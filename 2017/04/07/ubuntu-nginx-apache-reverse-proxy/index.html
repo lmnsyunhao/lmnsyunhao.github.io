@@ -111,19 +111,19 @@
 
 
   <meta name="description" content="Nginx 处理静态界面的性能比 Apache 要高很多，Nginx 同样能够抗并发。但是对于 php 等，Nginx 可以通过 FastCGI 转给 php-fpm 处理。在这个过程中，还是可能会出现403等问题。如果能够让 Nginx 反向代理 Apache 就完美了。">
-<meta name="keywords" content="Ubuntu,Proxy,Nginx,Apache">
+<meta name="keywords" content="Proxy,Ubuntu,Nginx,Apache">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Ubuntu16.04 Nginx 反向代理 Apache">
 <meta property="og:url" content="http://yunhao.life/2017/04/07/ubuntu-nginx-apache-reverse-proxy/index.html">
 <meta property="og:site_name" content="火龙窝">
 <meta property="og:description" content="Nginx 处理静态界面的性能比 Apache 要高很多，Nginx 同样能够抗并发。但是对于 php 等，Nginx 可以通过 FastCGI 转给 php-fpm 处理。在这个过程中，还是可能会出现403等问题。如果能够让 Nginx 反向代理 Apache 就完美了。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http://yunhao.life/pictures/ubuntu-nginx-apache-reverse-proxy/phpinfo-server-api.png">
-<meta property="og:updated_time" content="2018-05-17T10:15:58.234Z">
+<meta property="og:image" content="http://yunhao.life/images/ubuntu-nginx-apache-reverse-proxy/phpinfo-server-api.png">
+<meta property="og:updated_time" content="2018-05-17T10:22:09.855Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Ubuntu16.04 Nginx 反向代理 Apache">
 <meta name="twitter:description" content="Nginx 处理静态界面的性能比 Apache 要高很多，Nginx 同样能够抗并发。但是对于 php 等，Nginx 可以通过 FastCGI 转给 php-fpm 处理。在这个过程中，还是可能会出现403等问题。如果能够让 Nginx 反向代理 Apache 就完美了。">
-<meta name="twitter:image" content="http://yunhao.life/pictures/ubuntu-nginx-apache-reverse-proxy/phpinfo-server-api.png">
+<meta name="twitter:image" content="http://yunhao.life/images/ubuntu-nginx-apache-reverse-proxy/phpinfo-server-api.png">
 
 
 
@@ -383,7 +383,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2018-05-17 18:15:58" itemprop="dateModified" datetime="2018-05-17T18:15:58+08:00">2018-05-17</time>
+                <time title="修改时间：2018-05-17 18:22:09" itemprop="dateModified" datetime="2018-05-17T18:22:09+08:00">2018-05-17</time>
               
             
           </span>
@@ -467,7 +467,7 @@
 <p>&emsp;&emsp;这句话的意思就是，匹配到<code>php</code>文件的时候，交给<code>localhost:8080</code>去处理。我们都知道<code>localhost:8080</code>是<code>apache</code>所在的位置。所以，这个反向代理就成功了。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo systemctl reload nginx</span><br></pre></td></tr></table></figure></p>
 <p>&emsp;&emsp;我们重新载入一下<code>nginx</code>的配置文件。</p>
 <h1 id="测试2"><a href="#测试2" class="headerlink" title="测试2"></a>测试2</h1><p>&emsp;&emsp;现在，一切都OK了。我们再测试一下。<br>&emsp;&emsp;首先访问<code>http://localhost/index.php</code>。这个时候，就能够成功的显示界面了。可以看出<code>php</code>已经被解析了。<br>&emsp;&emsp;然后如果，我们关闭<code>apache</code>的服务。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo systemctl stop apache2</span><br></pre></td></tr></table></figure></p>
-<p>&emsp;&emsp;这个时候，我们再访问，<code>http://localhost/index.php</code>。我们会发现，还是解析不了，是因为<code>apache</code>关闭的原因了。所以，这个真的是<code>apache</code>处理的<code>php</code>文件。<br>&emsp;&emsp;当然，我们也可以通过，界面显示内容的server API 来判断是谁解析的<code>php</code>文件。<br><img src="/pictures/ubuntu-nginx-apache-reverse-proxy/phpinfo-server-api.png" alt="phpinfo Server API"><br>&emsp;&emsp;记得将<code>nginx</code>和<code>apache</code>都设置一下开机启动。</p>
+<p>&emsp;&emsp;这个时候，我们再访问，<code>http://localhost/index.php</code>。我们会发现，还是解析不了，是因为<code>apache</code>关闭的原因了。所以，这个真的是<code>apache</code>处理的<code>php</code>文件。<br>&emsp;&emsp;当然，我们也可以通过，界面显示内容的server API 来判断是谁解析的<code>php</code>文件。<br><img src="/images/ubuntu-nginx-apache-reverse-proxy/phpinfo-server-api.png" alt="phpinfo Server API"><br>&emsp;&emsp;记得将<code>nginx</code>和<code>apache</code>都设置一下开机启动。</p>
 
       
     </div>
@@ -488,9 +488,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Ubuntu/" rel="tag"># Ubuntu</a>
-          
             <a href="/tags/Proxy/" rel="tag"># Proxy</a>
+          
+            <a href="/tags/Ubuntu/" rel="tag"># Ubuntu</a>
           
             <a href="/tags/Nginx/" rel="tag"># Nginx</a>
           
