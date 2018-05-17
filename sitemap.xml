@@ -2,9 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yunhao.life/2017/04/07/ubuntu-nginx-apache-reverse-proxy/</loc>
+    
+    <lastmod>2018-05-17T10:15:58.234Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yunhao.life/2017/03/29/hexo-disqus-comments/</loc>
+    
+    <lastmod>2018-05-17T10:15:50.556Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yunhao.life/2017/04/07/forward-proxy-and-reverse-proxy/</loc>
     
-    <lastmod>2018-05-17T09:55:34.269Z</lastmod>
+    <lastmod>2018-05-17T10:15:18.506Z</lastmod>
     
   </url>
   
@@ -12,20 +26,6 @@
     <loc>http://yunhao.life/about/index.html</loc>
     
     <lastmod>2018-05-17T09:17:03.408Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yunhao.life/2017/04/07/ubuntu-nginx-apache-reverse-proxy/</loc>
-    
-    <lastmod>2018-05-17T09:08:44.180Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yunhao.life/2017/03/29/hexo-disqus-comments/</loc>
-    
-    <lastmod>2018-05-17T09:02:39.109Z</lastmod>
     
   </url>
   
