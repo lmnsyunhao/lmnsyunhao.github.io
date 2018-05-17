@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yunhao.life/2017/04/07/forward-proxy-and-reverse-proxy/</loc>
+    
+    <lastmod>2018-05-17T09:55:34.269Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yunhao.life/about/index.html</loc>
     
     <lastmod>2018-05-17T09:17:03.408Z</lastmod>
@@ -75,13 +82,6 @@
     <loc>http://yunhao.life/2017/03/27/hexo-backup/</loc>
     
     <lastmod>2018-05-17T08:58:33.610Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yunhao.life/2017/04/07/forward-proxy-and-reverse-proxy/</loc>
-    
-    <lastmod>2018-05-17T08:57:41.145Z</lastmod>
     
   </url>
   
