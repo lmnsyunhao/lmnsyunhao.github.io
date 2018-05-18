@@ -4,6 +4,28 @@
 
     
   <url>
+    <loc>http://yunhao.life/2017/03/29/hexo-disqus-comments/</loc>
+    <lastmod>2018-05-17T10:22:09.855Z</lastmod>
+    <data>
+        <display>
+        <title>Hexo NexT Disqus 评论插件</title>
+        <pubTime>2017-03-29T13:14:36.000Z</pubTime>
+        
+        <tag>Hexo</tag>
+         
+        <tag>NexT</tag>
+         
+         
+           
+             
+              <breadCrumb title="Hexo" url="http://yunhao.life/categories/Hexo/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://yunhao.life/2017/04/07/ubuntu-nginx-apache-reverse-proxy/</loc>
     <lastmod>2018-05-17T10:22:09.855Z</lastmod>
     <data>
@@ -23,28 +45,6 @@
            
              
               <breadCrumb title="Server" url="http://yunhao.life/categories/Server/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yunhao.life/2017/03/29/hexo-disqus-comments/</loc>
-    <lastmod>2018-05-17T10:22:09.855Z</lastmod>
-    <data>
-        <display>
-        <title>Hexo NexT Disqus 评论插件</title>
-        <pubTime>2017-03-29T13:14:36.000Z</pubTime>
-        
-        <tag>Hexo</tag>
-         
-        <tag>NexT</tag>
-         
-         
-           
-             
-              <breadCrumb title="Hexo" url="http://yunhao.life/categories/Hexo/"/>
           
         </display>
     </data>
