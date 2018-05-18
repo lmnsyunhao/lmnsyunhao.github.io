@@ -4,32 +4,6 @@
 
     
   <url>
-    <loc>http://yunhao.life/2017/04/07/ubuntu-nginx-apache-reverse-proxy/</loc>
-    <lastmod>2018-05-17T10:22:09.855Z</lastmod>
-    <data>
-        <display>
-        <title>Ubuntu16.04 Nginx 反向代理 Apache</title>
-        <pubTime>2017-04-07T12:19:44.000Z</pubTime>
-        
-        <tag>Proxy</tag>
-         
-        <tag>Ubuntu</tag>
-         
-        <tag>Nginx</tag>
-         
-        <tag>Apache</tag>
-         
-         
-           
-             
-              <breadCrumb title="Server" url="http://yunhao.life/categories/Server/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://yunhao.life/2017/03/29/hexo-disqus-comments/</loc>
     <lastmod>2018-05-17T10:22:09.855Z</lastmod>
     <data>
@@ -45,6 +19,32 @@
            
              
               <breadCrumb title="Hexo" url="http://yunhao.life/categories/Hexo/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yunhao.life/2017/04/07/ubuntu-nginx-apache-reverse-proxy/</loc>
+    <lastmod>2018-05-17T10:22:09.855Z</lastmod>
+    <data>
+        <display>
+        <title>Ubuntu16.04 Nginx 反向代理 Apache</title>
+        <pubTime>2017-04-07T12:19:44.000Z</pubTime>
+        
+        <tag>Ubuntu</tag>
+         
+        <tag>Proxy</tag>
+         
+        <tag>Nginx</tag>
+         
+        <tag>Apache</tag>
+         
+         
+           
+             
+              <breadCrumb title="Server" url="http://yunhao.life/categories/Server/"/>
           
         </display>
     </data>
@@ -190,9 +190,9 @@
         <title>Github blog 绑定域名</title>
         <pubTime>2017-03-27T08:47:20.000Z</pubTime>
         
-        <tag>Github</tag>
-         
         <tag>Domain</tag>
+         
+        <tag>Github</tag>
          
          
            
