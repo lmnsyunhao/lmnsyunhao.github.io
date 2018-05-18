@@ -133,6 +133,7 @@ function step() {
 }
 
 init();
+
 $("#background-container").css({
 	"margin-left": "0px",
 	"margin-top": "0px",
