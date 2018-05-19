@@ -5,7 +5,7 @@
     
   <url>
     <loc>http://yunhao.life/2018/05/19/acm-hdu-2577-dp/</loc>
-    <lastmod>2018-05-19T07:23:19.302Z</lastmod>
+    <lastmod>2018-05-19T07:36:27.419Z</lastmod>
     <data>
         <display>
         <title>ACM HDU 2577 解题思路 dp</title>
@@ -23,10 +23,7 @@
               <breadCrumb title="ACM" url="http://yunhao.life/categories/ACM/"/>
           
              
-              <breadCrumb title="HDU" url="http://yunhao.life/categories/ACM/HDU/"/>
-          
-             
-              <breadCrumb title="DP" url="http://yunhao.life/categories/ACM/HDU/DP/"/>
+              <breadCrumb title="DP" url="http://yunhao.life/categories/ACM/DP/"/>
           
         </display>
     </data>
@@ -220,9 +217,9 @@
         <title>Github blog 绑定域名</title>
         <pubTime>2017-03-27T08:47:20.000Z</pubTime>
         
-        <tag>Domain</tag>
-         
         <tag>Github</tag>
+         
+        <tag>Domain</tag>
          
          
            
