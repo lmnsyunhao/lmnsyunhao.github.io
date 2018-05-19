@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yunhao.life/2018/05/19/acm-hdu-2577-dp/</loc>
+    
+    <lastmod>2018-05-19T07:23:19.302Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yunhao.life/2017/03/27/ubuntu-PPPoE-dsl-connection/</loc>
+    
+    <lastmod>2018-05-19T07:10:47.444Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yunhao.life/2017/04/07/ubuntu-nginx-apache-reverse-proxy/</loc>
     
     <lastmod>2018-05-17T10:22:09.855Z</lastmod>
@@ -51,16 +65,9 @@
   </url>
   
   <url>
-    <loc>http://yunhao.life/2017/03/30/sogou-input-donesnt-work/</loc>
+    <loc>http://yunhao.life/2017/03/30/ubuntu-sogou-input-donesnt-work/</loc>
     
     <lastmod>2018-05-17T09:01:18.647Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yunhao.life/2017/03/27/ubuntu-PPPoE-dsl-connection/</loc>
-    
-    <lastmod>2018-05-17T09:00:39.848Z</lastmod>
     
   </url>
   

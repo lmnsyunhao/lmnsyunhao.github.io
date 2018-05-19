@@ -4,6 +4,60 @@
 
     
   <url>
+    <loc>http://yunhao.life/2018/05/19/acm-hdu-2577-dp/</loc>
+    <lastmod>2018-05-19T07:23:19.302Z</lastmod>
+    <data>
+        <display>
+        <title>ACM HDU 2577 解题思路 dp</title>
+        <pubTime>2018-05-19T07:07:30.000Z</pubTime>
+        
+        <tag>ACM</tag>
+         
+        <tag>HDU</tag>
+         
+        <tag>DP</tag>
+         
+         
+           
+             
+              <breadCrumb title="ACM" url="http://yunhao.life/categories/ACM/"/>
+          
+             
+              <breadCrumb title="HDU" url="http://yunhao.life/categories/ACM/HDU/"/>
+          
+             
+              <breadCrumb title="DP" url="http://yunhao.life/categories/ACM/HDU/DP/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yunhao.life/2017/03/27/ubuntu-PPPoE-dsl-connection/</loc>
+    <lastmod>2018-05-19T07:10:47.444Z</lastmod>
+    <data>
+        <display>
+        <title>Ubuntu16.04 PPPoE 拨号上网</title>
+        <pubTime>2017-03-27T06:41:12.000Z</pubTime>
+        
+        <tag>Ubuntu</tag>
+         
+        <tag>PPPoE</tag>
+         
+        <tag>DSL</tag>
+         
+         
+           
+             
+              <breadCrumb title="Ubuntu" url="http://yunhao.life/categories/Ubuntu/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://yunhao.life/2017/04/07/ubuntu-nginx-apache-reverse-proxy/</loc>
     <lastmod>2018-05-17T10:22:09.855Z</lastmod>
     <data>
@@ -137,7 +191,7 @@
 
     
   <url>
-    <loc>http://yunhao.life/2017/03/30/sogou-input-donesnt-work/</loc>
+    <loc>http://yunhao.life/2017/03/30/ubuntu-sogou-input-donesnt-work/</loc>
     <lastmod>2018-05-17T09:01:18.647Z</lastmod>
     <data>
         <display>
@@ -147,30 +201,6 @@
         <tag>Ubuntu</tag>
          
         <tag>SogouInput</tag>
-         
-         
-           
-             
-              <breadCrumb title="Ubuntu" url="http://yunhao.life/categories/Ubuntu/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yunhao.life/2017/03/27/ubuntu-PPPoE-dsl-connection/</loc>
-    <lastmod>2018-05-17T09:00:39.848Z</lastmod>
-    <data>
-        <display>
-        <title>ubuntu16.04 PPPoE 拨号上网</title>
-        <pubTime>2017-03-27T06:41:12.000Z</pubTime>
-        
-        <tag>Ubuntu</tag>
-         
-        <tag>PPPoE</tag>
-         
-        <tag>DSL</tag>
          
          
            
