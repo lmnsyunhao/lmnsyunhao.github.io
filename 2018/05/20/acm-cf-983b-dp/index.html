@@ -110,29 +110,27 @@
 
 
 
-  <meta name="description" content="什么是代理呢？用了这么久的Nginx，也听说过Nginx搭建反向代理服务器。正向代理是什么？反向代理是什么？两者的区别呢？">
-<meta name="keywords" content="Proxy">
+  <meta name="description" content="题目 思路&amp;emsp;&amp;emsp;用dp，dp右上半个数组存储f(l到r)的值，dp左下半个数组存储l到r区间内子串的最大f函数值&amp;emsp;&amp;emsp;提前打表，用递归的方式会超时。亲测。 代码123456789101112131415161718192021222324252627282930313233#include &amp;lt;iostream&amp;gt;#include &amp;lt;cstdio&amp;">
+<meta name="keywords" content="ACM,CodeForces,DP">
 <meta property="og:type" content="article">
-<meta property="og:title" content="正向代理与反向代理">
-<meta property="og:url" content="http://yunhao.life/2017/04/07/forward-proxy-and-reverse-proxy/index.html">
+<meta property="og:title" content="ACM CodeForces 983-B 题解 DP">
+<meta property="og:url" content="http://yunhao.life/2018/05/20/acm-cf-983b-dp/index.html">
 <meta property="og:site_name" content="火龙窝">
-<meta property="og:description" content="什么是代理呢？用了这么久的Nginx，也听说过Nginx搭建反向代理服务器。正向代理是什么？反向代理是什么？两者的区别呢？">
+<meta property="og:description" content="题目 思路&amp;emsp;&amp;emsp;用dp，dp右上半个数组存储f(l到r)的值，dp左下半个数组存储l到r区间内子串的最大f函数值&amp;emsp;&amp;emsp;提前打表，用递归的方式会超时。亲测。 代码123456789101112131415161718192021222324252627282930313233#include &amp;lt;iostream&amp;gt;#include &amp;lt;cstdio&amp;">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http://yunhao.life/images/forward-proxy-and-reverse-proxy/proxy.png">
-<meta property="og:image" content="http://yunhao.life/images/forward-proxy-and-reverse-proxy/forward-proxy.png">
-<meta property="og:image" content="http://yunhao.life/images/forward-proxy-and-reverse-proxy/reverse-proxy.png">
-<meta property="og:updated_time" content="2018-05-17T10:22:09.839Z">
+<meta property="og:image" content="http://yunhao.life/images/acm-answers/cf_983b_question.png">
+<meta property="og:updated_time" content="2018-05-20T05:37:18.862Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="正向代理与反向代理">
-<meta name="twitter:description" content="什么是代理呢？用了这么久的Nginx，也听说过Nginx搭建反向代理服务器。正向代理是什么？反向代理是什么？两者的区别呢？">
-<meta name="twitter:image" content="http://yunhao.life/images/forward-proxy-and-reverse-proxy/proxy.png">
+<meta name="twitter:title" content="ACM CodeForces 983-B 题解 DP">
+<meta name="twitter:description" content="题目 思路&amp;emsp;&amp;emsp;用dp，dp右上半个数组存储f(l到r)的值，dp左下半个数组存储l到r区间内子串的最大f函数值&amp;emsp;&amp;emsp;提前打表，用递归的方式会超时。亲测。 代码123456789101112131415161718192021222324252627282930313233#include &amp;lt;iostream&amp;gt;#include &amp;lt;cstdio&amp;">
+<meta name="twitter:image" content="http://yunhao.life/images/acm-answers/cf_983b_question.png">
 
 
 
 
 
 
-  <link rel="canonical" href="http://yunhao.life/2017/04/07/forward-proxy-and-reverse-proxy/"/>
+  <link rel="canonical" href="http://yunhao.life/2018/05/20/acm-cf-983b-dp/"/>
 
 
 
@@ -142,7 +140,7 @@
   };
 </script>
 
-  <title>正向代理与反向代理 | 火龙窝</title>
+  <title>ACM CodeForces 983-B 题解 DP | 火龙窝</title>
   
 
 
@@ -326,7 +324,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yunhao.life/2017/04/07/forward-proxy-and-reverse-proxy/">
+    <link itemprop="mainEntityOfPage" href="http://yunhao.life/2018/05/20/acm-cf-983b-dp/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="喷水小火龙">
@@ -343,7 +341,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">正向代理与反向代理
+          <h1 class="post-title" itemprop="name headline">ACM CodeForces 983-B 题解 DP
               
             
           </h1>
@@ -368,24 +366,12 @@
                 
               
 
-              <time title="创建时间：2017-04-07 18:51:19" itemprop="dateCreated datePublished" datetime="2017-04-07T18:51:19+08:00">2017-04-07</time>
+              <time title="创建时间：2018-05-20 13:17:46 / 修改时间：13:37:18" itemprop="dateCreated datePublished" datetime="2018-05-20T13:17:46+08:00">2018-05-20</time>
             
 
             
               
 
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2018-05-17 18:22:09" itemprop="dateModified" datetime="2018-05-17T18:22:09+08:00">2018-05-17</time>
               
             
           </span>
@@ -402,7 +388,14 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Server/" itemprop="url" rel="index"><span itemprop="name">Server</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/ACM/" itemprop="url" rel="index"><span itemprop="name">ACM</span></a></span>
+
+                
+                
+                  ，
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/ACM/DP/" itemprop="url" rel="index"><span itemprop="name">DP</span></a></span>
 
                 
                 
@@ -436,13 +429,9 @@
       
 
       
-        <p>什么是代理呢？用了这么久的Nginx，也听说过Nginx搭建反向代理服务器。正向代理是什么？反向代理是什么？两者的区别呢？</p>
-<a id="more"></a>
-<h1 id="代理"><a href="#代理" class="headerlink" title="代理"></a>代理</h1><p>&emsp;&emsp;打个比方，代理就是我们生活中所熟知的中介。他负责联系服务方和客户方。在服务器层面，就是客户端和服务器中间的一个服务器。这个服务器其实和正常的服务器没什么两样。只不过，他将客户发来的请求，转发到真正处理请求的服务器。或者是下一个代理服务器。<br>&emsp;&emsp;正因为有了代理服务器的存在，才有了墙的存在。墙其实就是代理服务器。比如我们访问<code>google.com</code>，代理服务器接受到了这个请求，正常的话，他应该去转发请求的。但是，墙这个代理很邪恶，他不转发，然后告诉你，哎呀，这个没有啊，找不到。然后就访问不了了。<br><img src="/images/forward-proxy-and-reverse-proxy/proxy.png" alt="代理服务器"></p>
-<h1 id="正向代理"><a href="#正向代理" class="headerlink" title="正向代理"></a>正向代理</h1><p>&emsp;&emsp;举个生活中的例子。比如你向隔壁老王借钱，但是隔壁老王和你不熟，不借给你。然后呢？你想到了，隔壁老王和你媳妇熟啊，于是，你让你媳妇跟隔壁老王借钱，隔壁老王一看是你媳妇和他借钱，十分爽快的答应了。然后你媳妇把借来的钱又给你了。<br>&emsp;&emsp;综上，隔壁老王只知道把钱借给你媳妇了，不知道实际上是借给你了。而你，知道这一切。<br>&emsp;&emsp;你就是客户，你媳妇就是正向代理服务器，老王就是真正的服务器。客户向代理服务器请求，代理服务器向真正的服务器请求。然后处理之后的请求，代理服务器再转给你。整个过程中，客户知道代理服务器的存在。<strong>而真正的服务器，感知不到客户的存在，只能感知到代理服务器的存在。</strong> 对他来说，代理服务器就是他的客户，所以他感知不到真正的客户。<br><img src="/images/forward-proxy-and-reverse-proxy/forward-proxy.png" alt="正向代理服务器"></p>
-<h1 id="反向代理"><a href="#反向代理" class="headerlink" title="反向代理"></a>反向代理</h1><p>&emsp;&emsp;举个生活中的例子，你遇到了坏人，然后急中生智，你掏出了手机，打电话给110。然后打通了，过了一会儿，警察来了，然后把坏人抓走了。<br>&emsp;&emsp;等等，仔细想一下，全国都哪都有警察，为什么都打一个电话？拨打110之后，会有一个处理系统，来确认你的位置，然后派出相应的警察来帮助你解决问题。<br>&emsp;&emsp;这个过程中，如果你不仔细想，你不会感觉到有这个处理系统的存在的。你也不知道，到底哪个地方的110来帮你解决问题，你只知道有警察来了，问题解决了。<br>&emsp;&emsp;在上面这个过程中，你就是客户，处理系统就是反向代理服务器，警察就是对应的服务器。反向代理服务器，让客户感觉到方便，向反向代理服务器请求，就好像向真的服务器请求一样。<strong>客户无法感知到真正的服务器的存在的。</strong><br><img src="/images/forward-proxy-and-reverse-proxy/reverse-proxy.png" alt="反向代理服务器"></p>
-<h1 id="区别"><a href="#区别" class="headerlink" title="区别"></a>区别</h1><p>&emsp;&emsp;图中的两个方框对与方框之外的事物，像黑盒一样。<br>&emsp;&emsp;正向代理服务器是对真正服务器透明，真正的服务器，感知不到客户存在。<br>&emsp;&emsp;反向代理服务器是对客户透明，客户，感知不到真正的服务器。  </p>
-
+        <h1 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h1><p><img src="/images/acm-answers/cf_983b_question.png" alt="题目"></p>
+<h1 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h1><p>&emsp;&emsp;用dp，dp右上半个数组存储f(l到r)的值，dp左下半个数组存储l到r区间内子串的最大f函数值<br>&emsp;&emsp;提前打表，用递归的方式会超时。亲测。</p>
+<h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">#include &lt;iostream&gt;</span><br><span class="line">#include &lt;cstdio&gt;</span><br><span class="line">#include &lt;cstring&gt;</span><br><span class="line"></span><br><span class="line">using namespace std;</span><br><span class="line"></span><br><span class="line">int n, q, l, r;</span><br><span class="line">int dp[5005][5005];</span><br><span class="line"></span><br><span class="line">void calc()&#123;</span><br><span class="line">    for (int i = 2; i &lt;= n; i++)&#123;</span><br><span class="line">        for(int j = 0; j &lt; n-i+1; j++)&#123;</span><br><span class="line">            int x = j+1, y = i+j;</span><br><span class="line">            dp[x][y] = dp[x+1][y] ^ dp[x][y-1];</span><br><span class="line">            dp[y][x] = max(dp[x][y], max(dp[y][x+1], dp[y-1][x]));</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int main()&#123;</span><br><span class="line">    while(~scanf(&quot;%d&quot;, &amp;n))&#123;</span><br><span class="line">        for (int i = 1; i &lt;= n; i++)&#123;</span><br><span class="line">            scanf(&quot;%d&quot;, &amp;dp[i][i]);</span><br><span class="line">        &#125;</span><br><span class="line">        calc();</span><br><span class="line">        scanf(&quot;%d&quot;, &amp;q);</span><br><span class="line">        for (int w = 0; w &lt; q; w++)&#123;</span><br><span class="line">            scanf(&quot;%d%d&quot;, &amp;l, &amp;r);</span><br><span class="line">            printf(&quot;%d\n&quot;, dp[r][l]);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
     </div>
 
@@ -462,7 +451,11 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Proxy/" rel="tag"># Proxy</a>
+            <a href="/tags/ACM/" rel="tag"># ACM</a>
+          
+            <a href="/tags/CodeForces/" rel="tag"># CodeForces</a>
+          
+            <a href="/tags/DP/" rel="tag"># DP</a>
           
         </div>
       
@@ -475,8 +468,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/03/30/ubuntu-sogou-input-donesnt-work/" rel="next" title="Ubuntu16.04 Sogou 输入法的备选词框不见了解决方法">
-                <i class="fa fa-chevron-left"></i> Ubuntu16.04 Sogou 输入法的备选词框不见了解决方法
+              <a href="/2018/05/19/acm-hdu-2577-dp/" rel="next" title="ACM HDU 2577 题解 DP">
+                <i class="fa fa-chevron-left"></i> ACM HDU 2577 题解 DP
               </a>
             
           </div>
@@ -484,10 +477,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/04/07/ubuntu-nginx-apache-reverse-proxy/" rel="prev" title="Ubuntu16.04 Nginx 反向代理 Apache">
-                Ubuntu16.04 Nginx 反向代理 Apache <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -692,7 +681,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#代理"><span class="nav-number">1.</span> <span class="nav-text">代理</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#正向代理"><span class="nav-number">2.</span> <span class="nav-text">正向代理</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#反向代理"><span class="nav-number">3.</span> <span class="nav-text">反向代理</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#区别"><span class="nav-number">4.</span> <span class="nav-text">区别</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#题目"><span class="nav-number">1.</span> <span class="nav-text">题目</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#思路"><span class="nav-number">2.</span> <span class="nav-text">思路</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#代码"><span class="nav-number">3.</span> <span class="nav-text">代码</span></a></li></ol></div>
             
 
           </div>

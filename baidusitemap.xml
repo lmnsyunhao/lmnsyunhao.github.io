@@ -4,18 +4,45 @@
 
     
   <url>
-    <loc>http://yunhao.life/2018/05/19/acm-hdu-2577-dp/</loc>
-    <lastmod>2018-05-19T07:36:27.419Z</lastmod>
+    <loc>http://yunhao.life/2018/05/20/acm-cf-983b-dp/</loc>
+    <lastmod>2018-05-20T05:37:18.862Z</lastmod>
     <data>
         <display>
-        <title>ACM HDU 2577 解题思路 dp</title>
+        <title>ACM CodeForces 983-B 题解 DP</title>
+        <pubTime>2018-05-20T05:17:46.000Z</pubTime>
+        
+        <tag>ACM</tag>
+         
+        <tag>CodeForces</tag>
+         
+        <tag>DP</tag>
+         
+         
+           
+             
+              <breadCrumb title="ACM" url="http://yunhao.life/categories/ACM/"/>
+          
+             
+              <breadCrumb title="DP" url="http://yunhao.life/categories/ACM/DP/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yunhao.life/2018/05/19/acm-hdu-2577-dp/</loc>
+    <lastmod>2018-05-20T05:30:46.717Z</lastmod>
+    <data>
+        <display>
+        <title>ACM HDU 2577 题解 DP</title>
         <pubTime>2018-05-19T07:07:30.000Z</pubTime>
         
         <tag>ACM</tag>
          
-        <tag>HDU</tag>
-         
         <tag>DP</tag>
+         
+        <tag>HDU</tag>
          
          
            
@@ -217,9 +244,9 @@
         <title>Github blog 绑定域名</title>
         <pubTime>2017-03-27T08:47:20.000Z</pubTime>
         
-        <tag>Github</tag>
-         
         <tag>Domain</tag>
+         
+        <tag>Github</tag>
          
          
            
