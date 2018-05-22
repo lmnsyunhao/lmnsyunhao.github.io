@@ -110,25 +110,25 @@
 
 
 
-  <meta name="description" content="hexo 备份和移植">
-<meta name="keywords" content="Hexo">
+  <meta name="description" content="症状在网上找到的MathJax的公式，直接粘贴到Markdown文档中发现，显示格式不正确。比如：1234mathjax的大括号$$\&amp;#123;x\&amp;#125;$$mathjax的换行符$$f(b) = \begin&amp;#123;cases&amp;#125; b[1] \\ b[2] \end&amp;#123;cases&amp;#125;$$ 在hexo中的实际效果为$${x}$$$$f(b) = \begin{c">
+<meta name="keywords" content="Hexo,Markdown,MathJax">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo 备份">
-<meta property="og:url" content="http://yunhao.life/2017/03/27/hexo-backup/index.html">
+<meta property="og:title" content="Hexo 中 Markdown 与 MathJax 冲突解决">
+<meta property="og:url" content="http://yunhao.life/2018/05/22/markdown-mathjax-syntax-collision/index.html">
 <meta property="og:site_name" content="火龙窝">
-<meta property="og:description" content="hexo 备份和移植">
+<meta property="og:description" content="症状在网上找到的MathJax的公式，直接粘贴到Markdown文档中发现，显示格式不正确。比如：1234mathjax的大括号$$\&amp;#123;x\&amp;#125;$$mathjax的换行符$$f(b) = \begin&amp;#123;cases&amp;#125; b[1] \\ b[2] \end&amp;#123;cases&amp;#125;$$ 在hexo中的实际效果为$${x}$$$$f(b) = \begin{c">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-05-22T03:58:22.655Z">
+<meta property="og:updated_time" content="2018-05-22T10:23:05.168Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo 备份">
-<meta name="twitter:description" content="hexo 备份和移植">
+<meta name="twitter:title" content="Hexo 中 Markdown 与 MathJax 冲突解决">
+<meta name="twitter:description" content="症状在网上找到的MathJax的公式，直接粘贴到Markdown文档中发现，显示格式不正确。比如：1234mathjax的大括号$$\&amp;#123;x\&amp;#125;$$mathjax的换行符$$f(b) = \begin&amp;#123;cases&amp;#125; b[1] \\ b[2] \end&amp;#123;cases&amp;#125;$$ 在hexo中的实际效果为$${x}$$$$f(b) = \begin{c">
 
 
 
 
 
 
-  <link rel="canonical" href="http://yunhao.life/2017/03/27/hexo-backup/"/>
+  <link rel="canonical" href="http://yunhao.life/2018/05/22/markdown-mathjax-syntax-collision/"/>
 
 
 
@@ -138,7 +138,7 @@
   };
 </script>
 
-  <title>Hexo 备份 | 火龙窝</title>
+  <title>Hexo 中 Markdown 与 MathJax 冲突解决 | 火龙窝</title>
   
 
 
@@ -322,7 +322,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yunhao.life/2017/03/27/hexo-backup/">
+    <link itemprop="mainEntityOfPage" href="http://yunhao.life/2018/05/22/markdown-mathjax-syntax-collision/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="喷水小火龙">
@@ -339,7 +339,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Hexo 备份
+          <h1 class="post-title" itemprop="name headline">Hexo 中 Markdown 与 MathJax 冲突解决
               
             
           </h1>
@@ -364,24 +364,12 @@
                 
               
 
-              <time title="创建时间：2017-03-27 14:55:40" itemprop="dateCreated datePublished" datetime="2017-03-27T14:55:40+08:00">2017-03-27</time>
+              <time title="创建时间：2018-05-22 18:05:19 / 修改时间：18:23:05" itemprop="dateCreated datePublished" datetime="2018-05-22T18:05:19+08:00">2018-05-22</time>
             
 
             
               
 
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2018-05-22 11:58:22" itemprop="dateModified" datetime="2018-05-22T11:58:22+08:00">2018-05-22</time>
               
             
           </span>
@@ -432,17 +420,11 @@
       
 
       
-        <p>hexo 备份和移植</p>
-<a id="more"></a>
-<h1 id="创建仓库"><a href="#创建仓库" class="headerlink" title="创建仓库"></a>创建仓库</h1><p>PS：如果远程已经备份好，只是要<code>pull</code>下来，请跳到恢复一节<br>假设我们的博客的项目目录为<code>blog</code><br>我们可以看到在<code>blog</code>目录下是没有<code>.git</code>文件夹的。<br>首先，我们先将所有的更改，提交到本地库<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git add .</span><br><span class="line">git commit -m <span class="string">"backup"</span></span><br></pre></td></tr></table></figure></p>
-<h1 id="创建backup分支"><a href="#创建backup分支" class="headerlink" title="创建backup分支"></a>创建backup分支</h1><p>我们新建一个叫做<code>backup</code>的分支。然后切换到该分支，再删除<code>master</code>分支。<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git branch backup</span><br><span class="line">git checkout backup</span><br><span class="line">git branch -d master</span><br><span class="line">git branch</span><br></pre></td></tr></table></figure></p>
-<p>我们可以通过<code>git branch</code> 查看，只剩一个<code>backup</code>分支。</p>
-<h1 id="连接远程"><a href="#连接远程" class="headerlink" title="连接远程"></a>连接远程</h1><p>我们连接远程库，并进行<code>push</code>操作，如下，远程库会自动建立<code>backup</code>分支。<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git remote add origin 你的username.github.io的项目地址</span><br><span class="line">git push origin backup:backup</span><br></pre></td></tr></table></figure></p>
-<h1 id="修改push和pull的默认分支"><a href="#修改push和pull的默认分支" class="headerlink" title="修改push和pull的默认分支"></a>修改push和pull的默认分支</h1><p>保险起见，设置默认的跟踪分支，之后会看到本地的<code>backup</code>分支跟踪<code>origin/backup</code>分支<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git push -u origin backup</span><br><span class="line">git branch --<span class="built_in">set</span>-upstream-to=origin/backup backup</span><br></pre></td></tr></table></figure></p>
-<p>设置了之后，我们再进行<code>git push</code> 或者是<code>git pull</code>的操作的时候就不用担心，会影响到<code>origin/master</code>分支了。</p>
-<h1 id="备份"><a href="#备份" class="headerlink" title="备份"></a>备份</h1><p>之后我们再上传新的帖子的时候，要进行下面的操作。<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">git add .</span><br><span class="line">git commit -m <span class="string">"backup"</span></span><br><span class="line">git push</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure></p>
-<p>这样就能够备份了</p>
-<h1 id="恢复"><a href="#恢复" class="headerlink" title="恢复"></a>恢复</h1><p>本地的博客丢了怎么办？这样就能够弄一份一模一样的了。<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">mkdir blog</span><br><span class="line"><span class="built_in">cd</span> blog</span><br><span class="line">git init</span><br><span class="line">git remote add origin 你的username.github.io的项目地址</span><br><span class="line">git pull origin backup:backup</span><br><span class="line">git branch</span><br><span class="line">git checkout backup</span><br><span class="line">git branch -d master</span><br><span class="line">git push -u origin backup</span><br><span class="line">git branch --<span class="built_in">set</span>-upstream-to=origin/backup backup</span><br><span class="line">npm install</span><br><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure></p>
+        <h1 id="症状"><a href="#症状" class="headerlink" title="症状"></a>症状</h1><p>在网上找到的MathJax的公式，直接粘贴到Markdown文档中发现，显示格式不正确。比如：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">mathjax的大括号</span><br><span class="line">$$\&#123;x\&#125;$$</span><br><span class="line">mathjax的换行符</span><br><span class="line">$$f(b) = \begin&#123;cases&#125; b[1] \\ b[2] \end&#123;cases&#125;$$</span><br></pre></td></tr></table></figure></p>
+<p>在hexo中的实际效果为<br>$${x}$$<br>$$f(b) = \begin{cases} b[1] \ b[2] \end{cases}$$<br>我的大括号呢？说好的换行符呢？怎么不显示了？  </p>
+<h1 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h1><p>在hexo生成中，markdown会将文档先一步渲染，将某些字符转义，之后再是MathJax的渲染。在这个过程中会有冲突。<br>对于大括号，markdown渲染器会将<code>\{</code>或是<code>\}</code>转义为<code>{</code>或是<code>}</code>，再等到MathJax渲染的时候当然就不对了。因为<code>\</code>没了啊。<br>对于换行符，markdown渲染器会将<code>\\</code>转义为<code>\</code>，再到MathJax渲染的时候发现就剩一个了，所以就不换行了。  </p>
+<h1 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h1><p>网上的一些解决方式都是修改mark.js中的正则表达式，来限制markdown的转义。或是npm安装一些东西来控制这些。有点粗暴。<br>遇到类似的情况，发现是markdown先转义了，我的解决方法是，允许markdown转义，但要保证轮到MathJax转义的时候表达式是正确的。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">mathjax的大括号</span><br><span class="line">$$\\&#123;x\\&#125;$$</span><br><span class="line">mathjax的换行符</span><br><span class="line">$$f(b) = \begin&#123;cases&#125; b[1] \\\\ b[2] \end&#123;cases&#125;$$</span><br></pre></td></tr></table></figure></p>
+<p>改成上边这样，结果实际效果就正确了。<br>$$\{x\}$$<br>$$f(b) = \begin{cases} b[1] \\ b[2] \end{cases}$$</p>
 
       
     </div>
@@ -465,6 +447,10 @@
           
             <a href="/tags/Hexo/" rel="tag"># Hexo</a>
           
+            <a href="/tags/Markdown/" rel="tag"># Markdown</a>
+          
+            <a href="/tags/MathJax/" rel="tag"># MathJax</a>
+          
         </div>
       
 
@@ -476,8 +462,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/03/27/ubuntu-PPPoE-dsl-connection/" rel="next" title="Ubuntu16.04 PPPoE 拨号上网">
-                <i class="fa fa-chevron-left"></i> Ubuntu16.04 PPPoE 拨号上网
+              <a href="/2018/05/22/mathjax-learning-note/" rel="next" title="MathJax 基本语法学习笔记">
+                <i class="fa fa-chevron-left"></i> MathJax 基本语法学习笔记
               </a>
             
           </div>
@@ -485,10 +471,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/03/27/github-blog-bundle-domain/" rel="prev" title="Github blog 绑定域名">
-                Github blog 绑定域名 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -699,7 +681,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#创建仓库"><span class="nav-number">1.</span> <span class="nav-text">创建仓库</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#创建backup分支"><span class="nav-number">2.</span> <span class="nav-text">创建backup分支</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#连接远程"><span class="nav-number">3.</span> <span class="nav-text">连接远程</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#修改push和pull的默认分支"><span class="nav-number">4.</span> <span class="nav-text">修改push和pull的默认分支</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#备份"><span class="nav-number">5.</span> <span class="nav-text">备份</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#恢复"><span class="nav-number">6.</span> <span class="nav-text">恢复</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#症状"><span class="nav-number">1.</span> <span class="nav-text">症状</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#分析"><span class="nav-number">2.</span> <span class="nav-text">分析</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#解决方法"><span class="nav-number">3.</span> <span class="nav-text">解决方法</span></a></li></ol></div>
             
 
           </div>
@@ -907,6 +889,30 @@
   
   
 
+  
+    
+      <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      },
+      TeX: {equationNumbers: { autoNumber: "AMS" }}
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+      var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/mathjax@2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+    
   
 
 
