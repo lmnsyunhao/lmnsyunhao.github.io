@@ -118,7 +118,7 @@
 <meta property="og:site_name" content="火龙窝">
 <meta property="og:description" content="firefox浏览器下载了之后，默认都是没有安装插件的。如何给firefox浏览器安装插件呢？希望下这篇帖子能够帮助你。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-05-17T08:56:47.336Z">
+<meta property="og:updated_time" content="2018-05-22T03:49:36.670Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Ubuntu16.04 Firefox Flash 插件安装">
 <meta name="twitter:description" content="firefox浏览器下载了之后，默认都是没有安装插件的。如何给firefox浏览器安装插件呢？希望下这篇帖子能够帮助你。">
@@ -244,7 +244,7 @@
           
           <li class="menu-item menu-item-tags">
     <a href="/tags/" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />标签<span class="badge">20</span></a>
+      <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />标签<span class="badge">21</span></a>
   </li>
         
         
@@ -260,7 +260,7 @@
           
           <li class="menu-item menu-item-archives">
     <a href="/archives/" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档<span class="badge">18</span></a>
+      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档<span class="badge">19</span></a>
   </li>
 
       
@@ -381,7 +381,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2018-05-17 16:56:47" itemprop="dateModified" datetime="2018-05-17T16:56:47+08:00">2018-05-17</time>
+                <time title="修改时间：2018-05-22 11:49:36" itemprop="dateModified" datetime="2018-05-22T11:49:36+08:00">2018-05-22</time>
               
             
           </span>
@@ -434,11 +434,11 @@
       
         <p>firefox浏览器下载了之后，默认都是没有安装插件的。如何给firefox浏览器安装插件呢？希望下这篇帖子能够帮助你。</p>
 <a id="more"></a>
-<h1 id="flash插件官网"><a href="#flash插件官网" class="headerlink" title="flash插件官网"></a>flash插件官网</h1><p>&emsp;&emsp;去<code>https://get.adobe.com/flashplayer/</code>这个网站，下载对应的flash插件。选择tar.gz下载。</p>
-<h1 id="解压"><a href="#解压" class="headerlink" title="解压"></a>解压</h1><p>&emsp;&emsp;解压下载之后的文件。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar -xzvf flash_player_npapi_linux.x86_64.tar.gz</span><br></pre></td></tr></table></figure></p>
-<h1 id="目录结构"><a href="#目录结构" class="headerlink" title="目录结构"></a>目录结构</h1><p>&emsp;&emsp;解压了之后，我们可以清晰的看到目录结构。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">.</span><br><span class="line">├── flash_player_npapi_linux.x86_64.tar.gz</span><br><span class="line">├── LGPL</span><br><span class="line">│   ├── LGPL.txt</span><br><span class="line">│   └── notice.txt</span><br><span class="line">├── libflashplayer.so</span><br><span class="line">├── license.pdf</span><br><span class="line">├── readme.txt</span><br><span class="line">└── usr</span><br><span class="line">    ├── bin</span><br><span class="line">    ├── lib</span><br><span class="line">    ├── lib64</span><br><span class="line">    └── share</span><br></pre></td></tr></table></figure></p>
-<h1 id="拷贝文件"><a href="#拷贝文件" class="headerlink" title="拷贝文件"></a>拷贝文件</h1><p>&emsp;&emsp;将<code>libflashplayer.so</code>这个文件拷贝到<code>/usr/lib/firefox-addons/plugins</code>，将usr下的东西拷贝到/usr下。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo cp libflashplayer.so /usr/lib/firefox-addons/plugins</span><br><span class="line">sudo cp -r usr/ /usr</span><br></pre></td></tr></table></figure></p>
-<h1 id="重启firefox"><a href="#重启firefox" class="headerlink" title="重启firefox"></a>重启firefox</h1><p>&emsp;&emsp;重新启动，firefox，我们就会发现，能够使用flash插件了。</p>
+<h1 id="flash插件官网"><a href="#flash插件官网" class="headerlink" title="flash插件官网"></a>flash插件官网</h1><p>去<code>https://get.adobe.com/flashplayer/</code>这个网站，下载对应的flash插件。选择tar.gz下载。</p>
+<h1 id="解压"><a href="#解压" class="headerlink" title="解压"></a>解压</h1><p>解压下载之后的文件。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar -xzvf flash_player_npapi_linux.x86_64.tar.gz</span><br></pre></td></tr></table></figure></p>
+<h1 id="目录结构"><a href="#目录结构" class="headerlink" title="目录结构"></a>目录结构</h1><p>解压了之后，我们可以清晰的看到目录结构。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">.</span><br><span class="line">├── flash_player_npapi_linux.x86_64.tar.gz</span><br><span class="line">├── LGPL</span><br><span class="line">│   ├── LGPL.txt</span><br><span class="line">│   └── notice.txt</span><br><span class="line">├── libflashplayer.so</span><br><span class="line">├── license.pdf</span><br><span class="line">├── readme.txt</span><br><span class="line">└── usr</span><br><span class="line">    ├── bin</span><br><span class="line">    ├── lib</span><br><span class="line">    ├── lib64</span><br><span class="line">    └── share</span><br></pre></td></tr></table></figure></p>
+<h1 id="拷贝文件"><a href="#拷贝文件" class="headerlink" title="拷贝文件"></a>拷贝文件</h1><p>将<code>libflashplayer.so</code>这个文件拷贝到<code>/usr/lib/firefox-addons/plugins</code>，将usr下的东西拷贝到/usr下。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo cp libflashplayer.so /usr/lib/firefox-addons/plugins</span><br><span class="line">sudo cp -r usr/ /usr</span><br></pre></td></tr></table></figure></p>
+<h1 id="重启firefox"><a href="#重启firefox" class="headerlink" title="重启firefox"></a>重启firefox</h1><p>重新启动，firefox，我们就会发现，能够使用flash插件了。</p>
 
       
     </div>
@@ -486,7 +486,7 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/03/30/ubuntu-sogou-input-donesnt-work/" rel="prev" title="Ubuntu16.04 Sogou 输入法的备选词框不见了解决方法">
+              <a href="/2017/03/30/ubuntu-sogou-input-doesnot-work/" rel="prev" title="Ubuntu16.04 Sogou 输入法的备选词框不见了解决方法">
                 Ubuntu16.04 Sogou 输入法的备选词框不见了解决方法 <i class="fa fa-chevron-right"></i>
               </a>
             
@@ -566,7 +566,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">18</span>
+                    <span class="site-state-item-count">19</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -652,7 +652,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">20</span>
+                      
+                    
+                    <span class="site-state-item-count">21</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
@@ -900,6 +902,13 @@
 
 
   
+  
+
+  
+  
+
+  
+
 
   
   

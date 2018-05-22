@@ -118,7 +118,7 @@
 <meta property="og:site_name" content="火龙窝">
 <meta property="og:description" content="hexo 备份和移植">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-05-17T08:58:33.610Z">
+<meta property="og:updated_time" content="2018-05-22T03:58:22.655Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo 备份">
 <meta name="twitter:description" content="hexo 备份和移植">
@@ -244,7 +244,7 @@
           
           <li class="menu-item menu-item-tags">
     <a href="/tags/" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />标签<span class="badge">20</span></a>
+      <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />标签<span class="badge">21</span></a>
   </li>
         
         
@@ -260,7 +260,7 @@
           
           <li class="menu-item menu-item-archives">
     <a href="/archives/" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档<span class="badge">18</span></a>
+      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档<span class="badge">19</span></a>
   </li>
 
       
@@ -381,7 +381,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2018-05-17 16:58:33" itemprop="dateModified" datetime="2018-05-17T16:58:33+08:00">2018-05-17</time>
+                <time title="修改时间：2018-05-22 11:58:22" itemprop="dateModified" datetime="2018-05-22T11:58:22+08:00">2018-05-22</time>
               
             
           </span>
@@ -434,15 +434,15 @@
       
         <p>hexo 备份和移植</p>
 <a id="more"></a>
-<h1 id="创建仓库"><a href="#创建仓库" class="headerlink" title="创建仓库"></a>创建仓库</h1><p>&emsp;&emsp;PS：如果远程已经备份好，只是要<code>pull</code>下来，请跳到恢复一节<br>&emsp;&emsp;假设我们的博客的项目目录为<code>blog</code><br>&emsp;&emsp;我们可以看到在<code>blog</code>目录下是没有<code>.git</code>文件夹的。<br>&emsp;&emsp;首先，我们先将所有的更改，提交到本地库<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git add .</span><br><span class="line">git commit -m <span class="string">"backup"</span></span><br></pre></td></tr></table></figure></p>
-<h1 id="创建backup分支"><a href="#创建backup分支" class="headerlink" title="创建backup分支"></a>创建backup分支</h1><p>&emsp;&emsp;我们新建一个叫做<code>backup</code>的分支。然后切换到该分支，再删除<code>master</code>分支。<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git branch backup</span><br><span class="line">git checkout backup</span><br><span class="line">git branch -d master</span><br><span class="line">git branch</span><br></pre></td></tr></table></figure></p>
-<p>&emsp;&emsp;我们可以通过<code>git branch</code> 查看，只剩一个<code>backup</code>分支。</p>
-<h1 id="连接远程"><a href="#连接远程" class="headerlink" title="连接远程"></a>连接远程</h1><p>&emsp;&emsp;我们连接远程库，并进行<code>push</code>操作，如下，远程库会自动建立<code>backup</code>分支。<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git remote add origin 你的username.github.io的项目地址</span><br><span class="line">git push origin backup:backup</span><br></pre></td></tr></table></figure></p>
-<h1 id="修改push和pull的默认分支"><a href="#修改push和pull的默认分支" class="headerlink" title="修改push和pull的默认分支"></a>修改push和pull的默认分支</h1><p>&emsp;&emsp;保险起见，设置默认的跟踪分支，之后会看到本地的<code>backup</code>分支跟踪<code>origin/backup</code>分支<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git push -u origin backup</span><br><span class="line">git branch --<span class="built_in">set</span>-upstream-to=origin/backup backup</span><br></pre></td></tr></table></figure></p>
-<p>&emsp;&emsp;设置了之后，我们再进行<code>git push</code> 或者是<code>git pull</code>的操作的时候就不用担心，会影响到<code>origin/master</code>分支了。</p>
-<h1 id="备份"><a href="#备份" class="headerlink" title="备份"></a>备份</h1><p>&emsp;&emsp;之后我们再上传新的帖子的时候，要进行下面的操作。<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">git add .</span><br><span class="line">git commit -m <span class="string">"backup"</span></span><br><span class="line">git push</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure></p>
-<p>&emsp;&emsp;这样就能够备份了</p>
-<h1 id="恢复"><a href="#恢复" class="headerlink" title="恢复"></a>恢复</h1><p>&emsp;&emsp;本地的博客丢了怎么办？这样就能够弄一份一模一样的了。<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">mkdir blog</span><br><span class="line"><span class="built_in">cd</span> blog</span><br><span class="line">git init</span><br><span class="line">git remote add origin 你的username.github.io的项目地址</span><br><span class="line">git pull origin backup:backup</span><br><span class="line">git branch</span><br><span class="line">git checkout backup</span><br><span class="line">git branch -d master</span><br><span class="line">git push -u origin backup</span><br><span class="line">git branch --<span class="built_in">set</span>-upstream-to=origin/backup backup</span><br><span class="line">npm install</span><br><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure></p>
+<h1 id="创建仓库"><a href="#创建仓库" class="headerlink" title="创建仓库"></a>创建仓库</h1><p>PS：如果远程已经备份好，只是要<code>pull</code>下来，请跳到恢复一节<br>假设我们的博客的项目目录为<code>blog</code><br>我们可以看到在<code>blog</code>目录下是没有<code>.git</code>文件夹的。<br>首先，我们先将所有的更改，提交到本地库<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git add .</span><br><span class="line">git commit -m <span class="string">"backup"</span></span><br></pre></td></tr></table></figure></p>
+<h1 id="创建backup分支"><a href="#创建backup分支" class="headerlink" title="创建backup分支"></a>创建backup分支</h1><p>我们新建一个叫做<code>backup</code>的分支。然后切换到该分支，再删除<code>master</code>分支。<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git branch backup</span><br><span class="line">git checkout backup</span><br><span class="line">git branch -d master</span><br><span class="line">git branch</span><br></pre></td></tr></table></figure></p>
+<p>我们可以通过<code>git branch</code> 查看，只剩一个<code>backup</code>分支。</p>
+<h1 id="连接远程"><a href="#连接远程" class="headerlink" title="连接远程"></a>连接远程</h1><p>我们连接远程库，并进行<code>push</code>操作，如下，远程库会自动建立<code>backup</code>分支。<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git remote add origin 你的username.github.io的项目地址</span><br><span class="line">git push origin backup:backup</span><br></pre></td></tr></table></figure></p>
+<h1 id="修改push和pull的默认分支"><a href="#修改push和pull的默认分支" class="headerlink" title="修改push和pull的默认分支"></a>修改push和pull的默认分支</h1><p>保险起见，设置默认的跟踪分支，之后会看到本地的<code>backup</code>分支跟踪<code>origin/backup</code>分支<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git push -u origin backup</span><br><span class="line">git branch --<span class="built_in">set</span>-upstream-to=origin/backup backup</span><br></pre></td></tr></table></figure></p>
+<p>设置了之后，我们再进行<code>git push</code> 或者是<code>git pull</code>的操作的时候就不用担心，会影响到<code>origin/master</code>分支了。</p>
+<h1 id="备份"><a href="#备份" class="headerlink" title="备份"></a>备份</h1><p>之后我们再上传新的帖子的时候，要进行下面的操作。<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">git add .</span><br><span class="line">git commit -m <span class="string">"backup"</span></span><br><span class="line">git push</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure></p>
+<p>这样就能够备份了</p>
+<h1 id="恢复"><a href="#恢复" class="headerlink" title="恢复"></a>恢复</h1><p>本地的博客丢了怎么办？这样就能够弄一份一模一样的了。<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">mkdir blog</span><br><span class="line"><span class="built_in">cd</span> blog</span><br><span class="line">git init</span><br><span class="line">git remote add origin 你的username.github.io的项目地址</span><br><span class="line">git pull origin backup:backup</span><br><span class="line">git branch</span><br><span class="line">git checkout backup</span><br><span class="line">git branch -d master</span><br><span class="line">git push -u origin backup</span><br><span class="line">git branch --<span class="built_in">set</span>-upstream-to=origin/backup backup</span><br><span class="line">npm install</span><br><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure></p>
 
       
     </div>
@@ -566,7 +566,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">18</span>
+                    <span class="site-state-item-count">19</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -652,7 +652,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">20</span>
+                      
+                    
+                    <span class="site-state-item-count">21</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
@@ -900,6 +902,13 @@
 
 
   
+  
+
+  
+  
+
+  
+
 
   
   
