@@ -4,6 +4,28 @@
 
     
   <url>
+    <loc>http://yunhao.life/2018/05/23/windows-pc-cannot-select-boot-device/</loc>
+    <lastmod>2018-05-23T07:35:37.740Z</lastmod>
+    <data>
+        <display>
+        <title>Windows10 PC 无法进入选择启动项界面 无法进入BIOS界面</title>
+        <pubTime>2018-05-23T07:12:59.000Z</pubTime>
+        
+        <tag>Windows</tag>
+         
+        <tag>System</tag>
+         
+         
+           
+             
+              <breadCrumb title="Windows" url="http://yunhao.life/categories/Windows/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://yunhao.life/2018/05/23/acm-cf-933a-dp/</loc>
     <lastmod>2018-05-23T02:51:51.627Z</lastmod>
     <data>
@@ -269,9 +291,9 @@
         <title>Ubuntu16.04 Nginx 反向代理 Apache</title>
         <pubTime>2017-04-07T12:19:44.000Z</pubTime>
         
-        <tag>Ubuntu</tag>
-         
         <tag>Proxy</tag>
+         
+        <tag>Ubuntu</tag>
          
         <tag>Nginx</tag>
          
