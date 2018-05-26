@@ -110,30 +110,25 @@
 
 
 
-  <meta name="description" content="症状想要安装双系统，或是干什么事情的时候，需要选择启动项，但是发现怎么按F12或者其他对应的按键，都不能进入选择启动项的界面，当然BIOS界面也是进不去。   原因Windows10有快速启动这一个功能，就是为了让每次开机更快，它并没有彻底关机，而是做了一些小操作，像是休眠，给你一种关机的假象。   标准解决方法当然是关掉快速启动功能了。如何关闭呢？打开控制面板点击系统和安全点击电源选项下的更改电">
-<meta name="keywords" content="Windows,System">
+  <meta name="description" content="题目A. The Way to Home 限制time limit per test: 1 secondmemory limit per test: 256 megabytesinput: standard inputoutput: standard output   描述outputstandard outputA frog lives on the axis $Ox$ and needs to">
+<meta name="keywords" content="ACM,CodeForces,DP">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Windows10 PC 无法进入选择启动项界面 无法进入BIOS界面">
-<meta property="og:url" content="http://yunhao.life/2018/05/23/windows-pc-cannot-select-boot-device/index.html">
+<meta property="og:title" content="ACM CodeForces 910 A 题解 DP">
+<meta property="og:url" content="http://yunhao.life/2018/05/26/acm-cf-910a-dp/index.html">
 <meta property="og:site_name" content="火龙窝">
-<meta property="og:description" content="症状想要安装双系统，或是干什么事情的时候，需要选择启动项，但是发现怎么按F12或者其他对应的按键，都不能进入选择启动项的界面，当然BIOS界面也是进不去。   原因Windows10有快速启动这一个功能，就是为了让每次开机更快，它并没有彻底关机，而是做了一些小操作，像是休眠，给你一种关机的假象。   标准解决方法当然是关掉快速启动功能了。如何关闭呢？打开控制面板点击系统和安全点击电源选项下的更改电">
+<meta property="og:description" content="题目A. The Way to Home 限制time limit per test: 1 secondmemory limit per test: 256 megabytesinput: standard inputoutput: standard output   描述outputstandard outputA frog lives on the axis $Ox$ and needs to">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http://yunhao.life/images/windows-pc-cannot-select-boot-device/controlpanel.png">
-<meta property="og:image" content="http://yunhao.life/images/windows-pc-cannot-select-boot-device/systemandsafe.png">
-<meta property="og:image" content="http://yunhao.life/images/windows-pc-cannot-select-boot-device/battery.png">
-<meta property="og:image" content="http://yunhao.life/images/windows-pc-cannot-select-boot-device/change.png">
-<meta property="og:updated_time" content="2018-05-23T07:35:37.740Z">
+<meta property="og:updated_time" content="2018-05-26T04:19:34.945Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Windows10 PC 无法进入选择启动项界面 无法进入BIOS界面">
-<meta name="twitter:description" content="症状想要安装双系统，或是干什么事情的时候，需要选择启动项，但是发现怎么按F12或者其他对应的按键，都不能进入选择启动项的界面，当然BIOS界面也是进不去。   原因Windows10有快速启动这一个功能，就是为了让每次开机更快，它并没有彻底关机，而是做了一些小操作，像是休眠，给你一种关机的假象。   标准解决方法当然是关掉快速启动功能了。如何关闭呢？打开控制面板点击系统和安全点击电源选项下的更改电">
-<meta name="twitter:image" content="http://yunhao.life/images/windows-pc-cannot-select-boot-device/controlpanel.png">
+<meta name="twitter:title" content="ACM CodeForces 910 A 题解 DP">
+<meta name="twitter:description" content="题目A. The Way to Home 限制time limit per test: 1 secondmemory limit per test: 256 megabytesinput: standard inputoutput: standard output   描述outputstandard outputA frog lives on the axis $Ox$ and needs to">
 
 
 
 
 
 
-  <link rel="canonical" href="http://yunhao.life/2018/05/23/windows-pc-cannot-select-boot-device/"/>
+  <link rel="canonical" href="http://yunhao.life/2018/05/26/acm-cf-910a-dp/"/>
 
 
 
@@ -143,7 +138,7 @@
   };
 </script>
 
-  <title>Windows10 PC 无法进入选择启动项界面 无法进入BIOS界面 | 火龙窝</title>
+  <title>ACM CodeForces 910 A 题解 DP | 火龙窝</title>
   
 
 
@@ -327,7 +322,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yunhao.life/2018/05/23/windows-pc-cannot-select-boot-device/">
+    <link itemprop="mainEntityOfPage" href="http://yunhao.life/2018/05/26/acm-cf-910a-dp/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="喷水小火龙">
@@ -344,7 +339,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Windows10 PC 无法进入选择启动项界面 无法进入BIOS界面
+          <h1 class="post-title" itemprop="name headline">ACM CodeForces 910 A 题解 DP
               
             
           </h1>
@@ -369,7 +364,7 @@
                 
               
 
-              <time title="创建时间：2018-05-23 15:12:59 / 修改时间：15:35:37" itemprop="dateCreated datePublished" datetime="2018-05-23T15:12:59+08:00">2018-05-23</time>
+              <time title="创建时间：2018-05-26 12:02:14 / 修改时间：12:19:34" itemprop="dateCreated datePublished" datetime="2018-05-26T12:02:14+08:00">2018-05-26</time>
             
 
             
@@ -391,7 +386,14 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Windows/" itemprop="url" rel="index"><span itemprop="name">Windows</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/ACM/" itemprop="url" rel="index"><span itemprop="name">ACM</span></a></span>
+
+                
+                
+                  ，
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/ACM/DP/" itemprop="url" rel="index"><span itemprop="name">DP</span></a></span>
 
                 
                 
@@ -425,12 +427,22 @@
       
 
       
-        <h1 id="症状"><a href="#症状" class="headerlink" title="症状"></a>症状</h1><p>想要安装双系统，或是干什么事情的时候，需要选择启动项，但是发现怎么按F12或者其他对应的按键，都不能进入选择启动项的界面，当然BIOS界面也是进不去。  </p>
-<h1 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h1><p>Windows10有快速启动这一个功能，就是为了让每次开机更快，它并没有彻底关机，而是做了一些小操作，像是休眠，给你一种关机的假象。  </p>
-<h1 id="标准解决方法"><a href="#标准解决方法" class="headerlink" title="标准解决方法"></a>标准解决方法</h1><p>当然是关掉快速启动功能了。如何关闭呢？<br>打开控制面板<br><img src="/images/windows-pc-cannot-select-boot-device/controlpanel.png" alt="控制面板"><br>点击系统和安全<br><img src="/images/windows-pc-cannot-select-boot-device/systemandsafe.png" alt="系统和安全"><br>点击电源选项下的更改电源按钮的功能<br><img src="/images/windows-pc-cannot-select-boot-device/battery.png" alt="更改电源按钮功能"><br>先点击上边的更改当前不可用的设置，然后取消勾选启用快速启动，最后保存更改就OK了<br><img src="/images/windows-pc-cannot-select-boot-device/change.png" alt="快速启动"></p>
-<h1 id="暴力解决方法"><a href="#暴力解决方法" class="headerlink" title="暴力解决方法"></a>暴力解决方法</h1><p>其实还有一种解决方法，但是只能当次适用。就是强制关机，强制关机后的第一次启动电脑可以进入选择启动项界面，之后就不行了。  </p>
-<h1 id="注"><a href="#注" class="headerlink" title="注"></a>注</h1><p>有的电脑尽管勾选了快速启动，还是能够正常的进入选择启动项界面，BIOS界面。比如工作站之类的。这些电脑就比较强大了。  </p>
-
+        <h1 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h1><p>A. The Way to Home</p>
+<h1 id="限制"><a href="#限制" class="headerlink" title="限制"></a>限制</h1><p>time limit per test: 1 second<br>memory limit per test: 256 megabytes<br>input: standard input<br>output: standard output  </p>
+<h1 id="描述"><a href="#描述" class="headerlink" title="描述"></a>描述</h1><p>outputstandard output<br>A frog lives on the axis $Ox$ and needs to reach home which is in the point $n$. She starts from the point $1$. The frog can jump to the right at a distance not more than $d$. So, after she jumped from the point $x$ she can reach the point $x+a$, where $a$ is an integer from $1$ to $d$.<br>For each point from $1$ to $n$ is known if there is a lily flower in it. The frog can jump only in points with a lilies. Guaranteed that there are lilies in the points $1$ and $n$.<br>Determine the minimal number of jumps that the frog needs to reach home which is in the point $n$ from the point $1$. Consider that initially the frog is in the point $1$. If the frog can not reach home, print $-1$.  </p>
+<h1 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h1><p>The first line contains two integers $n$ and $d$ $(2 \le n \le 100, 1 \le d \le n-1)$ — the point, which the frog wants to reach, and the maximal length of the frog jump.<br>The second line contains a string $s$ of length $n$, consisting of zeros and ones. If a character of the string s equals to zero, then in the corresponding point there is no lily flower. In the other case, in the corresponding point there is a lily flower. Guaranteed that the first and the last characters of the string $s$ equal to one.  </p>
+<h1 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h1><p>If the frog can not reach the home, print $-1$.<br>In the other case, print the minimal number of jumps that the frog needs to reach the home which is in the point $n$ from the point $1$.  </p>
+<h1 id="样本"><a href="#样本" class="headerlink" title="样本"></a>样本</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">8 4</span><br><span class="line">10010101</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">2</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">4 2</span><br><span class="line">1001</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">-1</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">8 4</span><br><span class="line">11100101</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">3</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">12 3</span><br><span class="line">101111100101</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">4</span><br></pre></td></tr></table></figure>
+<h1 id="提示"><a href="#提示" class="headerlink" title="提示"></a>提示</h1><p>In the first example the from can reach home in two jumps: the first jump from the point $1$ to the point $4$ (the length of the jump is three), and the second jump from the point $4$ to the point $8$ (the length of the jump is four).<br>In the second example the frog can not reach home, because to make it she need to jump on a distance three, but the maximum length of her jump equals to two.  </p>
+<h1 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h1><p>一个不怎么明显的dp题。<br>遍历字符串s，如果是1那么就考虑如下，假设当前是i位置，那么i位置的最小跳数是，从i-d到i-1这个区间内跳数的最小值，再加一。<br>所以关键就是怎么取得最小值。用优先队列，封装一个node，idx代表某个位置的下标，num代表这个位置的最小跳数，这个node的operator函数是将q队列弄成了以num排序的小顶堆。<br>遍历字符串的时候，如果是1，那么就先看堆顶的idx是否在i-d和i-1之间，如果不在，那么就pop，直到队列为空或者找到一个在区间内的为止。<br>队列为空，就直接是-1，如果找到了，那么就说明i位置能够到达，然后就更新i位置，将i位置的node加入堆中。  </p>
+<h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;queue&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> n, d;</span><br><span class="line"><span class="keyword">char</span> str[<span class="number">105</span>];</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">node</span>&#123;</span></span><br><span class="line">    <span class="keyword">int</span> idx, num;</span><br><span class="line">    <span class="keyword">bool</span> <span class="keyword">operator</span> &lt; (<span class="keyword">const</span> node&amp; no) <span class="keyword">const</span>&#123;</span><br><span class="line">        <span class="keyword">return</span> num &gt; no.num;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">while</span>(~<span class="built_in">scanf</span>(<span class="string">"%d %d"</span>, &amp;n, &amp;d))&#123;</span><br><span class="line">        <span class="built_in">scanf</span>(<span class="string">"%s"</span>, str);</span><br><span class="line">        priority_queue&lt;node&gt; q;</span><br><span class="line">        q.push((node)&#123;<span class="number">0</span>, <span class="number">0</span>&#125;);</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; i++)&#123;</span><br><span class="line">            <span class="keyword">if</span>(str[i] == <span class="string">'1'</span>)&#123;</span><br><span class="line">                <span class="keyword">while</span>(!q.empty() &amp;&amp; q.top().idx + d &lt; i)&#123;</span><br><span class="line">                    q.pop();</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">if</span>(q.empty())&#123;</span><br><span class="line">                    <span class="built_in">printf</span>(<span class="string">"-1\n"</span>);</span><br><span class="line">                    <span class="keyword">break</span>;</span><br><span class="line">                &#125;</span><br><span class="line">                node no = q.top();</span><br><span class="line">                <span class="keyword">if</span>(i == n<span class="number">-1</span>)&#123;</span><br><span class="line">                    <span class="built_in">printf</span>(<span class="string">"%d\n"</span>, no.num+<span class="number">1</span>);</span><br><span class="line">                    <span class="keyword">break</span>;</span><br><span class="line">                &#125;</span><br><span class="line">                q.push((node)&#123;i, no.num + <span class="number">1</span>&#125;);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
     </div>
 
@@ -450,9 +462,11 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Windows/" rel="tag"># Windows</a>
+            <a href="/tags/ACM/" rel="tag"># ACM</a>
           
-            <a href="/tags/System/" rel="tag"># System</a>
+            <a href="/tags/CodeForces/" rel="tag"># CodeForces</a>
+          
+            <a href="/tags/DP/" rel="tag"># DP</a>
           
         </div>
       
@@ -465,8 +479,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/05/23/acm-cf-933a-dp/" rel="next" title="ACM CodeForces 933 A 题解 DP">
-                <i class="fa fa-chevron-left"></i> ACM CodeForces 933 A 题解 DP
+              <a href="/2018/05/23/windows-pc-cannot-select-boot-device/" rel="next" title="Windows10 PC 无法进入选择启动项界面 无法进入BIOS界面">
+                <i class="fa fa-chevron-left"></i> Windows10 PC 无法进入选择启动项界面 无法进入BIOS界面
               </a>
             
           </div>
@@ -474,10 +488,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/05/26/acm-cf-910a-dp/" rel="prev" title="ACM CodeForces 910 A 题解 DP">
-                ACM CodeForces 910 A 题解 DP <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -690,7 +700,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#症状"><span class="nav-number">1.</span> <span class="nav-text">症状</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#原因"><span class="nav-number">2.</span> <span class="nav-text">原因</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#标准解决方法"><span class="nav-number">3.</span> <span class="nav-text">标准解决方法</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#暴力解决方法"><span class="nav-number">4.</span> <span class="nav-text">暴力解决方法</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#注"><span class="nav-number">5.</span> <span class="nav-text">注</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#题目"><span class="nav-number">1.</span> <span class="nav-text">题目</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#限制"><span class="nav-number">2.</span> <span class="nav-text">限制</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#描述"><span class="nav-number">3.</span> <span class="nav-text">描述</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#输入格式"><span class="nav-number">4.</span> <span class="nav-text">输入格式</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#输出格式"><span class="nav-number">5.</span> <span class="nav-text">输出格式</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#样本"><span class="nav-number">6.</span> <span class="nav-text">样本</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#提示"><span class="nav-number">7.</span> <span class="nav-text">提示</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#思路"><span class="nav-number">8.</span> <span class="nav-text">思路</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#代码"><span class="nav-number">9.</span> <span class="nav-text">代码</span></a></li></ol></div>
             
 
           </div>
@@ -898,6 +908,30 @@
   
   
 
+  
+    
+      <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      },
+      TeX: {equationNumbers: { autoNumber: "AMS" }}
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+      var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/mathjax@2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+    
   
 
 
