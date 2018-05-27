@@ -4,6 +4,376 @@
 
     
   <url>
+    <loc>http://yunhao.life/2017/03/30/ubuntu-sogou-input-doesnot-work/</loc>
+    <lastmod>2018-05-27T11:11:30.650Z</lastmod>
+    <data>
+        <display>
+        <title>Ubuntu16.04 Sogou 输入法的备选词框不见了解决方法</title>
+        <pubTime>2017-03-30T06:50:27.000Z</pubTime>
+        
+        <tag>Ubuntu</tag>
+         
+        <tag>SogouInput</tag>
+         
+         
+           
+             
+              <breadCrumb title="Ubuntu" url="http://yunhao.life/categories/Ubuntu/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yunhao.life/2017/03/27/ubuntu-PPPoE-dsl-connection/</loc>
+    <lastmod>2018-05-27T11:11:25.499Z</lastmod>
+    <data>
+        <display>
+        <title>Ubuntu16.04 PPPoE 拨号上网</title>
+        <pubTime>2017-03-27T06:41:12.000Z</pubTime>
+        
+        <tag>Ubuntu</tag>
+         
+        <tag>PPPoE</tag>
+         
+        <tag>DSL</tag>
+         
+         
+           
+             
+              <breadCrumb title="Ubuntu" url="http://yunhao.life/categories/Ubuntu/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yunhao.life/2017/04/07/ubuntu-nginx-apache-reverse-proxy/</loc>
+    <lastmod>2018-05-27T11:11:21.000Z</lastmod>
+    <data>
+        <display>
+        <title>Ubuntu16.04 Nginx 反向代理 Apache</title>
+        <pubTime>2017-04-07T12:19:44.000Z</pubTime>
+        
+        <tag>Ubuntu</tag>
+         
+        <tag>Server</tag>
+         
+        <tag>Proxy</tag>
+         
+        <tag>Nginx</tag>
+         
+        <tag>Apache</tag>
+         
+         
+           
+             
+              <breadCrumb title="Server" url="http://yunhao.life/categories/Server/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yunhao.life/2017/03/30/nginx-server-config-guide/</loc>
+    <lastmod>2018-05-27T11:11:08.576Z</lastmod>
+    <data>
+        <display>
+        <title>Ubuntu16.04 Nginx 配置站点学习笔记</title>
+        <pubTime>2017-03-30T02:42:15.000Z</pubTime>
+        
+        <tag>Ubuntu</tag>
+         
+        <tag>Server</tag>
+         
+        <tag>Nginx</tag>
+         
+         
+           
+             
+              <breadCrumb title="Server" url="http://yunhao.life/categories/Server/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yunhao.life/2017/03/26/markdown-learning-note/</loc>
+    <lastmod>2018-05-27T11:10:51.535Z</lastmod>
+    <data>
+        <display>
+        <title>Markdown 学习笔记</title>
+        <pubTime>2017-03-26T11:45:26.000Z</pubTime>
+        
+        <tag>Markdown</tag>
+         
+         
+           
+             
+              <breadCrumb title="Language" url="http://yunhao.life/categories/Language/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yunhao.life/2017/03/29/hexo-next-themes-left-sidebar/</loc>
+    <lastmod>2018-05-27T11:10:43.626Z</lastmod>
+    <data>
+        <display>
+        <title>Hexo NexT 主题如何把侧边栏调到左侧</title>
+        <pubTime>2017-03-29T12:09:15.000Z</pubTime>
+        
+        <tag>Hexo</tag>
+         
+        <tag>NexT</tag>
+         
+         
+           
+             
+              <breadCrumb title="Hexo" url="http://yunhao.life/categories/Hexo/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yunhao.life/2017/03/29/hexo-disqus-comments/</loc>
+    <lastmod>2018-05-27T11:10:30.199Z</lastmod>
+    <data>
+        <display>
+        <title>Hexo NexT Disqus 评论插件</title>
+        <pubTime>2017-03-29T13:14:36.000Z</pubTime>
+        
+        <tag>Hexo</tag>
+         
+        <tag>NexT</tag>
+         
+         
+           
+             
+              <breadCrumb title="Hexo" url="http://yunhao.life/categories/Hexo/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yunhao.life/2017/03/27/hexo-backup/</loc>
+    <lastmod>2018-05-27T11:10:23.337Z</lastmod>
+    <data>
+        <display>
+        <title>Hexo 备份</title>
+        <pubTime>2017-03-27T06:55:40.000Z</pubTime>
+        
+        <tag>Hexo</tag>
+         
+         
+           
+             
+              <breadCrumb title="Hexo" url="http://yunhao.life/categories/Hexo/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yunhao.life/2017/03/27/github-ssh-config/</loc>
+    <lastmod>2018-05-27T11:10:13.549Z</lastmod>
+    <data>
+        <display>
+        <title>Ubuntu16.04 Github SSH 配置</title>
+        <pubTime>2017-03-27T09:15:03.000Z</pubTime>
+        
+        <tag>Ubuntu</tag>
+         
+        <tag>Github</tag>
+         
+         
+           
+             
+              <breadCrumb title="Git" url="http://yunhao.life/categories/Git/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yunhao.life/2017/03/27/github-blog-bundle-domain/</loc>
+    <lastmod>2018-05-27T11:09:23.611Z</lastmod>
+    <data>
+        <display>
+        <title>Github blog 绑定域名</title>
+        <pubTime>2017-03-27T08:47:20.000Z</pubTime>
+        
+        <tag>Domain</tag>
+         
+        <tag>Github</tag>
+         
+         
+           
+             
+              <breadCrumb title="Git" url="http://yunhao.life/categories/Git/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yunhao.life/2017/04/07/forward-proxy-and-reverse-proxy/</loc>
+    <lastmod>2018-05-27T11:09:18.424Z</lastmod>
+    <data>
+        <display>
+        <title>正向代理与反向代理</title>
+        <pubTime>2017-04-07T10:51:19.000Z</pubTime>
+        
+        <tag>Server</tag>
+         
+        <tag>Proxy</tag>
+         
+         
+           
+             
+              <breadCrumb title="Server" url="http://yunhao.life/categories/Server/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yunhao.life/2017/03/30/firefox-add-flash-plugins/</loc>
+    <lastmod>2018-05-27T11:09:07.287Z</lastmod>
+    <data>
+        <display>
+        <title>Ubuntu16.04 Firefox Flash 插件安装</title>
+        <pubTime>2017-03-30T06:10:20.000Z</pubTime>
+        
+        <tag>Ubuntu</tag>
+         
+        <tag>Browser</tag>
+         
+        <tag>Firefox</tag>
+         
+         
+           
+             
+              <breadCrumb title="Browser" url="http://yunhao.life/categories/Browser/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yunhao.life/2017/03/27/atom-plugins-guide/</loc>
+    <lastmod>2018-05-27T11:08:57.987Z</lastmod>
+    <data>
+        <display>
+        <title>Atom 编辑器的插件总结</title>
+        <pubTime>2017-03-27T12:35:40.000Z</pubTime>
+        
+        <tag>Editor</tag>
+         
+        <tag>Atom</tag>
+         
+         
+           
+             
+              <breadCrumb title="Editor" url="http://yunhao.life/categories/Editor/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yunhao.life/2017/03/27/atom-packages-browser-plus-change-default-search-engine/</loc>
+    <lastmod>2018-05-27T11:08:39.286Z</lastmod>
+    <data>
+        <display>
+        <title>Atom 插件 browser-plus 修改默认搜索</title>
+        <pubTime>2017-03-27T14:58:02.000Z</pubTime>
+        
+        <tag>Editor</tag>
+         
+        <tag>Atom</tag>
+         
+         
+           
+             
+              <breadCrumb title="Editor" url="http://yunhao.life/categories/Editor/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yunhao.life/2018/05/19/acm-hdu-2577-dp/</loc>
+    <lastmod>2018-05-27T11:07:23.288Z</lastmod>
+    <data>
+        <display>
+        <title>ACM HDU 2577 题解 DP</title>
+        <pubTime>2018-05-19T07:07:30.000Z</pubTime>
+        
+        <tag>ACM</tag>
+         
+        <tag>DP</tag>
+         
+        <tag>HDU</tag>
+         
+         
+           
+             
+              <breadCrumb title="ACM" url="http://yunhao.life/categories/ACM/"/>
+          
+             
+              <breadCrumb title="DP" url="http://yunhao.life/categories/ACM/DP/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yunhao.life/2018/05/23/acm-cf-933a-dp/</loc>
+    <lastmod>2018-05-27T10:51:19.623Z</lastmod>
+    <data>
+        <display>
+        <title>ACM CodeForces 933 A 题解 DP</title>
+        <pubTime>2018-05-23T02:15:56.000Z</pubTime>
+        
+        <tag>ACM</tag>
+         
+        <tag>CodeForces</tag>
+         
+        <tag>DP</tag>
+         
+         
+           
+             
+              <breadCrumb title="ACM" url="http://yunhao.life/categories/ACM/"/>
+          
+             
+              <breadCrumb title="DP" url="http://yunhao.life/categories/ACM/DP/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://yunhao.life/2018/05/26/acm-cf-910a-dp/</loc>
     <lastmod>2018-05-26T04:19:34.945Z</lastmod>
     <data>
@@ -53,31 +423,6 @@
 
     
   <url>
-    <loc>http://yunhao.life/2018/05/23/acm-cf-933a-dp/</loc>
-    <lastmod>2018-05-23T02:51:51.627Z</lastmod>
-    <data>
-        <display>
-        <title>ACM CodeForces 933 A 题解 DP</title>
-        <pubTime>2018-05-23T02:15:56.000Z</pubTime>
-        
-        <tag>ACM</tag>
-         
-        <tag>CodeForces</tag>
-         
-         
-           
-             
-              <breadCrumb title="ACM" url="http://yunhao.life/categories/ACM/"/>
-          
-             
-              <breadCrumb title="DP" url="http://yunhao.life/categories/ACM/DP/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://yunhao.life/2018/05/21/acm-cf-894a-dp/</loc>
     <lastmod>2018-05-23T02:40:41.079Z</lastmod>
     <data>
@@ -90,33 +435,6 @@
         <tag>CodeForces</tag>
          
         <tag>DP</tag>
-         
-         
-           
-             
-              <breadCrumb title="ACM" url="http://yunhao.life/categories/ACM/"/>
-          
-             
-              <breadCrumb title="DP" url="http://yunhao.life/categories/ACM/DP/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yunhao.life/2018/05/19/acm-hdu-2577-dp/</loc>
-    <lastmod>2018-05-23T02:39:20.430Z</lastmod>
-    <data>
-        <display>
-        <title>ACM HDU 2577 题解 DP</title>
-        <pubTime>2018-05-19T07:07:30.000Z</pubTime>
-        
-        <tag>ACM</tag>
-         
-        <tag>DP</tag>
-         
-        <tag>HDU</tag>
          
          
            
@@ -203,28 +521,6 @@
 
     
   <url>
-    <loc>http://yunhao.life/2017/03/27/github-blog-bundle-domain/</loc>
-    <lastmod>2018-05-22T06:03:43.563Z</lastmod>
-    <data>
-        <display>
-        <title>Github blog 绑定域名</title>
-        <pubTime>2017-03-27T08:47:20.000Z</pubTime>
-        
-        <tag>Domain</tag>
-         
-        <tag>Github</tag>
-         
-         
-           
-             
-              <breadCrumb title="Git" url="http://yunhao.life/categories/Git/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://yunhao.life/2018/05/20/windows-c-partition-space-clean/</loc>
     <lastmod>2018-05-22T05:59:06.997Z</lastmod>
     <data>
@@ -238,290 +534,6 @@
            
              
               <breadCrumb title="Windows" url="http://yunhao.life/categories/Windows/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yunhao.life/2017/03/30/ubuntu-sogou-input-doesnot-work/</loc>
-    <lastmod>2018-05-22T05:56:33.527Z</lastmod>
-    <data>
-        <display>
-        <title>Ubuntu16.04 Sogou 输入法的备选词框不见了解决方法</title>
-        <pubTime>2017-03-30T06:50:27.000Z</pubTime>
-        
-        <tag>Ubuntu</tag>
-         
-        <tag>SogouInput</tag>
-         
-         
-           
-             
-              <breadCrumb title="Ubuntu" url="http://yunhao.life/categories/Ubuntu/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yunhao.life/2017/03/26/markdown-learning-note/</loc>
-    <lastmod>2018-05-22T05:52:51.039Z</lastmod>
-    <data>
-        <display>
-        <title>Markdown 学习笔记</title>
-        <pubTime>2017-03-26T11:45:26.000Z</pubTime>
-        
-        <tag>Markdown</tag>
-         
-         
-           
-             
-              <breadCrumb title="Language" url="http://yunhao.life/categories/Language/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yunhao.life/2017/03/27/ubuntu-PPPoE-dsl-connection/</loc>
-    <lastmod>2018-05-22T03:58:22.741Z</lastmod>
-    <data>
-        <display>
-        <title>Ubuntu16.04 PPPoE 拨号上网</title>
-        <pubTime>2017-03-27T06:41:12.000Z</pubTime>
-        
-        <tag>Ubuntu</tag>
-         
-        <tag>PPPoE</tag>
-         
-        <tag>DSL</tag>
-         
-         
-           
-             
-              <breadCrumb title="Ubuntu" url="http://yunhao.life/categories/Ubuntu/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yunhao.life/2017/04/07/ubuntu-nginx-apache-reverse-proxy/</loc>
-    <lastmod>2018-05-22T03:58:22.727Z</lastmod>
-    <data>
-        <display>
-        <title>Ubuntu16.04 Nginx 反向代理 Apache</title>
-        <pubTime>2017-04-07T12:19:44.000Z</pubTime>
-        
-        <tag>Ubuntu</tag>
-         
-        <tag>Proxy</tag>
-         
-        <tag>Nginx</tag>
-         
-        <tag>Apache</tag>
-         
-         
-           
-             
-              <breadCrumb title="Server" url="http://yunhao.life/categories/Server/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yunhao.life/2017/03/30/nginx-server-config-guide/</loc>
-    <lastmod>2018-05-22T03:58:22.711Z</lastmod>
-    <data>
-        <display>
-        <title>Ubuntu16.04 Nginx 配置站点学习笔记</title>
-        <pubTime>2017-03-30T02:42:15.000Z</pubTime>
-        
-        <tag>Ubuntu</tag>
-         
-        <tag>Nginx</tag>
-         
-         
-           
-             
-              <breadCrumb title="Server" url="http://yunhao.life/categories/Server/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yunhao.life/2017/03/29/hexo-next-themes-left-sidebar/</loc>
-    <lastmod>2018-05-22T03:58:22.680Z</lastmod>
-    <data>
-        <display>
-        <title>Hexo NexT 主题如何把侧边栏调到左侧</title>
-        <pubTime>2017-03-29T12:09:15.000Z</pubTime>
-        
-        <tag>Hexo</tag>
-         
-        <tag>NexT</tag>
-         
-         
-           
-             
-              <breadCrumb title="Hexo" url="http://yunhao.life/categories/Hexo/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yunhao.life/2017/03/29/hexo-disqus-comments/</loc>
-    <lastmod>2018-05-22T03:58:22.665Z</lastmod>
-    <data>
-        <display>
-        <title>Hexo NexT Disqus 评论插件</title>
-        <pubTime>2017-03-29T13:14:36.000Z</pubTime>
-        
-        <tag>Hexo</tag>
-         
-        <tag>NexT</tag>
-         
-         
-           
-             
-              <breadCrumb title="Hexo" url="http://yunhao.life/categories/Hexo/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yunhao.life/2017/03/27/hexo-backup/</loc>
-    <lastmod>2018-05-22T03:58:22.655Z</lastmod>
-    <data>
-        <display>
-        <title>Hexo 备份</title>
-        <pubTime>2017-03-27T06:55:40.000Z</pubTime>
-        
-        <tag>Hexo</tag>
-         
-         
-           
-             
-              <breadCrumb title="Hexo" url="http://yunhao.life/categories/Hexo/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yunhao.life/2017/03/27/atom-packages-browser-plus-change-default-search-engine/</loc>
-    <lastmod>2018-05-22T03:55:03.532Z</lastmod>
-    <data>
-        <display>
-        <title>Atom 插件 browser-plus 修改默认搜索</title>
-        <pubTime>2017-03-27T14:58:02.000Z</pubTime>
-        
-        <tag>Atom</tag>
-         
-         
-           
-             
-              <breadCrumb title="Editor" url="http://yunhao.life/categories/Editor/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yunhao.life/2017/03/27/github-ssh-config/</loc>
-    <lastmod>2018-05-22T03:50:56.548Z</lastmod>
-    <data>
-        <display>
-        <title>Ubuntu16.04 Github SSH 配置</title>
-        <pubTime>2017-03-27T09:15:03.000Z</pubTime>
-        
-        <tag>Ubuntu</tag>
-         
-        <tag>Github</tag>
-         
-         
-           
-             
-              <breadCrumb title="Git" url="http://yunhao.life/categories/Git/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yunhao.life/2017/04/07/forward-proxy-and-reverse-proxy/</loc>
-    <lastmod>2018-05-22T03:50:17.533Z</lastmod>
-    <data>
-        <display>
-        <title>正向代理与反向代理</title>
-        <pubTime>2017-04-07T10:51:19.000Z</pubTime>
-        
-        <tag>Proxy</tag>
-         
-         
-           
-             
-              <breadCrumb title="Server" url="http://yunhao.life/categories/Server/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yunhao.life/2017/03/27/atom-plugins-guide/</loc>
-    <lastmod>2018-05-22T03:49:39.193Z</lastmod>
-    <data>
-        <display>
-        <title>Atom 编辑器的插件总结</title>
-        <pubTime>2017-03-27T12:35:40.000Z</pubTime>
-        
-        <tag>Atom</tag>
-         
-         
-           
-             
-              <breadCrumb title="Editor" url="http://yunhao.life/categories/Editor/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yunhao.life/2017/03/30/firefox-add-flash-plugins/</loc>
-    <lastmod>2018-05-22T03:49:36.670Z</lastmod>
-    <data>
-        <display>
-        <title>Ubuntu16.04 Firefox Flash 插件安装</title>
-        <pubTime>2017-03-30T06:10:20.000Z</pubTime>
-        
-        <tag>Ubuntu</tag>
-         
-        <tag>Firefox</tag>
-         
-        <tag>Flash</tag>
-         
-         
-           
-             
-              <breadCrumb title="Browser" url="http://yunhao.life/categories/Browser/"/>
           
         </display>
     </data>
