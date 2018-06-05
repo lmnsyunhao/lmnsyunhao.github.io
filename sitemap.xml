@@ -2,6 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yunhao.life/2018/05/22/mathjax-learning-note/</loc>
+    
+    <lastmod>2018-06-05T12:55:22.260Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yunhao.life/2018/06/05/generating-function-learning/</loc>
+    
+    <lastmod>2018-06-05T12:18:19.939Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yunhao.life/2018/06/05/acm-hdu-1028-generating-function/</loc>
+    
+    <lastmod>2018-06-05T05:48:26.231Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yunhao.life/2018/06/05/acm-hdu-2844-dp/</loc>
+    
+    <lastmod>2018-06-05T05:08:20.533Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yunhao.life/2017/03/30/ubuntu-sogou-input-doesnot-work/</loc>
     
     <lastmod>2018-05-27T11:11:30.650Z</lastmod>
@@ -145,13 +173,6 @@
     <loc>http://yunhao.life/2018/05/22/markdown-mathjax-syntax-collision/</loc>
     
     <lastmod>2018-05-22T10:23:05.168Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yunhao.life/2018/05/22/mathjax-learning-note/</loc>
-    
-    <lastmod>2018-05-22T10:03:33.680Z</lastmod>
     
   </url>
   

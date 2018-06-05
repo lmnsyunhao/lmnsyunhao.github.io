@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-CN">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+  <meta name="baidu-site-verification" content="BaTyoYbpgY" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=6.2.0" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.2.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png?v=6.2.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16.png?v=6.2.0">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=6.2.0" color="#222">
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '6.2.0',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":true,"scrollpercent":true,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="介绍在组合数学中，母函数，又叫生成函数，是一种形式幂级数。每一项的系数可以提供关于这个项的信息。使用母函数解决问题的方法就是母函数法。母函数有很多种，普通母函数、指数母函数、L级数、贝尔级数、狄利克雷级数。根据一个序列不同的性质，或是需要得到的信息，要选择以上不同的母函数进行套用。母函数方法的思想就是将数列间的相加关系与幂级数间的乘幂运算对应起来。   定义序列$a_0, a_1, a_2, a_">
+<meta name="keywords" content="ACM,组合数学,母函数">
+<meta property="og:type" content="article">
+<meta property="og:title" content="组合数学 母函数 生成函数 详解">
+<meta property="og:url" content="http://yunhao.life/2018/06/05/generating-function-learning/index.html">
+<meta property="og:site_name" content="火龙窝">
+<meta property="og:description" content="介绍在组合数学中，母函数，又叫生成函数，是一种形式幂级数。每一项的系数可以提供关于这个项的信息。使用母函数解决问题的方法就是母函数法。母函数有很多种，普通母函数、指数母函数、L级数、贝尔级数、狄利克雷级数。根据一个序列不同的性质，或是需要得到的信息，要选择以上不同的母函数进行套用。母函数方法的思想就是将数列间的相加关系与幂级数间的乘幂运算对应起来。   定义序列$a_0, a_1, a_2, a_">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2018-06-05T12:18:19.939Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="组合数学 母函数 生成函数 详解">
+<meta name="twitter:description" content="介绍在组合数学中，母函数，又叫生成函数，是一种形式幂级数。每一项的系数可以提供关于这个项的信息。使用母函数解决问题的方法就是母函数法。母函数有很多种，普通母函数、指数母函数、L级数、贝尔级数、狄利克雷级数。根据一个序列不同的性质，或是需要得到的信息，要选择以上不同的母函数进行套用。母函数方法的思想就是将数列间的相加关系与幂级数间的乘幂运算对应起来。   定义序列$a_0, a_1, a_2, a_">
+
+
+
+
+
+
+  <link rel="canonical" href="http://yunhao.life/2018/06/05/generating-function-learning/"/>
+
+
+
+<script type="text/javascript" id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>组合数学 母函数 生成函数 详解 | 火龙窝</title>
+  
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+  
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">火龙窝</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <p class="site-subtitle">小火龙不吃火龙果</p>
+      
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+    <a href="/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-home"></i> <br />首页</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-about">
+    <a href="/about/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-user"></i> <br />关于</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+    <a href="/tags/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />标签<span class="badge">27</span></a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+    <a href="/categories/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-th"></i> <br />分类<span class="badge">13</span></a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+    <a href="/archives/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档<span class="badge">26</span></a>
+  </li>
+
+      
+      
+    </ul>
+  
+
+  
+
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+  
+  
+  
+    
+      
+    
+    <a href="https://github.com/lmnsyunhao" class="github-corner" target="_blank" title="Follow me on GitHub" aria-label="Follow me on GitHub"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#222; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg>
+    
+      </a>
+    
+
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+            
+
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yunhao.life/2018/06/05/generating-function-learning/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="喷水小火龙">
+      <meta itemprop="description" content="小火龙不吃火龙果">
+      <meta itemprop="image" content="/images/me.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="火龙窝">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">组合数学 母函数 生成函数 详解
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2018-06-05 13:50:20 / 修改时间：20:18:19" itemprop="dateCreated datePublished" datetime="2018-06-05T13:50:20+08:00">2018-06-05</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/ACM/" itemprop="url" rel="index"><span itemprop="name">ACM</span></a></span>
+
+                
+                
+                  ，
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/ACM/组合数学/" itemprop="url" rel="index"><span itemprop="name">组合数学</span></a></span>
+
+                
+                
+                  ，
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/ACM/组合数学/母函数/" itemprop="url" rel="index"><span itemprop="name">母函数</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h1><p>在组合数学中，母函数，又叫生成函数，是一种形式幂级数。每一项的系数可以提供关于这个项的信息。使用母函数解决问题的方法就是母函数法。<br>母函数有很多种，普通母函数、指数母函数、L级数、贝尔级数、狄利克雷级数。根据一个序列不同的性质，或是需要得到的信息，要选择以上不同的母函数进行套用。<br>母函数方法的思想就是将数列间的相加关系与幂级数间的乘幂运算对应起来。  </p>
+<h1 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h1><p>序列$a_0, a_1, a_2, a_3, …$构造一个函数<br>$G(x)=a_0+a_1x+a_2x^2+…$<br>称$G(x)$为$a_0, a_1, a_2, a_3, …$序列的母函数  </p>
+<h1 id="普通母函数"><a href="#普通母函数" class="headerlink" title="普通母函数"></a>普通母函数</h1><p>该类母函数比较常用，可以用于解决整数拆分，组合数量问题。  </p>
+<h2 id="一次多项式乘法母函数"><a href="#一次多项式乘法母函数" class="headerlink" title="一次多项式乘法母函数"></a>一次多项式乘法母函数</h2><p>一次是指每一个多项式的最高次是1<br>$\quad(1+a_1x)(1+a_2x)…(1+a_nx)$<br>$=1+(a_1+a_2+…+a_n)x+(a_1a_2+a_1a_3+…+a_{n-1}a_n)x^2+…+a_1a_2…a_nx^n$<br>$x$的系数是$a_1, a_2, … a_n$的$1$个组合的和<br>$x^2$的系数是$a_1, a_2, … a_n$的$2$个组合的和<br>…<br>$x^n$的系数是$a_1, a_2, … a_n$的$n$个组合的和  </p>
+<h2 id="杨辉三角母函数"><a href="#杨辉三角母函数" class="headerlink" title="杨辉三角母函数"></a>杨辉三角母函数</h2><p>$\quad(1+x)^n$<br>$=C_n^0x^0+C_n^1x^1+C_n^2x^2+…+C_n^nx^n$<br>$=1+C_n^1x+C_n^2x^2+…+C_n^nx^n$  </p>
+<h2 id="高次有限项多项式乘法母函数"><a href="#高次有限项多项式乘法母函数" class="headerlink" title="高次有限项多项式乘法母函数"></a>高次有限项多项式乘法母函数</h2><p>高次指每个多项式的最高次大于1，有限项指的是每个多项式的项数是有限的<br>比如有这样一个问题。有1元2张、5元4张、10元1张、20元3张，问可以组合出多少种面额，每种面额的组合方式数量是多少<br>问题可以转化为如下的多项式<br>$\quad(1\times x^{0 \times 1}+1\times x^{1 \times 1}+1\times x^{2 \times 1})(1\times x^{0 \times 5}+1\times x^{1 \times 5}+1\times x^{2 \times 5}+1\times x^{3 \times 5}+1\times x^{4 \times 5})\cdot$<br>$\quad(1\times x^{0 \times 10}+1\times x^{1 \times 10})(1\times x^{0 \times 20}+1\times x^{1 \times 20}+1\times x^{2 \times 20}+1\times x^{3 \times 20})$<br>$=(1+x+x^2)(1+x^5+x^{10}+x^{15}+x^{20})(1+x^{10})(1+x^{20}+x^{40}+x^{60})$<br>一共四个多项式相乘，分别代表1元、5元、10元、20元的选择情况。<br>用第一个多项式举例。多项式中每一项的指数代表组合情况，即<br>$x^{0 \times 1}$代表取0个1元，系数1代表组合种数有1种<br>$x^{1 \times 1}$代表取1个1元，系数1代表组合种数有1种<br>$x^{2 \times 1}$代表取2个1元，系数1代表组合种数有1种<br>因为1元有两张，所以到这里就结束了，这个多项式的项是有限项。<br>将数列间的相加关系与幂级数间的乘幂运算对应起来在这里的体现就是：在计算这个多项式乘积的时候，x的幂相乘运算就是指数相加，而这个指数相加正好对应了数列间的加法运算。而相乘之后得到的多项式的各项系数就是组合方式数。  </p>
+<h2 id="高次无限项多项式乘法母函数"><a href="#高次无限项多项式乘法母函数" class="headerlink" title="高次无限项多项式乘法母函数"></a>高次无限项多项式乘法母函数</h2><p>高次指每个多项式的最高次大于1，无限项指的是每个多项式的项数是无限的<br>考虑这样一个问题，有1,2,3克砝码无限个。求某一质量的方案数。<br>类比高次有限项多项式乘法母函数，直接写出多项式乘积：<br>$(1+x+x^2+x^3+…)(1+x^2+x^4+x^6+…)(1+x^3+x^6+x^9+…)$<br>计算这个多项式的和，质量为$n$的方案数就是$x^n$的系数<br>考虑这样一个题，有120个数，每个数的个数不限。求组成某个数的方案数。$4=3+1$与$4=1+3$属于同一种方案<br>给出模版代码<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstring&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> n;</span><br><span class="line"><span class="keyword">int</span> num1[<span class="number">125</span>];</span><br><span class="line"><span class="keyword">int</span> num2[<span class="number">125</span>];</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="built_in">memset</span>(num1, <span class="number">0</span>, <span class="keyword">sizeof</span> num1);</span><br><span class="line">    <span class="built_in">memset</span>(num2, <span class="number">0</span>, <span class="keyword">sizeof</span> num2);</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">125</span>; i++)&#123;</span><br><span class="line">        num1[i] = <span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">2</span>; i &lt;= <span class="number">120</span>; i++)&#123;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> j = <span class="number">0</span>; j &lt;= <span class="number">120</span>; j++)&#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> k = <span class="number">0</span>; k+j &lt;= <span class="number">120</span>; k += i)&#123;</span><br><span class="line">                num2[k+j] += num1[j];</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> j = <span class="number">0</span>; j &lt;= <span class="number">120</span>; j++)&#123;</span><br><span class="line">            num1[j] = num2[j];</span><br><span class="line">            num2[j] = <span class="number">0</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">while</span>(~<span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;n))&#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"%d\n"</span>, num1[n]);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>解释一下代码，这个代码其实就是在模拟多项式乘法的过程。<br>$(1+x^1+x^2+…+x^{120})(1+x^2+x^4+x^6+…+x^{120})…(1+x^{120})$<br>一共120个多项式相乘。  </p>
+<p>num1在每轮循环结束后存储的都是第一个多项式的系数。<br>num2是一个中转数组，用来暂存过程中的新的多项式的系数。<br>每次循环结束，num2中的值都要倒换到num1中。  </p>
+<p>13-15行就是第一轮，是$(1+x^1+x^2+…+x^{120})$多项式的各项系数。这是初始化num1，num2数组  </p>
+<p>第16行是对120个多项式进行循环。每轮乘一个多项式进去。第i轮乘的是各项系数是i的倍数的多项式。也就是说第2轮乘的是$(1+x^2+x^4+…)$，第三轮乘的是$(1+x^3+x^6+…)$，第i轮乘的是$(1+x^i+x^{2i}+…)$。第i轮结束后，num1中的系数是前i个多项式的乘积多项式的系数。即$(1+x^1+x^2+…)(1+x^2+x^4+…)…(1+x^i+x^{2i}+…)$的结果的系数  </p>
+<p>第17行的j是对第i-1轮得到的乘积多项式的各项进行循环。即，$(1+x^1+x^2+…)(1+x^2+x^4+…)…(1+x^{i-1}+x^{2i-2}+…)$的结果中的各项  </p>
+<p>第18行的k是对第i个多项式，即$(1+x^i+x^{2i}+…)$的各项进行循环。将这个多项式和前i-1个多项式的乘积相乘，得到前i个多项式的乘积。k的增量是i  </p>
+<p>第19行，num2存的是相乘运算的过程中的中间结果系数，num1存的是前i-1个多项式的乘积的系数。因为第i个多项式中的每项的系数都是1，所以num2[k+j]直接加了num1[j]，其实是1*num1[j]。  </p>
+<p>第22-24行，就是将num2的结果跟num1的结果倒腾一下。  </p>
+<p>注意，有的题，可能要求比如，某个值最少用多少，最多用多少这种情况。这个时候，就是k不从0开始了，并且k+=i的次数有限制。需要灵活变通  </p>
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/ACM/" rel="tag"># ACM</a>
+          
+            <a href="/tags/组合数学/" rel="tag"># 组合数学</a>
+          
+            <a href="/tags/母函数/" rel="tag"># 母函数</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/06/05/acm-hdu-1028-generating-function/" rel="next" title="ACM HDU 1028 题解 组合数学 母函数 生成函数">
+                <i class="fa fa-chevron-left"></i> ACM HDU 1028 题解 组合数学 母函数 生成函数
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/me.png"
+                alt="喷水小火龙" />
+            
+              <p class="site-author-name" itemprop="name">喷水小火龙</p>
+              <p class="site-description motion-element" itemprop="description">小火龙不吃火龙果</p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">26</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">13</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">27</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  <a href="https://github.com/lmnsyunhao" target="_blank" title="GitHub"><i class="fa fa-fw fa-github"></i></a>
+                  
+                </span>
+              
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#介绍"><span class="nav-number">1.</span> <span class="nav-text">介绍</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#定义"><span class="nav-number">2.</span> <span class="nav-text">定义</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#普通母函数"><span class="nav-number">3.</span> <span class="nav-text">普通母函数</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#一次多项式乘法母函数"><span class="nav-number">3.1.</span> <span class="nav-text">一次多项式乘法母函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#杨辉三角母函数"><span class="nav-number">3.2.</span> <span class="nav-text">杨辉三角母函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#高次有限项多项式乘法母函数"><span class="nav-number">3.3.</span> <span class="nav-text">高次有限项多项式乘法母函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#高次无限项多项式乘法母函数"><span class="nav-number">3.4.</span> <span class="nav-text">高次无限项多项式乘法母函数</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+        <div class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span id="scrollpercent"><span>0</span>%</span>
+          
+        </div>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">喷水小火龙</span>
+
+  
+
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.2.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.2.0"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=6.2.0"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=6.2.0"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.2.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.2.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.2.0"></script>
+
+
+
+  
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+  
+  
+
+  
+  
+
+  
+    
+      <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      },
+      TeX: {equationNumbers: { autoNumber: "AMS" }}
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+      var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/mathjax@2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+    
+  
+
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <script type="text/javascript" color="0,0,255" opacity='1' src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
+	
+</body>
+</html>

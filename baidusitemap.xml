@@ -4,6 +4,120 @@
 
     
   <url>
+    <loc>http://yunhao.life/2018/05/22/mathjax-learning-note/</loc>
+    <lastmod>2018-06-05T12:55:22.260Z</lastmod>
+    <data>
+        <display>
+        <title>MathJax 基本语法学习笔记</title>
+        <pubTime>2018-05-22T02:32:00.000Z</pubTime>
+        
+        <tag>MathJax</tag>
+         
+         
+           
+             
+              <breadCrumb title="Language" url="http://yunhao.life/categories/Language/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yunhao.life/2018/06/05/generating-function-learning/</loc>
+    <lastmod>2018-06-05T12:18:19.939Z</lastmod>
+    <data>
+        <display>
+        <title>组合数学 母函数 生成函数 详解</title>
+        <pubTime>2018-06-05T05:50:20.000Z</pubTime>
+        
+        <tag>ACM</tag>
+         
+        <tag>组合数学</tag>
+         
+        <tag>母函数</tag>
+         
+         
+           
+             
+              <breadCrumb title="ACM" url="http://yunhao.life/categories/ACM/"/>
+          
+             
+              <breadCrumb title="组合数学" url="http://yunhao.life/categories/ACM/%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/"/>
+          
+             
+              <breadCrumb title="母函数" url="http://yunhao.life/categories/ACM/%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/%E6%AF%8D%E5%87%BD%E6%95%B0/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yunhao.life/2018/06/05/acm-hdu-1028-generating-function/</loc>
+    <lastmod>2018-06-05T05:48:26.231Z</lastmod>
+    <data>
+        <display>
+        <title>ACM HDU 1028 题解 组合数学 母函数 生成函数</title>
+        <pubTime>2018-06-05T05:29:48.000Z</pubTime>
+        
+        <tag>ACM</tag>
+         
+        <tag>HDU</tag>
+         
+        <tag>组合数学</tag>
+         
+        <tag>母函数</tag>
+         
+         
+           
+             
+              <breadCrumb title="ACM" url="http://yunhao.life/categories/ACM/"/>
+          
+             
+              <breadCrumb title="组合数学" url="http://yunhao.life/categories/ACM/%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/"/>
+          
+             
+              <breadCrumb title="母函数" url="http://yunhao.life/categories/ACM/%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/%E6%AF%8D%E5%87%BD%E6%95%B0/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yunhao.life/2018/06/05/acm-hdu-2844-dp/</loc>
+    <lastmod>2018-06-05T05:08:20.533Z</lastmod>
+    <data>
+        <display>
+        <title>ACM HDU 2844 题解 DP 多重背包</title>
+        <pubTime>2018-06-05T04:53:49.000Z</pubTime>
+        
+        <tag>ACM</tag>
+         
+        <tag>DP</tag>
+         
+        <tag>HDU</tag>
+         
+        <tag>背包问题</tag>
+         
+         
+           
+             
+              <breadCrumb title="ACM" url="http://yunhao.life/categories/ACM/"/>
+          
+             
+              <breadCrumb title="DP" url="http://yunhao.life/categories/ACM/DP/"/>
+          
+             
+              <breadCrumb title="背包问题" url="http://yunhao.life/categories/ACM/DP/%E8%83%8C%E5%8C%85%E9%97%AE%E9%A2%98/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://yunhao.life/2017/03/30/ubuntu-sogou-input-doesnot-work/</loc>
     <lastmod>2018-05-27T11:11:30.650Z</lastmod>
     <data>
@@ -486,34 +600,14 @@
         
         <tag>Hexo</tag>
          
-        <tag>Markdown</tag>
-         
         <tag>MathJax</tag>
+         
+        <tag>Markdown</tag>
          
          
            
              
               <breadCrumb title="Hexo" url="http://yunhao.life/categories/Hexo/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yunhao.life/2018/05/22/mathjax-learning-note/</loc>
-    <lastmod>2018-05-22T10:03:33.680Z</lastmod>
-    <data>
-        <display>
-        <title>MathJax 基本语法学习笔记</title>
-        <pubTime>2018-05-22T02:32:00.000Z</pubTime>
-        
-        <tag>MathJax</tag>
-         
-         
-           
-             
-              <breadCrumb title="Language" url="http://yunhao.life/categories/Language/"/>
           
         </display>
     </data>
