@@ -4,6 +4,33 @@
 
     
   <url>
+    <loc>http://yunhao.life/2018/06/06/acm-cf-891a-dp/</loc>
+    <lastmod>2018-06-06T03:46:12.261Z</lastmod>
+    <data>
+        <display>
+        <title>ACM CodeForces 891 A 题解 DP</title>
+        <pubTime>2018-06-06T03:28:19.000Z</pubTime>
+        
+        <tag>ACM</tag>
+         
+        <tag>CodeForces</tag>
+         
+        <tag>DP</tag>
+         
+         
+           
+             
+              <breadCrumb title="ACM" url="http://yunhao.life/categories/ACM/"/>
+          
+             
+              <breadCrumb title="DP" url="http://yunhao.life/categories/ACM/DP/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://yunhao.life/2018/05/22/mathjax-learning-note/</loc>
     <lastmod>2018-06-05T12:55:22.260Z</lastmod>
     <data>
@@ -600,9 +627,9 @@
         
         <tag>Hexo</tag>
          
-        <tag>MathJax</tag>
-         
         <tag>Markdown</tag>
+         
+        <tag>MathJax</tag>
          
          
            
