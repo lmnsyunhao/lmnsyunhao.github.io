@@ -5,7 +5,7 @@
     
   <url>
     <loc>http://yunhao.life/2018/06/06/acm-cf-891a-dp/</loc>
-    <lastmod>2018-06-06T03:46:12.261Z</lastmod>
+    <lastmod>2018-06-07T08:31:21.601Z</lastmod>
     <data>
         <display>
         <title>ACM CodeForces 891 A 题解 DP</title>
@@ -24,6 +24,33 @@
           
              
               <breadCrumb title="DP" url="http://yunhao.life/categories/ACM/DP/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yunhao.life/2018/06/07/acm-cf-888b-greedy/</loc>
+    <lastmod>2018-06-07T08:30:40.637Z</lastmod>
+    <data>
+        <display>
+        <title>ACM CodeForces 888 B 题解 贪心</title>
+        <pubTime>2018-06-07T08:15:16.000Z</pubTime>
+        
+        <tag>ACM</tag>
+         
+        <tag>CodeForces</tag>
+         
+        <tag>贪心</tag>
+         
+         
+           
+             
+              <breadCrumb title="ACM" url="http://yunhao.life/categories/ACM/"/>
+          
+             
+              <breadCrumb title="贪心" url="http://yunhao.life/categories/ACM/%E8%B4%AA%E5%BF%83/"/>
           
         </display>
     </data>
