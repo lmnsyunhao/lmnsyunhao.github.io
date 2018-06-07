@@ -4,6 +4,60 @@
 
     
   <url>
+    <loc>http://yunhao.life/2018/06/07/acm-cf-873b-simple/</loc>
+    <lastmod>2018-06-07T16:17:44.861Z</lastmod>
+    <data>
+        <display>
+        <title>ACM CodeForces 873 B 题解 基础题</title>
+        <pubTime>2018-06-07T15:49:23.000Z</pubTime>
+        
+        <tag>ACM</tag>
+         
+        <tag>CodeForces</tag>
+         
+        <tag>基础题</tag>
+         
+         
+           
+             
+              <breadCrumb title="ACM" url="http://yunhao.life/categories/ACM/"/>
+          
+             
+              <breadCrumb title="基础题" url="http://yunhao.life/categories/ACM/%E5%9F%BA%E7%A1%80%E9%A2%98/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yunhao.life/2018/06/07/acm-cf-888b-simple/</loc>
+    <lastmod>2018-06-07T15:46:59.826Z</lastmod>
+    <data>
+        <display>
+        <title>ACM CodeForces 888 B 题解 基础题</title>
+        <pubTime>2018-06-07T08:15:16.000Z</pubTime>
+        
+        <tag>ACM</tag>
+         
+        <tag>CodeForces</tag>
+         
+        <tag>基础题</tag>
+         
+         
+           
+             
+              <breadCrumb title="ACM" url="http://yunhao.life/categories/ACM/"/>
+          
+             
+              <breadCrumb title="基础题" url="http://yunhao.life/categories/ACM/%E5%9F%BA%E7%A1%80%E9%A2%98/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://yunhao.life/2018/06/06/acm-cf-891a-dp/</loc>
     <lastmod>2018-06-07T08:31:21.601Z</lastmod>
     <data>
@@ -24,33 +78,6 @@
           
              
               <breadCrumb title="DP" url="http://yunhao.life/categories/ACM/DP/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yunhao.life/2018/06/07/acm-cf-888b-greedy/</loc>
-    <lastmod>2018-06-07T08:30:40.637Z</lastmod>
-    <data>
-        <display>
-        <title>ACM CodeForces 888 B 题解 贪心</title>
-        <pubTime>2018-06-07T08:15:16.000Z</pubTime>
-        
-        <tag>ACM</tag>
-         
-        <tag>CodeForces</tag>
-         
-        <tag>贪心</tag>
-         
-         
-           
-             
-              <breadCrumb title="ACM" url="http://yunhao.life/categories/ACM/"/>
-          
-             
-              <breadCrumb title="贪心" url="http://yunhao.life/categories/ACM/%E8%B4%AA%E5%BF%83/"/>
           
         </display>
     </data>
@@ -654,9 +681,9 @@
         
         <tag>Hexo</tag>
          
-        <tag>Markdown</tag>
-         
         <tag>MathJax</tag>
+         
+        <tag>Markdown</tag>
          
          
            
