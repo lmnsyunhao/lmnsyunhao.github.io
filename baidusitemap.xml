@@ -4,6 +4,38 @@
 
     
   <url>
+    <loc>http://yunhao.life/2018/06/09/acm-cf-963b-dfs/</loc>
+    <lastmod>2018-06-09T15:30:08.389Z</lastmod>
+    <data>
+        <display>
+        <title>ACM CodeForces 963 B 题解 DFS</title>
+        <pubTime>2018-06-09T14:01:07.000Z</pubTime>
+        
+        <tag>ACM</tag>
+         
+        <tag>CodeForces</tag>
+         
+        <tag>搜索</tag>
+         
+        <tag>DFS</tag>
+         
+         
+           
+             
+              <breadCrumb title="ACM" url="http://yunhao.life/categories/ACM/"/>
+          
+             
+              <breadCrumb title="搜索" url="http://yunhao.life/categories/ACM/%E6%90%9C%E7%B4%A2/"/>
+          
+             
+              <breadCrumb title="DFS" url="http://yunhao.life/categories/ACM/%E6%90%9C%E7%B4%A2/DFS/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://yunhao.life/2018/06/08/acm-cf-877b-dp/</loc>
     <lastmod>2018-06-08T15:38:19.834Z</lastmod>
     <data>
@@ -279,11 +311,11 @@
         <title>Ubuntu16.04 Nginx 反向代理 Apache</title>
         <pubTime>2017-04-07T12:19:44.000Z</pubTime>
         
+        <tag>Ubuntu</tag>
+         
         <tag>Server</tag>
          
         <tag>Proxy</tag>
-         
-        <tag>Ubuntu</tag>
          
         <tag>Nginx</tag>
          
@@ -307,9 +339,9 @@
         <title>Ubuntu16.04 Nginx 配置站点学习笔记</title>
         <pubTime>2017-03-30T02:42:15.000Z</pubTime>
         
-        <tag>Server</tag>
-         
         <tag>Ubuntu</tag>
+         
+        <tag>Server</tag>
          
         <tag>Nginx</tag>
          
@@ -437,9 +469,9 @@
         <title>Github blog 绑定域名</title>
         <pubTime>2017-03-27T08:47:20.000Z</pubTime>
         
-        <tag>Github</tag>
-         
         <tag>Domain</tag>
+         
+        <tag>Github</tag>
          
          
            
