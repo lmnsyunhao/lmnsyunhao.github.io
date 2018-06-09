@@ -4,6 +4,394 @@
 
     
   <url>
+    <loc>http://yunhao.life/2018/06/07/acm-cf-873b-simple/</loc>
+    <lastmod>2018-06-09T17:13:12.522Z</lastmod>
+    <data>
+        <display>
+        <title>ACM CodeForces 873 B 题解 基础题</title>
+        <pubTime>2018-06-07T15:49:23.000Z</pubTime>
+        
+        <tag>ACM</tag>
+         
+        <tag>CodeForces</tag>
+         
+        <tag>基础题</tag>
+         
+        <tag>前缀和</tag>
+         
+         
+           
+             
+              <breadCrumb title="ACM" url="http://yunhao.life/categories/ACM/"/>
+          
+             
+              <breadCrumb title="基础题" url="http://yunhao.life/categories/ACM/%E5%9F%BA%E7%A1%80%E9%A2%98/"/>
+          
+             
+              <breadCrumb title="前缀和" url="http://yunhao.life/categories/ACM/%E5%9F%BA%E7%A1%80%E9%A2%98/%E5%89%8D%E7%BC%80%E5%92%8C/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yunhao.life/2017/04/07/ubuntu-nginx-apache-reverse-proxy/</loc>
+    <lastmod>2018-06-09T17:04:04.673Z</lastmod>
+    <data>
+        <display>
+        <title>Ubuntu16.04 Nginx 反向代理 Apache</title>
+        <pubTime>2017-04-07T12:19:44.000Z</pubTime>
+        
+        <tag>Ubuntu</tag>
+         
+        <tag>服务器</tag>
+         
+        <tag>代理</tag>
+         
+        <tag>Nginx</tag>
+         
+        <tag>Apache</tag>
+         
+         
+           
+             
+              <breadCrumb title="服务器" url="http://yunhao.life/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yunhao.life/2017/03/30/nginx-server-config-guide/</loc>
+    <lastmod>2018-06-09T17:03:39.273Z</lastmod>
+    <data>
+        <display>
+        <title>Ubuntu16.04 Nginx 配置站点学习笔记</title>
+        <pubTime>2017-03-30T02:42:15.000Z</pubTime>
+        
+        <tag>Ubuntu</tag>
+         
+        <tag>服务器</tag>
+         
+        <tag>Nginx</tag>
+         
+         
+           
+             
+              <breadCrumb title="服务器" url="http://yunhao.life/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yunhao.life/2017/03/30/firefox-add-flash-plugins/</loc>
+    <lastmod>2018-06-09T17:01:32.794Z</lastmod>
+    <data>
+        <display>
+        <title>Ubuntu16.04 FireFox Flash 插件安装</title>
+        <pubTime>2017-03-30T06:10:20.000Z</pubTime>
+        
+        <tag>Ubuntu</tag>
+         
+        <tag>浏览器</tag>
+         
+        <tag>FireFox</tag>
+         
+         
+           
+             
+              <breadCrumb title="浏览器" url="http://yunhao.life/categories/%E6%B5%8F%E8%A7%88%E5%99%A8/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yunhao.life/2017/03/27/github-blog-bundle-domain/</loc>
+    <lastmod>2018-06-09T17:00:58.547Z</lastmod>
+    <data>
+        <display>
+        <title>GitHub blog 绑定域名</title>
+        <pubTime>2017-03-27T08:47:20.000Z</pubTime>
+        
+        <tag>域名</tag>
+         
+        <tag>GitHub</tag>
+         
+         
+           
+             
+              <breadCrumb title="Git" url="http://yunhao.life/categories/Git/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yunhao.life/2017/03/27/github-ssh-config/</loc>
+    <lastmod>2018-06-09T17:00:16.060Z</lastmod>
+    <data>
+        <display>
+        <title>Ubuntu16.04 GitHub SSH 配置</title>
+        <pubTime>2017-03-27T09:15:03.000Z</pubTime>
+        
+        <tag>Ubuntu</tag>
+         
+        <tag>GitHub</tag>
+         
+         
+           
+             
+              <breadCrumb title="Git" url="http://yunhao.life/categories/Git/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yunhao.life/2017/04/07/forward-proxy-and-reverse-proxy/</loc>
+    <lastmod>2018-06-09T16:56:51.571Z</lastmod>
+    <data>
+        <display>
+        <title>正向代理与反向代理</title>
+        <pubTime>2017-04-07T10:51:19.000Z</pubTime>
+        
+        <tag>服务器</tag>
+         
+        <tag>代理</tag>
+         
+         
+           
+             
+              <breadCrumb title="服务器" url="http://yunhao.life/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yunhao.life/2017/03/27/atom-plugins-guide/</loc>
+    <lastmod>2018-06-09T16:55:59.523Z</lastmod>
+    <data>
+        <display>
+        <title>Atom 编辑器的插件总结</title>
+        <pubTime>2017-03-27T12:35:40.000Z</pubTime>
+        
+        <tag>编辑器</tag>
+         
+        <tag>Atom</tag>
+         
+         
+           
+             
+              <breadCrumb title="编辑器" url="http://yunhao.life/categories/%E7%BC%96%E8%BE%91%E5%99%A8/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yunhao.life/2017/03/27/atom-packages-browser-plus-change-default-search-engine/</loc>
+    <lastmod>2018-06-09T16:55:43.896Z</lastmod>
+    <data>
+        <display>
+        <title>Atom 插件 browser-plus 修改默认搜索</title>
+        <pubTime>2017-03-27T14:58:02.000Z</pubTime>
+        
+        <tag>编辑器</tag>
+         
+        <tag>Atom</tag>
+         
+         
+           
+             
+              <breadCrumb title="编辑器" url="http://yunhao.life/categories/%E7%BC%96%E8%BE%91%E5%99%A8/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yunhao.life/2017/03/30/ubuntu-sogou-input-doesnot-work/</loc>
+    <lastmod>2018-06-09T16:54:34.751Z</lastmod>
+    <data>
+        <display>
+        <title>Ubuntu16.04 Sogou 输入法的备选词框不见了解决方法</title>
+        <pubTime>2017-03-30T06:50:27.000Z</pubTime>
+        
+        <tag>Ubuntu</tag>
+         
+        <tag>搜狗输入法</tag>
+         
+         
+           
+             
+              <breadCrumb title="Ubuntu" url="http://yunhao.life/categories/Ubuntu/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yunhao.life/2018/05/23/windows-pc-cannot-select-boot-device/</loc>
+    <lastmod>2018-06-09T16:54:20.385Z</lastmod>
+    <data>
+        <display>
+        <title>Windows10 PC 无法进入选择启动项界面 无法进入BIOS界面</title>
+        <pubTime>2018-05-23T07:12:59.000Z</pubTime>
+        
+        <tag>Windows</tag>
+         
+        <tag>系统安装</tag>
+         
+         
+           
+             
+              <breadCrumb title="系统安装" url="http://yunhao.life/categories/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yunhao.life/2018/06/10/acm-poj-2342-dp-on-tree/</loc>
+    <lastmod>2018-06-09T16:50:22.034Z</lastmod>
+    <data>
+        <display>
+        <title>ACM POJ 2342 题解 树形DP</title>
+        <pubTime>2018-06-09T16:31:47.000Z</pubTime>
+        
+        <tag>ACM</tag>
+         
+        <tag>DP</tag>
+         
+        <tag>POJ</tag>
+         
+        <tag>树形DP</tag>
+         
+         
+           
+             
+              <breadCrumb title="ACM" url="http://yunhao.life/categories/ACM/"/>
+          
+             
+              <breadCrumb title="DP" url="http://yunhao.life/categories/ACM/DP/"/>
+          
+             
+              <breadCrumb title="树形DP" url="http://yunhao.life/categories/ACM/DP/%E6%A0%91%E5%BD%A2DP/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yunhao.life/2018/06/05/acm-generating-function-learning/</loc>
+    <lastmod>2018-06-09T16:45:47.243Z</lastmod>
+    <data>
+        <display>
+        <title>ACM 组合数学 母函数 生成函数 详解</title>
+        <pubTime>2018-06-05T05:50:20.000Z</pubTime>
+        
+        <tag>ACM</tag>
+         
+        <tag>组合数学</tag>
+         
+        <tag>母函数</tag>
+         
+         
+           
+             
+              <breadCrumb title="ACM" url="http://yunhao.life/categories/ACM/"/>
+          
+             
+              <breadCrumb title="组合数学" url="http://yunhao.life/categories/ACM/%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/"/>
+          
+             
+              <breadCrumb title="母函数" url="http://yunhao.life/categories/ACM/%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/%E6%AF%8D%E5%87%BD%E6%95%B0/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yunhao.life/2018/06/05/acm-hdu-1028-generating-function/</loc>
+    <lastmod>2018-06-09T16:33:46.996Z</lastmod>
+    <data>
+        <display>
+        <title>ACM HDU 1028 题解 母函数 生成函数</title>
+        <pubTime>2018-06-05T05:29:48.000Z</pubTime>
+        
+        <tag>ACM</tag>
+         
+        <tag>组合数学</tag>
+         
+        <tag>母函数</tag>
+         
+        <tag>HDU</tag>
+         
+         
+           
+             
+              <breadCrumb title="ACM" url="http://yunhao.life/categories/ACM/"/>
+          
+             
+              <breadCrumb title="组合数学" url="http://yunhao.life/categories/ACM/%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/"/>
+          
+             
+              <breadCrumb title="母函数" url="http://yunhao.life/categories/ACM/%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/%E6%AF%8D%E5%87%BD%E6%95%B0/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yunhao.life/2018/06/05/acm-hdu-2844-dp/</loc>
+    <lastmod>2018-06-09T16:33:35.911Z</lastmod>
+    <data>
+        <display>
+        <title>ACM HDU 2844 题解 多重背包</title>
+        <pubTime>2018-06-05T04:53:49.000Z</pubTime>
+        
+        <tag>ACM</tag>
+         
+        <tag>DP</tag>
+         
+        <tag>HDU</tag>
+         
+        <tag>背包问题</tag>
+         
+         
+           
+             
+              <breadCrumb title="ACM" url="http://yunhao.life/categories/ACM/"/>
+          
+             
+              <breadCrumb title="DP" url="http://yunhao.life/categories/ACM/DP/"/>
+          
+             
+              <breadCrumb title="背包问题" url="http://yunhao.life/categories/ACM/DP/%E8%83%8C%E5%8C%85%E9%97%AE%E9%A2%98/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://yunhao.life/2018/06/09/acm-cf-963b-dfs/</loc>
     <lastmod>2018-06-09T15:30:08.389Z</lastmod>
     <data>
@@ -56,33 +444,6 @@
           
              
               <breadCrumb title="DP" url="http://yunhao.life/categories/ACM/DP/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yunhao.life/2018/06/07/acm-cf-873b-simple/</loc>
-    <lastmod>2018-06-07T16:17:44.861Z</lastmod>
-    <data>
-        <display>
-        <title>ACM CodeForces 873 B 题解 基础题</title>
-        <pubTime>2018-06-07T15:49:23.000Z</pubTime>
-        
-        <tag>ACM</tag>
-         
-        <tag>CodeForces</tag>
-         
-        <tag>基础题</tag>
-         
-         
-           
-             
-              <breadCrumb title="ACM" url="http://yunhao.life/categories/ACM/"/>
-          
-             
-              <breadCrumb title="基础题" url="http://yunhao.life/categories/ACM/%E5%9F%BA%E7%A1%80%E9%A2%98/"/>
           
         </display>
     </data>
@@ -164,122 +525,6 @@
 
     
   <url>
-    <loc>http://yunhao.life/2018/06/05/generating-function-learning/</loc>
-    <lastmod>2018-06-05T12:18:19.939Z</lastmod>
-    <data>
-        <display>
-        <title>组合数学 母函数 生成函数 详解</title>
-        <pubTime>2018-06-05T05:50:20.000Z</pubTime>
-        
-        <tag>ACM</tag>
-         
-        <tag>组合数学</tag>
-         
-        <tag>母函数</tag>
-         
-         
-           
-             
-              <breadCrumb title="ACM" url="http://yunhao.life/categories/ACM/"/>
-          
-             
-              <breadCrumb title="组合数学" url="http://yunhao.life/categories/ACM/%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/"/>
-          
-             
-              <breadCrumb title="母函数" url="http://yunhao.life/categories/ACM/%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/%E6%AF%8D%E5%87%BD%E6%95%B0/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yunhao.life/2018/06/05/acm-hdu-1028-generating-function/</loc>
-    <lastmod>2018-06-05T05:48:26.231Z</lastmod>
-    <data>
-        <display>
-        <title>ACM HDU 1028 题解 组合数学 母函数 生成函数</title>
-        <pubTime>2018-06-05T05:29:48.000Z</pubTime>
-        
-        <tag>ACM</tag>
-         
-        <tag>HDU</tag>
-         
-        <tag>组合数学</tag>
-         
-        <tag>母函数</tag>
-         
-         
-           
-             
-              <breadCrumb title="ACM" url="http://yunhao.life/categories/ACM/"/>
-          
-             
-              <breadCrumb title="组合数学" url="http://yunhao.life/categories/ACM/%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/"/>
-          
-             
-              <breadCrumb title="母函数" url="http://yunhao.life/categories/ACM/%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/%E6%AF%8D%E5%87%BD%E6%95%B0/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yunhao.life/2018/06/05/acm-hdu-2844-dp/</loc>
-    <lastmod>2018-06-05T05:08:20.533Z</lastmod>
-    <data>
-        <display>
-        <title>ACM HDU 2844 题解 DP 多重背包</title>
-        <pubTime>2018-06-05T04:53:49.000Z</pubTime>
-        
-        <tag>ACM</tag>
-         
-        <tag>DP</tag>
-         
-        <tag>HDU</tag>
-         
-        <tag>背包问题</tag>
-         
-         
-           
-             
-              <breadCrumb title="ACM" url="http://yunhao.life/categories/ACM/"/>
-          
-             
-              <breadCrumb title="DP" url="http://yunhao.life/categories/ACM/DP/"/>
-          
-             
-              <breadCrumb title="背包问题" url="http://yunhao.life/categories/ACM/DP/%E8%83%8C%E5%8C%85%E9%97%AE%E9%A2%98/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yunhao.life/2017/03/30/ubuntu-sogou-input-doesnot-work/</loc>
-    <lastmod>2018-05-27T11:11:30.650Z</lastmod>
-    <data>
-        <display>
-        <title>Ubuntu16.04 Sogou 输入法的备选词框不见了解决方法</title>
-        <pubTime>2017-03-30T06:50:27.000Z</pubTime>
-        
-        <tag>Ubuntu</tag>
-         
-        <tag>SogouInput</tag>
-         
-         
-           
-             
-              <breadCrumb title="Ubuntu" url="http://yunhao.life/categories/Ubuntu/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://yunhao.life/2017/03/27/ubuntu-PPPoE-dsl-connection/</loc>
     <lastmod>2018-05-27T11:11:25.499Z</lastmod>
     <data>
@@ -297,58 +542,6 @@
            
              
               <breadCrumb title="Ubuntu" url="http://yunhao.life/categories/Ubuntu/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yunhao.life/2017/04/07/ubuntu-nginx-apache-reverse-proxy/</loc>
-    <lastmod>2018-05-27T11:11:21.000Z</lastmod>
-    <data>
-        <display>
-        <title>Ubuntu16.04 Nginx 反向代理 Apache</title>
-        <pubTime>2017-04-07T12:19:44.000Z</pubTime>
-        
-        <tag>Ubuntu</tag>
-         
-        <tag>Server</tag>
-         
-        <tag>Proxy</tag>
-         
-        <tag>Nginx</tag>
-         
-        <tag>Apache</tag>
-         
-         
-           
-             
-              <breadCrumb title="Server" url="http://yunhao.life/categories/Server/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yunhao.life/2017/03/30/nginx-server-config-guide/</loc>
-    <lastmod>2018-05-27T11:11:08.576Z</lastmod>
-    <data>
-        <display>
-        <title>Ubuntu16.04 Nginx 配置站点学习笔记</title>
-        <pubTime>2017-03-30T02:42:15.000Z</pubTime>
-        
-        <tag>Ubuntu</tag>
-         
-        <tag>Server</tag>
-         
-        <tag>Nginx</tag>
-         
-         
-           
-             
-              <breadCrumb title="Server" url="http://yunhao.life/categories/Server/"/>
           
         </display>
     </data>
@@ -440,140 +633,6 @@
 
     
   <url>
-    <loc>http://yunhao.life/2017/03/27/github-ssh-config/</loc>
-    <lastmod>2018-05-27T11:10:13.549Z</lastmod>
-    <data>
-        <display>
-        <title>Ubuntu16.04 Github SSH 配置</title>
-        <pubTime>2017-03-27T09:15:03.000Z</pubTime>
-        
-        <tag>Ubuntu</tag>
-         
-        <tag>Github</tag>
-         
-         
-           
-             
-              <breadCrumb title="Git" url="http://yunhao.life/categories/Git/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yunhao.life/2017/03/27/github-blog-bundle-domain/</loc>
-    <lastmod>2018-05-27T11:09:23.611Z</lastmod>
-    <data>
-        <display>
-        <title>Github blog 绑定域名</title>
-        <pubTime>2017-03-27T08:47:20.000Z</pubTime>
-        
-        <tag>Domain</tag>
-         
-        <tag>Github</tag>
-         
-         
-           
-             
-              <breadCrumb title="Git" url="http://yunhao.life/categories/Git/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yunhao.life/2017/04/07/forward-proxy-and-reverse-proxy/</loc>
-    <lastmod>2018-05-27T11:09:18.424Z</lastmod>
-    <data>
-        <display>
-        <title>正向代理与反向代理</title>
-        <pubTime>2017-04-07T10:51:19.000Z</pubTime>
-        
-        <tag>Server</tag>
-         
-        <tag>Proxy</tag>
-         
-         
-           
-             
-              <breadCrumb title="Server" url="http://yunhao.life/categories/Server/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yunhao.life/2017/03/30/firefox-add-flash-plugins/</loc>
-    <lastmod>2018-05-27T11:09:07.287Z</lastmod>
-    <data>
-        <display>
-        <title>Ubuntu16.04 Firefox Flash 插件安装</title>
-        <pubTime>2017-03-30T06:10:20.000Z</pubTime>
-        
-        <tag>Ubuntu</tag>
-         
-        <tag>Browser</tag>
-         
-        <tag>Firefox</tag>
-         
-         
-           
-             
-              <breadCrumb title="Browser" url="http://yunhao.life/categories/Browser/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yunhao.life/2017/03/27/atom-plugins-guide/</loc>
-    <lastmod>2018-05-27T11:08:57.987Z</lastmod>
-    <data>
-        <display>
-        <title>Atom 编辑器的插件总结</title>
-        <pubTime>2017-03-27T12:35:40.000Z</pubTime>
-        
-        <tag>Editor</tag>
-         
-        <tag>Atom</tag>
-         
-         
-           
-             
-              <breadCrumb title="Editor" url="http://yunhao.life/categories/Editor/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yunhao.life/2017/03/27/atom-packages-browser-plus-change-default-search-engine/</loc>
-    <lastmod>2018-05-27T11:08:39.286Z</lastmod>
-    <data>
-        <display>
-        <title>Atom 插件 browser-plus 修改默认搜索</title>
-        <pubTime>2017-03-27T14:58:02.000Z</pubTime>
-        
-        <tag>Editor</tag>
-         
-        <tag>Atom</tag>
-         
-         
-           
-             
-              <breadCrumb title="Editor" url="http://yunhao.life/categories/Editor/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://yunhao.life/2018/05/19/acm-hdu-2577-dp/</loc>
     <lastmod>2018-05-27T11:07:23.288Z</lastmod>
     <data>
@@ -648,28 +707,6 @@
           
              
               <breadCrumb title="DP" url="http://yunhao.life/categories/ACM/DP/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yunhao.life/2018/05/23/windows-pc-cannot-select-boot-device/</loc>
-    <lastmod>2018-05-23T07:35:37.740Z</lastmod>
-    <data>
-        <display>
-        <title>Windows10 PC 无法进入选择启动项界面 无法进入BIOS界面</title>
-        <pubTime>2018-05-23T07:12:59.000Z</pubTime>
-        
-        <tag>Windows</tag>
-         
-        <tag>System</tag>
-         
-         
-           
-             
-              <breadCrumb title="Windows" url="http://yunhao.life/categories/Windows/"/>
           
         </display>
     </data>
