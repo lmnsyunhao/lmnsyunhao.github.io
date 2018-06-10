@@ -4,11 +4,107 @@
 
     
   <url>
-    <loc>http://yunhao.life/2018/06/07/acm-cf-873b-simple/</loc>
-    <lastmod>2018-06-09T17:13:12.522Z</lastmod>
+    <loc>http://yunhao.life/2018/06/10/acm-poj-2955-dp-on-segment/</loc>
+    <lastmod>2018-06-10T16:38:43.451Z</lastmod>
     <data>
         <display>
-        <title>ACM CodeForces 873 B 题解 基础题</title>
+        <title>ACM POJ 2955 题解 区间DP</title>
+        <pubTime>2018-06-10T15:57:07.000Z</pubTime>
+        
+        <tag>ACM</tag>
+         
+        <tag>DP</tag>
+         
+        <tag>POJ</tag>
+         
+        <tag>区间DP</tag>
+         
+         
+           
+             
+              <breadCrumb title="ACM" url="http://yunhao.life/categories/ACM/"/>
+          
+             
+              <breadCrumb title="DP" url="http://yunhao.life/categories/ACM/DP/"/>
+          
+             
+              <breadCrumb title="区间DP" url="http://yunhao.life/categories/ACM/DP/%E5%8C%BA%E9%97%B4DP/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yunhao.life/2018/06/10/acm-hdu-4745-dp-on-segment/</loc>
+    <lastmod>2018-06-10T16:38:14.528Z</lastmod>
+    <data>
+        <display>
+        <title>ACM HDU 4745 题解 区间DP</title>
+        <pubTime>2018-06-10T12:47:42.000Z</pubTime>
+        
+        <tag>ACM</tag>
+         
+        <tag>DP</tag>
+         
+        <tag>HDU</tag>
+         
+        <tag>区间DP</tag>
+         
+         
+           
+             
+              <breadCrumb title="ACM" url="http://yunhao.life/categories/ACM/"/>
+          
+             
+              <breadCrumb title="DP" url="http://yunhao.life/categories/ACM/DP/"/>
+          
+             
+              <breadCrumb title="区间DP" url="http://yunhao.life/categories/ACM/DP/%E5%8C%BA%E9%97%B4DP/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yunhao.life/2018/06/10/acm-hdu-4632-dp-on-segment/</loc>
+    <lastmod>2018-06-10T06:48:34.665Z</lastmod>
+    <data>
+        <display>
+        <title>ACM HDU 4632 题解 区间DP</title>
+        <pubTime>2018-06-10T06:31:43.000Z</pubTime>
+        
+        <tag>ACM</tag>
+         
+        <tag>DP</tag>
+         
+        <tag>HDU</tag>
+         
+        <tag>区间DP</tag>
+         
+         
+           
+             
+              <breadCrumb title="ACM" url="http://yunhao.life/categories/ACM/"/>
+          
+             
+              <breadCrumb title="DP" url="http://yunhao.life/categories/ACM/DP/"/>
+          
+             
+              <breadCrumb title="区间DP" url="http://yunhao.life/categories/ACM/DP/%E5%8C%BA%E9%97%B4DP/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yunhao.life/2018/06/07/acm-cf-873b-simple/</loc>
+    <lastmod>2018-06-09T17:28:08.211Z</lastmod>
+    <data>
+        <display>
+        <title>ACM CodeForces 873 B 题解 前缀和</title>
         <pubTime>2018-06-07T15:49:23.000Z</pubTime>
         
         <tag>ACM</tag>
@@ -777,9 +873,9 @@
         
         <tag>Hexo</tag>
          
-        <tag>Markdown</tag>
-         
         <tag>MathJax</tag>
+         
+        <tag>Markdown</tag>
          
          
            
