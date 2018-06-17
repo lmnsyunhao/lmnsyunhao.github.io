@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yunhao.life/2018/06/14/acm-lightoj-1422-dp-on-segment/</loc>
+    
+    <lastmod>2018-06-17T02:23:32.290Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yunhao.life/about/index.html</loc>
+    
+    <lastmod>2018-06-13T03:37:42.613Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yunhao.life/2018/06/11/acm-poj-1651-dp-on-segment/</loc>
     
     <lastmod>2018-06-11T06:34:41.559Z</lastmod>
@@ -250,13 +264,6 @@
     <loc>http://yunhao.life/2018/05/20/windows-c-partition-space-clean/</loc>
     
     <lastmod>2018-05-22T05:59:06.997Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yunhao.life/about/index.html</loc>
-    
-    <lastmod>2018-05-17T09:17:03.408Z</lastmod>
     
   </url>
   

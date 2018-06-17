@@ -110,25 +110,25 @@
 
 
 
-  <meta name="description" content="题目Multiplication Puzzle   限制Time Limit: 1000MSMemory Limit: 65536K   描述The multiplication puzzle is played with a row of cards, each containing a single positive integer. During the move player takes">
-<meta name="keywords" content="ACM,DP,区间DP,POJ">
+  <meta name="description" content="题目1422 - Halloween Costumes   限制Time Limit: 2 second(s)Memory Limit: 32 MB   描述Gappu has a very busy weekend ahead of him. Because, next weekend is Halloween, and he is planning to attend as many part">
+<meta name="keywords" content="ACM,DP,区间DP,LightOJ">
 <meta property="og:type" content="article">
-<meta property="og:title" content="ACM POJ 1651 题解 区间DP">
-<meta property="og:url" content="http://yunhao.life/2018/06/11/acm-poj-1651-dp-on-segment/index.html">
+<meta property="og:title" content="ACM LightOJ 1422 题解 区间DP">
+<meta property="og:url" content="http://yunhao.life/2018/06/14/acm-lightoj-1422-dp-on-segment/index.html">
 <meta property="og:site_name" content="火龙窝">
-<meta property="og:description" content="题目Multiplication Puzzle   限制Time Limit: 1000MSMemory Limit: 65536K   描述The multiplication puzzle is played with a row of cards, each containing a single positive integer. During the move player takes">
+<meta property="og:description" content="题目1422 - Halloween Costumes   限制Time Limit: 2 second(s)Memory Limit: 32 MB   描述Gappu has a very busy weekend ahead of him. Because, next weekend is Halloween, and he is planning to attend as many part">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-06-11T06:34:41.559Z">
+<meta property="og:updated_time" content="2018-06-17T02:23:32.290Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="ACM POJ 1651 题解 区间DP">
-<meta name="twitter:description" content="题目Multiplication Puzzle   限制Time Limit: 1000MSMemory Limit: 65536K   描述The multiplication puzzle is played with a row of cards, each containing a single positive integer. During the move player takes">
+<meta name="twitter:title" content="ACM LightOJ 1422 题解 区间DP">
+<meta name="twitter:description" content="题目1422 - Halloween Costumes   限制Time Limit: 2 second(s)Memory Limit: 32 MB   描述Gappu has a very busy weekend ahead of him. Because, next weekend is Halloween, and he is planning to attend as many part">
 
 
 
 
 
 
-  <link rel="canonical" href="http://yunhao.life/2018/06/11/acm-poj-1651-dp-on-segment/"/>
+  <link rel="canonical" href="http://yunhao.life/2018/06/14/acm-lightoj-1422-dp-on-segment/"/>
 
 
 
@@ -138,7 +138,7 @@
   };
 </script>
 
-  <title>ACM POJ 1651 题解 区间DP | 火龙窝</title>
+  <title>ACM LightOJ 1422 题解 区间DP | 火龙窝</title>
   
 
 
@@ -322,7 +322,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yunhao.life/2018/06/11/acm-poj-1651-dp-on-segment/">
+    <link itemprop="mainEntityOfPage" href="http://yunhao.life/2018/06/14/acm-lightoj-1422-dp-on-segment/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="喷水小火龙">
@@ -339,7 +339,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">ACM POJ 1651 题解 区间DP
+          <h1 class="post-title" itemprop="name headline">ACM LightOJ 1422 题解 区间DP
               
             
           </h1>
@@ -364,12 +364,24 @@
                 
               
 
-              <time title="创建时间：2018-06-11 13:33:38 / 修改时间：14:34:41" itemprop="dateCreated datePublished" datetime="2018-06-11T13:33:38+08:00">2018-06-11</time>
+              <time title="创建时间：2018-06-14 15:19:43" itemprop="dateCreated datePublished" datetime="2018-06-14T15:19:43+08:00">2018-06-14</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-06-17 10:23:32" itemprop="dateModified" datetime="2018-06-17T10:23:32+08:00">2018-06-17</time>
               
             
           </span>
@@ -434,27 +446,15 @@
       
 
       
-        <h1 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h1><p>Multiplication Puzzle  </p>
-<h1 id="限制"><a href="#限制" class="headerlink" title="限制"></a>限制</h1><p>Time Limit: 1000MS<br>Memory Limit: 65536K  </p>
-<h1 id="描述"><a href="#描述" class="headerlink" title="描述"></a>描述</h1><p>The multiplication puzzle is played with a row of cards, each containing a single positive integer. During the move player takes one card out of the row and scores the number of points equal to the product of the number on the card taken and the numbers on the cards on the left and on the right of it. It is not allowed to take out the first and the last card in the row. After the final move, only two cards are left in the row.<br>The goal is to take cards in such order as to minimize the total number of scored points.<br>For example, if cards in the row contain numbers 10 1 50 20 5, player might take a card with 1, then 20 and 50, scoring<br>$$10 \times 15 \times 0 + 50 \times 20 \times 5 + 10 \times 50 \times 5 = 500+5000+2500 = 8000$$<br>If he would take the cards in the opposite order, i.e. 50, then 20, then 1, the score would be<br>$$1 \times 50 \times 20 + 1 \times 20 \times 5 + 10 \times 1 \times 5 = 1000+100+50 = 1150$$  </p>
-<h1 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h1><p>The first line of the input contains the number of cards $N$ $(3 \le N \le 100)$. The second line contains $N$ integers in the range from $1$ to $100$, separated by spaces.  </p>
-<h1 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h1><p>Output must contain a single integer - the minimal score.  </p>
-<h1 id="样本"><a href="#样本" class="headerlink" title="样本"></a>样本</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">6</span><br><span class="line">10 1 50 50 20 5</span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">3650</span><br></pre></td></tr></table></figure>
-<h1 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h1><p>划分区间DP。无条件划分区间。dp[a][b]是区间[a,b]的最小的分值。<br>举个例子。序列$1,2,3,4,5$，这就是取$2,3,4$这三个，一共有$6$种组合方式：  </p>
-<ul>
-<li>$2,3,4: \quad 1 \times 2 \times 3+1 \times 3 \times 4+1 \times 4 \times 5$  </li>
-<li>$2,4,3: \quad 1 \times 2 \times 3+3 \times 4 \times 5+1 \times 3 \times 5$  </li>
-<li>$3,2,4: \quad 2 \times 3 \times 4+1 \times 2 \times 4+1 \times 4 \times 5$  </li>
-<li>$3,4,2: \quad 2 \times 3 \times 4+2 \times 4 \times 5+1 \times 2 \times 5$  </li>
-<li>$4,2,3: \quad 3 \times 4 \times 5+1 \times 2 \times 3+1 \times 3 \times 5$  </li>
-<li>$4,3,2: \quad 3 \times 4 \times 5+2 \times 3 \times 5+1 \times 2 \times 5$  </li>
-</ul>
-<p>也就是说$1,2,3,4,5$的最小分值是从这$6$个组合方式中计算出的。<br>现在考虑区间划分。<br>第一，划分成$[1,2],[2,3,4,5]$两段，$[1,2]$序列中没法计算最小分值，所以考虑序列$[2,3,4,5]$，这个区间的最小分值是从下面这两个序列中计算出来的。<br>$3,4: \quad 2 \times 3 \times 4+2 \times 4 \times 5$<br>$4,3: \quad 3 \times 4 \times 5+2 \times 3 \times 5$<br>与原序列相比，2这个数字还没有移除，我们在后边加上2移除时候的值，得到：<br>$3,4,2: \quad 2 \times 3 \times 4+2 \times 4 \times 5+1 \times 2 \times 5$<br>$4,3,2: \quad 3 \times 4 \times 5+2 \times 3 \times 5+1 \times 2 \times 5$  </p>
-<p>第二，划分成$[1,2,3][3,4,5]$两段，$[1,2,3]$序列的最小分值就是将2移除时的分值，$[3,4,5]$序列的最小分值就是将4移除时的分值。所以，我们可以得到这样两个式子：<br>$2,4: \quad 1 \times 2 \times 3+3 \times 4 \times 5$<br>$4,2: \quad 3 \times 4 \times 5+1 \times 2 \times 3$<br>与原序列相比，3这个数字还没有移除，我们在后边再加上3移除时候的值，得到：<br>$2,4,3: \quad 1 \times 2 \times 3+3 \times 4 \times 5+1 \times 3 \times 5$<br>$4,2,3: \quad 3 \times 4 \times 5+1 \times 2 \times 3+1 \times 3 \times 5$  </p>
-<p>第三，划分成$[1,2,3,4][4,5]$两段，同理，我们可以得到下面两个：<br>$2,3: \quad 1 \times 2 \times 3+1 \times 3 \times 4$<br>$3,2: \quad 2 \times 3 \times 4+1 \times 2 \times 4$<br>与原序列相比，4还没移除，将4移除。<br>$2,3,4: \quad 1 \times 2 \times 3+1 \times 3 \times 4+1 \times 4 \times 5$<br>$3,2,4: \quad 2 \times 3 \times 4+1 \times 2 \times 4+1 \times 4 \times 5$  </p>
-<p>可以看出，拆成了小区间之后，两个小区间的情况再加上边界的数移除的值，就是大区间的所有情况。<br>大概就是这样，我们能看到了整体和局部的关系。这样的话，就可以用划分区间DP了。大区间的解可以从小区间的解中推到出来。上面的例子说明了，大区间求最小值可以拆成小区间，从小区间的最小值中构造出来。<br>解释一下代码，18行对区间长度进行迭代，19行对区间起始节点进行迭代，20行对一个区间的不同划分点进行迭代。转移规则就是在所有划分中取最小值，对于某一个划分的值等于，两个小区间的dp值再加上边界数移除的值。<br>代码中dp默认赋值为0, 所以22行要直接赋值一下，不然最小值永远都是0了，因为序列中所有的数是整数，最小值一定比0大。  </p>
-<h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstring&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> n;</span><br><span class="line"><span class="keyword">int</span> num[<span class="number">105</span>];</span><br><span class="line"><span class="keyword">int</span> dp[<span class="number">105</span>][<span class="number">105</span>];</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">while</span>(~<span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;n))&#123;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; i++)&#123;</span><br><span class="line">            <span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;num[i]);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="built_in">memset</span>(dp, <span class="number">0</span>, <span class="keyword">sizeof</span> dp);</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">2</span>; i &lt; n; i++)&#123;</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; n-i; j++)&#123;</span><br><span class="line">                <span class="keyword">for</span>(<span class="keyword">int</span> k = j+<span class="number">1</span>; k &lt; j+i; k++)&#123;</span><br><span class="line">                    <span class="keyword">if</span>(dp[j][j+i] == <span class="number">0</span>)</span><br><span class="line">                        dp[j][j+i] = dp[j][k]+dp[k][j+i]+num[j]*num[k]*num[j+i];</span><br><span class="line">                    <span class="keyword">else</span></span><br><span class="line">                        dp[j][j+i] = min(dp[j][j+i], dp[j][k]+dp[k][j+i]+num[j]*num[k]*num[j+i]);</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"%d\n"</span>, dp[<span class="number">0</span>][n<span class="number">-1</span>]);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+        <h1 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h1><p>1422 - Halloween Costumes  </p>
+<h1 id="限制"><a href="#限制" class="headerlink" title="限制"></a>限制</h1><p>Time Limit: 2 second(s)<br>Memory Limit: 32 MB  </p>
+<h1 id="描述"><a href="#描述" class="headerlink" title="描述"></a>描述</h1><p>Gappu has a very busy weekend ahead of him. Because, next weekend is Halloween, and he is planning to attend as many parties as he can. Since it’s Halloween, these parties are all costume parties, Gappu always selects his costumes in such a way that it blends with his friends, that is, when he is attending the party, arranged by his comic-book-fan friends, he will go with the costume of Superman, but when the party is arranged contest-buddies, he would go with the costume of ‘Chinese Postman’.<br>Since he is going to attend a number of parties on the Halloween night, and wear costumes accordingly, he will be changing his costumes a number of times. So, to make things a little easier, he may put on costumes one over another (that is he may wear the uniform for the postman, over the superman costume). Before each party he can take off some of the costumes, or wear a new one. That is, if he is wearing the Postman uniform over the Superman costume, and wants to go to a party in Superman costume, he can take off the Postman uniform, or he can wear a new Superman uniform. But, keep in mind that, Gappu doesn’t like to wear dresses without cleaning them first, so, after taking off the Postman uniform, he cannot use that again in the Halloween night, if he needs the Postman costume again, he will have to use a new one. He can take off any number of costumes, and if he takes off $k$ of the costumes, that will be the last $k$ ones (e.g. if he wears costume $A$ before costume $B$, to take off $A$, first he has to remove $B$).<br>Given the parties and the costumes, find the minimum number of costumes Gappu will need in the Halloween night.  </p>
+<h1 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h1><p>Input starts with an integer $T (\le 200)$, denoting the number of test cases.<br>Each case starts with a line containing an integer $N$ $(1 \le N \le 100)$ denoting the number of parties. Next line contains $N$ integers, where the $i^{th}$ integer $c_i$ $(1 \le c_i \le 100)$ denotes the costume he will be wearing in party $i$. He will attend party 1 first, then party 2, and so on.  </p>
+<h1 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h1><p>For each case, print the case number and the minimum number of required costumes.  </p>
+<h1 id="样本"><a href="#样本" class="headerlink" title="样本"></a>样本</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">2</span><br><span class="line">4</span><br><span class="line">1 2 1 2</span><br><span class="line">7</span><br><span class="line">1 2 1 1 3 2 1</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Case 1: 3</span><br><span class="line">Case 2: 4</span><br></pre></td></tr></table></figure>
+<h1 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h1><p>区间划分DP。dp[a][b]表示区间[a,b]内最少需要多少件戏服。<br>对于不同长度的每个区间，dp[a][b]最大是b-a+1，然后对以下情况考虑，选出最小值<br>第一，如果区间的两端的戏服是一样的，那么就说明这件戏服在这个区间里可以一直穿着，即dp[a+1][b-1]+1<br>第二，对区间进行划分，对于每个划分，选择最小值。min(dp[a][b], dp[a][k]+dp[k+1][b])<br>第三，对区间划分的时候，如果中间有个数，等于两端的数。即num[k] == num[b]并且num[k] == num[a]，这种情况下，可以省一件戏服，可以从头穿到尾。所以是dp[a][k]+dp[k+1][b]-1，与dp[a][b]比较，选择最小值<br>大概的思路就是这样。<br>看下代码，第21行是对区间长度迭代，第22行是对区间起始节点进行迭代，29行是对不同的划分位置进行迭代。  </p>
+<h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstring&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> t;</span><br><span class="line"><span class="keyword">int</span> n;</span><br><span class="line"><span class="keyword">int</span> num[<span class="number">105</span>];</span><br><span class="line"><span class="keyword">int</span> dp[<span class="number">105</span>][<span class="number">105</span>];</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">while</span>(~<span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;t))&#123;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> w = <span class="number">1</span>; w &lt;= t; w++)&#123;</span><br><span class="line">            <span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;n);</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; i++)&#123;</span><br><span class="line">                <span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;num[i]);</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            <span class="built_in">memset</span>(dp, <span class="number">0</span>, <span class="keyword">sizeof</span> dp);</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; i++)&#123;</span><br><span class="line">                <span class="keyword">for</span>(<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; n-i; j++)&#123;</span><br><span class="line">                    dp[j][j+i] = i+<span class="number">1</span>;</span><br><span class="line"></span><br><span class="line">                    <span class="keyword">if</span>(num[j] == num[j+i])&#123;</span><br><span class="line">                        dp[j][j+i] = min(dp[j][j+i], dp[j+<span class="number">1</span>][j+i<span class="number">-1</span>]+<span class="number">1</span>);</span><br><span class="line">                    &#125;</span><br><span class="line"></span><br><span class="line">                    <span class="keyword">for</span>(<span class="keyword">int</span> k = j; k &lt; j+i; k++)&#123;</span><br><span class="line">                        dp[j][j+i] = min(dp[j][j+i], dp[j][k]+dp[k+<span class="number">1</span>][j+i]);</span><br><span class="line">                        <span class="keyword">if</span>(k != j &amp;&amp; k != j+i &amp;&amp; num[k] == num[j] &amp;&amp; num[k] == num[j+i])&#123;</span><br><span class="line">                            dp[j][j+i] = min(dp[j][j+i], dp[j][k]+dp[k+<span class="number">1</span>][j+i]<span class="number">-1</span>);</span><br><span class="line">                        &#125;</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            <span class="built_in">printf</span>(<span class="string">"Case %d: %d\n"</span>, w, dp[<span class="number">0</span>][n<span class="number">-1</span>]);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
     </div>
 
@@ -480,7 +480,7 @@
           
             <a href="/tags/区间DP/" rel="tag"># 区间DP</a>
           
-            <a href="/tags/POJ/" rel="tag"># POJ</a>
+            <a href="/tags/LightOJ/" rel="tag"># LightOJ</a>
           
         </div>
       
@@ -493,8 +493,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/06/10/acm-poj-2955-dp-on-segment/" rel="next" title="ACM POJ 2955 题解 区间DP">
-                <i class="fa fa-chevron-left"></i> ACM POJ 2955 题解 区间DP
+              <a href="/2018/06/11/acm-poj-1651-dp-on-segment/" rel="next" title="ACM POJ 1651 题解 区间DP">
+                <i class="fa fa-chevron-left"></i> ACM POJ 1651 题解 区间DP
               </a>
             
           </div>
@@ -502,10 +502,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/06/14/acm-lightoj-1422-dp-on-segment/" rel="prev" title="ACM LightOJ 1422 题解 区间DP">
-                ACM LightOJ 1422 题解 区间DP <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>

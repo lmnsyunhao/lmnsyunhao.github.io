@@ -4,6 +4,39 @@
 
     
   <url>
+    <loc>http://yunhao.life/2018/06/14/acm-lightoj-1422-dp-on-segment/</loc>
+    <lastmod>2018-06-17T02:23:32.290Z</lastmod>
+    <data>
+        <display>
+        <title>ACM LightOJ 1422 题解 区间DP</title>
+        <pubTime>2018-06-14T07:19:43.000Z</pubTime>
+        
+        <tag>ACM</tag>
+         
+        <tag>DP</tag>
+         
+        <tag>区间DP</tag>
+         
+        <tag>LightOJ</tag>
+         
+         
+           
+             
+              <breadCrumb title="ACM" url="http://yunhao.life/categories/ACM/"/>
+          
+             
+              <breadCrumb title="DP" url="http://yunhao.life/categories/ACM/DP/"/>
+          
+             
+              <breadCrumb title="区间DP" url="http://yunhao.life/categories/ACM/DP/%E5%8C%BA%E9%97%B4DP/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+    
+  <url>
     <loc>http://yunhao.life/2018/06/11/acm-poj-1651-dp-on-segment/</loc>
     <lastmod>2018-06-11T06:34:41.559Z</lastmod>
     <data>
@@ -247,9 +280,9 @@
         <title>GitHub blog 绑定域名</title>
         <pubTime>2017-03-27T08:47:20.000Z</pubTime>
         
-        <tag>GitHub</tag>
-         
         <tag>域名</tag>
+         
+        <tag>GitHub</tag>
          
          
            
@@ -938,7 +971,6 @@
     </data>
     </url>
 
-    
     
     
 </urlset>
