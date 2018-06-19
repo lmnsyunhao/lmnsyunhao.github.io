@@ -4,6 +4,165 @@
 
     
   <url>
+    <loc>http://yunhao.life/2018/06/19/windows-openssh-and-ssh-remote-connection/</loc>
+    <lastmod>2018-06-19T14:35:28.159Z</lastmod>
+    <data>
+        <display>
+        <title>Windows10 开启OpenSSH服务 CMD配置SSH远程连接服务</title>
+        <pubTime>2018-06-19T08:34:55.000Z</pubTime>
+        
+        <tag>OpenSSH</tag>
+         
+        <tag>Windows</tag>
+         
+        <tag>CMD</tag>
+         
+         
+           
+             
+              <breadCrumb title="Windows" url="http://yunhao.life/categories/Windows/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yunhao.life/2018/06/19/windows-github-ssh-key/</loc>
+    <lastmod>2018-06-19T14:35:18.171Z</lastmod>
+    <data>
+        <display>
+        <title>Windows10 生成 SSH密钥 GitHub配置</title>
+        <pubTime>2018-06-19T08:30:35.000Z</pubTime>
+        
+        <tag>GitHub</tag>
+         
+        <tag>OpenSSH</tag>
+         
+        <tag>Windows</tag>
+         
+         
+           
+             
+              <breadCrumb title="Windows" url="http://yunhao.life/categories/Windows/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yunhao.life/2018/06/17/acm-hdu-2089-digital-dp/</loc>
+    <lastmod>2018-06-19T14:33:59.545Z</lastmod>
+    <data>
+        <display>
+        <title>ACM HDU 2089 题解 数位DP</title>
+        <pubTime>2018-06-17T08:34:42.000Z</pubTime>
+        
+        <tag>ACM</tag>
+         
+        <tag>DP</tag>
+         
+        <tag>HDU</tag>
+         
+        <tag>数位DP</tag>
+         
+         
+           
+             
+              <breadCrumb title="ACM" url="http://yunhao.life/categories/ACM/"/>
+          
+             
+              <breadCrumb title="DP" url="http://yunhao.life/categories/ACM/DP/"/>
+          
+             
+              <breadCrumb title="数位DP" url="http://yunhao.life/categories/ACM/DP/%E6%95%B0%E4%BD%8DDP/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yunhao.life/2018/06/18/godaddy-domain-dns-on-tencent-cloud/</loc>
+    <lastmod>2018-06-19T14:12:02.518Z</lastmod>
+    <data>
+        <display>
+        <title>GoDaddy 域名 托管于腾讯云解析</title>
+        <pubTime>2018-06-18T14:57:39.000Z</pubTime>
+        
+        <tag>域名</tag>
+         
+        <tag>DNS</tag>
+         
+        <tag>GoDaddy</tag>
+         
+        <tag>腾讯云</tag>
+         
+         
+           
+             
+              <breadCrumb title="服务器" url="http://yunhao.life/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+          
+             
+              <breadCrumb title="域名" url="http://yunhao.life/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%9F%9F%E5%90%8D/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yunhao.life/2017/03/27/github-ssh-config/</loc>
+    <lastmod>2018-06-19T14:02:27.853Z</lastmod>
+    <data>
+        <display>
+        <title>Ubuntu16.04 GitHub SSH密钥 配置</title>
+        <pubTime>2017-03-27T09:15:03.000Z</pubTime>
+        
+        <tag>Ubuntu</tag>
+         
+        <tag>GitHub</tag>
+         
+        <tag>OpenSSH</tag>
+         
+         
+           
+             
+              <breadCrumb title="Git" url="http://yunhao.life/categories/Git/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yunhao.life/2017/03/27/github-hexo-blog-bundle-domain/</loc>
+    <lastmod>2018-06-18T15:06:36.077Z</lastmod>
+    <data>
+        <display>
+        <title>GitHub Hexo blog 绑定域名</title>
+        <pubTime>2017-03-27T08:47:20.000Z</pubTime>
+        
+        <tag>域名</tag>
+         
+        <tag>GitHub</tag>
+         
+        <tag>Hexo</tag>
+         
+        <tag>DNS</tag>
+         
+         
+           
+             
+              <breadCrumb title="Git" url="http://yunhao.life/categories/Git/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://yunhao.life/2018/06/14/acm-lightoj-1422-dp-on-segment/</loc>
     <lastmod>2018-06-17T02:23:32.290Z</lastmod>
     <data>
@@ -204,11 +363,11 @@
         <title>Ubuntu16.04 Nginx 反向代理 Apache</title>
         <pubTime>2017-04-07T12:19:44.000Z</pubTime>
         
-        <tag>Ubuntu</tag>
-         
         <tag>服务器</tag>
          
         <tag>代理</tag>
+         
+        <tag>Ubuntu</tag>
          
         <tag>Nginx</tag>
          
@@ -232,9 +391,9 @@
         <title>Ubuntu16.04 Nginx 配置站点学习笔记</title>
         <pubTime>2017-03-30T02:42:15.000Z</pubTime>
         
-        <tag>Ubuntu</tag>
-         
         <tag>服务器</tag>
+         
+        <tag>Ubuntu</tag>
          
         <tag>Nginx</tag>
          
@@ -266,50 +425,6 @@
            
              
               <breadCrumb title="浏览器" url="http://yunhao.life/categories/%E6%B5%8F%E8%A7%88%E5%99%A8/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yunhao.life/2017/03/27/github-blog-bundle-domain/</loc>
-    <lastmod>2018-06-09T17:00:58.547Z</lastmod>
-    <data>
-        <display>
-        <title>GitHub blog 绑定域名</title>
-        <pubTime>2017-03-27T08:47:20.000Z</pubTime>
-        
-        <tag>域名</tag>
-         
-        <tag>GitHub</tag>
-         
-         
-           
-             
-              <breadCrumb title="Git" url="http://yunhao.life/categories/Git/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yunhao.life/2017/03/27/github-ssh-config/</loc>
-    <lastmod>2018-06-09T17:00:16.060Z</lastmod>
-    <data>
-        <display>
-        <title>Ubuntu16.04 GitHub SSH 配置</title>
-        <pubTime>2017-03-27T09:15:03.000Z</pubTime>
-        
-        <tag>Ubuntu</tag>
-         
-        <tag>GitHub</tag>
-         
-         
-           
-             
-              <breadCrumb title="Git" url="http://yunhao.life/categories/Git/"/>
           
         </display>
     </data>
@@ -498,11 +613,11 @@
         
         <tag>ACM</tag>
          
+        <tag>HDU</tag>
+         
         <tag>组合数学</tag>
          
         <tag>母函数</tag>
-         
-        <tag>HDU</tag>
          
          
            
