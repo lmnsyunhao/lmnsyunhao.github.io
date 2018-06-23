@@ -4,6 +4,28 @@
 
     
   <url>
+    <loc>http://yunhao.life/2018/06/24/hexo-d-host-key-verification-failed-issue/</loc>
+    <lastmod>2018-06-23T16:18:45.768Z</lastmod>
+    <data>
+        <display>
+        <title>Hexo d 时遇到 Host Key Verification Failed 问题</title>
+        <pubTime>2018-06-23T16:09:57.000Z</pubTime>
+        
+        <tag>GitHub</tag>
+         
+        <tag>Hexo</tag>
+         
+         
+           
+             
+              <breadCrumb title="Hexo" url="http://yunhao.life/categories/Hexo/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://yunhao.life/2018/06/20/do-you-need-a-ladder/</loc>
     <lastmod>2018-06-23T15:54:37.303Z</lastmod>
     <data>
@@ -122,13 +144,13 @@
         <title>GoDaddy 域名 托管于腾讯云解析</title>
         <pubTime>2018-06-18T14:57:39.000Z</pubTime>
         
-        <tag>GoDaddy</tag>
-         
         <tag>域名</tag>
          
-        <tag>腾讯云</tag>
-         
         <tag>DNS</tag>
+         
+        <tag>GoDaddy</tag>
+         
+        <tag>腾讯云</tag>
          
          
            
@@ -151,9 +173,9 @@
         <title>Ubuntu16.04 GitHub SSH密钥 配置</title>
         <pubTime>2017-03-27T09:15:03.000Z</pubTime>
         
-        <tag>Ubuntu</tag>
-         
         <tag>GitHub</tag>
+         
+        <tag>Ubuntu</tag>
          
         <tag>OpenSSH</tag>
          
@@ -177,11 +199,11 @@
         
         <tag>域名</tag>
          
-        <tag>DNS</tag>
-         
         <tag>GitHub</tag>
          
         <tag>Hexo</tag>
+         
+        <tag>DNS</tag>
          
          
            
@@ -394,11 +416,11 @@
         <title>Ubuntu16.04 Nginx 反向代理 Apache</title>
         <pubTime>2017-04-07T12:19:44.000Z</pubTime>
         
-        <tag>Ubuntu</tag>
-         
         <tag>服务器</tag>
          
         <tag>代理</tag>
+         
+        <tag>Ubuntu</tag>
          
         <tag>Nginx</tag>
          
@@ -422,9 +444,9 @@
         <title>Ubuntu16.04 Nginx 配置站点学习笔记</title>
         <pubTime>2017-03-30T02:42:15.000Z</pubTime>
         
-        <tag>Ubuntu</tag>
-         
         <tag>服务器</tag>
+         
+        <tag>Ubuntu</tag>
          
         <tag>Nginx</tag>
          
@@ -644,11 +666,11 @@
         
         <tag>ACM</tag>
          
-        <tag>HDU</tag>
-         
         <tag>组合数学</tag>
          
         <tag>母函数</tag>
+         
+        <tag>HDU</tag>
          
          
            
