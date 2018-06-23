@@ -4,6 +4,37 @@
 
     
   <url>
+    <loc>http://yunhao.life/2018/06/20/do-you-need-a-ladder/</loc>
+    <lastmod>2018-06-23T15:48:11.257Z</lastmod>
+    <data>
+        <display>
+        <title>Do U Need A Ladder ?</title>
+        <pubTime>2018-06-20T14:09:21.000Z</pubTime>
+        
+        <tag>Ladder</tag>
+         
+        <tag>Proxifier</tag>
+         
+        <tag>VPS</tag>
+         
+        <tag>服务器</tag>
+         
+        <tag>代理</tag>
+         
+         
+           
+             
+              <breadCrumb title="服务器" url="http://yunhao.life/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+          
+             
+              <breadCrumb title="Ladder" url="http://yunhao.life/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/Ladder/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://yunhao.life/2018/06/19/windows-openssh-and-ssh-remote-connection/</loc>
     <lastmod>2018-06-19T14:35:28.159Z</lastmod>
     <data>
@@ -174,9 +205,9 @@
          
         <tag>DP</tag>
          
-        <tag>区间DP</tag>
-         
         <tag>LightOJ</tag>
+         
+        <tag>区间DP</tag>
          
          
            
@@ -613,11 +644,11 @@
         
         <tag>ACM</tag>
          
-        <tag>HDU</tag>
-         
         <tag>组合数学</tag>
          
         <tag>母函数</tag>
+         
+        <tag>HDU</tag>
          
          
            
