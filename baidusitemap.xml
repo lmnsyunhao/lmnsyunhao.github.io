@@ -197,9 +197,9 @@
         <title>GitHub Hexo blog 绑定域名</title>
         <pubTime>2017-03-27T08:47:20.000Z</pubTime>
         
-        <tag>GitHub</tag>
-         
         <tag>域名</tag>
+         
+        <tag>GitHub</tag>
          
         <tag>Hexo</tag>
          
@@ -416,11 +416,11 @@
         <title>Ubuntu16.04 Nginx 反向代理 Apache</title>
         <pubTime>2017-04-07T12:19:44.000Z</pubTime>
         
+        <tag>Ubuntu</tag>
+         
         <tag>服务器</tag>
          
         <tag>代理</tag>
-         
-        <tag>Ubuntu</tag>
          
         <tag>Nginx</tag>
          
@@ -444,9 +444,9 @@
         <title>Ubuntu16.04 Nginx 配置站点学习笔记</title>
         <pubTime>2017-03-30T02:42:15.000Z</pubTime>
         
-        <tag>服务器</tag>
-         
         <tag>Ubuntu</tag>
+         
+        <tag>服务器</tag>
          
         <tag>Nginx</tag>
          
