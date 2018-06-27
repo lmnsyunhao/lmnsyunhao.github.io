@@ -4,6 +4,57 @@
 
     
   <url>
+    <loc>http://yunhao.life/2018/06/27/hexo-leancloud-plugin-installation-tutor/</loc>
+    <lastmod>2018-06-27T14:52:45.927Z</lastmod>
+    <data>
+        <display>
+        <title>Hexo NexT 主题 LeanCloud 插件安装教程</title>
+        <pubTime>2018-06-27T13:13:51.000Z</pubTime>
+        
+        <tag>Hexo</tag>
+         
+        <tag>LeanCloud</tag>
+         
+         
+           
+             
+              <breadCrumb title="Hexo" url="http://yunhao.life/categories/Hexo/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yunhao.life/2018/06/18/godaddy-domain-dns-on-tencent-cloud/</loc>
+    <lastmod>2018-06-27T13:19:58.903Z</lastmod>
+    <data>
+        <display>
+        <title>GoDaddy 域名 托管于腾讯云解析</title>
+        <pubTime>2018-06-18T14:57:39.000Z</pubTime>
+        
+        <tag>域名</tag>
+         
+        <tag>DNS</tag>
+         
+        <tag>GoDaddy</tag>
+         
+        <tag>腾讯云</tag>
+         
+         
+           
+             
+              <breadCrumb title="服务器" url="http://yunhao.life/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+          
+             
+              <breadCrumb title="域名" url="http://yunhao.life/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%9F%9F%E5%90%8D/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://yunhao.life/2018/06/20/do-you-need-a-ladder/</loc>
     <lastmod>2018-06-25T06:59:08.144Z</lastmod>
     <data>
@@ -44,9 +95,9 @@
         <title>Hexo d 时遇到 Host Key Verification Failed 问题</title>
         <pubTime>2018-06-23T16:09:57.000Z</pubTime>
         
-        <tag>GitHub</tag>
-         
         <tag>Hexo</tag>
+         
+        <tag>GitHub</tag>
          
          
            
@@ -139,35 +190,6 @@
 
     
   <url>
-    <loc>http://yunhao.life/2018/06/18/godaddy-domain-dns-on-tencent-cloud/</loc>
-    <lastmod>2018-06-19T14:12:02.518Z</lastmod>
-    <data>
-        <display>
-        <title>GoDaddy 域名 托管于腾讯云解析</title>
-        <pubTime>2018-06-18T14:57:39.000Z</pubTime>
-        
-        <tag>GoDaddy</tag>
-         
-        <tag>域名</tag>
-         
-        <tag>腾讯云</tag>
-         
-        <tag>DNS</tag>
-         
-         
-           
-             
-              <breadCrumb title="服务器" url="http://yunhao.life/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
-          
-             
-              <breadCrumb title="域名" url="http://yunhao.life/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%9F%9F%E5%90%8D/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://yunhao.life/2017/03/27/github-ssh-config/</loc>
     <lastmod>2018-06-19T14:02:27.853Z</lastmod>
     <data>
@@ -199,13 +221,13 @@
         <title>GitHub Hexo blog 绑定域名</title>
         <pubTime>2017-03-27T08:47:20.000Z</pubTime>
         
-        <tag>域名</tag>
-         
-        <tag>DNS</tag>
+        <tag>Hexo</tag>
          
         <tag>GitHub</tag>
          
-        <tag>Hexo</tag>
+        <tag>域名</tag>
+         
+        <tag>DNS</tag>
          
          
            
@@ -582,9 +604,9 @@
         <title>Windows10 PC 无法进入选择启动项界面 无法进入BIOS界面</title>
         <pubTime>2018-05-23T07:12:59.000Z</pubTime>
         
-        <tag>Windows</tag>
-         
         <tag>系统安装</tag>
+         
+        <tag>Windows</tag>
          
          
            
@@ -893,28 +915,6 @@
            
              
               <breadCrumb title="Language" url="http://yunhao.life/categories/Language/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yunhao.life/2017/03/29/hexo-next-themes-left-sidebar/</loc>
-    <lastmod>2018-05-27T11:10:43.626Z</lastmod>
-    <data>
-        <display>
-        <title>Hexo NexT 主题如何把侧边栏调到左侧</title>
-        <pubTime>2017-03-29T12:09:15.000Z</pubTime>
-        
-        <tag>Hexo</tag>
-         
-        <tag>NexT</tag>
-         
-         
-           
-             
-              <breadCrumb title="Hexo" url="http://yunhao.life/categories/Hexo/"/>
           
         </display>
     </data>
