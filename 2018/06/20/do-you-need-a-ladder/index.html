@@ -1,0 +1,1142 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-CN">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-corner-indicator.min.css?v=1.0.2" rel="stylesheet">
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+  <meta name="baidu-site-verification" content="BaTyoYbpgY" />
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=6.3.0" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.3.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png?v=6.3.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16.png?v=6.3.0">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=6.3.0" color="#222">
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '6.3.0',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":true,"scrollpercent":true,"onmobile":false},
+    fancybox: true,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideUpIn","post_body":"slideUpIn","coll_header":"fadeIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="映射请将本文中所有的“暗影袜子们”替换成如下字眼 安装SS在服务器端操作。我购买的是Digital Ocean的服务器，Ubuntu16.04系统。确认当前是root用户，通过pip安装。1234sudo apt-get updatesudo apt-get install python-pippip install --upgrade pippip install 暗影袜子们 pip无法安装的问">
+<meta name="keywords" content="Ladder,Proxifier,VPS,服务器,代理,DigitalOcean">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Do U Need A Ladder ?">
+<meta property="og:url" content="http://yunhao.life/2018/06/20/do-you-need-a-ladder/index.html">
+<meta property="og:site_name" content="火龙窝">
+<meta property="og:description" content="映射请将本文中所有的“暗影袜子们”替换成如下字眼 安装SS在服务器端操作。我购买的是Digital Ocean的服务器，Ubuntu16.04系统。确认当前是root用户，通过pip安装。1234sudo apt-get updatesudo apt-get install python-pippip install --upgrade pippip install 暗影袜子们 pip无法安装的问">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http://yunhao.life/images/do-you-need-a-ladder/socks.png">
+<meta property="og:image" content="http://yunhao.life/images/do-you-need-a-ladder/1.png">
+<meta property="og:image" content="http://yunhao.life/images/do-you-need-a-ladder/2.png">
+<meta property="og:image" content="http://yunhao.life/images/do-you-need-a-ladder/3.png">
+<meta property="og:image" content="http://yunhao.life/images/do-you-need-a-ladder/4.png">
+<meta property="og:image" content="http://yunhao.life/images/do-you-need-a-ladder/5.png">
+<meta property="og:image" content="http://yunhao.life/images/do-you-need-a-ladder/6.png">
+<meta property="og:image" content="http://yunhao.life/images/do-you-need-a-ladder/7.png">
+<meta property="og:updated_time" content="2018-06-25T06:59:08.144Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Do U Need A Ladder ?">
+<meta name="twitter:description" content="映射请将本文中所有的“暗影袜子们”替换成如下字眼 安装SS在服务器端操作。我购买的是Digital Ocean的服务器，Ubuntu16.04系统。确认当前是root用户，通过pip安装。1234sudo apt-get updatesudo apt-get install python-pippip install --upgrade pippip install 暗影袜子们 pip无法安装的问">
+<meta name="twitter:image" content="http://yunhao.life/images/do-you-need-a-ladder/socks.png">
+
+
+
+
+
+
+  <link rel="canonical" href="http://yunhao.life/2018/06/20/do-you-need-a-ladder/"/>
+
+
+
+<script type="text/javascript" id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>Do U Need A Ladder ? | 火龙窝</title>
+  
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">火龙窝</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+    <a href="/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-home"></i> <br />首页</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-about">
+    <a href="/about/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-user"></i> <br />关于</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+    <a href="/tags/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />标签<span class="badge">54</span></a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+    <a href="/categories/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-th"></i> <br />分类<span class="badge">23</span></a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+    <a href="/archives/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档<span class="badge">43</span></a>
+  </li>
+
+      
+      
+    </ul>
+  
+
+  
+
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+  
+  
+  
+    
+      
+    
+    <a href="https://github.com/lmnsyunhao" class="github-corner" target="_blank" title="Follow me on GitHub" aria-label="Follow me on GitHub"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#222; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg>
+    
+      </a>
+    
+
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+            
+
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yunhao.life/2018/06/20/do-you-need-a-ladder/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="喷水小火龙">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/me.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="火龙窝">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">Do U Need A Ladder ?
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2018-06-20 22:09:21" itemprop="dateCreated datePublished" datetime="2018-06-20T22:09:21+08:00">2018-06-20</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-06-25 14:59:08" itemprop="dateModified" datetime="2018-06-25T14:59:08+08:00">2018-06-25</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/服务器/" itemprop="url" rel="index"><span itemprop="name">服务器</span></a></span>
+
+                
+                
+                  ，
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/服务器/Ladder/" itemprop="url" rel="index"><span itemprop="name">Ladder</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="映射"><a href="#映射" class="headerlink" title="映射"></a>映射</h1><p>请将本文中所有的“暗影袜子们”替换成如下字眼<br><img src="/images/do-you-need-a-ladder/socks.png" alt="暗影袜子"></p>
+<h1 id="安装SS"><a href="#安装SS" class="headerlink" title="安装SS"></a>安装SS</h1><p>在服务器端操作。<br>我购买的是Digital Ocean的服务器，Ubuntu16.04系统。<br>确认当前是root用户，通过pip安装。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get update</span><br><span class="line">sudo apt-get install python-pip</span><br><span class="line">pip install --upgrade pip</span><br><span class="line">pip install 暗影袜子们</span><br></pre></td></tr></table></figure></p>
+<h1 id="pip无法安装的问题"><a href="#pip无法安装的问题" class="headerlink" title="pip无法安装的问题"></a>pip无法安装的问题</h1><p>在上边安装的时候，可能会出现下面的问题，如果出现了，就解决一下，没出现当然就不用管这一节。报错如下：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Traceback (most recent call last):</span><br><span class="line">  File <span class="string">"/usr/bin/pip"</span>, line 9, <span class="keyword">in</span> &lt;module&gt;</span><br><span class="line">    from pip import main</span><br><span class="line">ImportError: cannot import name main</span><br></pre></td></tr></table></figure></p>
+<p>解决方法是修改<code>/usr/bin/pip</code>文件，改成下面的。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">from pip import __main__</span><br><span class="line">if __name__ == &apos;__main__&apos;:</span><br><span class="line">    sys.exit(__main__._main())</span><br></pre></td></tr></table></figure></p>
+<h1 id="配置IPv4连接"><a href="#配置IPv4连接" class="headerlink" title="配置IPv4连接"></a>配置IPv4连接</h1><p>在服务器端操作。<br>创建配置文件<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim /etc/暗影袜子们.json</span><br></pre></td></tr></table></figure></p>
+<p>json文件中填写，如下<br><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">"server"</span>:<span class="string">"服务器ip"</span>,</span><br><span class="line">    <span class="attr">"server_port"</span>:<span class="number">8388</span>,</span><br><span class="line">    <span class="attr">"local_address"</span>: <span class="string">"127.0.0.1"</span>,</span><br><span class="line">    <span class="attr">"local_port"</span>:<span class="number">1080</span>,</span><br><span class="line">    <span class="attr">"password"</span>:<span class="string">"自己设置的密码"</span>,</span><br><span class="line">    <span class="attr">"timeout"</span>:<span class="number">300</span>,</span><br><span class="line">    <span class="attr">"method"</span>:<span class="string">"aes-256-cfb"</span>,</span><br><span class="line">    <span class="attr">"fast_open"</span>: <span class="literal">false</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<table>
+<thead>
+<tr>
+<th>字段名称</th>
+<th>各个字段的含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Name</td>
+<td>解释说明</td>
+</tr>
+<tr>
+<td>server</td>
+<td>监听的服务器地址</td>
+</tr>
+<tr>
+<td>server_port</td>
+<td>监听的服务器端口</td>
+</tr>
+<tr>
+<td>local_address</td>
+<td>本地监听的地址</td>
+</tr>
+<tr>
+<td>local_port</td>
+<td>本地坚挺的端口</td>
+</tr>
+<tr>
+<td>password</td>
+<td>登陆用的密码</td>
+</tr>
+<tr>
+<td>timeout</td>
+<td>按秒计算</td>
+</tr>
+<tr>
+<td>method</td>
+<td>加密方法 默认是”aes-256-cfb”</td>
+</tr>
+<tr>
+<td>fast_open</td>
+<td>快速打开，TCP_FASTOPEN, 填写true或者false</td>
+</tr>
+<tr>
+<td>workers</td>
+<td>number of workers, available on Unix/Linux</td>
+</tr>
+</tbody>
+</table>
+<p>大家在设置的时候最好不要弄错了，就想例子中的那样。一个空格最好都不要错，否则容易出莫名其妙的问题。  </p>
+<h1 id="配置IPv6连接"><a href="#配置IPv6连接" class="headerlink" title="配置IPv6连接"></a>配置IPv6连接</h1><p>在服务器端操作<br>如果你的服务器有ipv6的公网地址，那么你可以通过ipv6来连接你的VPS。那么配置文件中就如下填写：<br><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">"server"</span>:<span class="string">"::"</span>,</span><br><span class="line">    <span class="attr">"server_port"</span>:<span class="number">8388</span>,</span><br><span class="line">    <span class="attr">"local_address"</span>: <span class="string">"127.0.0.1"</span>,</span><br><span class="line">    <span class="attr">"local_port"</span>:<span class="number">1080</span>,</span><br><span class="line">    <span class="attr">"password"</span>:<span class="string">"自己设置的密码"</span>,</span><br><span class="line">    <span class="attr">"timeout"</span>:<span class="number">300</span>,</span><br><span class="line">    <span class="attr">"method"</span>:<span class="string">"aes-256-cfb"</span>,</span><br><span class="line">    <span class="attr">"fast_open"</span>: <span class="literal">false</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>就是server字段填::，这么填以后，你可以使用ipv6连接，也可以使用ipv4连接，亲测。  </p>
+<h1 id="客户端配置"><a href="#客户端配置" class="headerlink" title="客户端配置"></a>客户端配置</h1><p>在客户端操作<br>客户端点选“添加服务器”，填写“地址”、“端口”、“加密方法”和“密码”即可。其中“端口”、“加密方法”和“密码”与前面设置的服务器配置相同。<br>如果服务器支持IPv4和IPv6双栈，那么客户端实际可以配置两个服务器参数，其仅有“地址”不相同。对于IPv4，填写服务器的IPv4地址；对于IPv6，填写服务器的IPv6地址（末尾不用加/64，也不用写[]）  </p>
+<h1 id="启动ssserver服务"><a href="#启动ssserver服务" class="headerlink" title="启动ssserver服务"></a>启动ssserver服务</h1><p>在服务器端操作。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssserver -c /etc/暗影袜子们.json</span><br></pre></td></tr></table></figure></p>
+<p>输入命令就能够开启ssserver服务了<br>上面的命令是工作在前台的进程。如果想把ssserver放到后台工作。那么用下面的命令启动和停止。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ssserver -c /etc/暗影袜子们.json -d start</span><br><span class="line">ssserver -c /etc/暗影袜子们.json -d stop</span><br></pre></td></tr></table></figure></p>
+<p>如果你发现你的ssserver不支持-d命令的话，那么就是你安装暗影袜子们时候有问题。重装吧就。  </p>
+<h1 id="测试连通性"><a href="#测试连通性" class="headerlink" title="测试连通性"></a>测试连通性</h1><p>为了保险起见，客户端选择IPv4连接服务器。<br>解释一下<code>系统代理模式</code>中的<code>全局模式</code>和<code>PAC模式</code>，PAC就是一个规则，定义了有哪些网站在国内，有哪些网站在国外。如果选择了全局模式，不管访问国内还是国外的网站，都会走VPS代理；而PAC模式，只有在国外的走代理，国内的不走。但是PAC规则更新慢的话，有时候还得调成全局模式。全局模式访问国内网站，比PAC访问国内网站要慢一点，因为走了代理。<br>客户端设置好之后，看是不是能够正常的登上梯子（客户端登陆<code>youtube.com</code>）。如果正常，那么就成功了。<br>设置客户端中服务器为IPv6地址的，同样访问上述网站，若都能很快正常打开，则成功。<br>可以测试一下支不支持IPv6，访问网站<a href="https://test-ipv6.com/" target="_blank" rel="noopener">IPv6测试</a></p>
+<h1 id="配置systemd开机启动"><a href="#配置systemd开机启动" class="headerlink" title="配置systemd开机启动"></a>配置systemd开机启动</h1><p>在服务器端操作<br>systemd配置文件一般存在于<code>/lib/systemd/system/</code>和<code>/etc/systemd/system/</code>这两个文件夹下，我们需要在<code>/lib/systemd/system</code>下创建配置文件。如下：如果创建过程中有权限问题，自觉用<code>sudo</code><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> /lib/systemd/system</span><br><span class="line">vim ssserver.service</span><br></pre></td></tr></table></figure></p>
+<p>文件中写如下内容<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"># /lib/systemd/system/ssserver.service</span><br><span class="line"></span><br><span class="line">[Unit]</span><br><span class="line">Description=ssserver</span><br><span class="line">After=network.target</span><br><span class="line"></span><br><span class="line">[Service]</span><br><span class="line">ExecStart=/usr/local/bin/ssserver -c /etc/暗影袜子们.json</span><br><span class="line">Restart=on-failure</span><br><span class="line"></span><br><span class="line">[Install]</span><br><span class="line">WantedBy=multi-user.target</span><br></pre></td></tr></table></figure></p>
+<p>创建了文件之后，需要重新加载配置一下。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl daemon-reload</span><br></pre></td></tr></table></figure></p>
+<p>然后试试把刚才创建的ssserver.service启动<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl start ssserver.service</span><br></pre></td></tr></table></figure></p>
+<p>如果没报任何信息的话，查看一下状态。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl status ssserver.service</span><br></pre></td></tr></table></figure></p>
+<p>如果显示running的话，那么就是配置成功了，然后设置一下开机启动<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl <span class="built_in">enable</span> ssserver.service</span><br></pre></td></tr></table></figure></p>
+<p>到这里，已经达到目的了，下面是一些有意思的操作，感兴趣的可以看一下。不感兴趣的不看也ok。  </p>
+<h1 id="配置全局代理-Proxifier"><a href="#配置全局代理-Proxifier" class="headerlink" title="配置全局代理+Proxifier"></a>配置全局代理+Proxifier</h1><p>配置这个的目的是让VPS和本地间走ipv6流量，然后系统代理模式选择全局代理，也就是说让所有的网络访问都走VPS。这样的话，也就是说所有的网络都走ipv6。这种情况下会有一些问题。有的软件不支持用前面这种形式访问网络。这个时候我们就需要一个叫做Proxifier的软件来给这些软件搞一下，让他们也能正常了。因为都是ipv6，所以就免流量了，而且不用登录校园网，这就是我们要的效果。<br>首先，VPS那边得是ipv6能够访问的，就是配好了上边说的ipv6连接，其次，本地也需要有ipv6的地址。二者缺一不可。然后。配置一下Proxifier。配置方法如下：<br>打开Proxifier，然后Profile，Proxy Servers，点击右侧Add。<br><img src="/images/do-you-need-a-ladder/1.png" alt="1"><br>如下这样添加。点击确定。<br><img src="/images/do-you-need-a-ladder/2.png" alt="1"><br>添加之后如下图：<br><img src="/images/do-you-need-a-ladder/3.png" alt="1"><br>打开，Profile，Proxification Rules。<br><img src="/images/do-you-need-a-ladder/4.png" alt="1"><br>如下设置<br><img src="/images/do-you-need-a-ladder/5.png" alt="1"><br>点击Profile，Name Resolution：<br><img src="/images/do-you-need-a-ladder/6.png" alt="1"><br>如下设置：<br><img src="/images/do-you-need-a-ladder/7.png" alt="1"><br>这个时候，注销校园网络登陆。然后看看行不行？如果qq能正常使用，说明大功告成了。下次再使用的时候，ipv6连接+Proxifier都打开，就能够免流量了。<br>我用的是有线连接的校园网（没登录），没测试无线能不能用，不过如果无线连接的时候，本地有ipv6地址的话，应该就能用。  </p>
+<p>这时候会出问题，比如使用localhost:4000调试hexo时候，会无法访问。感觉是dns问题，因为现在是ipv6，可能会解析到ipv6的地址，然后proxifier会报错说，没法解决ipv4和ipv6混合使用的问题。这个时候不用localhost:4000，访问127.0.0.1:4000就能调试hexo了。  </p>
+<h1 id="Google-BBR-加速"><a href="#Google-BBR-加速" class="headerlink" title="Google BBR 加速"></a>Google BBR 加速</h1><p>说是能给网络加速，实际效果感觉并不明显，还是写一下吧。<br>root登陆服务器，输入下面命令。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">wget --no-check-certificate https://github.com/teddysun/across/raw/master/bbr.sh</span><br><span class="line">chmod +x bbr.sh</span><br><span class="line">./bbr.sh</span><br></pre></td></tr></table></figure></p>
+<p>安装完事儿之后会让重启服务器，然后就重启吧。<br>输入下面命令。验证是否安装最新内核并开启了BBR。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">uname -r</span><br></pre></td></tr></table></figure></p>
+<p>查看一下；<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sysctl net.ipv4.tcp_available_congestion_control</span><br></pre></td></tr></table></figure></p>
+<p>上面结果中，看看等号后边带不带bbr，带就行。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sysctl net.ipv4.tcp_congestion_control</span><br></pre></td></tr></table></figure></p>
+<p>上面结果应该等于bbr。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sysctl net.core.default_qdisc</span><br></pre></td></tr></table></figure></p>
+<p>上面结果应该等于fq。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">lsmod | grep bbr</span><br></pre></td></tr></table></figure></p>
+<p>上面结果中，看看有没有tcp_bbr，说明已经启动。  </p>
+<h1 id="过了两天"><a href="#过了两天" class="headerlink" title="过了两天"></a>过了两天</h1><p>我保证我这两天，没动服务器，也没开电脑。然后就出现了一个状况。<br>ipv6可以连上服务器，但是ipv4死活连不上服务器。经过一番排查，我感觉是服务器那边的问题。然后，于此同时我用ssh竟然没法连接DigitalOcean的服务器了。闹心。<br>我这个DigitalOcean最开始新建Droplet的时候，没有选ssh。不过，最开始的时候是能够用ssh连的，然后过了两天就连接超时，只能通过网页端的console连接。<br>我查了不少教程又看了官方文档。并不会解决，然后我将droplet的系统重装了。然后依旧是这个问题。<br>然后，我就把这个droplet删了。新建了一个droplet，新建时候上传了ssh公钥，并选择了对应的公钥。然后，当然ssh的连接超时的问题就解决了。<br>然后照着我上边说的又走了一遍，ipv4连不上的问题也解决了。  </p>
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Ladder/" rel="tag"># Ladder</a>
+          
+            <a href="/tags/Proxifier/" rel="tag"># Proxifier</a>
+          
+            <a href="/tags/VPS/" rel="tag"># VPS</a>
+          
+            <a href="/tags/服务器/" rel="tag"># 服务器</a>
+          
+            <a href="/tags/代理/" rel="tag"># 代理</a>
+          
+            <a href="/tags/DigitalOcean/" rel="tag"># DigitalOcean</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/06/19/windows-openssh-and-ssh-remote-connection/" rel="next" title="Windows10 开启OpenSSH服务 CMD配置SSH远程连接服务">
+                <i class="fa fa-chevron-left"></i> Windows10 开启OpenSSH服务 CMD配置SSH远程连接服务
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/06/24/hexo-d-host-key-verification-failed-issue/" rel="prev" title="Hexo d 时遇到 Host Key Verification Failed 问题">
+                Hexo d 时遇到 Host Key Verification Failed 问题 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/me.png"
+                alt="喷水小火龙" />
+            
+              <p class="site-author-name" itemprop="name">喷水小火龙</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">43</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">23</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">45</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  <a href="https://github.com/lmnsyunhao" target="_blank" title="GitHub"><i class="fa fa-fw fa-github"></i></a>
+                  
+                </span>
+              
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#映射"><span class="nav-number">1.</span> <span class="nav-text">映射</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#安装SS"><span class="nav-number">2.</span> <span class="nav-text">安装SS</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#pip无法安装的问题"><span class="nav-number">3.</span> <span class="nav-text">pip无法安装的问题</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#配置IPv4连接"><span class="nav-number">4.</span> <span class="nav-text">配置IPv4连接</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#配置IPv6连接"><span class="nav-number">5.</span> <span class="nav-text">配置IPv6连接</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#客户端配置"><span class="nav-number">6.</span> <span class="nav-text">客户端配置</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#启动ssserver服务"><span class="nav-number">7.</span> <span class="nav-text">启动ssserver服务</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#测试连通性"><span class="nav-number">8.</span> <span class="nav-text">测试连通性</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#配置systemd开机启动"><span class="nav-number">9.</span> <span class="nav-text">配置systemd开机启动</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#配置全局代理-Proxifier"><span class="nav-number">10.</span> <span class="nav-text">配置全局代理+Proxifier</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Google-BBR-加速"><span class="nav-number">11.</span> <span class="nav-text">Google BBR 加速</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#过了两天"><span class="nav-number">12.</span> <span class="nav-text">过了两天</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+        <div class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span id="scrollpercent"><span>0</span>%</span>
+          
+        </div>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">喷水小火龙</span>
+
+  
+
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/three/three.min.js"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/three/canvas_lines.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.3.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.3.0"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=6.3.0"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=6.3.0"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.3.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.3.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.3.0"></script>
+
+
+
+  
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+  
+  
+
+  
+  
+
+  
+
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
