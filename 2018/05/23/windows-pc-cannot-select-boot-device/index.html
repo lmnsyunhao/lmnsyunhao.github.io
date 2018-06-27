@@ -122,7 +122,7 @@
 
 
   <meta name="description" content="症状想要安装双系统，或是干什么事情的时候，需要选择启动项，但是发现怎么按F12或者其他对应的按键，都不能进入选择启动项的界面，当然BIOS界面也是进不去。   原因Windows10有快速启动这一个功能，就是为了让每次开机更快，它并没有彻底关机，而是做了一些小操作，像是休眠，给你一种关机的假象。   标准解决方法当然是关掉快速启动功能了。如何关闭呢？打开控制面板点击系统和安全点击电源选项下的更改电">
-<meta name="keywords" content="系统安装,Windows">
+<meta name="keywords" content="Windows,系统安装">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Windows10 PC 无法进入选择启动项界面 无法进入BIOS界面">
 <meta property="og:url" content="http://yunhao.life/2018/05/23/windows-pc-cannot-select-boot-device/index.html">
@@ -424,6 +424,17 @@
 
           
           
+             <span id="/2018/05/23/windows-pc-cannot-select-boot-device/" class="leancloud_visitors" data-flag-title="Windows10 PC 无法进入选择启动项界面 无法进入BIOS界面">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数：</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
 
           
 
@@ -469,9 +480,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/系统安装/" rel="tag"># 系统安装</a>
-          
             <a href="/tags/Windows/" rel="tag"># Windows</a>
+          
+            <a href="/tags/系统安装/" rel="tag"># 系统安装</a>
           
         </div>
       
@@ -1001,6 +1012,102 @@
 
 
   
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+  <script>AV.initialize("xTppDVLRfUfE8BB44yavuxc6-gzGzoHsz", "WjtaEKh4RlcyKT9ao37Obi5h");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            
+            counter.save(null, {
+              success: function(counter) {
+                
+                  var $element = $(document.getElementById(url));
+                  $element.find('.leancloud-visitors-count').text(counter.get('time'));
+                
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            
+              var $element = $(document.getElementById(url));
+              $element.find('.leancloud-visitors-count').text('Counter not initialized! See more at console err msg.');
+              console.error('ATTENTION! LeanCloud counter has security bug, see here how to solve it: https://github.com/theme-next/hexo-leancloud-counter-security. \n But you also can use LeanCloud without security, by set \'security\' option to \'false\'.');
+            
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
 
   
 
