@@ -4,6 +4,28 @@
 
     
   <url>
+    <loc>http://yunhao.life/2018/06/29/hexo-next-function-setting/</loc>
+    <lastmod>2018-06-29T12:47:20.397Z</lastmod>
+    <data>
+        <display>
+        <title>Hexo NexT 站内搜索 站点统计 RSS订阅 字数统计 阅读时长 进度条 图片放大 canvas背景 功能配置</title>
+        <pubTime>2018-06-29T11:11:35.000Z</pubTime>
+        
+        <tag>Hexo</tag>
+         
+        <tag>NexT</tag>
+         
+         
+           
+             
+              <breadCrumb title="Hexo" url="http://yunhao.life/categories/Hexo/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://yunhao.life/2018/06/29/git-warning-lf-replaced-by-crlf/</loc>
     <lastmod>2018-06-29T07:17:32.913Z</lastmod>
     <data>
@@ -87,9 +109,9 @@
          
         <tag>Hexo</tag>
          
-        <tag>域名</tag>
-         
         <tag>GitHub</tag>
+         
+        <tag>域名</tag>
          
         <tag>DNS</tag>
          
@@ -111,9 +133,9 @@
         <title>Ubuntu16.04 GitHub SSH密钥 配置</title>
         <pubTime>2017-03-27T09:15:03.000Z</pubTime>
         
-        <tag>Git</tag>
-         
         <tag>Ubuntu</tag>
+         
+        <tag>Git</tag>
          
         <tag>GitHub</tag>
          
@@ -183,13 +205,13 @@
         <title>GoDaddy 域名 托管于腾讯云解析</title>
         <pubTime>2018-06-18T14:57:39.000Z</pubTime>
         
-        <tag>域名</tag>
-         
-        <tag>DNS</tag>
-         
         <tag>GoDaddy</tag>
          
+        <tag>域名</tag>
+         
         <tag>腾讯云</tag>
+         
+        <tag>DNS</tag>
          
          
            
