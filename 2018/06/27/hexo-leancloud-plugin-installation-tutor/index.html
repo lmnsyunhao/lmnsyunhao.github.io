@@ -151,13 +151,15 @@
 <meta property="og:image" content="http://yunhao.life/images/hexo-leancloud-plugin-installation-tutor/19.png">
 <meta property="og:image" content="http://yunhao.life/images/hexo-leancloud-plugin-installation-tutor/20.png">
 <meta property="og:image" content="http://yunhao.life/images/hexo-leancloud-plugin-installation-tutor/21.png">
-<meta property="og:updated_time" content="2018-06-27T16:33:48.054Z">
+<meta property="og:updated_time" content="2018-06-29T05:48:17.126Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo NexT 主题 LeanCloud 插件安装教程">
 <meta name="twitter:description" content="LeanCloudLeanCloud能够给每篇博客统计访问量的工具。首先注册，并登陆LeanCloud。注意：登陆密码要求还得有大写英文字母，小写英文字母，还有数字。   膜拜大佬这篇博客是学习两位大佬，DoubleMine和leaferx，的博文之后写的   应用配置进入控制台后，我们先创建一个应用。点击创建应用然后弹出如下窗口：起名字，选择开发版，之后点击创建按钮创建完之后，我们看到下面这样。">
 <meta name="twitter:image" content="http://yunhao.life/images/hexo-leancloud-plugin-installation-tutor/1.png">
 
 
+
+  <link rel="alternate" href="/atom.xml" title="火龙窝" type="application/atom+xml" />
 
 
 
@@ -274,7 +276,7 @@
           
           <li class="menu-item menu-item-tags">
     <a href="/tags/" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />标签<span class="badge">55</span></a>
+      <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />标签<span class="badge">47</span></a>
   </li>
         
         
@@ -290,16 +292,47 @@
           
           <li class="menu-item menu-item-archives">
     <a href="/archives/" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档<span class="badge">43</span></a>
+      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档<span class="badge">45</span></a>
   </li>
 
       
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />搜索</a>
+        </li>
       
     </ul>
   
 
   
 
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
   
 </nav>
 
@@ -411,7 +444,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2018-06-28 00:33:48" itemprop="dateModified" datetime="2018-06-28T00:33:48+08:00">2018-06-28</time>
+                <time title="修改时间：2018-06-29 13:48:17" itemprop="dateModified" datetime="2018-06-29T13:48:17+08:00">2018-06-29</time>
               
             
           </span>
@@ -457,6 +490,34 @@
           
 
           
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">本文字数：</span>
+                
+                <span title="本文字数">9.3k</span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">8 分钟</span>
+              
+            </div>
+          
 
           
 
@@ -489,8 +550,11 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">FATAL duplicated mapping key at line 86, column 3:</span><br><span class="line">      type: leancloud_counter_security ...</span><br><span class="line">      ^</span><br><span class="line">YAMLException: duplicated mapping key at line 86, column 3:</span><br><span class="line">      type: leancloud_counter_security ...</span><br><span class="line">      ^</span><br><span class="line">    at generateError (E:\code\blog\node_modules\js-yaml\lib\js-yaml\loader.js:165:10)</span><br><span class="line">    at throwError (E:\code\blog\node_modules\js-yaml\lib\js-yaml\loader.js:171:9)</span><br><span class="line">    at storeMappingPair (E:\code\blog\node_modules\js-yaml\lib\js-yaml\loader.js:308:7)</span><br><span class="line">    at readBlockMapping (E:\code\blog\node_modules\js-yaml\lib\js-yaml\loader.js:1071:9)</span><br><span class="line">    at composeNode (E:\code\blog\node_modules\js-yaml\lib\js-yaml\loader.js:1332:12)</span><br><span class="line">    at readBlockMapping (E:\code\blog\node_modules\js-yaml\lib\js-yaml\loader.js:1062:11)</span><br><span class="line">    at composeNode (E:\code\blog\node_modules\js-yaml\lib\js-yaml\loader.js:1332:12)</span><br><span class="line">    at readDocument (E:\code\blog\node_modules\js-yaml\lib\js-yaml\loader.js:1492:3)</span><br><span class="line">    at loadDocuments (E:\code\blog\node_modules\js-yaml\lib\js-yaml\loader.js:1548:5)</span><br><span class="line">    at Object.load (E:\code\blog\node_modules\js-yaml\lib\js-yaml\loader.js:1569:19)</span><br><span class="line">    at Hexo.yamlHelper (E:\code\blog\node_modules\hexo\lib\plugins\renderer\yaml.js:7:15)</span><br><span class="line">    at Hexo.tryCatcher (E:\code\blog\node_modules\bluebird\js\release\util.js:16:23)</span><br><span class="line">    at Hexo.&lt;anonymous&gt; (E:\code\blog\node_modules\bluebird\js\release\method.js:15:34)</span><br><span class="line">    at Promise.then.text (E:\code\blog\node_modules\hexo\lib\hexo\render.js:61:21)</span><br><span class="line">    at tryCatcher (E:\code\blog\node_modules\bluebird\js\release\util.js:16:23)</span><br><span class="line">    at Promise._settlePromiseFromHandler (E:\code\blog\node_modules\bluebird\js\release\promise.js:512:31)</span><br><span class="line">    at Promise._settlePromise (E:\code\blog\node_modules\bluebird\js\release\promise.js:569:18)</span><br><span class="line">    at Promise._settlePromise0 (E:\code\blog\node_modules\bluebird\js\release\promise.js:614:10)</span><br><span class="line">    at Promise._settlePromises (E:\code\blog\node_modules\bluebird\js\release\promise.js:693:18)</span><br><span class="line">    at Async._drainQueue (E:\code\blog\node_modules\bluebird\js\release\async.js:133:16)</span><br><span class="line">    at Async._drainQueues (E:\code\blog\node_modules\bluebird\js\release\async.js:143:10)</span><br><span class="line">    at Immediate.Async.drainQueues (E:\code\blog\node_modules\bluebird\js\release\async.js:17:14)</span><br></pre></td></tr></table></figure>
 <p>这个问题，很简单，就是博客配置文件中deploy的那个位置，没写明白。如何让git和leancloud同时部署呢，如下：<br><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line"><span class="bullet">  -</span> </span><br><span class="line"><span class="attr">    type:</span> <span class="string">git</span></span><br><span class="line"><span class="attr">    repository:</span> <span class="string">git@github.com:lmnsyunhao/lmnsyunhao.github.io.git</span></span><br><span class="line"><span class="attr">    branch:</span> <span class="string">master</span></span><br><span class="line"><span class="bullet">  -</span></span><br><span class="line"><span class="attr">    type:</span> <span class="string">leancloud_counter_security_sync</span></span><br></pre></td></tr></table></figure></p>
 <p>这样写就行了。具体为啥这样写，简单学习一下YAML语法就好了。不做赘述  </p>
-<h1 id="部署过程中leancloud问题"><a href="#部署过程中leancloud问题" class="headerlink" title="部署过程中leancloud问题"></a>部署过程中leancloud问题</h1><p>如果没出现这个问题就跳过这一节。<br><code>deploy d</code>的过程中，还可能出现这个问题。看描述是请求过多。如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">ERROR Too many requests. [429 POST https://xtppdvlr.api.lncld.net/1.1/classes/Counter]</span><br><span class="line">Error: Too many requests. [429 POST https://xtppdvlr.api.lncld.net/1.1/classes/Counter]</span><br><span class="line">    at E:\code\blog\node_modules\leancloud-storage\dist\node\request.js:163:17</span><br><span class="line">    at tryCatch (E:\code\blog\node_modules\es6-promise\dist\es6-promise.js:410:12)</span><br><span class="line">    at invokeCallback (E:\code\blog\node_modules\es6-promise\dist\es6-promise.js:425:13)</span><br><span class="line">    at publish (E:\code\blog\node_modules\es6-promise\dist\es6-promise.js:399:7)</span><br><span class="line">    at publishRejection (E:\code\blog\node_modules\es6-promise\dist\es6-promise.js:340:3)</span><br><span class="line">    at flush (E:\code\blog\node_modules\es6-promise\dist\es6-promise.js:128:5)</span><br><span class="line">    at _combinedTickCallback (internal/process/next_tick.js:131:7)</span><br><span class="line">    at process._tickCallback (internal/process/next_tick.js:180:9)</span><br></pre></td></tr></table></figure></p>
-<p>这个就是你第一次部署的时候，你的博文太多了，leancloud那边儿收不过来。很简单，多部署几次，直到这个错不在报了，就ok了。<br>如果，你在控制台发现所有的博文都已经有对应的记录了，但是每次<code>hexo d</code>时候还是报错，那么就把记录都删掉。然后重新<code>hexo d</code>。  </p>
+<h1 id="部署过程中leancloud过多请求问题"><a href="#部署过程中leancloud过多请求问题" class="headerlink" title="部署过程中leancloud过多请求问题"></a>部署过程中leancloud过多请求问题</h1><p>如果没出现这个问题就跳过这一节。<br><code>deploy d</code>的过程中，还可能出现这个问题。看描述是请求过多。如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">ERROR Too many requests. [429 POST https://xtppdvlr.api.lncld.net/1.1/classes/Counter]</span><br><span class="line">Error: Too many requests. [429 POST https://xtppdvlr.api.lncld.net/1.1/classes/Counter]</span><br><span class="line">    at E:\code\blog\node_modules\leancloud-storage\dist\node\request.js:163:17</span><br><span class="line">    at tryCatch (E:\code\blog\node_modules\es6-promise\dist\es6-promise.js:410:12)</span><br><span class="line">    at invokeCallback (E:\code\blog\node_modules\es6-promise\dist\es6-promise.js:425:13)</span><br><span class="line">    at publish (E:\code\blog\node_modules\es6-promise\dist\es6-promise.js:399:7)</span><br><span class="line">    at publishRejection (E:\code\blog\node_modules\es6-promise\dist\es6-promise.js:340:3)</span><br><span class="line">    at flush (E:\code\blog\node_modules\es6-promise\dist\es6-promise.js:128:5)</span><br><span class="line">    at _combinedTickCallback (internal/process/next_tick.js:131:7)</span><br><span class="line">    at process._tickCallback (internal/process/next_tick.js:180:9)</span><br></pre></td></tr></table></figure></p>
+<blockquote>
+<p>信息 - Too many requests.<br>含义 - 超过应用的流控限制，即超过每个应用同一时刻最多可使用的工作线程数，或者说同一时刻最多可以同时处理的数据请求。通过 控制台 &gt; 存储 &gt; API 统计 &gt; API 性能 &gt; 总览 可以查看应用产生的请求统计数据，如平均工作线程、平均响应时间等。使用 LeanCloud 商用版或企业版 的用户，如有需要，可以联系我们来调整工作线程数。</p>
+</blockquote>
+<p>以上是LeanCloud官方解释。<br>这个就是你第一次部署的时候，你的博文太多了，leancloud那边儿收不过来。<br>但是慢慢的我发现，在LeanCloud控制台那边儿所有的博文都已经有对应的记录了，但是每次<code>hexo d</code>时候还是报错，那是因为请求太快了。我查看了一下hexo-leancloud-counter-security的源代码，发现源代码中每次请求都会把所有博文的记录逐条查询。所以，我改了改源代码，详见<a href="/2018/06/29/hexo-leancloud-counter-security-too-many-requests-error/">hexo-leancloud-counter-security过多请求错误</a>  </p>
 <h1 id="查看记录"><a href="#查看记录" class="headerlink" title="查看记录"></a>查看记录</h1><p>这里能够查看记录。<br><code>time</code>就是阅读次数。这里可以直接改实现骚操作。<br><code>title</code>，<code>url</code>和<code>createdAt</code>字段不要乱改，不然容易出现问题。<br><img src="/images/hexo-leancloud-plugin-installation-tutor/22.png" alt="查看记录"></p>
 <h1 id="安全中心保护"><a href="#安全中心保护" class="headerlink" title="安全中心保护"></a>安全中心保护</h1><p>点击设置，安全中心，Web安全域名。这个保证只有对应域名传过来的才有效，也就是说，别人用你的应用ID和应用Key是无效的。<br><img src="/images/hexo-leancloud-plugin-installation-tutor/15.png" alt="安全中心保护"></p>
 <h1 id="云引擎保护"><a href="#云引擎保护" class="headerlink" title="云引擎保护"></a>云引擎保护</h1><p>云引擎保护访客数量不被随意篡改。<br>点击云引擎，部署，在线编辑。<br><img src="/images/hexo-leancloud-plugin-installation-tutor/16.png" alt="在线编辑"><br>然后点击创建函数。<br><img src="/images/hexo-leancloud-plugin-installation-tutor/17.png" alt="创建函数"><br>弹出的框中，选择Hook，beforeUpdate，Counter，函数内填写如下：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> query = <span class="keyword">new</span> AV.Query(<span class="string">"Counter"</span>);</span><br><span class="line"><span class="keyword">if</span> (request.object.updatedKeys.indexOf(<span class="string">'time'</span>) !== <span class="number">-1</span>) &#123;</span><br><span class="line">    <span class="keyword">return</span> query.get(request.object.id).then(<span class="function"><span class="keyword">function</span> (<span class="params">obj</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (obj.get(<span class="string">"time"</span>) + <span class="number">1</span> !== request.object.get(<span class="string">"time"</span>)) &#123;</span><br><span class="line">            <span class="keyword">throw</span> <span class="keyword">new</span> AV.Cloud.Error(<span class="string">'Invalid update!'</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
@@ -541,6 +605,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/06/29/hexo-leancloud-counter-security-too-many-requests-error/" rel="prev" title="hexo-leancloud-counter-security 插件 Too many requests 错误">
+                hexo-leancloud-counter-security 插件 Too many requests 错误 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -618,7 +686,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">43</span>
+                    <span class="site-state-item-count">45</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -784,23 +852,7 @@
                     
                       
                     
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                    <span class="site-state-item-count">46</span>
+                    <span class="site-state-item-count">47</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
@@ -809,12 +861,24 @@
           
 
           
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
 
           
             <div class="links-of-author motion-element">
               
                 <span class="links-of-author-item">
-                  <a href="https://github.com/lmnsyunhao" target="_blank" title="GitHub"><i class="fa fa-fw fa-github"></i></a>
+                  <a href="https://github.com/lmnsyunhao" target="_blank" title="GitHub"><i class="fa fa-fw fa-github"></i>GitHub</a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="mailto:niuniu456c@163.com" target="_blank" title="E-Mail"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
                   
                 </span>
               
@@ -845,7 +909,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#LeanCloud"><span class="nav-number">1.</span> <span class="nav-text">LeanCloud</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#膜拜大佬"><span class="nav-number">2.</span> <span class="nav-text">膜拜大佬</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#应用配置"><span class="nav-number">3.</span> <span class="nav-text">应用配置</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#主题配置"><span class="nav-number">4.</span> <span class="nav-text">主题配置</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Counter类未初始化问题"><span class="nav-number">5.</span> <span class="nav-text">Counter类未初始化问题</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#hexo-leancloud-counter-security插件的安装与配置"><span class="nav-number">6.</span> <span class="nav-text">hexo-leancloud-counter-security插件的安装与配置</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#同时部署git和leancloud的问题"><span class="nav-number">7.</span> <span class="nav-text">同时部署git和leancloud的问题</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#部署过程中leancloud问题"><span class="nav-number">8.</span> <span class="nav-text">部署过程中leancloud问题</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#查看记录"><span class="nav-number">9.</span> <span class="nav-text">查看记录</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#安全中心保护"><span class="nav-number">10.</span> <span class="nav-text">安全中心保护</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#云引擎保护"><span class="nav-number">11.</span> <span class="nav-text">云引擎保护</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#LeanCloud"><span class="nav-number">1.</span> <span class="nav-text">LeanCloud</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#膜拜大佬"><span class="nav-number">2.</span> <span class="nav-text">膜拜大佬</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#应用配置"><span class="nav-number">3.</span> <span class="nav-text">应用配置</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#主题配置"><span class="nav-number">4.</span> <span class="nav-text">主题配置</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Counter类未初始化问题"><span class="nav-number">5.</span> <span class="nav-text">Counter类未初始化问题</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#hexo-leancloud-counter-security插件的安装与配置"><span class="nav-number">6.</span> <span class="nav-text">hexo-leancloud-counter-security插件的安装与配置</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#同时部署git和leancloud的问题"><span class="nav-number">7.</span> <span class="nav-text">同时部署git和leancloud的问题</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#部署过程中leancloud过多请求问题"><span class="nav-number">8.</span> <span class="nav-text">部署过程中leancloud过多请求问题</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#查看记录"><span class="nav-number">9.</span> <span class="nav-text">查看记录</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#安全中心保护"><span class="nav-number">10.</span> <span class="nav-text">安全中心保护</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#云引擎保护"><span class="nav-number">11.</span> <span class="nav-text">云引擎保护</span></a></li></ol></div>
             
 
           </div>
@@ -879,12 +943,28 @@
   <span class="author" itemprop="copyrightHolder">喷水小火龙</span>
 
   
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+    <span title="站点总字数">119k</span>
+  
 
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    
+    <span title="站点阅读时长">1:48</span>
   
 </div>
 
 
 
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
 
 
 
@@ -894,6 +974,24 @@
 
 
         
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv" title="总访客量">
+      <i class="fa fa-user"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+    </span>
+  
+
+  
+    <span class="site-pv" title="总访问量">
+      <i class="fa fa-eye"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+    </span>
+  
+</div>
+
 
 
 
@@ -1041,6 +1139,326 @@
 
 
   
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
 
 
 

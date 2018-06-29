@@ -4,8 +4,156 @@
 
     
   <url>
+    <loc>http://yunhao.life/2018/06/29/git-warning-lf-replaced-by-crlf/</loc>
+    <lastmod>2018-06-29T07:17:32.913Z</lastmod>
+    <data>
+        <display>
+        <title>Git 警告错误 LF will be replaced by CRLF</title>
+        <pubTime>2018-06-29T06:59:18.000Z</pubTime>
+        
+        <tag>Git</tag>
+         
+        <tag>Hexo</tag>
+         
+         
+           
+             
+              <breadCrumb title="Git" url="http://yunhao.life/categories/Git/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yunhao.life/2018/06/19/windows-github-ssh-key/</loc>
+    <lastmod>2018-06-29T07:01:28.635Z</lastmod>
+    <data>
+        <display>
+        <title>Windows10 生成 SSH密钥 GitHub配置</title>
+        <pubTime>2018-06-19T08:30:35.000Z</pubTime>
+        
+        <tag>Git</tag>
+         
+        <tag>GitHub</tag>
+         
+        <tag>OpenSSH</tag>
+         
+        <tag>Windows</tag>
+         
+         
+           
+             
+              <breadCrumb title="Windows" url="http://yunhao.life/categories/Windows/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yunhao.life/2018/06/24/hexo-d-host-key-verification-failed-issue/</loc>
+    <lastmod>2018-06-29T07:01:11.910Z</lastmod>
+    <data>
+        <display>
+        <title>Hexo d 时遇到 Host Key Verification Failed 问题</title>
+        <pubTime>2018-06-23T16:09:57.000Z</pubTime>
+        
+        <tag>Git</tag>
+         
+        <tag>Hexo</tag>
+         
+        <tag>GitHub</tag>
+         
+         
+           
+             
+              <breadCrumb title="Hexo" url="http://yunhao.life/categories/Hexo/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yunhao.life/2017/03/27/github-hexo-blog-bundle-domain/</loc>
+    <lastmod>2018-06-29T07:00:37.559Z</lastmod>
+    <data>
+        <display>
+        <title>GitHub Hexo blog 绑定域名</title>
+        <pubTime>2017-03-27T08:47:20.000Z</pubTime>
+        
+        <tag>Git</tag>
+         
+        <tag>Hexo</tag>
+         
+        <tag>域名</tag>
+         
+        <tag>GitHub</tag>
+         
+        <tag>DNS</tag>
+         
+         
+           
+             
+              <breadCrumb title="Git" url="http://yunhao.life/categories/Git/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yunhao.life/2017/03/27/github-ssh-config/</loc>
+    <lastmod>2018-06-29T07:00:29.961Z</lastmod>
+    <data>
+        <display>
+        <title>Ubuntu16.04 GitHub SSH密钥 配置</title>
+        <pubTime>2017-03-27T09:15:03.000Z</pubTime>
+        
+        <tag>Git</tag>
+         
+        <tag>Ubuntu</tag>
+         
+        <tag>GitHub</tag>
+         
+        <tag>OpenSSH</tag>
+         
+         
+           
+             
+              <breadCrumb title="Git" url="http://yunhao.life/categories/Git/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yunhao.life/2018/06/29/hexo-leancloud-counter-security-too-many-requests-error/</loc>
+    <lastmod>2018-06-29T06:54:32.102Z</lastmod>
+    <data>
+        <display>
+        <title>hexo-leancloud-counter-security 插件 Too many requests 错误</title>
+        <pubTime>2018-06-29T05:05:13.000Z</pubTime>
+        
+        <tag>Hexo</tag>
+         
+        <tag>LeanCloud</tag>
+         
+         
+           
+             
+              <breadCrumb title="Hexo" url="http://yunhao.life/categories/Hexo/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://yunhao.life/2018/06/27/hexo-leancloud-plugin-installation-tutor/</loc>
-    <lastmod>2018-06-27T16:33:48.054Z</lastmod>
+    <lastmod>2018-06-29T05:48:17.126Z</lastmod>
     <data>
         <display>
         <title>Hexo NexT 主题 LeanCloud 插件安装教程</title>
@@ -90,28 +238,6 @@
 
     
   <url>
-    <loc>http://yunhao.life/2018/06/24/hexo-d-host-key-verification-failed-issue/</loc>
-    <lastmod>2018-06-23T16:18:45.768Z</lastmod>
-    <data>
-        <display>
-        <title>Hexo d 时遇到 Host Key Verification Failed 问题</title>
-        <pubTime>2018-06-23T16:09:57.000Z</pubTime>
-        
-        <tag>Hexo</tag>
-         
-        <tag>GitHub</tag>
-         
-         
-           
-             
-              <breadCrumb title="Hexo" url="http://yunhao.life/categories/Hexo/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://yunhao.life/2018/06/19/windows-openssh-and-ssh-remote-connection/</loc>
     <lastmod>2018-06-19T14:35:28.159Z</lastmod>
     <data>
@@ -119,35 +245,11 @@
         <title>Windows10 开启OpenSSH服务 CMD配置SSH远程连接服务</title>
         <pubTime>2018-06-19T08:34:55.000Z</pubTime>
         
-        <tag>Windows</tag>
-         
         <tag>OpenSSH</tag>
+         
+        <tag>Windows</tag>
          
         <tag>CMD</tag>
-         
-         
-           
-             
-              <breadCrumb title="Windows" url="http://yunhao.life/categories/Windows/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yunhao.life/2018/06/19/windows-github-ssh-key/</loc>
-    <lastmod>2018-06-19T14:35:18.171Z</lastmod>
-    <data>
-        <display>
-        <title>Windows10 生成 SSH密钥 GitHub配置</title>
-        <pubTime>2018-06-19T08:30:35.000Z</pubTime>
-        
-        <tag>Windows</tag>
-         
-        <tag>GitHub</tag>
-         
-        <tag>OpenSSH</tag>
          
          
            
@@ -185,56 +287,6 @@
           
              
               <breadCrumb title="数位DP" url="http://yunhao.life/categories/ACM/DP/%E6%95%B0%E4%BD%8DDP/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yunhao.life/2017/03/27/github-ssh-config/</loc>
-    <lastmod>2018-06-19T14:02:27.853Z</lastmod>
-    <data>
-        <display>
-        <title>Ubuntu16.04 GitHub SSH密钥 配置</title>
-        <pubTime>2017-03-27T09:15:03.000Z</pubTime>
-        
-        <tag>Ubuntu</tag>
-         
-        <tag>GitHub</tag>
-         
-        <tag>OpenSSH</tag>
-         
-         
-           
-             
-              <breadCrumb title="Git" url="http://yunhao.life/categories/Git/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yunhao.life/2017/03/27/github-hexo-blog-bundle-domain/</loc>
-    <lastmod>2018-06-18T15:06:36.077Z</lastmod>
-    <data>
-        <display>
-        <title>GitHub Hexo blog 绑定域名</title>
-        <pubTime>2017-03-27T08:47:20.000Z</pubTime>
-        
-        <tag>Hexo</tag>
-         
-        <tag>域名</tag>
-         
-        <tag>GitHub</tag>
-         
-        <tag>DNS</tag>
-         
-         
-           
-             
-              <breadCrumb title="Git" url="http://yunhao.life/categories/Git/"/>
           
         </display>
     </data>
@@ -442,11 +494,11 @@
         <title>Ubuntu16.04 Nginx 反向代理 Apache</title>
         <pubTime>2017-04-07T12:19:44.000Z</pubTime>
         
-        <tag>Ubuntu</tag>
-         
         <tag>服务器</tag>
          
         <tag>代理</tag>
+         
+        <tag>Ubuntu</tag>
          
         <tag>Nginx</tag>
          
@@ -470,9 +522,9 @@
         <title>Ubuntu16.04 Nginx 配置站点学习笔记</title>
         <pubTime>2017-03-30T02:42:15.000Z</pubTime>
         
-        <tag>Ubuntu</tag>
-         
         <tag>服务器</tag>
+         
+        <tag>Ubuntu</tag>
          
         <tag>Nginx</tag>
          
@@ -692,11 +744,11 @@
         
         <tag>ACM</tag>
          
-        <tag>HDU</tag>
-         
         <tag>组合数学</tag>
          
         <tag>母函数</tag>
+         
+        <tag>HDU</tag>
          
          
            
