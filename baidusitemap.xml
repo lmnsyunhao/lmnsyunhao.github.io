@@ -4,6 +4,28 @@
 
     
   <url>
+    <loc>http://yunhao.life/2018/06/30/npm-instruction-learning-note/</loc>
+    <lastmod>2018-06-30T09:08:29.416Z</lastmod>
+    <data>
+        <display>
+        <title>NPM 学习笔记</title>
+        <pubTime>2018-06-29T17:12:40.000Z</pubTime>
+        
+        <tag>NPM</tag>
+         
+        <tag>NodeJS</tag>
+         
+         
+           
+             
+              <breadCrumb title="NodeJS" url="http://yunhao.life/categories/NodeJS/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://yunhao.life/2018/06/30/hexo-next-add-daovoice-contact/</loc>
     <lastmod>2018-06-30T04:04:16.832Z</lastmod>
     <data>
@@ -21,28 +43,6 @@
            
              
               <breadCrumb title="Hexo" url="http://yunhao.life/categories/Hexo/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yunhao.life/2018/06/30/npm-instruction-learning-note/</loc>
-    <lastmod>2018-06-29T17:17:34.461Z</lastmod>
-    <data>
-        <display>
-        <title>npm 指令学习笔记</title>
-        <pubTime>2018-06-29T17:12:40.000Z</pubTime>
-        
-        <tag>npm</tag>
-         
-        <tag>NodeJS</tag>
-         
-         
-           
-             
-              <breadCrumb title="NodeJS" url="http://yunhao.life/categories/NodeJS/"/>
           
         </display>
     </data>
@@ -229,9 +229,9 @@
         
         <tag>Hexo</tag>
          
-        <tag>LeanCloud</tag>
-         
         <tag>NexT</tag>
+         
+        <tag>LeanCloud</tag>
          
          
            

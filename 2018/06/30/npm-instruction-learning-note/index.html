@@ -129,15 +129,18 @@
   </script>
 
 
-  <meta name="keywords" content="npm,NodeJS">
+  <meta name="description" content="NPMNPM全称是node package manager。在安装nodejs的时候就会连带安装npm，用来维护和管理node_modules。我为什么要写这篇博客呢？因为懒得每次都百度。所以就mark一下。   官方文档官方的中文文档请见中文文档   本地安装和全局安装如果你自己的模块依赖于某个包，并通过 Node.js 的 require 加载，那么你应该选择本地安装，这种方式也是 npm i">
+<meta name="keywords" content="NPM,NodeJS">
 <meta property="og:type" content="article">
-<meta property="og:title" content="npm 指令学习笔记">
+<meta property="og:title" content="NPM 学习笔记">
 <meta property="og:url" content="http://yunhao.life/2018/06/30/npm-instruction-learning-note/index.html">
 <meta property="og:site_name" content="火龙窝">
+<meta property="og:description" content="NPMNPM全称是node package manager。在安装nodejs的时候就会连带安装npm，用来维护和管理node_modules。我为什么要写这篇博客呢？因为懒得每次都百度。所以就mark一下。   官方文档官方的中文文档请见中文文档   本地安装和全局安装如果你自己的模块依赖于某个包，并通过 Node.js 的 require 加载，那么你应该选择本地安装，这种方式也是 npm i">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-06-29T17:17:34.461Z">
+<meta property="og:updated_time" content="2018-06-30T09:08:29.416Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="npm 指令学习笔记">
+<meta name="twitter:title" content="NPM 学习笔记">
+<meta name="twitter:description" content="NPMNPM全称是node package manager。在安装nodejs的时候就会连带安装npm，用来维护和管理node_modules。我为什么要写这篇博客呢？因为懒得每次都百度。所以就mark一下。   官方文档官方的中文文档请见中文文档   本地安装和全局安装如果你自己的模块依赖于某个包，并通过 Node.js 的 require 加载，那么你应该选择本地安装，这种方式也是 npm i">
 
 
 
@@ -156,7 +159,7 @@
   };
 </script>
 
-  <title>npm 指令学习笔记 | 火龙窝</title>
+  <title>NPM 学习笔记 | 火龙窝</title>
   
 
 
@@ -384,7 +387,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">npm 指令学习笔记
+          <h1 class="post-title" itemprop="name headline">NPM 学习笔记
               
             
           </h1>
@@ -409,7 +412,7 @@
                 
               
 
-              <time title="创建时间：2018-06-30 01:12:40 / 修改时间：01:17:34" itemprop="dateCreated datePublished" datetime="2018-06-30T01:12:40+08:00">2018-06-30</time>
+              <time title="创建时间：2018-06-30 01:12:40 / 修改时间：17:08:29" itemprop="dateCreated datePublished" datetime="2018-06-30T01:12:40+08:00">2018-06-30</time>
             
 
             
@@ -445,7 +448,7 @@
 
           
           
-             <span id="/2018/06/30/npm-instruction-learning-note/" class="leancloud_visitors" data-flag-title="npm 指令学习笔记">
+             <span id="/2018/06/30/npm-instruction-learning-note/" class="leancloud_visitors" data-flag-title="NPM 学习笔记">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -470,7 +473,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">1</span>
+                <span title="本文字数">1.7k</span>
               
 
               
@@ -484,7 +487,7 @@
                 
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
-                <span title="阅读时长">1 分钟</span>
+                <span title="阅读时长">2 分钟</span>
               
             </div>
           
@@ -504,7 +507,40 @@
       
 
       
-        <a id="more"></a>
+        <h1 id="NPM"><a href="#NPM" class="headerlink" title="NPM"></a>NPM</h1><p>NPM全称是node package manager。在安装nodejs的时候就会连带安装npm，用来维护和管理node_modules。我为什么要写这篇博客呢？因为懒得每次都百度。所以就mark一下。  </p>
+<h1 id="官方文档"><a href="#官方文档" class="headerlink" title="官方文档"></a>官方文档</h1><p>官方的中文文档请见<a href="https://www.npmjs.com.cn/" target="_blank" rel="noopener">中文文档</a>  </p>
+<h1 id="本地安装和全局安装"><a href="#本地安装和全局安装" class="headerlink" title="本地安装和全局安装"></a>本地安装和全局安装</h1><p>如果你自己的模块依赖于某个包，并通过 Node.js 的 require 加载，那么你应该选择本地安装，这种方式也是 npm install 命令的默认行为。<br>如果你想将包作为一个命令行工具，（比如 grunt CLI），那么你应该选择全局安装。  </p>
+<h1 id="package-json"><a href="#package-json" class="headerlink" title="package.json"></a>package.json</h1><p>一个package.json文件必须有”name”，”version”两个字段，要求如下：  </p>
+<blockquote>
+<ul>
+<li>“name”<ul>
+<li>都是小写字母</li>
+<li>一个单词，没有空格</li>
+<li>可以有-和_</li>
+</ul>
+</li>
+<li>“version”<ul>
+<li>形如x.x.x</li>
+<li>遵守语法规范</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h1 id="语义化版本号"><a href="#语义化版本号" class="headerlink" title="语义化版本号"></a>语义化版本号</h1><p>a.b.c的含义，如下：<br>发布补丁，就增加最后一位数字，比如1.0.1<br>如果增加新功能，且不影响原有的功能，就增加小版本号，比如1.1.0<br>如果引入的变化，破坏了向后兼容性，就增加大版本号，比如2.0.0<br>对于依赖包的版本，版本位置应该怎样填写？  </p>
+<ul>
+<li>只接受补丁: 1.0 或 1.0.x 或 ~1.0.4</li>
+<li>只接受小版本号和补丁: 1 或 1.x 或 ^1.0.4</li>
+<li>接受全部更新: * 或 x</li>
+</ul>
+<h1 id="指令"><a href="#指令" class="headerlink" title="指令"></a>指令</h1><ul>
+<li>npm更新<br><code>npm install npm -g</code><br><code>npm install npm@latest -g</code> 安装最新测试版<br><code>npm install npm@next -g</code> 安装下一个未发行版  </li>
+<li>创建package.json<br><code>npm init</code><br><code>npm init -y</code> 会抽取项目的信息来生成package.json<br><code>npm init --yes</code> 会抽取项目的信息来生成package.json<br><code>npm set init.author.email &quot;wombat@npmjs.com&quot;</code> 设置初始化信息<br><code>npm set init.author.name &quot;ag_dubs&quot;</code> 设置初始化信息<br><code>npm set init.license &quot;MIT&quot;</code> 设置初始化信息  </li>
+<li>查看npm版本<br><code>npm -v</code>  </li>
+<li>安装模块<br><code>npm install &lt;package_name&gt;</code> 本地安装<br><code>npm install &lt;package_name&gt; -g</code> 全局安装<br><code>npm install &lt;package_name&gt; --save</code> 会将package_name添加到package.json中的dependencies下<br><code>npm install &lt;package_name&gt; --save-dev</code> 会将package_name添加到package.json中的devDependencies下  </li>
+<li>更新模块<br><code>npm update [-g] [&lt;pkg&gt;...]</code> -g决定更新全局还是更新本地，如果没指定任何的pkg，那么就都更新。  </li>
+<li>检查模块更新<br><code>npm outdated [[&lt;@scope&gt;/]&lt;pkg&gt; ...]</code>  </li>
+<li>删除模块<br><code>npm uninstall &lt;package_name&gt;</code><br><code>npm uninstall --save &lt;package_name&gt;</code> 卸载并移除package.json中的依赖。  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">npm list -g # 查看全局安装的模块</span><br><span class="line">npm list &lt;Module Name&gt; # 查看某个模块的版本号</span><br><span class="line">npm uninstall &lt;Module Name&gt; # 卸载某模块</span><br><span class="line">npm ls # 查看当前目录所有模块</span><br><span class="line">npm update &lt;Module Name&gt; # 更新某模块</span><br><span class="line">npm search &lt;Module Name&gt; # 搜索某模块</span><br><span class="line">npm help &lt;command&gt; # 查看某条命令帮助</span><br></pre></td></tr></table></figure></li>
+</ul>
 
       
     </div>
@@ -525,7 +561,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/npm/" rel="tag"># npm</a>
+            <a href="/tags/NPM/" rel="tag"># NPM</a>
           
             <a href="/tags/NodeJS/" rel="tag"># NodeJS</a>
           
@@ -597,8 +633,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -839,6 +884,22 @@
       </section>
 
       
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#NPM"><span class="nav-number">1.</span> <span class="nav-text">NPM</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#官方文档"><span class="nav-number">2.</span> <span class="nav-text">官方文档</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#本地安装和全局安装"><span class="nav-number">3.</span> <span class="nav-text">本地安装和全局安装</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#package-json"><span class="nav-number">4.</span> <span class="nav-text">package.json</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#语义化版本号"><span class="nav-number">5.</span> <span class="nav-text">语义化版本号</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#指令"><span class="nav-number">6.</span> <span class="nav-text">指令</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
 
       
         <div class="back-to-top">
@@ -871,7 +932,7 @@
       <i class="fa fa-area-chart"></i>
     </span>
     
-    <span title="站点总字数">126k</span>
+    <span title="站点总字数">127k</span>
   
 
   
@@ -880,7 +941,7 @@
       <i class="fa fa-coffee"></i>
     </span>
     
-    <span title="站点阅读时长">1:54</span>
+    <span title="站点阅读时长">1:56</span>
   
 </div>
 
