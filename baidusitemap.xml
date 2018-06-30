@@ -4,6 +4,52 @@
 
     
   <url>
+    <loc>http://yunhao.life/2018/06/30/hexo-next-add-daovoice-contact/</loc>
+    <lastmod>2018-06-30T04:04:16.832Z</lastmod>
+    <data>
+        <display>
+        <title>Hexo NexT 添加 DaoVoice 在线聊天</title>
+        <pubTime>2018-06-29T17:11:22.000Z</pubTime>
+        
+        <tag>Hexo</tag>
+         
+        <tag>NexT</tag>
+         
+        <tag>DaoVoice</tag>
+         
+         
+           
+             
+              <breadCrumb title="Hexo" url="http://yunhao.life/categories/Hexo/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yunhao.life/2018/06/30/npm-instruction-learning-note/</loc>
+    <lastmod>2018-06-29T17:17:34.461Z</lastmod>
+    <data>
+        <display>
+        <title>npm 指令学习笔记</title>
+        <pubTime>2018-06-29T17:12:40.000Z</pubTime>
+        
+        <tag>npm</tag>
+         
+        <tag>NodeJS</tag>
+         
+         
+           
+             
+              <breadCrumb title="NodeJS" url="http://yunhao.life/categories/NodeJS/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://yunhao.life/2018/06/29/hexo-next-function-setting/</loc>
     <lastmod>2018-06-29T12:47:20.397Z</lastmod>
     <data>
@@ -109,9 +155,9 @@
          
         <tag>Hexo</tag>
          
-        <tag>GitHub</tag>
-         
         <tag>域名</tag>
+         
+        <tag>GitHub</tag>
          
         <tag>DNS</tag>
          
@@ -205,13 +251,13 @@
         <title>GoDaddy 域名 托管于腾讯云解析</title>
         <pubTime>2018-06-18T14:57:39.000Z</pubTime>
         
-        <tag>GoDaddy</tag>
-         
         <tag>域名</tag>
          
-        <tag>腾讯云</tag>
-         
         <tag>DNS</tag>
+         
+        <tag>GoDaddy</tag>
+         
+        <tag>腾讯云</tag>
          
          
            
@@ -516,11 +562,11 @@
         <title>Ubuntu16.04 Nginx 反向代理 Apache</title>
         <pubTime>2017-04-07T12:19:44.000Z</pubTime>
         
+        <tag>Ubuntu</tag>
+         
         <tag>服务器</tag>
          
         <tag>代理</tag>
-         
-        <tag>Ubuntu</tag>
          
         <tag>Nginx</tag>
          
@@ -544,9 +590,9 @@
         <title>Ubuntu16.04 Nginx 配置站点学习笔记</title>
         <pubTime>2017-03-30T02:42:15.000Z</pubTime>
         
-        <tag>服务器</tag>
-         
         <tag>Ubuntu</tag>
+         
+        <tag>服务器</tag>
          
         <tag>Nginx</tag>
          

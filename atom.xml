@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yunhao.life/"/>
-  <updated>2018-06-29T12:47:20.397Z</updated>
+  <updated>2018-06-29T17:17:34.461Z</updated>
   <id>http://yunhao.life/</id>
   
   <author>
@@ -15,6 +15,63 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>npm 指令学习笔记</title>
+    <link href="http://yunhao.life/2018/06/30/npm-instruction-learning-note/"/>
+    <id>http://yunhao.life/2018/06/30/npm-instruction-learning-note/</id>
+    <published>2018-06-29T17:12:40.000Z</published>
+    <updated>2018-06-29T17:17:34.461Z</updated>
+    
+    <content type="html"><![CDATA[<a id="more"></a>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+
+      
+    
+    </summary>
+    
+      <category term="NodeJS" scheme="http://yunhao.life/categories/NodeJS/"/>
+    
+    
+      <category term="npm" scheme="http://yunhao.life/tags/npm/"/>
+    
+      <category term="NodeJS" scheme="http://yunhao.life/tags/NodeJS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo NexT 添加 DaoVoice 在线聊天</title>
+    <link href="http://yunhao.life/2018/06/30/hexo-next-add-daovoice-contact/"/>
+    <id>http://yunhao.life/2018/06/30/hexo-next-add-daovoice-contact/</id>
+    <published>2018-06-29T17:11:22.000Z</published>
+    <updated>2018-06-30T04:04:16.832Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="DaoVoice"><a href="#DaoVoice" class="headerlink" title="DaoVoice"></a>DaoVoice</h1><p>一个实时在线沟通的工具。可以及时解答客户的问题。还能够绑定微信。具体请看<a href="http://blog.daovoice.io/daovocie_manhua/?utm_source=DaoCloud&amp;utm_campaign=39_campaign&amp;utm_medium=daovoice_widget&amp;utm_term=footer_link&amp;utm_content=one_min" target="_blank" rel="noopener">一分钟了解DaoVoice</a>  </p><h1 id="新建应用"><a href="#新建应用" class="headerlink" title="新建应用"></a>新建应用</h1><p>首先现在DaoVoice上注册一个账号。打开<a href="https://www.daocloud.io/" target="_blank" rel="noopener">DaoCloud首页</a>。找到DaoVoice服务，然后点击，如下图：<br><img src="/images/hexo-next-add-daovoice-contact/1.png" alt="DaoVoice服务"><br>然后再下边的界面中选择注册，或登录。<br><img src="/images/hexo-next-add-daovoice-contact/2.png" alt="注册或登录"><br>如果是新注册的用户，那么注册之后，就会看到下面的这个界面。这个是让你添加一个应用的，填写你的公司名称，你的电话号码，然后点击保存就好了<br><img src="/images/hexo-next-add-daovoice-contact/3.png" alt="新建应用"><br>如果你是老用户了，找不到上边这个界面了，在下面的位置可以找到，找到之后向上边设置一下。<br><img src="/images/hexo-next-add-daovoice-contact/4.png" alt="新建应用"></p><h1 id="安装到网站"><a href="#安装到网站" class="headerlink" title="安装到网站"></a>安装到网站</h1><p>如下图，点击应用设置，安装到网站，JS，仅匿名用户，然后找到下面两个代码。<br><img src="/images/hexo-next-add-daovoice-contact/5.png" alt="安装到网站"><br>打开博客的主题目录下的文件<code>/themes/next/layout/_custom/head.swig</code>。<br>然后粘贴成下面这样：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&#123;#</span><br><span class="line">Custom head.</span><br><span class="line">#&#125;</span><br><span class="line">&#123;% if config.daovoice %&#125;</span><br><span class="line">  &lt;script&gt;</span><br><span class="line">  (function(i,s,o,g,r,a,m)&#123;i[&quot;DaoVoiceObject&quot;]=r;i[r]=i[r]||function()&#123;(i[r].q=i[r].q||[]).push(arguments)&#125;,i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;a.charset=&quot;utf-8&quot;;m.parentNode.insertBefore(a,m)&#125;)(window,document,&quot;script&quot;,(&apos;https:&apos; == document.location.protocol ? &apos;https:&apos; : &apos;http:&apos;) + &quot;//widget.daovoice.io/widget/&#123;&#123;config.daovoice_app_id&#125;&#125;.js&quot;,&quot;daovoice&quot;)</span><br><span class="line">  daovoice(&apos;init&apos;, &#123;</span><br><span class="line">      app_id: &quot;&#123;&#123;config.daovoice_app_id&#125;&#125;&quot;</span><br><span class="line">    &#125;);</span><br><span class="line">  daovoice(&apos;update&apos;);</span><br><span class="line">  &lt;/script&gt;</span><br><span class="line">&#123;% endif %&#125;</span><br></pre></td></tr></table></figure></p><p>注意app_id后边的那个要换一下，然后那个网址后边哪儿也要换成变量。就是上边图片中，那两段代码中被黑条盖住的部分要替换<br>那个被黑条盖住的部分就是你的app_id。打开<code>博客配置文件</code>然后增加下面内容：<br><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 实时联系</span></span><br><span class="line"><span class="attr">daovoice:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">daovoice_app_id:</span> <span class="string">你的app_id</span></span><br></pre></td></tr></table></figure></p><p>将<code>你的app_id</code>替换成黑条盖住的部分就行了。然后执行<code>hexo cl &amp; hexo g &amp; hexo d</code>，之后ping一下，如下图<br><img src="/images/hexo-next-add-daovoice-contact/6.png" alt="Ping"><br>如果成功了，现在就已经接入了，网站右下角就应该有一个悬浮钮了。  </p><h1 id="微信绑定"><a href="#微信绑定" class="headerlink" title="微信绑定"></a>微信绑定</h1><p>绑定到微信，可以实时处理消息，回复消息。<br><img src="/images/hexo-next-add-daovoice-contact/7.png" alt="微信绑定"><br>扫码之后，就能看到下面的绑定成功。<br><img src="/images/hexo-next-add-daovoice-contact/8.png" alt="绑定成功"></p><h1 id="设置悬浮钮"><a href="#设置悬浮钮" class="headerlink" title="设置悬浮钮"></a>设置悬浮钮</h1><p>如果悬浮钮遮挡其他元素了，或者是想设置悬浮钮的颜色，什么的。点击应用设置，聊天设置，如下图：<br><img src="/images/hexo-next-add-daovoice-contact/9.png" alt="聊天设置"><br>在这里，我们可以设置欢迎语，按钮的颜色，位置什么的。  </p><h1 id="新消息指派"><a href="#新消息指派" class="headerlink" title="新消息指派"></a>新消息指派</h1><p>设置一下新消息指派，点击应用设置，新消息设置，默认指派选择自己。如下图<br><img src="/images/hexo-next-add-daovoice-contact/10.png" alt="新消息指派"></p><h1 id="费用问题"><a href="#费用问题" class="headerlink" title="费用问题"></a>费用问题</h1><p>这个应用是免费的。不过也有付费版。你的网站用户数小于5000的时候，就是免费的。具体的需不需要付费，请看<a href="http://guide.daocloud.io/daovoice/%E6%94%B6%E8%B4%B9%E8%A7%84%E5%88%99-9145665.html?_ga=2.184733417.1747920387.1530264739-470864725.1530264739" target="_blank" rel="noopener">资费情况</a>  </p><h1 id="用户手册"><a href="#用户手册" class="headerlink" title="用户手册"></a>用户手册</h1><p>其他问题，请自行查阅<a href="http://guide.daocloud.io/daovoice/daovoice-5868545.html" target="_blank" rel="noopener">官方用户手册</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;DaoVoice&quot;&gt;&lt;a href=&quot;#DaoVoice&quot; class=&quot;headerlink&quot; title=&quot;DaoVoice&quot;&gt;&lt;/a&gt;DaoVoice&lt;/h1&gt;&lt;p&gt;一个实时在线沟通的工具。可以及时解答客户的问题。还能够绑定微信。具体请看&lt;a href=&quot;h
+      
+    
+    </summary>
+    
+      <category term="Hexo" scheme="http://yunhao.life/categories/Hexo/"/>
+    
+    
+      <category term="Hexo" scheme="http://yunhao.life/tags/Hexo/"/>
+    
+      <category term="NexT" scheme="http://yunhao.life/tags/NexT/"/>
+    
+      <category term="DaoVoice" scheme="http://yunhao.life/tags/DaoVoice/"/>
+    
+  </entry>
   
   <entry>
     <title>Hexo NexT 站内搜索 站点统计 RSS订阅 字数统计 阅读时长 进度条 图片放大 canvas背景 功能配置</title>
@@ -272,13 +329,13 @@
       <category term="域名" scheme="http://yunhao.life/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%9F%9F%E5%90%8D/"/>
     
     
-      <category term="GoDaddy" scheme="http://yunhao.life/tags/GoDaddy/"/>
-    
       <category term="域名" scheme="http://yunhao.life/tags/%E5%9F%9F%E5%90%8D/"/>
     
-      <category term="腾讯云" scheme="http://yunhao.life/tags/%E8%85%BE%E8%AE%AF%E4%BA%91/"/>
-    
       <category term="DNS" scheme="http://yunhao.life/tags/DNS/"/>
+    
+      <category term="GoDaddy" scheme="http://yunhao.life/tags/GoDaddy/"/>
+    
+      <category term="腾讯云" scheme="http://yunhao.life/tags/%E8%85%BE%E8%AE%AF%E4%BA%91/"/>
     
   </entry>
   
@@ -599,74 +656,6 @@
       <category term="CodeForces" scheme="http://yunhao.life/tags/CodeForces/"/>
     
       <category term="DP" scheme="http://yunhao.life/tags/DP/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ACM CodeForces 873 B 题解 前缀和</title>
-    <link href="http://yunhao.life/2018/06/07/acm-cf-873b-simple/"/>
-    <id>http://yunhao.life/2018/06/07/acm-cf-873b-simple/</id>
-    <published>2018-06-07T15:49:23.000Z</published>
-    <updated>2018-06-09T17:28:08.211Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h1><p>B. Balanced Substring  </p><h1 id="限制"><a href="#限制" class="headerlink" title="限制"></a>限制</h1><p>time limit per test: 1 second<br>memory limit per test: 256 megabytes<br>input: standard input<br>output: standard output  </p><h1 id="描述"><a href="#描述" class="headerlink" title="描述"></a>描述</h1><p>You are given a string $s$ consisting only of characters $0$ and $1$. A substring $[l,r]$ of $s$ is a string $s_l$$s_{l+1}$$s_{l+2}$$…$$s_r$, and its length equals to $r-l+1$. A substring is called balanced if the number of zeroes (0) equals to the number of ones in this substring.<br>You have to determine the length of the longest balanced substring of $s$.  </p><h1 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h1><p>The first line contains $n$ $(1 \le n \le 100000)$ — the number of characters in $s$.<br>The second line contains a string $s$ consisting of exactly $n$ characters. Only characters $0$ and $1$ can appear in $s$.  </p><h1 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h1><p>If there is no non-empty balanced substring in $s$, print $0$. Otherwise, print the length of the longest balanced substring.  </p><h1 id="样本"><a href="#样本" class="headerlink" title="样本"></a>样本</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">8</span><br><span class="line">11010111</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">4</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">3</span><br><span class="line">111</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">0</span><br></pre></td></tr></table></figure><h1 id="提示"><a href="#提示" class="headerlink" title="提示"></a>提示</h1><p>In the first example you can choose the substring $[3,6]$. It is balanced, and its length is $4$. Choosing the substring $[2,5]$ is also possible.<br>In the second example it’s impossible to find a non-empty balanced substring.  </p><h1 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h1><p>前缀和的思想。从头往后扫，遇到1就加一，遇到0就减一，维护数列的前缀和。一旦r的前缀和l的前缀相等，那么[l+1,r]这个区间里的0和1的数量一定相等。<br>mark数组中0到100000存储的是前缀和为-100000到0的首次出现位置。100001到200000存储的是前缀和为1到100000的首次出现位置。<br>mark数组首先初始化为-2，然后将mark[0]设置为-1。每次计算前缀和，一旦发现某个mark对应某个前缀和在之前出现过，即不等于-2，那么就和res作比较。否则就更新mark的值为当前下标。  </p><h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstring&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> n;</span><br><span class="line"><span class="keyword">char</span> c;</span><br><span class="line"><span class="keyword">int</span> num;</span><br><span class="line"><span class="keyword">int</span> mark[<span class="number">200005</span>];</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">while</span>(~<span class="built_in">scanf</span>(<span class="string">"%d\n"</span>, &amp;n))&#123;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">-1</span>*n; i &lt;= n; i++)&#123;</span><br><span class="line">            mark[i+<span class="number">100000</span>] = <span class="number">-2</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        mark[<span class="number">100000</span>] = <span class="number">-1</span>;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">int</span> sum = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">int</span> res = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; i++)&#123;</span><br><span class="line">            <span class="built_in">scanf</span>(<span class="string">"%c"</span>, &amp;c);</span><br><span class="line">            num = c-<span class="string">'0'</span>;</span><br><span class="line">            num == <span class="number">0</span> ? sum-- : sum++;</span><br><span class="line">            <span class="keyword">if</span>(mark[<span class="number">100000</span>+sum] != <span class="number">-2</span>)&#123;</span><br><span class="line">                res = max(i-mark[<span class="number">100000</span>+sum], res);</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">else</span>&#123;</span><br><span class="line">                mark[<span class="number">100000</span>+sum] = i;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"%d\n"</span>, res);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;题目&quot;&gt;&lt;a href=&quot;#题目&quot; class=&quot;headerlink&quot; title=&quot;题目&quot;&gt;&lt;/a&gt;题目&lt;/h1&gt;&lt;p&gt;B. Balanced Substring  &lt;/p&gt;
-&lt;h1 id=&quot;限制&quot;&gt;&lt;a href=&quot;#限制&quot; class=&quot;headerlin
-      
-    
-    </summary>
-    
-      <category term="ACM" scheme="http://yunhao.life/categories/ACM/"/>
-    
-      <category term="基础题" scheme="http://yunhao.life/categories/ACM/%E5%9F%BA%E7%A1%80%E9%A2%98/"/>
-    
-      <category term="前缀和" scheme="http://yunhao.life/categories/ACM/%E5%9F%BA%E7%A1%80%E9%A2%98/%E5%89%8D%E7%BC%80%E5%92%8C/"/>
-    
-    
-      <category term="ACM" scheme="http://yunhao.life/tags/ACM/"/>
-    
-      <category term="CodeForces" scheme="http://yunhao.life/tags/CodeForces/"/>
-    
-      <category term="基础题" scheme="http://yunhao.life/tags/%E5%9F%BA%E7%A1%80%E9%A2%98/"/>
-    
-      <category term="前缀和" scheme="http://yunhao.life/tags/%E5%89%8D%E7%BC%80%E5%92%8C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ACM CodeForces 888 B 题解 基础题</title>
-    <link href="http://yunhao.life/2018/06/07/acm-cf-888b-simple/"/>
-    <id>http://yunhao.life/2018/06/07/acm-cf-888b-simple/</id>
-    <published>2018-06-07T08:15:16.000Z</published>
-    <updated>2018-06-07T15:46:59.826Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h1><p>B. Buggy Robot  </p><h1 id="限制"><a href="#限制" class="headerlink" title="限制"></a>限制</h1><p>time limit per test: 2 seconds<br>memory limit per test: 256 megabytes<br>input: standard input<br>output: standard output  </p><h1 id="描述"><a href="#描述" class="headerlink" title="描述"></a>描述</h1><p>Ivan has a robot which is situated on an infinite grid. Initially the robot is standing in the starting cell $(0,0)$. The robot can process commands. There are four types of commands it can perform:  </p><ul><li>U — move from the cell $(x,y)$ to $(x,y+1)$;  </li><li>D — move from $(x,y)$ to $(x,y-1)$;  </li><li>L — move from $(x,y)$ to $(x-1,y)$;  </li><li>R — move from $(x,y)$ to $(x+1,y)$.  </li></ul><p>Ivan entered a sequence of $n$ commands, and the robot processed it. After this sequence the robot ended up in the starting cell $(0,0)$, but Ivan doubts that the sequence is such that after performing it correctly the robot ends up in the same cell. He thinks that some commands were ignored by robot. To acknowledge whether the robot is severely bugged, he needs to calculate the maximum possible number of commands that were performed correctly. Help Ivan to do the calculations!  </p><h1 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h1><p>The first line contains one number $n$ — the length of sequence of commands entered by Ivan $(1 \le n \le 100)$.<br>The second line contains the sequence itself — a string consisting of $n$ characters. Each character can be $U$, $D$, $L$ or $R$.  </p><h1 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h1><p>Print the maximum possible number of commands from the sequence the robot could perform to end up in the starting cell.  </p><h1 id="样本"><a href="#样本" class="headerlink" title="样本"></a>样本</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">4</span><br><span class="line">LDUR</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">4</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">5</span><br><span class="line">RRRUU</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">0</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">6</span><br><span class="line">LLRRRR</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">4</span><br></pre></td></tr></table></figure><h1 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h1><p>水题。算一下L、R、U、D四个字符的个数，然后为了回到原点，所以选取的L、R的个数必须相等，选取的U、D的个数也必须相等。详见代码。  </p><h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstring&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> n;</span><br><span class="line"><span class="keyword">char</span> c;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">while</span>(~<span class="built_in">scanf</span>(<span class="string">"%d\n"</span>, &amp;n))&#123;</span><br><span class="line">        <span class="keyword">int</span> cntl = <span class="number">0</span>, cntr = <span class="number">0</span>, cntu = <span class="number">0</span>, cntd = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++)&#123;</span><br><span class="line">            <span class="built_in">scanf</span>(<span class="string">"%c"</span>, &amp;c);</span><br><span class="line">            <span class="keyword">if</span>(c == <span class="string">'L'</span>) cntl++;</span><br><span class="line">            <span class="keyword">else</span> <span class="keyword">if</span>(c == <span class="string">'R'</span>) cntr++;</span><br><span class="line">            <span class="keyword">else</span> <span class="keyword">if</span>(c == <span class="string">'U'</span>) cntu++;</span><br><span class="line">            <span class="keyword">else</span> <span class="keyword">if</span>(c == <span class="string">'D'</span>) cntd++;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"%d\n"</span>, min(cntl, cntr)*<span class="number">2</span> + min(cntu, cntd)*<span class="number">2</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;题目&quot;&gt;&lt;a href=&quot;#题目&quot; class=&quot;headerlink&quot; title=&quot;题目&quot;&gt;&lt;/a&gt;题目&lt;/h1&gt;&lt;p&gt;B. Buggy Robot  &lt;/p&gt;
-&lt;h1 id=&quot;限制&quot;&gt;&lt;a href=&quot;#限制&quot; class=&quot;headerlink&quot; titl
-      
-    
-    </summary>
-    
-      <category term="ACM" scheme="http://yunhao.life/categories/ACM/"/>
-    
-      <category term="基础题" scheme="http://yunhao.life/categories/ACM/%E5%9F%BA%E7%A1%80%E9%A2%98/"/>
-    
-    
-      <category term="ACM" scheme="http://yunhao.life/tags/ACM/"/>
-    
-      <category term="CodeForces" scheme="http://yunhao.life/tags/CodeForces/"/>
-    
-      <category term="基础题" scheme="http://yunhao.life/tags/%E5%9F%BA%E7%A1%80%E9%A2%98/"/>
     
   </entry>
   
