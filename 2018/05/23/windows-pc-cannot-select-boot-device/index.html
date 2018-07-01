@@ -29,9 +29,13 @@
   
   
     
+      
     
-  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
-  <link href="/lib/pace/pace-theme-corner-indicator.min.css?v=1.0.2" rel="stylesheet">
+    
+      
+    
+  <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+  <link href="//cdn.bootcss.com/pace/1.0.2/themes/blue/pace-theme-corner-indicator.min.css" rel="stylesheet">
 
 
 
@@ -61,7 +65,9 @@
 
   
   
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+    
+  
+  <link href="//cdn.bootcss.com/fancybox/3.2.5/jquery.fancybox.min.css" rel="stylesheet" type="text/css" />
 
 
 
@@ -69,7 +75,9 @@
 
 
 
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+  
+
+<link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
 
 <link href="/css/main.css?v=6.3.0" rel="stylesheet" type="text/css" />
 
@@ -104,7 +112,7 @@
     fastclick: false,
     lazyload: false,
     tabs: true,
-    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideUpIn","post_body":"slideUpIn","coll_header":"fadeIn","sidebar":"slideUpIn"}},
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideUpIn","post_body":"slideUpIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     algolia: {
       applicationID: '',
       apiKey: '',
@@ -133,19 +141,19 @@
 <meta name="keywords" content="Windows,系统安装">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Windows10 PC 无法进入选择启动项界面 无法进入BIOS界面">
-<meta property="og:url" content="http://yunhao.life/2018/05/23/windows-pc-cannot-select-boot-device/index.html">
+<meta property="og:url" content="http://yunhao.space/2018/05/23/windows-pc-cannot-select-boot-device/index.html">
 <meta property="og:site_name" content="火龙窝">
 <meta property="og:description" content="症状想要安装双系统，或是干什么事情的时候，需要选择启动项，但是发现怎么按F12或者其他对应的按键，都不能进入选择启动项的界面，当然BIOS界面也是进不去。   原因Windows10有快速启动这一个功能，就是为了让每次开机更快，它并没有彻底关机，而是做了一些小操作，像是休眠，给你一种关机的假象。   标准解决方法当然是关掉快速启动功能了。如何关闭呢？打开控制面板点击系统和安全点击电源选项下的更改电">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http://yunhao.life/images/windows-pc-cannot-select-boot-device/controlpanel.png">
-<meta property="og:image" content="http://yunhao.life/images/windows-pc-cannot-select-boot-device/systemandsafe.png">
-<meta property="og:image" content="http://yunhao.life/images/windows-pc-cannot-select-boot-device/battery.png">
-<meta property="og:image" content="http://yunhao.life/images/windows-pc-cannot-select-boot-device/change.png">
+<meta property="og:image" content="http://yunhao.space/images/windows-pc-cannot-select-boot-device/controlpanel.png">
+<meta property="og:image" content="http://yunhao.space/images/windows-pc-cannot-select-boot-device/systemandsafe.png">
+<meta property="og:image" content="http://yunhao.space/images/windows-pc-cannot-select-boot-device/battery.png">
+<meta property="og:image" content="http://yunhao.space/images/windows-pc-cannot-select-boot-device/change.png">
 <meta property="og:updated_time" content="2018-06-09T16:54:20.385Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Windows10 PC 无法进入选择启动项界面 无法进入BIOS界面">
 <meta name="twitter:description" content="症状想要安装双系统，或是干什么事情的时候，需要选择启动项，但是发现怎么按F12或者其他对应的按键，都不能进入选择启动项的界面，当然BIOS界面也是进不去。   原因Windows10有快速启动这一个功能，就是为了让每次开机更快，它并没有彻底关机，而是做了一些小操作，像是休眠，给你一种关机的假象。   标准解决方法当然是关掉快速启动功能了。如何关闭呢？打开控制面板点击系统和安全点击电源选项下的更改电">
-<meta name="twitter:image" content="http://yunhao.life/images/windows-pc-cannot-select-boot-device/controlpanel.png">
+<meta name="twitter:image" content="http://yunhao.space/images/windows-pc-cannot-select-boot-device/controlpanel.png">
 
 
 
@@ -154,7 +162,7 @@
 
 
 
-  <link rel="canonical" href="http://yunhao.life/2018/05/23/windows-pc-cannot-select-boot-device/"/>
+  <link rel="canonical" href="http://yunhao.space/2018/05/23/windows-pc-cannot-select-boot-device/"/>
 
 
 
@@ -375,7 +383,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yunhao.life/2018/05/23/windows-pc-cannot-select-boot-device/">
+    <link itemprop="mainEntityOfPage" href="http://yunhao.space/2018/05/23/windows-pc-cannot-select-boot-device/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="喷水小火龙">
@@ -1045,17 +1053,17 @@
 
   
   
-    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+    <script type="text/javascript" src="//cdn.bootcss.com/fancybox/3.2.5/jquery.fancybox.min.js"></script>
   
 
   
   
-    <script type="text/javascript" src="/lib/three/three.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/gh/theme-next/theme-next-three@1.0.0/three.min.js"></script>
   
 
   
   
-    <script type="text/javascript" src="/lib/three/canvas_lines.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/gh/theme-next/theme-next-three@1.0.0/canvas_lines.min.js"></script>
   
 
 

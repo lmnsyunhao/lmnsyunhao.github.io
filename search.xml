@@ -134,7 +134,7 @@
   <entry>
     <title><![CDATA[GoDaddy 域名 托管于腾讯云解析]]></title>
     <url>%2F2018%2F06%2F18%2Fgodaddy-domain-dns-on-tencent-cloud%2F</url>
-    <content type="text"><![CDATA[腾讯云获取域名服务器注册并登陆了腾讯云之后，找到控制台。然后找到域名服务，云解析。然后点击添加解析。将你要解析的域名加进来。添加域名就是你购买的域名，项目就默认就行。然后能看到添加的域名，点击后边的解析。我们可以看到上边的域名服务器的地址。并且它提示我们去到域名注册商处更改地址。 GoDaddy自定义域名服务器首先是去GoDaddy登陆账户（登陆密码还得要求有大写英文字母，小写英文字母，还有数字）。然后找到我的产品。然后是找到需要托管的域名的DNS。点击了DNS之后，我们可以看到，记录和域名服务器俩栏。我们需要把下面的域名服务器改成自定义的，然后将腾讯云上边的那个域名服务器的地址填上。刷新一下界面，我们就能够看到记录的位置显示信息，表示已经脱离了Godaddy的管理了。这个时候我们就只需要在腾讯云上添加解析的记录就ok了。 腾讯云添加记录添加记录的过程中，A类型是将域名指向IP，CNAME类型是将域名指向另一个域名。比如主机记录填写@，记录类型写CNAME，线路类型默认，记录值写lmnsyunhao.github.io，TTL600。这个就是表示在访问yunhao.life的时候就会解析到lmnsyunhao.github.io这个域名。相当于直接访问lmnsyunhao.github.io这个域名。比如主机记录填写www，记录类型写A，线路类型默认，记录值写8.8.8.8，TTL600。这个表示在访问www.yunhao.life的时候会解析到8.8.8.8。相当于直接访问8.8.8.8这个IP。@主机记录表示三级域名处为空。如果记录类型选CNAME那么记录值只能写域名才有效，记录类型选A，记录值只能写IP地址才有效。]]></content>
+    <content type="text"><![CDATA[腾讯云获取域名服务器注册并登陆了腾讯云之后，找到控制台。然后找到域名服务，云解析。然后点击添加解析。将你要解析的域名加进来。添加域名就是你购买的域名，项目就默认就行。然后能看到添加的域名，点击后边的解析。我们可以看到上边的域名服务器的地址。并且它提示我们去到域名注册商处更改地址。 GoDaddy自定义域名服务器首先是去GoDaddy登陆账户（登陆密码还得要求有大写英文字母，小写英文字母，还有数字）。然后找到我的产品。然后是找到需要托管的域名的DNS。点击了DNS之后，我们可以看到，记录和域名服务器俩栏。我们需要把下面的域名服务器改成自定义的，然后将腾讯云上边的那个域名服务器的地址填上。刷新一下界面，我们就能够看到记录的位置显示信息，表示已经脱离了Godaddy的管理了。这个时候我们就只需要在腾讯云上添加解析的记录就ok了。 腾讯云添加记录添加记录的过程中，A类型是将域名指向IP，CNAME类型是将域名指向另一个域名。比如主机记录填写@，记录类型写CNAME，线路类型默认，记录值写lmnsyunhao.github.io，TTL600。这个就是表示在访问yunhao.space的时候就会解析到lmnsyunhao.github.io这个域名。相当于直接访问lmnsyunhao.github.io这个域名。比如主机记录填写www，记录类型写A，线路类型默认，记录值写8.8.8.8，TTL600。这个表示在访问www.yunhao.space的时候会解析到8.8.8.8。相当于直接访问8.8.8.8这个IP。@主机记录表示三级域名处为空。如果记录类型选CNAME那么记录值只能写域名才有效，记录类型选A，记录值只能写IP地址才有效。]]></content>
       <categories>
         <category>服务器</category>
         <category>域名</category>
@@ -358,9 +358,9 @@
       </categories>
       <tags>
         <tag>ACM</tag>
+        <tag>HDU</tag>
         <tag>组合数学</tag>
         <tag>母函数</tag>
-        <tag>HDU</tag>
       </tags>
   </entry>
   <entry>
@@ -605,8 +605,8 @@
         <category>Git</category>
       </categories>
       <tags>
-        <tag>Git</tag>
         <tag>Ubuntu</tag>
+        <tag>Git</tag>
         <tag>GitHub</tag>
         <tag>OpenSSH</tag>
       </tags>
@@ -614,15 +614,15 @@
   <entry>
     <title><![CDATA[GitHub Hexo blog 绑定域名]]></title>
     <url>%2F2017%2F03%2F27%2Fgithub-hexo-blog-bundle-domain%2F</url>
-    <content type="text"><![CDATA[Github 上的 username.github.io 的博客绑定域名操作 创建CNAME文件首先我们要在master分之下创建CNAME文件，文件中写‘你自己想的二级域名.你购买的一级域名’。我的二级域名是www，加上一级域名，所以是www.yunhao.life。这时候就会遇到一个问题，每次在hexo d的时候，CNAME文件会被删除，不要慌，我们将CNAME文件创建在source目录下，然后再进行hexo g的时候，会生成。不用担心CNAME文件被删除的情况。 添加解析去购买域名的网站。找到购买的一级域名。点击解析，然后添加记录。记录类型写CNAME，然后主机记录，就是你要起的二级域名，然后记录值，就是你的github的username.github.io了。我们看介绍可以知道CNAME是针对的两个域名之间的解析，即把记录值的域名，解析成二级域名和一级域名组合成的域名。添加完解析之后，稍等几分钟，访问域名就能看到你的博客了。]]></content>
+    <content type="text"><![CDATA[Github 上的 username.github.io 的博客绑定域名操作 创建CNAME文件首先我们要在master分之下创建CNAME文件，文件中写‘你自己想的二级域名.你购买的一级域名’。我的二级域名是www，加上一级域名，所以是www.yunhao.space。这时候就会遇到一个问题，每次在hexo d的时候，CNAME文件会被删除，不要慌，我们将CNAME文件创建在source目录下，然后再进行hexo g的时候，会生成。不用担心CNAME文件被删除的情况。 添加解析去购买域名的网站。找到购买的一级域名。点击解析，然后添加记录。记录类型写CNAME，然后主机记录，就是你要起的二级域名，然后记录值，就是你的github的username.github.io了。我们看介绍可以知道CNAME是针对的两个域名之间的解析，即把记录值的域名，解析成二级域名和一级域名组合成的域名。添加完解析之后，稍等几分钟，访问域名就能看到你的博客了。]]></content>
       <categories>
         <category>Git</category>
       </categories>
       <tags>
         <tag>Git</tag>
         <tag>Hexo</tag>
-        <tag>GitHub</tag>
         <tag>域名</tag>
+        <tag>GitHub</tag>
         <tag>DNS</tag>
       </tags>
   </entry>

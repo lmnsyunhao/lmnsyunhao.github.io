@@ -5,9 +5,9 @@
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yunhao.life/"/>
+  <link href="http://yunhao.space/"/>
   <updated>2018-06-30T09:14:16.576Z</updated>
-  <id>http://yunhao.life/</id>
+  <id>http://yunhao.space/</id>
   
   <author>
     <name>喷水小火龙</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>NPM 学习笔记</title>
-    <link href="http://yunhao.life/2018/06/30/npm-instruction-learning-note/"/>
-    <id>http://yunhao.life/2018/06/30/npm-instruction-learning-note/</id>
+    <link href="http://yunhao.space/2018/06/30/npm-instruction-learning-note/"/>
+    <id>http://yunhao.space/2018/06/30/npm-instruction-learning-note/</id>
     <published>2018-06-29T17:12:40.000Z</published>
     <updated>2018-06-30T09:14:16.576Z</updated>
     
@@ -34,19 +34,19 @@
     
     </summary>
     
-      <category term="NodeJS" scheme="http://yunhao.life/categories/NodeJS/"/>
+      <category term="NodeJS" scheme="http://yunhao.space/categories/NodeJS/"/>
     
     
-      <category term="NPM" scheme="http://yunhao.life/tags/NPM/"/>
+      <category term="NPM" scheme="http://yunhao.space/tags/NPM/"/>
     
-      <category term="NodeJS" scheme="http://yunhao.life/tags/NodeJS/"/>
+      <category term="NodeJS" scheme="http://yunhao.space/tags/NodeJS/"/>
     
   </entry>
   
   <entry>
     <title>Hexo NexT 添加 DaoVoice 在线聊天</title>
-    <link href="http://yunhao.life/2018/06/30/hexo-next-add-daovoice-contact/"/>
-    <id>http://yunhao.life/2018/06/30/hexo-next-add-daovoice-contact/</id>
+    <link href="http://yunhao.space/2018/06/30/hexo-next-add-daovoice-contact/"/>
+    <id>http://yunhao.space/2018/06/30/hexo-next-add-daovoice-contact/</id>
     <published>2018-06-29T17:11:22.000Z</published>
     <updated>2018-06-30T04:04:16.832Z</updated>
     
@@ -61,21 +61,21 @@
     
     </summary>
     
-      <category term="Hexo" scheme="http://yunhao.life/categories/Hexo/"/>
+      <category term="Hexo" scheme="http://yunhao.space/categories/Hexo/"/>
     
     
-      <category term="Hexo" scheme="http://yunhao.life/tags/Hexo/"/>
+      <category term="Hexo" scheme="http://yunhao.space/tags/Hexo/"/>
     
-      <category term="NexT" scheme="http://yunhao.life/tags/NexT/"/>
+      <category term="NexT" scheme="http://yunhao.space/tags/NexT/"/>
     
-      <category term="DaoVoice" scheme="http://yunhao.life/tags/DaoVoice/"/>
+      <category term="DaoVoice" scheme="http://yunhao.space/tags/DaoVoice/"/>
     
   </entry>
   
   <entry>
     <title>Hexo NexT 站内搜索 站点统计 RSS订阅 字数统计 阅读时长 进度条 图片放大 canvas背景 功能配置</title>
-    <link href="http://yunhao.life/2018/06/29/hexo-next-function-setting/"/>
-    <id>http://yunhao.life/2018/06/29/hexo-next-function-setting/</id>
+    <link href="http://yunhao.space/2018/06/29/hexo-next-function-setting/"/>
+    <id>http://yunhao.space/2018/06/29/hexo-next-function-setting/</id>
     <published>2018-06-29T11:11:35.000Z</published>
     <updated>2018-06-29T12:47:20.397Z</updated>
     
@@ -87,19 +87,19 @@
     
     </summary>
     
-      <category term="Hexo" scheme="http://yunhao.life/categories/Hexo/"/>
+      <category term="Hexo" scheme="http://yunhao.space/categories/Hexo/"/>
     
     
-      <category term="Hexo" scheme="http://yunhao.life/tags/Hexo/"/>
+      <category term="Hexo" scheme="http://yunhao.space/tags/Hexo/"/>
     
-      <category term="NexT" scheme="http://yunhao.life/tags/NexT/"/>
+      <category term="NexT" scheme="http://yunhao.space/tags/NexT/"/>
     
   </entry>
   
   <entry>
     <title>Git 警告错误 LF will be replaced by CRLF</title>
-    <link href="http://yunhao.life/2018/06/29/git-warning-lf-replaced-by-crlf/"/>
-    <id>http://yunhao.life/2018/06/29/git-warning-lf-replaced-by-crlf/</id>
+    <link href="http://yunhao.space/2018/06/29/git-warning-lf-replaced-by-crlf/"/>
+    <id>http://yunhao.space/2018/06/29/git-warning-lf-replaced-by-crlf/</id>
     <published>2018-06-29T06:59:18.000Z</published>
     <updated>2018-06-29T07:17:32.913Z</updated>
     
@@ -114,19 +114,19 @@
     
     </summary>
     
-      <category term="Git" scheme="http://yunhao.life/categories/Git/"/>
+      <category term="Git" scheme="http://yunhao.space/categories/Git/"/>
     
     
-      <category term="Git" scheme="http://yunhao.life/tags/Git/"/>
+      <category term="Git" scheme="http://yunhao.space/tags/Git/"/>
     
-      <category term="Hexo" scheme="http://yunhao.life/tags/Hexo/"/>
+      <category term="Hexo" scheme="http://yunhao.space/tags/Hexo/"/>
     
   </entry>
   
   <entry>
     <title>hexo-leancloud-counter-security 插件 Too many requests 错误</title>
-    <link href="http://yunhao.life/2018/06/29/hexo-leancloud-counter-security-too-many-requests-error/"/>
-    <id>http://yunhao.life/2018/06/29/hexo-leancloud-counter-security-too-many-requests-error/</id>
+    <link href="http://yunhao.space/2018/06/29/hexo-leancloud-counter-security-too-many-requests-error/"/>
+    <id>http://yunhao.space/2018/06/29/hexo-leancloud-counter-security-too-many-requests-error/</id>
     <published>2018-06-29T05:05:13.000Z</published>
     <updated>2018-06-29T06:54:32.102Z</updated>
     
@@ -141,19 +141,19 @@
     
     </summary>
     
-      <category term="Hexo" scheme="http://yunhao.life/categories/Hexo/"/>
+      <category term="Hexo" scheme="http://yunhao.space/categories/Hexo/"/>
     
     
-      <category term="Hexo" scheme="http://yunhao.life/tags/Hexo/"/>
+      <category term="Hexo" scheme="http://yunhao.space/tags/Hexo/"/>
     
-      <category term="LeanCloud" scheme="http://yunhao.life/tags/LeanCloud/"/>
+      <category term="LeanCloud" scheme="http://yunhao.space/tags/LeanCloud/"/>
     
   </entry>
   
   <entry>
     <title>Hexo NexT 主题 LeanCloud 插件安装教程</title>
-    <link href="http://yunhao.life/2018/06/27/hexo-leancloud-plugin-installation-tutor/"/>
-    <id>http://yunhao.life/2018/06/27/hexo-leancloud-plugin-installation-tutor/</id>
+    <link href="http://yunhao.space/2018/06/27/hexo-leancloud-plugin-installation-tutor/"/>
+    <id>http://yunhao.space/2018/06/27/hexo-leancloud-plugin-installation-tutor/</id>
     <published>2018-06-27T13:13:51.000Z</published>
     <updated>2018-06-29T05:48:17.126Z</updated>
     
@@ -168,21 +168,21 @@
     
     </summary>
     
-      <category term="Hexo" scheme="http://yunhao.life/categories/Hexo/"/>
+      <category term="Hexo" scheme="http://yunhao.space/categories/Hexo/"/>
     
     
-      <category term="Hexo" scheme="http://yunhao.life/tags/Hexo/"/>
+      <category term="Hexo" scheme="http://yunhao.space/tags/Hexo/"/>
     
-      <category term="NexT" scheme="http://yunhao.life/tags/NexT/"/>
+      <category term="NexT" scheme="http://yunhao.space/tags/NexT/"/>
     
-      <category term="LeanCloud" scheme="http://yunhao.life/tags/LeanCloud/"/>
+      <category term="LeanCloud" scheme="http://yunhao.space/tags/LeanCloud/"/>
     
   </entry>
   
   <entry>
     <title>Hexo d 时遇到 Host Key Verification Failed 问题</title>
-    <link href="http://yunhao.life/2018/06/24/hexo-d-host-key-verification-failed-issue/"/>
-    <id>http://yunhao.life/2018/06/24/hexo-d-host-key-verification-failed-issue/</id>
+    <link href="http://yunhao.space/2018/06/24/hexo-d-host-key-verification-failed-issue/"/>
+    <id>http://yunhao.space/2018/06/24/hexo-d-host-key-verification-failed-issue/</id>
     <published>2018-06-23T16:09:57.000Z</published>
     <updated>2018-06-29T07:01:11.910Z</updated>
     
@@ -197,21 +197,21 @@
     
     </summary>
     
-      <category term="Hexo" scheme="http://yunhao.life/categories/Hexo/"/>
+      <category term="Hexo" scheme="http://yunhao.space/categories/Hexo/"/>
     
     
-      <category term="Git" scheme="http://yunhao.life/tags/Git/"/>
+      <category term="Git" scheme="http://yunhao.space/tags/Git/"/>
     
-      <category term="Hexo" scheme="http://yunhao.life/tags/Hexo/"/>
+      <category term="Hexo" scheme="http://yunhao.space/tags/Hexo/"/>
     
-      <category term="GitHub" scheme="http://yunhao.life/tags/GitHub/"/>
+      <category term="GitHub" scheme="http://yunhao.space/tags/GitHub/"/>
     
   </entry>
   
   <entry>
     <title>Do U Need A Ladder ?</title>
-    <link href="http://yunhao.life/2018/06/20/do-you-need-a-ladder/"/>
-    <id>http://yunhao.life/2018/06/20/do-you-need-a-ladder/</id>
+    <link href="http://yunhao.space/2018/06/20/do-you-need-a-ladder/"/>
+    <id>http://yunhao.space/2018/06/20/do-you-need-a-ladder/</id>
     <published>2018-06-20T14:09:21.000Z</published>
     <updated>2018-06-25T06:59:08.144Z</updated>
     
@@ -226,29 +226,29 @@
     
     </summary>
     
-      <category term="服务器" scheme="http://yunhao.life/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+      <category term="服务器" scheme="http://yunhao.space/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
     
-      <category term="Ladder" scheme="http://yunhao.life/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/Ladder/"/>
+      <category term="Ladder" scheme="http://yunhao.space/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/Ladder/"/>
     
     
-      <category term="Ladder" scheme="http://yunhao.life/tags/Ladder/"/>
+      <category term="Ladder" scheme="http://yunhao.space/tags/Ladder/"/>
     
-      <category term="Proxifier" scheme="http://yunhao.life/tags/Proxifier/"/>
+      <category term="Proxifier" scheme="http://yunhao.space/tags/Proxifier/"/>
     
-      <category term="VPS" scheme="http://yunhao.life/tags/VPS/"/>
+      <category term="VPS" scheme="http://yunhao.space/tags/VPS/"/>
     
-      <category term="服务器" scheme="http://yunhao.life/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+      <category term="服务器" scheme="http://yunhao.space/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
     
-      <category term="代理" scheme="http://yunhao.life/tags/%E4%BB%A3%E7%90%86/"/>
+      <category term="代理" scheme="http://yunhao.space/tags/%E4%BB%A3%E7%90%86/"/>
     
-      <category term="DigitalOcean" scheme="http://yunhao.life/tags/DigitalOcean/"/>
+      <category term="DigitalOcean" scheme="http://yunhao.space/tags/DigitalOcean/"/>
     
   </entry>
   
   <entry>
     <title>Windows10 开启OpenSSH服务 CMD配置SSH远程连接服务</title>
-    <link href="http://yunhao.life/2018/06/19/windows-openssh-and-ssh-remote-connection/"/>
-    <id>http://yunhao.life/2018/06/19/windows-openssh-and-ssh-remote-connection/</id>
+    <link href="http://yunhao.space/2018/06/19/windows-openssh-and-ssh-remote-connection/"/>
+    <id>http://yunhao.space/2018/06/19/windows-openssh-and-ssh-remote-connection/</id>
     <published>2018-06-19T08:34:55.000Z</published>
     <updated>2018-06-19T14:35:28.159Z</updated>
     
@@ -263,21 +263,21 @@
     
     </summary>
     
-      <category term="Windows" scheme="http://yunhao.life/categories/Windows/"/>
+      <category term="Windows" scheme="http://yunhao.space/categories/Windows/"/>
     
     
-      <category term="OpenSSH" scheme="http://yunhao.life/tags/OpenSSH/"/>
+      <category term="OpenSSH" scheme="http://yunhao.space/tags/OpenSSH/"/>
     
-      <category term="Windows" scheme="http://yunhao.life/tags/Windows/"/>
+      <category term="Windows" scheme="http://yunhao.space/tags/Windows/"/>
     
-      <category term="CMD" scheme="http://yunhao.life/tags/CMD/"/>
+      <category term="CMD" scheme="http://yunhao.space/tags/CMD/"/>
     
   </entry>
   
   <entry>
     <title>Windows10 生成 SSH密钥 GitHub配置</title>
-    <link href="http://yunhao.life/2018/06/19/windows-github-ssh-key/"/>
-    <id>http://yunhao.life/2018/06/19/windows-github-ssh-key/</id>
+    <link href="http://yunhao.space/2018/06/19/windows-github-ssh-key/"/>
+    <id>http://yunhao.space/2018/06/19/windows-github-ssh-key/</id>
     <published>2018-06-19T08:30:35.000Z</published>
     <updated>2018-06-29T07:01:28.635Z</updated>
     
@@ -292,27 +292,27 @@
     
     </summary>
     
-      <category term="Windows" scheme="http://yunhao.life/categories/Windows/"/>
+      <category term="Windows" scheme="http://yunhao.space/categories/Windows/"/>
     
     
-      <category term="Git" scheme="http://yunhao.life/tags/Git/"/>
+      <category term="Git" scheme="http://yunhao.space/tags/Git/"/>
     
-      <category term="GitHub" scheme="http://yunhao.life/tags/GitHub/"/>
+      <category term="GitHub" scheme="http://yunhao.space/tags/GitHub/"/>
     
-      <category term="OpenSSH" scheme="http://yunhao.life/tags/OpenSSH/"/>
+      <category term="OpenSSH" scheme="http://yunhao.space/tags/OpenSSH/"/>
     
-      <category term="Windows" scheme="http://yunhao.life/tags/Windows/"/>
+      <category term="Windows" scheme="http://yunhao.space/tags/Windows/"/>
     
   </entry>
   
   <entry>
     <title>GoDaddy 域名 托管于腾讯云解析</title>
-    <link href="http://yunhao.life/2018/06/18/godaddy-domain-dns-on-tencent-cloud/"/>
-    <id>http://yunhao.life/2018/06/18/godaddy-domain-dns-on-tencent-cloud/</id>
+    <link href="http://yunhao.space/2018/06/18/godaddy-domain-dns-on-tencent-cloud/"/>
+    <id>http://yunhao.space/2018/06/18/godaddy-domain-dns-on-tencent-cloud/</id>
     <published>2018-06-18T14:57:39.000Z</published>
-    <updated>2018-06-27T13:19:58.903Z</updated>
+    <updated>2018-07-01T10:24:01.671Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="腾讯云获取域名服务器"><a href="#腾讯云获取域名服务器" class="headerlink" title="腾讯云获取域名服务器"></a>腾讯云获取域名服务器</h1><p>注册并登陆了腾讯云之后，找到控制台。<br><img src="/images/godaddy-domain-dns-on-tencent-cloud/tencent-control-panel.png" alt="控制台"><br>然后找到域名服务，云解析。<br><img src="/images/godaddy-domain-dns-on-tencent-cloud/service.png" alt="云解析"><br>然后点击添加解析。将你要解析的域名加进来。<br><img src="/images/godaddy-domain-dns-on-tencent-cloud/add-parsing.png" alt="添加解析"><br>添加域名就是你购买的域名，项目就默认就行。<br><img src="/images/godaddy-domain-dns-on-tencent-cloud/parsing-info.png" alt="添加解析"><br>然后能看到添加的域名，点击后边的解析。<br><img src="/images/godaddy-domain-dns-on-tencent-cloud/parsing.png" alt="解析"><br>我们可以看到上边的域名服务器的地址。并且它提示我们去到域名注册商处更改地址。<br><img src="/images/godaddy-domain-dns-on-tencent-cloud/dns-address.png" alt="DNS地址"></p><h1 id="GoDaddy自定义域名服务器"><a href="#GoDaddy自定义域名服务器" class="headerlink" title="GoDaddy自定义域名服务器"></a>GoDaddy自定义域名服务器</h1><p>首先是去<a href="https://sg.godaddy.com/zh/" target="_blank" rel="noopener">GoDaddy</a>登陆账户（登陆密码还得要求有大写英文字母，小写英文字母，还有数字）。然后找到我的产品。<br><img src="/images/godaddy-domain-dns-on-tencent-cloud/godaddy-production.png" alt="我的产品"><br>然后是找到需要托管的域名的DNS。<br><img src="/images/godaddy-domain-dns-on-tencent-cloud/godaddy-dns.png" alt="DNS"><br>点击了DNS之后，我们可以看到，记录和域名服务器俩栏。我们需要把下面的域名服务器改成自定义的，然后将腾讯云上边的那个域名服务器的地址填上。刷新一下界面，我们就能够看到记录的位置显示信息，表示已经脱离了Godaddy的管理了。<br><img src="/images/godaddy-domain-dns-on-tencent-cloud/customized-dns.png" alt="自定义域名服务器"><br>这个时候我们就只需要在腾讯云上添加解析的记录就ok了。  </p><h1 id="腾讯云添加记录"><a href="#腾讯云添加记录" class="headerlink" title="腾讯云添加记录"></a>腾讯云添加记录</h1><p>添加记录的过程中，A类型是将域名指向IP，CNAME类型是将域名指向另一个域名。<br><img src="/images/godaddy-domain-dns-on-tencent-cloud/add-record.png" alt="添加记录"><br>比如<code>主机记录</code>填写<code>@</code>，<code>记录类型</code>写<code>CNAME</code>，线路类型默认，<code>记录值</code>写<code>lmnsyunhao.github.io</code>，TTL600。这个就是表示在访问yunhao.life的时候就会解析到lmnsyunhao.github.io这个域名。相当于直接访问lmnsyunhao.github.io这个域名。<br>比如<code>主机记录</code>填写<code>www</code>，<code>记录类型</code>写<code>A</code>，线路类型默认，<code>记录值</code>写<code>8.8.8.8</code>，TTL600。这个表示在访问<code>www.yunhao.life</code>的时候会解析到8.8.8.8。相当于直接访问8.8.8.8这个IP。<br><code>@</code>主机记录表示三级域名处为空。如果记录类型选<code>CNAME</code>那么记录值只能写域名才有效，记录类型选A，记录值只能写IP地址才有效。  </p>]]></content>
+    <content type="html"><![CDATA[<h1 id="腾讯云获取域名服务器"><a href="#腾讯云获取域名服务器" class="headerlink" title="腾讯云获取域名服务器"></a>腾讯云获取域名服务器</h1><p>注册并登陆了腾讯云之后，找到控制台。<br><img src="/images/godaddy-domain-dns-on-tencent-cloud/tencent-control-panel.png" alt="控制台"><br>然后找到域名服务，云解析。<br><img src="/images/godaddy-domain-dns-on-tencent-cloud/service.png" alt="云解析"><br>然后点击添加解析。将你要解析的域名加进来。<br><img src="/images/godaddy-domain-dns-on-tencent-cloud/add-parsing.png" alt="添加解析"><br>添加域名就是你购买的域名，项目就默认就行。<br><img src="/images/godaddy-domain-dns-on-tencent-cloud/parsing-info.png" alt="添加解析"><br>然后能看到添加的域名，点击后边的解析。<br><img src="/images/godaddy-domain-dns-on-tencent-cloud/parsing.png" alt="解析"><br>我们可以看到上边的域名服务器的地址。并且它提示我们去到域名注册商处更改地址。<br><img src="/images/godaddy-domain-dns-on-tencent-cloud/dns-address.png" alt="DNS地址"></p><h1 id="GoDaddy自定义域名服务器"><a href="#GoDaddy自定义域名服务器" class="headerlink" title="GoDaddy自定义域名服务器"></a>GoDaddy自定义域名服务器</h1><p>首先是去<a href="https://sg.godaddy.com/zh/" target="_blank" rel="noopener">GoDaddy</a>登陆账户（登陆密码还得要求有大写英文字母，小写英文字母，还有数字）。然后找到我的产品。<br><img src="/images/godaddy-domain-dns-on-tencent-cloud/godaddy-production.png" alt="我的产品"><br>然后是找到需要托管的域名的DNS。<br><img src="/images/godaddy-domain-dns-on-tencent-cloud/godaddy-dns.png" alt="DNS"><br>点击了DNS之后，我们可以看到，记录和域名服务器俩栏。我们需要把下面的域名服务器改成自定义的，然后将腾讯云上边的那个域名服务器的地址填上。刷新一下界面，我们就能够看到记录的位置显示信息，表示已经脱离了Godaddy的管理了。<br><img src="/images/godaddy-domain-dns-on-tencent-cloud/customized-dns.png" alt="自定义域名服务器"><br>这个时候我们就只需要在腾讯云上添加解析的记录就ok了。  </p><h1 id="腾讯云添加记录"><a href="#腾讯云添加记录" class="headerlink" title="腾讯云添加记录"></a>腾讯云添加记录</h1><p>添加记录的过程中，A类型是将域名指向IP，CNAME类型是将域名指向另一个域名。<br><img src="/images/godaddy-domain-dns-on-tencent-cloud/add-record.png" alt="添加记录"><br>比如<code>主机记录</code>填写<code>@</code>，<code>记录类型</code>写<code>CNAME</code>，线路类型默认，<code>记录值</code>写<code>lmnsyunhao.github.io</code>，TTL600。这个就是表示在访问yunhao.space的时候就会解析到lmnsyunhao.github.io这个域名。相当于直接访问lmnsyunhao.github.io这个域名。<br>比如<code>主机记录</code>填写<code>www</code>，<code>记录类型</code>写<code>A</code>，线路类型默认，<code>记录值</code>写<code>8.8.8.8</code>，TTL600。这个表示在访问<code>www.yunhao.space</code>的时候会解析到8.8.8.8。相当于直接访问8.8.8.8这个IP。<br><code>@</code>主机记录表示三级域名处为空。如果记录类型选<code>CNAME</code>那么记录值只能写域名才有效，记录类型选A，记录值只能写IP地址才有效。  </p>]]></content>
     
     <summary type="html">
     
@@ -323,25 +323,25 @@
     
     </summary>
     
-      <category term="服务器" scheme="http://yunhao.life/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+      <category term="服务器" scheme="http://yunhao.space/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
     
-      <category term="域名" scheme="http://yunhao.life/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%9F%9F%E5%90%8D/"/>
+      <category term="域名" scheme="http://yunhao.space/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%9F%9F%E5%90%8D/"/>
     
     
-      <category term="域名" scheme="http://yunhao.life/tags/%E5%9F%9F%E5%90%8D/"/>
+      <category term="域名" scheme="http://yunhao.space/tags/%E5%9F%9F%E5%90%8D/"/>
     
-      <category term="DNS" scheme="http://yunhao.life/tags/DNS/"/>
+      <category term="DNS" scheme="http://yunhao.space/tags/DNS/"/>
     
-      <category term="GoDaddy" scheme="http://yunhao.life/tags/GoDaddy/"/>
+      <category term="GoDaddy" scheme="http://yunhao.space/tags/GoDaddy/"/>
     
-      <category term="腾讯云" scheme="http://yunhao.life/tags/%E8%85%BE%E8%AE%AF%E4%BA%91/"/>
+      <category term="腾讯云" scheme="http://yunhao.space/tags/%E8%85%BE%E8%AE%AF%E4%BA%91/"/>
     
   </entry>
   
   <entry>
     <title>ACM HDU 2089 题解 数位DP</title>
-    <link href="http://yunhao.life/2018/06/17/acm-hdu-2089-digital-dp/"/>
-    <id>http://yunhao.life/2018/06/17/acm-hdu-2089-digital-dp/</id>
+    <link href="http://yunhao.space/2018/06/17/acm-hdu-2089-digital-dp/"/>
+    <id>http://yunhao.space/2018/06/17/acm-hdu-2089-digital-dp/</id>
     <published>2018-06-17T08:34:42.000Z</published>
     <updated>2018-06-19T14:33:59.545Z</updated>
     
@@ -357,27 +357,27 @@
     
     </summary>
     
-      <category term="ACM" scheme="http://yunhao.life/categories/ACM/"/>
+      <category term="ACM" scheme="http://yunhao.space/categories/ACM/"/>
     
-      <category term="DP" scheme="http://yunhao.life/categories/ACM/DP/"/>
+      <category term="DP" scheme="http://yunhao.space/categories/ACM/DP/"/>
     
-      <category term="数位DP" scheme="http://yunhao.life/categories/ACM/DP/%E6%95%B0%E4%BD%8DDP/"/>
+      <category term="数位DP" scheme="http://yunhao.space/categories/ACM/DP/%E6%95%B0%E4%BD%8DDP/"/>
     
     
-      <category term="ACM" scheme="http://yunhao.life/tags/ACM/"/>
+      <category term="ACM" scheme="http://yunhao.space/tags/ACM/"/>
     
-      <category term="DP" scheme="http://yunhao.life/tags/DP/"/>
+      <category term="DP" scheme="http://yunhao.space/tags/DP/"/>
     
-      <category term="HDU" scheme="http://yunhao.life/tags/HDU/"/>
+      <category term="HDU" scheme="http://yunhao.space/tags/HDU/"/>
     
-      <category term="数位DP" scheme="http://yunhao.life/tags/%E6%95%B0%E4%BD%8DDP/"/>
+      <category term="数位DP" scheme="http://yunhao.space/tags/%E6%95%B0%E4%BD%8DDP/"/>
     
   </entry>
   
   <entry>
     <title>ACM LightOJ 1422 题解 区间DP</title>
-    <link href="http://yunhao.life/2018/06/14/acm-lightoj-1422-dp-on-segment/"/>
-    <id>http://yunhao.life/2018/06/14/acm-lightoj-1422-dp-on-segment/</id>
+    <link href="http://yunhao.space/2018/06/14/acm-lightoj-1422-dp-on-segment/"/>
+    <id>http://yunhao.space/2018/06/14/acm-lightoj-1422-dp-on-segment/</id>
     <published>2018-06-14T07:19:43.000Z</published>
     <updated>2018-06-17T02:23:32.290Z</updated>
     
@@ -393,27 +393,27 @@
     
     </summary>
     
-      <category term="ACM" scheme="http://yunhao.life/categories/ACM/"/>
+      <category term="ACM" scheme="http://yunhao.space/categories/ACM/"/>
     
-      <category term="DP" scheme="http://yunhao.life/categories/ACM/DP/"/>
+      <category term="DP" scheme="http://yunhao.space/categories/ACM/DP/"/>
     
-      <category term="区间DP" scheme="http://yunhao.life/categories/ACM/DP/%E5%8C%BA%E9%97%B4DP/"/>
+      <category term="区间DP" scheme="http://yunhao.space/categories/ACM/DP/%E5%8C%BA%E9%97%B4DP/"/>
     
     
-      <category term="ACM" scheme="http://yunhao.life/tags/ACM/"/>
+      <category term="ACM" scheme="http://yunhao.space/tags/ACM/"/>
     
-      <category term="DP" scheme="http://yunhao.life/tags/DP/"/>
+      <category term="DP" scheme="http://yunhao.space/tags/DP/"/>
     
-      <category term="区间DP" scheme="http://yunhao.life/tags/%E5%8C%BA%E9%97%B4DP/"/>
+      <category term="区间DP" scheme="http://yunhao.space/tags/%E5%8C%BA%E9%97%B4DP/"/>
     
-      <category term="LightOJ" scheme="http://yunhao.life/tags/LightOJ/"/>
+      <category term="LightOJ" scheme="http://yunhao.space/tags/LightOJ/"/>
     
   </entry>
   
   <entry>
     <title>ACM POJ 1651 题解 区间DP</title>
-    <link href="http://yunhao.life/2018/06/11/acm-poj-1651-dp-on-segment/"/>
-    <id>http://yunhao.life/2018/06/11/acm-poj-1651-dp-on-segment/</id>
+    <link href="http://yunhao.space/2018/06/11/acm-poj-1651-dp-on-segment/"/>
+    <id>http://yunhao.space/2018/06/11/acm-poj-1651-dp-on-segment/</id>
     <published>2018-06-11T05:33:38.000Z</published>
     <updated>2018-06-11T06:34:41.559Z</updated>
     
@@ -429,27 +429,27 @@
     
     </summary>
     
-      <category term="ACM" scheme="http://yunhao.life/categories/ACM/"/>
+      <category term="ACM" scheme="http://yunhao.space/categories/ACM/"/>
     
-      <category term="DP" scheme="http://yunhao.life/categories/ACM/DP/"/>
+      <category term="DP" scheme="http://yunhao.space/categories/ACM/DP/"/>
     
-      <category term="区间DP" scheme="http://yunhao.life/categories/ACM/DP/%E5%8C%BA%E9%97%B4DP/"/>
+      <category term="区间DP" scheme="http://yunhao.space/categories/ACM/DP/%E5%8C%BA%E9%97%B4DP/"/>
     
     
-      <category term="ACM" scheme="http://yunhao.life/tags/ACM/"/>
+      <category term="ACM" scheme="http://yunhao.space/tags/ACM/"/>
     
-      <category term="DP" scheme="http://yunhao.life/tags/DP/"/>
+      <category term="DP" scheme="http://yunhao.space/tags/DP/"/>
     
-      <category term="区间DP" scheme="http://yunhao.life/tags/%E5%8C%BA%E9%97%B4DP/"/>
+      <category term="区间DP" scheme="http://yunhao.space/tags/%E5%8C%BA%E9%97%B4DP/"/>
     
-      <category term="POJ" scheme="http://yunhao.life/tags/POJ/"/>
+      <category term="POJ" scheme="http://yunhao.space/tags/POJ/"/>
     
   </entry>
   
   <entry>
     <title>ACM POJ 2955 题解 区间DP</title>
-    <link href="http://yunhao.life/2018/06/10/acm-poj-2955-dp-on-segment/"/>
-    <id>http://yunhao.life/2018/06/10/acm-poj-2955-dp-on-segment/</id>
+    <link href="http://yunhao.space/2018/06/10/acm-poj-2955-dp-on-segment/"/>
+    <id>http://yunhao.space/2018/06/10/acm-poj-2955-dp-on-segment/</id>
     <published>2018-06-10T15:57:07.000Z</published>
     <updated>2018-06-10T16:38:43.451Z</updated>
     
@@ -465,27 +465,27 @@
     
     </summary>
     
-      <category term="ACM" scheme="http://yunhao.life/categories/ACM/"/>
+      <category term="ACM" scheme="http://yunhao.space/categories/ACM/"/>
     
-      <category term="DP" scheme="http://yunhao.life/categories/ACM/DP/"/>
+      <category term="DP" scheme="http://yunhao.space/categories/ACM/DP/"/>
     
-      <category term="区间DP" scheme="http://yunhao.life/categories/ACM/DP/%E5%8C%BA%E9%97%B4DP/"/>
+      <category term="区间DP" scheme="http://yunhao.space/categories/ACM/DP/%E5%8C%BA%E9%97%B4DP/"/>
     
     
-      <category term="ACM" scheme="http://yunhao.life/tags/ACM/"/>
+      <category term="ACM" scheme="http://yunhao.space/tags/ACM/"/>
     
-      <category term="DP" scheme="http://yunhao.life/tags/DP/"/>
+      <category term="DP" scheme="http://yunhao.space/tags/DP/"/>
     
-      <category term="区间DP" scheme="http://yunhao.life/tags/%E5%8C%BA%E9%97%B4DP/"/>
+      <category term="区间DP" scheme="http://yunhao.space/tags/%E5%8C%BA%E9%97%B4DP/"/>
     
-      <category term="POJ" scheme="http://yunhao.life/tags/POJ/"/>
+      <category term="POJ" scheme="http://yunhao.space/tags/POJ/"/>
     
   </entry>
   
   <entry>
     <title>ACM HDU 4745 题解 区间DP</title>
-    <link href="http://yunhao.life/2018/06/10/acm-hdu-4745-dp-on-segment/"/>
-    <id>http://yunhao.life/2018/06/10/acm-hdu-4745-dp-on-segment/</id>
+    <link href="http://yunhao.space/2018/06/10/acm-hdu-4745-dp-on-segment/"/>
+    <id>http://yunhao.space/2018/06/10/acm-hdu-4745-dp-on-segment/</id>
     <published>2018-06-10T12:47:42.000Z</published>
     <updated>2018-06-10T16:38:14.528Z</updated>
     
@@ -501,27 +501,27 @@
     
     </summary>
     
-      <category term="ACM" scheme="http://yunhao.life/categories/ACM/"/>
+      <category term="ACM" scheme="http://yunhao.space/categories/ACM/"/>
     
-      <category term="DP" scheme="http://yunhao.life/categories/ACM/DP/"/>
+      <category term="DP" scheme="http://yunhao.space/categories/ACM/DP/"/>
     
-      <category term="区间DP" scheme="http://yunhao.life/categories/ACM/DP/%E5%8C%BA%E9%97%B4DP/"/>
+      <category term="区间DP" scheme="http://yunhao.space/categories/ACM/DP/%E5%8C%BA%E9%97%B4DP/"/>
     
     
-      <category term="ACM" scheme="http://yunhao.life/tags/ACM/"/>
+      <category term="ACM" scheme="http://yunhao.space/tags/ACM/"/>
     
-      <category term="DP" scheme="http://yunhao.life/tags/DP/"/>
+      <category term="DP" scheme="http://yunhao.space/tags/DP/"/>
     
-      <category term="HDU" scheme="http://yunhao.life/tags/HDU/"/>
+      <category term="HDU" scheme="http://yunhao.space/tags/HDU/"/>
     
-      <category term="区间DP" scheme="http://yunhao.life/tags/%E5%8C%BA%E9%97%B4DP/"/>
+      <category term="区间DP" scheme="http://yunhao.space/tags/%E5%8C%BA%E9%97%B4DP/"/>
     
   </entry>
   
   <entry>
     <title>ACM HDU 4632 题解 区间DP</title>
-    <link href="http://yunhao.life/2018/06/10/acm-hdu-4632-dp-on-segment/"/>
-    <id>http://yunhao.life/2018/06/10/acm-hdu-4632-dp-on-segment/</id>
+    <link href="http://yunhao.space/2018/06/10/acm-hdu-4632-dp-on-segment/"/>
+    <id>http://yunhao.space/2018/06/10/acm-hdu-4632-dp-on-segment/</id>
     <published>2018-06-10T06:31:43.000Z</published>
     <updated>2018-06-10T06:48:34.665Z</updated>
     
@@ -537,27 +537,27 @@
     
     </summary>
     
-      <category term="ACM" scheme="http://yunhao.life/categories/ACM/"/>
+      <category term="ACM" scheme="http://yunhao.space/categories/ACM/"/>
     
-      <category term="DP" scheme="http://yunhao.life/categories/ACM/DP/"/>
+      <category term="DP" scheme="http://yunhao.space/categories/ACM/DP/"/>
     
-      <category term="区间DP" scheme="http://yunhao.life/categories/ACM/DP/%E5%8C%BA%E9%97%B4DP/"/>
+      <category term="区间DP" scheme="http://yunhao.space/categories/ACM/DP/%E5%8C%BA%E9%97%B4DP/"/>
     
     
-      <category term="ACM" scheme="http://yunhao.life/tags/ACM/"/>
+      <category term="ACM" scheme="http://yunhao.space/tags/ACM/"/>
     
-      <category term="DP" scheme="http://yunhao.life/tags/DP/"/>
+      <category term="DP" scheme="http://yunhao.space/tags/DP/"/>
     
-      <category term="HDU" scheme="http://yunhao.life/tags/HDU/"/>
+      <category term="HDU" scheme="http://yunhao.space/tags/HDU/"/>
     
-      <category term="区间DP" scheme="http://yunhao.life/tags/%E5%8C%BA%E9%97%B4DP/"/>
+      <category term="区间DP" scheme="http://yunhao.space/tags/%E5%8C%BA%E9%97%B4DP/"/>
     
   </entry>
   
   <entry>
     <title>ACM POJ 2342 题解 树形DP</title>
-    <link href="http://yunhao.life/2018/06/10/acm-poj-2342-dp-on-tree/"/>
-    <id>http://yunhao.life/2018/06/10/acm-poj-2342-dp-on-tree/</id>
+    <link href="http://yunhao.space/2018/06/10/acm-poj-2342-dp-on-tree/"/>
+    <id>http://yunhao.space/2018/06/10/acm-poj-2342-dp-on-tree/</id>
     <published>2018-06-09T16:31:47.000Z</published>
     <updated>2018-06-09T16:50:22.034Z</updated>
     
@@ -573,27 +573,27 @@
     
     </summary>
     
-      <category term="ACM" scheme="http://yunhao.life/categories/ACM/"/>
+      <category term="ACM" scheme="http://yunhao.space/categories/ACM/"/>
     
-      <category term="DP" scheme="http://yunhao.life/categories/ACM/DP/"/>
+      <category term="DP" scheme="http://yunhao.space/categories/ACM/DP/"/>
     
-      <category term="树形DP" scheme="http://yunhao.life/categories/ACM/DP/%E6%A0%91%E5%BD%A2DP/"/>
+      <category term="树形DP" scheme="http://yunhao.space/categories/ACM/DP/%E6%A0%91%E5%BD%A2DP/"/>
     
     
-      <category term="ACM" scheme="http://yunhao.life/tags/ACM/"/>
+      <category term="ACM" scheme="http://yunhao.space/tags/ACM/"/>
     
-      <category term="DP" scheme="http://yunhao.life/tags/DP/"/>
+      <category term="DP" scheme="http://yunhao.space/tags/DP/"/>
     
-      <category term="POJ" scheme="http://yunhao.life/tags/POJ/"/>
+      <category term="POJ" scheme="http://yunhao.space/tags/POJ/"/>
     
-      <category term="树形DP" scheme="http://yunhao.life/tags/%E6%A0%91%E5%BD%A2DP/"/>
+      <category term="树形DP" scheme="http://yunhao.space/tags/%E6%A0%91%E5%BD%A2DP/"/>
     
   </entry>
   
   <entry>
     <title>ACM CodeForces 963 B 题解 DFS</title>
-    <link href="http://yunhao.life/2018/06/09/acm-cf-963b-dfs/"/>
-    <id>http://yunhao.life/2018/06/09/acm-cf-963b-dfs/</id>
+    <link href="http://yunhao.space/2018/06/09/acm-cf-963b-dfs/"/>
+    <id>http://yunhao.space/2018/06/09/acm-cf-963b-dfs/</id>
     <published>2018-06-09T14:01:07.000Z</published>
     <updated>2018-06-09T15:30:08.389Z</updated>
     
@@ -609,27 +609,27 @@
     
     </summary>
     
-      <category term="ACM" scheme="http://yunhao.life/categories/ACM/"/>
+      <category term="ACM" scheme="http://yunhao.space/categories/ACM/"/>
     
-      <category term="搜索" scheme="http://yunhao.life/categories/ACM/%E6%90%9C%E7%B4%A2/"/>
+      <category term="搜索" scheme="http://yunhao.space/categories/ACM/%E6%90%9C%E7%B4%A2/"/>
     
-      <category term="DFS" scheme="http://yunhao.life/categories/ACM/%E6%90%9C%E7%B4%A2/DFS/"/>
+      <category term="DFS" scheme="http://yunhao.space/categories/ACM/%E6%90%9C%E7%B4%A2/DFS/"/>
     
     
-      <category term="ACM" scheme="http://yunhao.life/tags/ACM/"/>
+      <category term="ACM" scheme="http://yunhao.space/tags/ACM/"/>
     
-      <category term="CodeForces" scheme="http://yunhao.life/tags/CodeForces/"/>
+      <category term="CodeForces" scheme="http://yunhao.space/tags/CodeForces/"/>
     
-      <category term="搜索" scheme="http://yunhao.life/tags/%E6%90%9C%E7%B4%A2/"/>
+      <category term="搜索" scheme="http://yunhao.space/tags/%E6%90%9C%E7%B4%A2/"/>
     
-      <category term="DFS" scheme="http://yunhao.life/tags/DFS/"/>
+      <category term="DFS" scheme="http://yunhao.space/tags/DFS/"/>
     
   </entry>
   
   <entry>
     <title>ACM CodeForces 877 B 题解 DP</title>
-    <link href="http://yunhao.life/2018/06/08/acm-cf-877b-dp/"/>
-    <id>http://yunhao.life/2018/06/08/acm-cf-877b-dp/</id>
+    <link href="http://yunhao.space/2018/06/08/acm-cf-877b-dp/"/>
+    <id>http://yunhao.space/2018/06/08/acm-cf-877b-dp/</id>
     <published>2018-06-08T15:18:41.000Z</published>
     <updated>2018-06-08T15:38:19.834Z</updated>
     
@@ -645,16 +645,16 @@
     
     </summary>
     
-      <category term="ACM" scheme="http://yunhao.life/categories/ACM/"/>
+      <category term="ACM" scheme="http://yunhao.space/categories/ACM/"/>
     
-      <category term="DP" scheme="http://yunhao.life/categories/ACM/DP/"/>
+      <category term="DP" scheme="http://yunhao.space/categories/ACM/DP/"/>
     
     
-      <category term="ACM" scheme="http://yunhao.life/tags/ACM/"/>
+      <category term="ACM" scheme="http://yunhao.space/tags/ACM/"/>
     
-      <category term="CodeForces" scheme="http://yunhao.life/tags/CodeForces/"/>
+      <category term="CodeForces" scheme="http://yunhao.space/tags/CodeForces/"/>
     
-      <category term="DP" scheme="http://yunhao.life/tags/DP/"/>
+      <category term="DP" scheme="http://yunhao.space/tags/DP/"/>
     
   </entry>
   

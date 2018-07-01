@@ -29,9 +29,13 @@
   
   
     
+      
     
-  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
-  <link href="/lib/pace/pace-theme-corner-indicator.min.css?v=1.0.2" rel="stylesheet">
+    
+      
+    
+  <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+  <link href="//cdn.bootcss.com/pace/1.0.2/themes/blue/pace-theme-corner-indicator.min.css" rel="stylesheet">
 
 
 
@@ -61,7 +65,9 @@
 
   
   
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+    
+  
+  <link href="//cdn.bootcss.com/fancybox/3.2.5/jquery.fancybox.min.css" rel="stylesheet" type="text/css" />
 
 
 
@@ -69,7 +75,9 @@
 
 
 
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+  
+
+<link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
 
 <link href="/css/main.css?v=6.3.0" rel="stylesheet" type="text/css" />
 
@@ -104,7 +112,7 @@
     fastclick: false,
     lazyload: false,
     tabs: true,
-    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideUpIn","post_body":"slideUpIn","coll_header":"fadeIn","sidebar":"slideUpIn"}},
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideUpIn","post_body":"slideUpIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     algolia: {
       applicationID: '',
       apiKey: '',
@@ -133,20 +141,20 @@
 <meta name="keywords" content="OpenSSH,Windows,CMD">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Windows10 开启OpenSSH服务 CMD配置SSH远程连接服务">
-<meta property="og:url" content="http://yunhao.life/2018/06/19/windows-openssh-and-ssh-remote-connection/index.html">
+<meta property="og:url" content="http://yunhao.space/2018/06/19/windows-openssh-and-ssh-remote-connection/index.html">
 <meta property="og:site_name" content="火龙窝">
 <meta property="og:description" content="开启OpenSSH服务想要cmd能够使用ssh远程连接服务。我们需要打开OpenSSH服务。首先打开设置，快捷键windows键+I。然后打开应用。然后看到右侧有管理可选功能。点击管理可选功能如果列表中有OpenSSH 客户端，或者是OpenSSH Client字样的东西，说明你的电脑已经开启了OpenSSH服务了。如果没开启OpenSSH服务，那么就点击添加功能，然后把OpenSSH安装了就行了">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http://yunhao.life/images/windows-openssh-and-ssh-remote-connection/setting.png">
-<meta property="og:image" content="http://yunhao.life/images/windows-openssh-and-ssh-remote-connection/application.png">
-<meta property="og:image" content="http://yunhao.life/images/windows-openssh-and-ssh-remote-connection/add-function.png">
-<meta property="og:image" content="http://yunhao.life/images/windows-openssh-and-ssh-remote-connection/openssh.png">
-<meta property="og:image" content="http://yunhao.life/images/windows-openssh-and-ssh-remote-connection/openssh-functions.png">
+<meta property="og:image" content="http://yunhao.space/images/windows-openssh-and-ssh-remote-connection/setting.png">
+<meta property="og:image" content="http://yunhao.space/images/windows-openssh-and-ssh-remote-connection/application.png">
+<meta property="og:image" content="http://yunhao.space/images/windows-openssh-and-ssh-remote-connection/add-function.png">
+<meta property="og:image" content="http://yunhao.space/images/windows-openssh-and-ssh-remote-connection/openssh.png">
+<meta property="og:image" content="http://yunhao.space/images/windows-openssh-and-ssh-remote-connection/openssh-functions.png">
 <meta property="og:updated_time" content="2018-06-19T14:35:28.159Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Windows10 开启OpenSSH服务 CMD配置SSH远程连接服务">
 <meta name="twitter:description" content="开启OpenSSH服务想要cmd能够使用ssh远程连接服务。我们需要打开OpenSSH服务。首先打开设置，快捷键windows键+I。然后打开应用。然后看到右侧有管理可选功能。点击管理可选功能如果列表中有OpenSSH 客户端，或者是OpenSSH Client字样的东西，说明你的电脑已经开启了OpenSSH服务了。如果没开启OpenSSH服务，那么就点击添加功能，然后把OpenSSH安装了就行了">
-<meta name="twitter:image" content="http://yunhao.life/images/windows-openssh-and-ssh-remote-connection/setting.png">
+<meta name="twitter:image" content="http://yunhao.space/images/windows-openssh-and-ssh-remote-connection/setting.png">
 
 
 
@@ -155,7 +163,7 @@
 
 
 
-  <link rel="canonical" href="http://yunhao.life/2018/06/19/windows-openssh-and-ssh-remote-connection/"/>
+  <link rel="canonical" href="http://yunhao.space/2018/06/19/windows-openssh-and-ssh-remote-connection/"/>
 
 
 
@@ -376,7 +384,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yunhao.life/2018/06/19/windows-openssh-and-ssh-remote-connection/">
+    <link itemprop="mainEntityOfPage" href="http://yunhao.space/2018/06/19/windows-openssh-and-ssh-remote-connection/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="喷水小火龙">
@@ -1033,17 +1041,17 @@
 
   
   
-    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+    <script type="text/javascript" src="//cdn.bootcss.com/fancybox/3.2.5/jquery.fancybox.min.js"></script>
   
 
   
   
-    <script type="text/javascript" src="/lib/three/three.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/gh/theme-next/theme-next-three@1.0.0/three.min.js"></script>
   
 
   
   
-    <script type="text/javascript" src="/lib/three/canvas_lines.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/gh/theme-next/theme-next-three@1.0.0/canvas_lines.min.js"></script>
   
 
 
