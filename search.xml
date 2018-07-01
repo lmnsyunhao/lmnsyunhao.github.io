@@ -45,8 +45,8 @@
         <category>Git</category>
       </categories>
       <tags>
-        <tag>Hexo</tag>
         <tag>Git</tag>
+        <tag>Hexo</tag>
       </tags>
   </entry>
   <entry>
@@ -82,9 +82,9 @@
         <category>Hexo</category>
       </categories>
       <tags>
-        <tag>GitHub</tag>
-        <tag>Hexo</tag>
         <tag>Git</tag>
+        <tag>Hexo</tag>
+        <tag>GitHub</tag>
       </tags>
   </entry>
   <entry>
@@ -96,11 +96,11 @@
         <category>Ladder</category>
       </categories>
       <tags>
+        <tag>服务器</tag>
+        <tag>代理</tag>
         <tag>Ladder</tag>
         <tag>Proxifier</tag>
         <tag>VPS</tag>
-        <tag>服务器</tag>
-        <tag>代理</tag>
         <tag>DigitalOcean</tag>
       </tags>
   </entry>
@@ -125,8 +125,8 @@
         <category>Windows</category>
       </categories>
       <tags>
-        <tag>GitHub</tag>
         <tag>Git</tag>
+        <tag>GitHub</tag>
         <tag>OpenSSH</tag>
         <tag>Windows</tag>
       </tags>
@@ -504,9 +504,9 @@
         <category>服务器</category>
       </categories>
       <tags>
+        <tag>Ubuntu</tag>
         <tag>服务器</tag>
         <tag>代理</tag>
-        <tag>Ubuntu</tag>
         <tag>Nginx</tag>
         <tag>Apache</tag>
       </tags>
@@ -556,8 +556,8 @@
         <category>服务器</category>
       </categories>
       <tags>
-        <tag>服务器</tag>
         <tag>Ubuntu</tag>
+        <tag>服务器</tag>
         <tag>Nginx</tag>
       </tags>
   </entry>
@@ -606,8 +606,8 @@
       </categories>
       <tags>
         <tag>Ubuntu</tag>
-        <tag>GitHub</tag>
         <tag>Git</tag>
+        <tag>GitHub</tag>
         <tag>OpenSSH</tag>
       </tags>
   </entry>
@@ -619,11 +619,11 @@
         <category>Git</category>
       </categories>
       <tags>
-        <tag>域名</tag>
-        <tag>GitHub</tag>
-        <tag>Hexo</tag>
-        <tag>DNS</tag>
         <tag>Git</tag>
+        <tag>Hexo</tag>
+        <tag>GitHub</tag>
+        <tag>域名</tag>
+        <tag>DNS</tag>
       </tags>
   </entry>
   <entry>

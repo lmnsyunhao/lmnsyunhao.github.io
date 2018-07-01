@@ -117,9 +117,9 @@
       <category term="Git" scheme="http://yunhao.life/categories/Git/"/>
     
     
-      <category term="Hexo" scheme="http://yunhao.life/tags/Hexo/"/>
-    
       <category term="Git" scheme="http://yunhao.life/tags/Git/"/>
+    
+      <category term="Hexo" scheme="http://yunhao.life/tags/Hexo/"/>
     
   </entry>
   
@@ -200,11 +200,11 @@
       <category term="Hexo" scheme="http://yunhao.life/categories/Hexo/"/>
     
     
-      <category term="GitHub" scheme="http://yunhao.life/tags/GitHub/"/>
+      <category term="Git" scheme="http://yunhao.life/tags/Git/"/>
     
       <category term="Hexo" scheme="http://yunhao.life/tags/Hexo/"/>
     
-      <category term="Git" scheme="http://yunhao.life/tags/Git/"/>
+      <category term="GitHub" scheme="http://yunhao.life/tags/GitHub/"/>
     
   </entry>
   
@@ -231,15 +231,15 @@
       <category term="Ladder" scheme="http://yunhao.life/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/Ladder/"/>
     
     
+      <category term="服务器" scheme="http://yunhao.life/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    
+      <category term="代理" scheme="http://yunhao.life/tags/%E4%BB%A3%E7%90%86/"/>
+    
       <category term="Ladder" scheme="http://yunhao.life/tags/Ladder/"/>
     
       <category term="Proxifier" scheme="http://yunhao.life/tags/Proxifier/"/>
     
       <category term="VPS" scheme="http://yunhao.life/tags/VPS/"/>
-    
-      <category term="服务器" scheme="http://yunhao.life/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
-    
-      <category term="代理" scheme="http://yunhao.life/tags/%E4%BB%A3%E7%90%86/"/>
     
       <category term="DigitalOcean" scheme="http://yunhao.life/tags/DigitalOcean/"/>
     
@@ -295,9 +295,9 @@
       <category term="Windows" scheme="http://yunhao.life/categories/Windows/"/>
     
     
-      <category term="GitHub" scheme="http://yunhao.life/tags/GitHub/"/>
-    
       <category term="Git" scheme="http://yunhao.life/tags/Git/"/>
+    
+      <category term="GitHub" scheme="http://yunhao.life/tags/GitHub/"/>
     
       <category term="OpenSSH" scheme="http://yunhao.life/tags/OpenSSH/"/>
     
