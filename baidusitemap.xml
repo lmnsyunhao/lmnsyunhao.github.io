@@ -155,9 +155,9 @@
          
         <tag>Hexo</tag>
          
-        <tag>域名</tag>
-         
         <tag>GitHub</tag>
+         
+        <tag>域名</tag>
          
         <tag>DNS</tag>
          
@@ -251,13 +251,13 @@
         <title>GoDaddy 域名 托管于腾讯云解析</title>
         <pubTime>2018-06-18T14:57:39.000Z</pubTime>
         
-        <tag>域名</tag>
-         
-        <tag>DNS</tag>
-         
         <tag>GoDaddy</tag>
          
+        <tag>域名</tag>
+         
         <tag>腾讯云</tag>
+         
+        <tag>DNS</tag>
          
          
            
@@ -280,15 +280,15 @@
         <title>Do U Need A Ladder ?</title>
         <pubTime>2018-06-20T14:09:21.000Z</pubTime>
         
+        <tag>服务器</tag>
+         
+        <tag>代理</tag>
+         
         <tag>Ladder</tag>
          
         <tag>Proxifier</tag>
          
         <tag>VPS</tag>
-         
-        <tag>服务器</tag>
-         
-        <tag>代理</tag>
          
         <tag>DigitalOcean</tag>
          
@@ -562,11 +562,11 @@
         <title>Ubuntu16.04 Nginx 反向代理 Apache</title>
         <pubTime>2017-04-07T12:19:44.000Z</pubTime>
         
+        <tag>Ubuntu</tag>
+         
         <tag>服务器</tag>
          
         <tag>代理</tag>
-         
-        <tag>Ubuntu</tag>
          
         <tag>Nginx</tag>
          
@@ -590,9 +590,9 @@
         <title>Ubuntu16.04 Nginx 配置站点学习笔记</title>
         <pubTime>2017-03-30T02:42:15.000Z</pubTime>
         
-        <tag>服务器</tag>
-         
         <tag>Ubuntu</tag>
+         
+        <tag>服务器</tag>
          
         <tag>Nginx</tag>
          
