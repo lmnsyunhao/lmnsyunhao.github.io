@@ -140,10 +140,10 @@
         <category>域名</category>
       </categories>
       <tags>
-        <tag>域名</tag>
-        <tag>DNS</tag>
         <tag>GoDaddy</tag>
+        <tag>域名</tag>
         <tag>腾讯云</tag>
+        <tag>DNS</tag>
       </tags>
   </entry>
   <entry>
@@ -358,9 +358,9 @@
       </categories>
       <tags>
         <tag>ACM</tag>
-        <tag>HDU</tag>
         <tag>组合数学</tag>
         <tag>母函数</tag>
+        <tag>HDU</tag>
       </tags>
   </entry>
   <entry>
@@ -621,9 +621,9 @@
       <tags>
         <tag>Git</tag>
         <tag>Hexo</tag>
-        <tag>GitHub</tag>
         <tag>域名</tag>
         <tag>DNS</tag>
+        <tag>GitHub</tag>
       </tags>
   </entry>
   <entry>

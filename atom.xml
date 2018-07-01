@@ -328,13 +328,13 @@
       <category term="域名" scheme="http://yunhao.life/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%9F%9F%E5%90%8D/"/>
     
     
-      <category term="域名" scheme="http://yunhao.life/tags/%E5%9F%9F%E5%90%8D/"/>
-    
-      <category term="DNS" scheme="http://yunhao.life/tags/DNS/"/>
-    
       <category term="GoDaddy" scheme="http://yunhao.life/tags/GoDaddy/"/>
     
+      <category term="域名" scheme="http://yunhao.life/tags/%E5%9F%9F%E5%90%8D/"/>
+    
       <category term="腾讯云" scheme="http://yunhao.life/tags/%E8%85%BE%E8%AE%AF%E4%BA%91/"/>
+    
+      <category term="DNS" scheme="http://yunhao.life/tags/DNS/"/>
     
   </entry>
   
