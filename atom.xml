@@ -117,9 +117,9 @@
       <category term="Git" scheme="http://yunhao.life/categories/Git/"/>
     
     
-      <category term="Git" scheme="http://yunhao.life/tags/Git/"/>
-    
       <category term="Hexo" scheme="http://yunhao.life/tags/Hexo/"/>
+    
+      <category term="Git" scheme="http://yunhao.life/tags/Git/"/>
     
   </entry>
   
@@ -200,11 +200,11 @@
       <category term="Hexo" scheme="http://yunhao.life/categories/Hexo/"/>
     
     
-      <category term="Git" scheme="http://yunhao.life/tags/Git/"/>
+      <category term="GitHub" scheme="http://yunhao.life/tags/GitHub/"/>
     
       <category term="Hexo" scheme="http://yunhao.life/tags/Hexo/"/>
     
-      <category term="GitHub" scheme="http://yunhao.life/tags/GitHub/"/>
+      <category term="Git" scheme="http://yunhao.life/tags/Git/"/>
     
   </entry>
   
@@ -231,15 +231,15 @@
       <category term="Ladder" scheme="http://yunhao.life/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/Ladder/"/>
     
     
-      <category term="服务器" scheme="http://yunhao.life/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
-    
-      <category term="代理" scheme="http://yunhao.life/tags/%E4%BB%A3%E7%90%86/"/>
-    
       <category term="Ladder" scheme="http://yunhao.life/tags/Ladder/"/>
     
       <category term="Proxifier" scheme="http://yunhao.life/tags/Proxifier/"/>
     
       <category term="VPS" scheme="http://yunhao.life/tags/VPS/"/>
+    
+      <category term="服务器" scheme="http://yunhao.life/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    
+      <category term="代理" scheme="http://yunhao.life/tags/%E4%BB%A3%E7%90%86/"/>
     
       <category term="DigitalOcean" scheme="http://yunhao.life/tags/DigitalOcean/"/>
     
@@ -295,9 +295,9 @@
       <category term="Windows" scheme="http://yunhao.life/categories/Windows/"/>
     
     
-      <category term="Git" scheme="http://yunhao.life/tags/Git/"/>
-    
       <category term="GitHub" scheme="http://yunhao.life/tags/GitHub/"/>
+    
+      <category term="Git" scheme="http://yunhao.life/tags/Git/"/>
     
       <category term="OpenSSH" scheme="http://yunhao.life/tags/OpenSSH/"/>
     
@@ -328,13 +328,13 @@
       <category term="域名" scheme="http://yunhao.life/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%9F%9F%E5%90%8D/"/>
     
     
-      <category term="GoDaddy" scheme="http://yunhao.life/tags/GoDaddy/"/>
-    
       <category term="域名" scheme="http://yunhao.life/tags/%E5%9F%9F%E5%90%8D/"/>
     
-      <category term="腾讯云" scheme="http://yunhao.life/tags/%E8%85%BE%E8%AE%AF%E4%BA%91/"/>
-    
       <category term="DNS" scheme="http://yunhao.life/tags/DNS/"/>
+    
+      <category term="GoDaddy" scheme="http://yunhao.life/tags/GoDaddy/"/>
+    
+      <category term="腾讯云" scheme="http://yunhao.life/tags/%E8%85%BE%E8%AE%AF%E4%BA%91/"/>
     
   </entry>
   
