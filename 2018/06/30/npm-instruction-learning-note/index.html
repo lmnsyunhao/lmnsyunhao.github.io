@@ -50,12 +50,14 @@
 
 
 
+  <meta name="msvalidate.01" content="3FE9192887D96459DF3F8D5E48E9A580" />
 
 
 
 
 
-  <meta name="baidu-site-verification" content="BaTyoYbpgY" />
+
+  <meta name="baidu-site-verification" content="TItRle6Roy" />
 
 
 
@@ -145,7 +147,7 @@
 <meta property="og:site_name" content="火龙窝">
 <meta property="og:description" content="NPMNPM全称是node package manager。在安装nodejs的时候就会连带安装npm，用来维护和管理node_modules。我为什么要写这篇博客呢？因为懒得每次都百度。所以就mark一下。   官方文档官方的中文文档请见中文文档   本地安装和全局安装如果你自己的模块依赖于某个包，并通过 Node.js 的 require 加载，那么你应该选择本地安装，这种方式也是 npm i">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-06-30T09:14:16.576Z">
+<meta property="og:updated_time" content="2018-07-02T15:28:40.853Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="NPM 学习笔记">
 <meta name="twitter:description" content="NPMNPM全称是node package manager。在安装nodejs的时候就会连带安装npm，用来维护和管理node_modules。我为什么要写这篇博客呢？因为懒得每次都百度。所以就mark一下。   官方文档官方的中文文档请见中文文档   本地安装和全局安装如果你自己的模块依赖于某个包，并通过 Node.js 的 require 加载，那么你应该选择本地安装，这种方式也是 npm i">
@@ -269,7 +271,7 @@
           
           <li class="menu-item menu-item-tags">
     <a href="/tags/" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />标签<span class="badge">50</span></a>
+      <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />标签<span class="badge">51</span></a>
   </li>
         
         
@@ -285,7 +287,7 @@
           
           <li class="menu-item menu-item-archives">
     <a href="/archives/" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档<span class="badge">48</span></a>
+      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档<span class="badge">50</span></a>
   </li>
 
       
@@ -420,12 +422,24 @@
                 
               
 
-              <time title="创建时间：2018-06-30 01:12:40 / 修改时间：17:14:16" itemprop="dateCreated datePublished" datetime="2018-06-30T01:12:40+08:00">2018-06-30</time>
+              <time title="创建时间：2018-06-30 01:12:40" itemprop="dateCreated datePublished" datetime="2018-06-30T01:12:40+08:00">2018-06-30</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-07-02 23:28:40" itemprop="dateModified" datetime="2018-07-02T23:28:40+08:00">2018-07-02</time>
               
             
           </span>
@@ -481,7 +495,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">1.6k</span>
+                <span title="本文字数">1.5k</span>
               
 
               
@@ -518,23 +532,7 @@
         <h1 id="NPM"><a href="#NPM" class="headerlink" title="NPM"></a>NPM</h1><p>NPM全称是node package manager。在安装nodejs的时候就会连带安装npm，用来维护和管理node_modules。我为什么要写这篇博客呢？因为懒得每次都百度。所以就mark一下。  </p>
 <h1 id="官方文档"><a href="#官方文档" class="headerlink" title="官方文档"></a>官方文档</h1><p>官方的中文文档请见<a href="https://www.npmjs.com.cn/" target="_blank" rel="noopener">中文文档</a>  </p>
 <h1 id="本地安装和全局安装"><a href="#本地安装和全局安装" class="headerlink" title="本地安装和全局安装"></a>本地安装和全局安装</h1><p>如果你自己的模块依赖于某个包，并通过 Node.js 的 require 加载，那么你应该选择本地安装，这种方式也是 npm install 命令的默认行为。<br>如果你想将包作为一个命令行工具，（比如 grunt CLI），那么你应该选择全局安装。  </p>
-<h1 id="package-json"><a href="#package-json" class="headerlink" title="package.json"></a>package.json</h1><p>一个package.json文件必须有”name”，”version”两个字段，要求如下：  </p>
-<blockquote>
-<ul>
-<li>“name”<ul>
-<li>都是小写字母</li>
-<li>一个单词，没有空格</li>
-<li>可以有-和_</li>
-</ul>
-</li>
-<li>“version”<ul>
-<li>形如x.x.x</li>
-<li>遵守语法规范</li>
-</ul>
-</li>
-</ul>
-</blockquote>
-<h1 id="语义化版本号"><a href="#语义化版本号" class="headerlink" title="语义化版本号"></a>语义化版本号</h1><p>a.b.c的含义，如下：<br>发布补丁，就增加最后一位数字，比如1.0.1<br>如果增加新功能，且不影响原有的功能，就增加小版本号，比如1.1.0<br>如果引入的变化，破坏了向后兼容性，就增加大版本号，比如2.0.0<br>对于依赖包的版本，版本位置应该怎样填写？  </p>
+<h1 id="语义化版本号"><a href="#语义化版本号" class="headerlink" title="语义化版本号"></a>语义化版本号</h1><p>package.json中的dependencies里面都有version，那么version字段具体都表示什么含义呢？<br>a.b.c的含义，如下：<br>发布补丁，就增加最后一位数字，比如1.0.1<br>如果增加新功能，且不影响原有的功能，就增加小版本号，比如1.1.0<br>如果引入的变化，破坏了向后兼容性，就增加大版本号，比如2.0.0<br>对于依赖包的版本，版本位置应该怎样填写？  </p>
 <ul>
 <li>只接受补丁: 1.0 或 1.0.x 或 ~1.0.4</li>
 <li>只接受小版本号和补丁: 1 或 1.x 或 ^1.0.4</li>
@@ -598,6 +596,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/07/01/github-blog-multiple-domain-bundling-issue/" rel="prev" title="GitHub Hexo 博客 GitHub Pages 个人站点 多域名绑定问题">
+                GitHub Hexo 博客 GitHub Pages 个人站点 多域名绑定问题 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -675,7 +677,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">48</span>
+                    <span class="site-state-item-count">50</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -849,7 +851,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">50</span>
+                      
+                    
+                    <span class="site-state-item-count">51</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
@@ -906,7 +910,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#NPM"><span class="nav-number">1.</span> <span class="nav-text">NPM</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#官方文档"><span class="nav-number">2.</span> <span class="nav-text">官方文档</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#本地安装和全局安装"><span class="nav-number">3.</span> <span class="nav-text">本地安装和全局安装</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#package-json"><span class="nav-number">4.</span> <span class="nav-text">package.json</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#语义化版本号"><span class="nav-number">5.</span> <span class="nav-text">语义化版本号</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#指令"><span class="nav-number">6.</span> <span class="nav-text">指令</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#NPM"><span class="nav-number">1.</span> <span class="nav-text">NPM</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#官方文档"><span class="nav-number">2.</span> <span class="nav-text">官方文档</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#本地安装和全局安装"><span class="nav-number">3.</span> <span class="nav-text">本地安装和全局安装</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#语义化版本号"><span class="nav-number">4.</span> <span class="nav-text">语义化版本号</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#指令"><span class="nav-number">5.</span> <span class="nav-text">指令</span></a></li></ol></div>
             
 
           </div>
@@ -945,7 +949,7 @@
       <i class="fa fa-area-chart"></i>
     </span>
     
-    <span title="站点总字数">127k</span>
+    <span title="站点总字数">134k</span>
   
 
   
@@ -954,7 +958,7 @@
       <i class="fa fa-coffee"></i>
     </span>
     
-    <span title="站点阅读时长">1:56</span>
+    <span title="站点阅读时长">2:02</span>
   
 </div>
 

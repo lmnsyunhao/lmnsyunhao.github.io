@@ -4,8 +4,127 @@
 
     
   <url>
+    <loc>http://yunhao.space/2017/03/27/github-hexo-blog-bundle-domain/</loc>
+    <lastmod>2018-07-02T16:18:09.030Z</lastmod>
+    <data>
+        <display>
+        <title>GitHub Hexo blog 绑定域名</title>
+        <pubTime>2017-03-27T08:47:20.000Z</pubTime>
+        
+        <tag>域名</tag>
+         
+        <tag>DNS</tag>
+         
+        <tag>Git</tag>
+         
+        <tag>Hexo</tag>
+         
+        <tag>GitHub</tag>
+         
+         
+           
+             
+              <breadCrumb title="Git" url="http://yunhao.space/categories/Git/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yunhao.space/2018/06/05/acm-generating-function-learning/</loc>
+    <lastmod>2018-07-02T15:42:00.961Z</lastmod>
+    <data>
+        <display>
+        <title>ACM 组合数学 母函数 生成函数 详解</title>
+        <pubTime>2018-06-05T05:50:20.000Z</pubTime>
+        
+        <tag>ACM</tag>
+         
+        <tag>组合数学</tag>
+         
+        <tag>母函数</tag>
+         
+         
+           
+             
+              <breadCrumb title="ACM" url="http://yunhao.space/categories/ACM/"/>
+          
+             
+              <breadCrumb title="组合数学" url="http://yunhao.space/categories/ACM/%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/"/>
+          
+             
+              <breadCrumb title="母函数" url="http://yunhao.space/categories/ACM/%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/%E6%AF%8D%E5%87%BD%E6%95%B0/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yunhao.space/2018/06/30/npm-instruction-learning-note/</loc>
+    <lastmod>2018-07-02T15:28:40.853Z</lastmod>
+    <data>
+        <display>
+        <title>NPM 学习笔记</title>
+        <pubTime>2018-06-29T17:12:40.000Z</pubTime>
+        
+        <tag>NPM</tag>
+         
+        <tag>NodeJS</tag>
+         
+         
+           
+             
+              <breadCrumb title="NodeJS" url="http://yunhao.space/categories/NodeJS/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yunhao.space/2018/07/01/github-blog-multiple-domain-bundling-issue/</loc>
+    <lastmod>2018-07-02T15:15:20.956Z</lastmod>
+    <data>
+        <display>
+        <title>GitHub Hexo 博客 GitHub Pages 个人站点 多域名绑定问题</title>
+        <pubTime>2018-07-01T15:19:54.000Z</pubTime>
+        
+        <tag>服务器</tag>
+         
+        <tag>域名</tag>
+         
+        <tag>DNS</tag>
+         
+        <tag>Hexo</tag>
+         
+        <tag>GitHub</tag>
+         
+        <tag>GitHub Pages</tag>
+         
+        <tag>GoDaddy</tag>
+         
+        <tag>腾讯云</tag>
+         
+        <tag>Nginx</tag>
+         
+         
+           
+             
+              <breadCrumb title="服务器" url="http://yunhao.space/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+          
+             
+              <breadCrumb title="域名" url="http://yunhao.space/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%9F%9F%E5%90%8D/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://yunhao.space/2018/06/18/godaddy-domain-dns-on-tencent-cloud/</loc>
-    <lastmod>2018-07-01T10:24:01.671Z</lastmod>
+    <lastmod>2018-07-02T10:49:14.955Z</lastmod>
     <data>
         <display>
         <title>GoDaddy 域名 托管于腾讯云解析</title>
@@ -33,27 +152,24 @@
 
     
   <url>
-    <loc>http://yunhao.space/2017/03/27/github-hexo-blog-bundle-domain/</loc>
-    <lastmod>2018-07-01T10:23:16.423Z</lastmod>
+    <loc>http://yunhao.space/2018/07/01/domain-name-parsing-setting-tutor/</loc>
+    <lastmod>2018-07-02T10:47:55.067Z</lastmod>
     <data>
         <display>
-        <title>GitHub Hexo blog 绑定域名</title>
-        <pubTime>2017-03-27T08:47:20.000Z</pubTime>
+        <title>域名解析配置教程</title>
+        <pubTime>2018-07-01T15:21:19.000Z</pubTime>
         
-        <tag>Git</tag>
-         
-        <tag>Hexo</tag>
-         
         <tag>域名</tag>
-         
-        <tag>GitHub</tag>
          
         <tag>DNS</tag>
          
          
            
              
-              <breadCrumb title="Git" url="http://yunhao.space/categories/Git/"/>
+              <breadCrumb title="服务器" url="http://yunhao.space/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+          
+             
+              <breadCrumb title="域名" url="http://yunhao.space/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%9F%9F%E5%90%8D/"/>
           
         </display>
     </data>
@@ -61,21 +177,43 @@
 
     
   <url>
-    <loc>http://yunhao.space/2018/06/30/npm-instruction-learning-note/</loc>
-    <lastmod>2018-06-30T09:14:16.576Z</lastmod>
+    <loc>http://yunhao.space/2018/06/29/hexo-next-function-setting/</loc>
+    <lastmod>2018-07-01T14:58:50.739Z</lastmod>
     <data>
         <display>
-        <title>NPM 学习笔记</title>
-        <pubTime>2018-06-29T17:12:40.000Z</pubTime>
+        <title>Hexo NexT 站内搜索 站点统计 RSS订阅 字数统计 阅读时长 进度条 图片放大 Canvas背景 DaoVoice聊天 功能配置</title>
+        <pubTime>2018-06-29T11:11:35.000Z</pubTime>
         
-        <tag>NPM</tag>
+        <tag>Hexo</tag>
          
-        <tag>NodeJS</tag>
+        <tag>NexT</tag>
          
          
            
              
-              <breadCrumb title="NodeJS" url="http://yunhao.space/categories/NodeJS/"/>
+              <breadCrumb title="Hexo" url="http://yunhao.space/categories/Hexo/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yunhao.space/2018/06/29/hexo-leancloud-counter-security-too-many-requests-error/</loc>
+    <lastmod>2018-07-01T14:43:15.502Z</lastmod>
+    <data>
+        <display>
+        <title>hexo-leancloud-counter-security 插件 Too many requests 错误</title>
+        <pubTime>2018-06-29T05:05:13.000Z</pubTime>
+        
+        <tag>Hexo</tag>
+         
+        <tag>LeanCloud</tag>
+         
+         
+           
+             
+              <breadCrumb title="Hexo" url="http://yunhao.space/categories/Hexo/"/>
           
         </display>
     </data>
@@ -95,28 +233,6 @@
         <tag>NexT</tag>
          
         <tag>DaoVoice</tag>
-         
-         
-           
-             
-              <breadCrumb title="Hexo" url="http://yunhao.space/categories/Hexo/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yunhao.space/2018/06/29/hexo-next-function-setting/</loc>
-    <lastmod>2018-06-29T12:47:20.397Z</lastmod>
-    <data>
-        <display>
-        <title>Hexo NexT 站内搜索 站点统计 RSS订阅 字数统计 阅读时长 进度条 图片放大 canvas背景 功能配置</title>
-        <pubTime>2018-06-29T11:11:35.000Z</pubTime>
-        
-        <tag>Hexo</tag>
-         
-        <tag>NexT</tag>
          
          
            
@@ -208,9 +324,9 @@
         <title>Ubuntu16.04 GitHub SSH密钥 配置</title>
         <pubTime>2017-03-27T09:15:03.000Z</pubTime>
         
-        <tag>Ubuntu</tag>
-         
         <tag>Git</tag>
+         
+        <tag>Ubuntu</tag>
          
         <tag>GitHub</tag>
          
@@ -220,28 +336,6 @@
            
              
               <breadCrumb title="Git" url="http://yunhao.space/categories/Git/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yunhao.space/2018/06/29/hexo-leancloud-counter-security-too-many-requests-error/</loc>
-    <lastmod>2018-06-29T06:54:32.102Z</lastmod>
-    <data>
-        <display>
-        <title>hexo-leancloud-counter-security 插件 Too many requests 错误</title>
-        <pubTime>2018-06-29T05:05:13.000Z</pubTime>
-        
-        <tag>Hexo</tag>
-         
-        <tag>LeanCloud</tag>
-         
-         
-           
-             
-              <breadCrumb title="Hexo" url="http://yunhao.space/categories/Hexo/"/>
           
         </display>
     </data>
@@ -773,36 +867,6 @@
 
     
   <url>
-    <loc>http://yunhao.space/2018/06/05/acm-generating-function-learning/</loc>
-    <lastmod>2018-06-09T16:45:47.243Z</lastmod>
-    <data>
-        <display>
-        <title>ACM 组合数学 母函数 生成函数 详解</title>
-        <pubTime>2018-06-05T05:50:20.000Z</pubTime>
-        
-        <tag>ACM</tag>
-         
-        <tag>组合数学</tag>
-         
-        <tag>母函数</tag>
-         
-         
-           
-             
-              <breadCrumb title="ACM" url="http://yunhao.space/categories/ACM/"/>
-          
-             
-              <breadCrumb title="组合数学" url="http://yunhao.space/categories/ACM/%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/"/>
-          
-             
-              <breadCrumb title="母函数" url="http://yunhao.space/categories/ACM/%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/%E6%AF%8D%E5%87%BD%E6%95%B0/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://yunhao.space/2018/06/05/acm-hdu-1028-generating-function/</loc>
     <lastmod>2018-06-09T16:33:46.996Z</lastmod>
     <data>
@@ -812,11 +876,11 @@
         
         <tag>ACM</tag>
          
-        <tag>HDU</tag>
-         
         <tag>组合数学</tag>
          
         <tag>母函数</tag>
+         
+        <tag>HDU</tag>
          
          
            
