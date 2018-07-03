@@ -142,7 +142,7 @@
 
 
   <meta name="description" content="SSH的简介SSH技术是指通信的双方A，B，分别有自己的公钥和私钥，公钥负责加密信息，私钥负责解密信息。设定是这样的A公钥加密的信息，只能通过A的私钥来解密，不能通过其他的私钥来解密，而且通过A的公钥很难推断出A的私钥。通信开始前，双方得知对方的公钥，A给B发送数据，用B的公钥来加密。B给A发送数据用A的公钥来加密。此项技术能够保证通信之间的安全性。即使信息被第三方获取，也无法解密。避免了信息被窃">
-<meta name="keywords" content="Git,GitHub,OpenSSH,Windows">
+<meta name="keywords" content="GitHub,Git,OpenSSH,Windows">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Windows10 生成 SSH密钥 GitHub配置">
 <meta property="og:url" content="http://yunhao.space/2018/06/19/windows-github-ssh-key/index.html">
@@ -477,16 +477,6 @@
 
           
             
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2018/06/19/windows-github-ssh-key/#comments" itemprop="discussionUrl">
-                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count gitment-comments-count" data-xid="/2018/06/19/windows-github-ssh-key/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
           
 
           
@@ -574,9 +564,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Git/" rel="tag"># Git</a>
-          
             <a href="/tags/GitHub/" rel="tag"># GitHub</a>
+          
+            <a href="/tags/Git/" rel="tag"># Git</a>
           
             <a href="/tags/OpenSSH/" rel="tag"># OpenSSH</a>
           
@@ -630,13 +620,6 @@
 
           </div>
           
-
-  
-    <div class="comments" id="comments">
-      
-        <div id="gitment-container"></div>
-      
-    </div>
 
   
 
@@ -947,6 +930,23 @@
             
           
           
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+  <script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+  <script>
+      var gitalk = new Gitalk({
+        clientID: 'b0256742e4b4efdace39',
+        clientSecret: 'cd6da9191f5f3bf4afddeea2491551e117e423c5',
+        repo: 'lmnsyunhao.github.io',
+        owner: 'lmnsyunhao',
+        admin: ['lmnsyunhao'],
+        distractionFreeMode: true
+      });
+      var div = document.createElement('div');
+      div.setAttribute("id", "gitalk_comments");
+      var bro = document.getElementById('content');
+      bro.parentNode.appendChild(div);
+      gitalk.render('gitalk_comments');
+  </script>
 
         </div>
       </section>
@@ -1188,43 +1188,6 @@
 
 
 
-
-
-<!-- LOCAL: You can save these files to your site and update links -->
-    
-        
-        <link rel="stylesheet" href="https://aimingoo.github.io/gitmint/style/default.css">
-        <script src="https://aimingoo.github.io/gitmint/dist/gitmint.browser.js"></script>
-    
-<!-- END LOCAL -->
-
-    
-
-    
-      <script type="text/javascript">
-      function renderGitment(){
-        var gitment = new Gitmint({
-            id: window.location.pathname,
-            owner: 'lmnsyunhao',
-            repo: 'lmnsyunhao.github.io',
-            
-            lang: "" || navigator.language || navigator.systemLanguage || navigator.userLanguage,
-            
-            oauth: {
-            
-            
-                client_secret: 'cd6da9191f5f3bf4afddeea2491551e117e423c5',
-            
-                client_id: 'b0256742e4b4efdace39'
-            }});
-        gitment.render('gitment-container');
-      }
-
-      
-      renderGitment();
-      
-      </script>
-    
 
 
 
