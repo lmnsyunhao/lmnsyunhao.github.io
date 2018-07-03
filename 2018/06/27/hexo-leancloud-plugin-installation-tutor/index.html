@@ -142,7 +142,7 @@
 
 
   <meta name="description" content="LeanCloudLeanCloud能够给每篇博客统计访问量的工具。首先注册，并登陆LeanCloud。注意：登陆密码要求还得有大写英文字母，小写英文字母，还有数字。   膜拜大佬这篇博客是学习两位大佬，DoubleMine和leaferx，的博文之后写的   应用配置进入控制台后，我们先创建一个应用。点击创建应用然后弹出如下窗口：起名字，选择开发版，之后点击创建按钮创建完之后，我们看到下面这样。">
-<meta name="keywords" content="Hexo,LeanCloud,NexT">
+<meta name="keywords" content="Hexo,NexT,LeanCloud">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo NexT 主题 LeanCloud 插件安装教程">
 <meta property="og:url" content="http://yunhao.space/2018/06/27/hexo-leancloud-plugin-installation-tutor/index.html">
@@ -500,6 +500,16 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/06/27/hexo-leancloud-plugin-installation-tutor/#comments" itemprop="discussionUrl">
+                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count gitment-comments-count" data-xid="/2018/06/27/hexo-leancloud-plugin-installation-tutor/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -610,9 +620,9 @@
           
             <a href="/tags/Hexo/" rel="tag"># Hexo</a>
           
-            <a href="/tags/LeanCloud/" rel="tag"># LeanCloud</a>
-          
             <a href="/tags/NexT/" rel="tag"># NexT</a>
+          
+            <a href="/tags/LeanCloud/" rel="tag"># LeanCloud</a>
           
         </div>
       
@@ -662,6 +672,13 @@
 
           </div>
           
+
+  
+    <div class="comments" id="comments">
+      
+        <div id="gitment-container"></div>
+      
+    </div>
 
   
 
@@ -1213,6 +1230,43 @@
 
 
 
+
+
+<!-- LOCAL: You can save these files to your site and update links -->
+    
+        
+        <link rel="stylesheet" href="https://aimingoo.github.io/gitmint/style/default.css">
+        <script src="https://aimingoo.github.io/gitmint/dist/gitmint.browser.js"></script>
+    
+<!-- END LOCAL -->
+
+    
+
+    
+      <script type="text/javascript">
+      function renderGitment(){
+        var gitment = new Gitmint({
+            id: window.location.pathname,
+            owner: 'lmnsyunhao',
+            repo: 'lmnsyunhao.github.io',
+            
+            lang: "" || navigator.language || navigator.systemLanguage || navigator.userLanguage,
+            
+            oauth: {
+            
+            
+                client_secret: 'cd6da9191f5f3bf4afddeea2491551e117e423c5',
+            
+                client_id: 'b0256742e4b4efdace39'
+            }});
+        gitment.render('gitment-container');
+      }
+
+      
+      renderGitment();
+      
+      </script>
+    
 
 
 

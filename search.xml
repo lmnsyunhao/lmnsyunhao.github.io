@@ -23,13 +23,13 @@
       </categories>
       <tags>
         <tag>服务器</tag>
+        <tag>Hexo</tag>
         <tag>域名</tag>
         <tag>DNS</tag>
-        <tag>Hexo</tag>
         <tag>GitHub</tag>
+        <tag>GitHub Pages</tag>
         <tag>GoDaddy</tag>
         <tag>腾讯云</tag>
-        <tag>GitHub Pages</tag>
         <tag>Nginx</tag>
       </tags>
   </entry>
@@ -103,8 +103,8 @@
       </categories>
       <tags>
         <tag>Hexo</tag>
-        <tag>LeanCloud</tag>
         <tag>NexT</tag>
+        <tag>LeanCloud</tag>
       </tags>
   </entry>
   <entry>
@@ -652,10 +652,10 @@
         <category>Git</category>
       </categories>
       <tags>
-        <tag>域名</tag>
-        <tag>DNS</tag>
         <tag>Git</tag>
         <tag>Hexo</tag>
+        <tag>域名</tag>
+        <tag>DNS</tag>
         <tag>GitHub</tag>
       </tags>
   </entry>
