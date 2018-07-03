@@ -37,11 +37,11 @@
          
         <tag>DNS</tag>
          
-        <tag>GitHub</tag>
+        <tag>Git</tag>
          
         <tag>Hexo</tag>
          
-        <tag>Git</tag>
+        <tag>GitHub</tag>
          
          
            
@@ -119,6 +119,8 @@
          
         <tag>DNS</tag>
          
+        <tag>Hexo</tag>
+         
         <tag>GitHub</tag>
          
         <tag>GitHub Pages</tag>
@@ -126,8 +128,6 @@
         <tag>GoDaddy</tag>
          
         <tag>腾讯云</tag>
-         
-        <tag>Hexo</tag>
          
         <tag>Nginx</tag>
          
@@ -252,9 +252,9 @@
         <title>Git 警告错误 LF will be replaced by CRLF</title>
         <pubTime>2018-06-29T06:59:18.000Z</pubTime>
         
-        <tag>Hexo</tag>
-         
         <tag>Git</tag>
+         
+        <tag>Hexo</tag>
          
          
            
@@ -274,9 +274,9 @@
         <title>Windows10 生成 SSH密钥 GitHub配置</title>
         <pubTime>2018-06-19T08:30:35.000Z</pubTime>
         
-        <tag>GitHub</tag>
-         
         <tag>Git</tag>
+         
+        <tag>GitHub</tag>
          
         <tag>OpenSSH</tag>
          
@@ -300,11 +300,11 @@
         <title>Hexo d 时遇到 Host Key Verification Failed 问题</title>
         <pubTime>2018-06-23T16:09:57.000Z</pubTime>
         
-        <tag>GitHub</tag>
+        <tag>Git</tag>
          
         <tag>Hexo</tag>
          
-        <tag>Git</tag>
+        <tag>GitHub</tag>
          
          
            
@@ -326,9 +326,9 @@
         
         <tag>Ubuntu</tag>
          
-        <tag>GitHub</tag>
-         
         <tag>Git</tag>
+         
+        <tag>GitHub</tag>
          
         <tag>OpenSSH</tag>
          
