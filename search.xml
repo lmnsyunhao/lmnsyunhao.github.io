@@ -22,9 +22,9 @@
         <category>域名</category>
       </categories>
       <tags>
+        <tag>服务器</tag>
         <tag>域名</tag>
         <tag>DNS</tag>
-        <tag>服务器</tag>
         <tag>Hexo</tag>
         <tag>GitHub</tag>
         <tag>GitHub Pages</tag>
@@ -539,8 +539,8 @@
       <tags>
         <tag>服务器</tag>
         <tag>代理</tag>
-        <tag>Nginx</tag>
         <tag>Ubuntu</tag>
+        <tag>Nginx</tag>
         <tag>Apache</tag>
       </tags>
   </entry>
@@ -590,8 +590,8 @@
       </categories>
       <tags>
         <tag>服务器</tag>
-        <tag>Nginx</tag>
         <tag>Ubuntu</tag>
+        <tag>Nginx</tag>
       </tags>
   </entry>
   <entry>
@@ -638,9 +638,9 @@
         <category>Git</category>
       </categories>
       <tags>
+        <tag>Ubuntu</tag>
         <tag>Git</tag>
         <tag>GitHub</tag>
-        <tag>Ubuntu</tag>
         <tag>OpenSSH</tag>
       </tags>
   </entry>
