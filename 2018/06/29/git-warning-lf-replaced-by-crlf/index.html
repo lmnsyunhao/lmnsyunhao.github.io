@@ -141,18 +141,18 @@
   </script>
 
 
-  <meta name="description" content="症状每次使用git的时候，都会出现这个问题：12warning: LF will be replaced by CRLF in tags/组合数学/index.html.The file will have its original line endings in your working directory. 一报一大溜，真的烦。   原因windows中的换行符为 CRLF，而在Linux下的">
+  <meta name="description" content="我忍了这个问题好久了，每次Hexo d的时候，一大溜这个警告错误，今天查了查，然后知道了到底是什么问题了。mark一下。">
 <meta name="keywords" content="Git,Hexo">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Git 警告错误 LF will be replaced by CRLF">
 <meta property="og:url" content="http://yunhao.space/2018/06/29/git-warning-lf-replaced-by-crlf/index.html">
 <meta property="og:site_name" content="火龙窝">
-<meta property="og:description" content="症状每次使用git的时候，都会出现这个问题：12warning: LF will be replaced by CRLF in tags/组合数学/index.html.The file will have its original line endings in your working directory. 一报一大溜，真的烦。   原因windows中的换行符为 CRLF，而在Linux下的">
+<meta property="og:description" content="我忍了这个问题好久了，每次Hexo d的时候，一大溜这个警告错误，今天查了查，然后知道了到底是什么问题了。mark一下。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-06-29T07:17:32.913Z">
+<meta property="og:updated_time" content="2018-07-03T11:37:52.587Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Git 警告错误 LF will be replaced by CRLF">
-<meta name="twitter:description" content="症状每次使用git的时候，都会出现这个问题：12warning: LF will be replaced by CRLF in tags/组合数学/index.html.The file will have its original line endings in your working directory. 一报一大溜，真的烦。   原因windows中的换行符为 CRLF，而在Linux下的">
+<meta name="twitter:description" content="我忍了这个问题好久了，每次Hexo d的时候，一大溜这个警告错误，今天查了查，然后知道了到底是什么问题了。mark一下。">
 
 
 
@@ -433,12 +433,24 @@
                 
               
 
-              <time title="创建时间：2018-06-29 14:59:18 / 修改时间：15:17:32" itemprop="dateCreated datePublished" datetime="2018-06-29T14:59:18+08:00">2018-06-29</time>
+              <time title="创建时间：2018-06-29 14:59:18" itemprop="dateCreated datePublished" datetime="2018-06-29T14:59:18+08:00">2018-06-29</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-07-03 19:37:52" itemprop="dateModified" datetime="2018-07-03T19:37:52+08:00">2018-07-03</time>
               
             
           </span>
@@ -494,7 +506,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">617</span>
+                <span title="本文字数">681</span>
               
 
               
@@ -528,7 +540,9 @@
       
 
       
-        <h1 id="症状"><a href="#症状" class="headerlink" title="症状"></a>症状</h1><p>每次使用git的时候，都会出现这个问题：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">warning: LF will be replaced by CRLF in tags/组合数学/index.html.</span><br><span class="line">The file will have its original line endings in your working directory.</span><br></pre></td></tr></table></figure></p>
+        <p>我忍了这个问题好久了，每次Hexo d的时候，一大溜这个警告错误，今天查了查，然后知道了到底是什么问题了。mark一下。  </p>
+<a id="more"></a>
+<h1 id="症状"><a href="#症状" class="headerlink" title="症状"></a>症状</h1><p>每次使用git的时候，都会出现这个问题：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">warning: LF will be replaced by CRLF in tags/组合数学/index.html.</span><br><span class="line">The file will have its original line endings in your working directory.</span><br></pre></td></tr></table></figure></p>
 <p>一报一大溜，真的烦。  </p>
 <h1 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h1><p>windows中的换行符为 CRLF，而在Linux下的换行符为LF。所以会给换过来。<br>就是说，我们在<code>工作区</code>的文件中，有的是以LF作为换行符结尾的，然后在添加到<code>暂存区</code>的时候，git会<code>暂存区</code>的LF换成CRLF。然后统一提交时候，都是CRLF换行了。  </p>
 <h1 id="Hexo请看这里"><a href="#Hexo请看这里" class="headerlink" title="Hexo请看这里"></a>Hexo请看这里</h1><p>如果是<code>Hexo d</code>的时候出的这个问题。我就是这个时候出的<br>那么直接禁用转换就好了。不需要删除.git什么的。因为<code>hexo d</code>的时候，他会在<code>.deploy_git</code>文件夹内自动从新生成<code>.git</code><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config –global core.autocrlf false</span><br></pre></td></tr></table></figure></p>
@@ -919,20 +933,25 @@
           
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
   <script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+  <script src="//cdn.bootcss.com/blueimp-md5/1.1.0/js/md5.min.js"></script>
   <script>
       var gitalk = new Gitalk({
         clientID: 'b0256742e4b4efdace39',
         clientSecret: 'cd6da9191f5f3bf4afddeea2491551e117e423c5',
         repo: 'lmnsyunhao.github.io',
         owner: 'lmnsyunhao',
-        admin: ['lmnsyunhao'],
-        id: location.pathname,
-        distractionFreeMode: true
+        admin: 'lmnsyunhao',
+        id: md5(location.pathname),
+        distractionFreeMode: 'true'
       });
       var div = document.createElement('div');
       div.setAttribute("id", "gitalk_comments");
-      var bro = document.getElementById('content');
-      bro.parentNode.appendChild(div);
+      div.setAttribute("class", "post-nav");
+      var bro = document.getElementById('posts').getElementsByTagName('article');
+      bro = bro[0].getElementsByClassName('post-block');
+      bro = bro[0].getElementsByTagName('footer');
+      bro = bro[0];
+      bro.appendChild(div);
       gitalk.render('gitalk_comments');
   </script>
 
@@ -988,7 +1007,7 @@
       <i class="fa fa-area-chart"></i>
     </span>
     
-    <span title="站点总字数">134k</span>
+    <span title="站点总字数">136k</span>
   
 
   
@@ -997,7 +1016,7 @@
       <i class="fa fa-coffee"></i>
     </span>
     
-    <span title="站点阅读时长">2:02</span>
+    <span title="站点阅读时长">2:04</span>
   
 </div>
 

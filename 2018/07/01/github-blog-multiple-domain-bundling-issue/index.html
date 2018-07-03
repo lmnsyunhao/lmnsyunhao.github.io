@@ -142,7 +142,7 @@
 
 
   <meta name="description" content="我的个人站点托管在GitHub上，想要多个域名都能够正常访问站点，比如，yunhao.space可以访问站点，blog.yunhao.space也可以访问站点。记录一次折腾。因为设置过程中，会有缓存，所以吧有的时候，不一定能够是真的能访问，所以得再三确认。">
-<meta name="keywords" content="服务器,域名,DNS,Hexo,GitHub,GitHub Pages,GoDaddy,腾讯云,Nginx">
+<meta name="keywords" content="域名,DNS,服务器,Hexo,GitHub,GitHub Pages,GoDaddy,腾讯云,Nginx">
 <meta property="og:type" content="article">
 <meta property="og:title" content="GitHub Hexo 博客 GitHub Pages 个人站点 多域名绑定问题">
 <meta property="og:url" content="http://yunhao.space/2018/07/01/github-blog-multiple-domain-bundling-issue/index.html">
@@ -158,7 +158,7 @@
 <meta property="og:image" content="http://yunhao.space/images/github-blog-multiple-domain-bundling-issue/7.png">
 <meta property="og:image" content="http://yunhao.space/images/github-blog-multiple-domain-bundling-issue/8.png">
 <meta property="og:image" content="http://yunhao.space/images/github-blog-multiple-domain-bundling-issue/9.png">
-<meta property="og:updated_time" content="2018-07-02T15:15:20.956Z">
+<meta property="og:updated_time" content="2018-07-03T11:37:59.819Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="GitHub Hexo 博客 GitHub Pages 个人站点 多域名绑定问题">
 <meta name="twitter:description" content="我的个人站点托管在GitHub上，想要多个域名都能够正常访问站点，比如，yunhao.space可以访问站点，blog.yunhao.space也可以访问站点。记录一次折腾。因为设置过程中，会有缓存，所以吧有的时候，不一定能够是真的能访问，所以得再三确认。">
@@ -460,7 +460,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2018-07-02 23:15:20" itemprop="dateModified" datetime="2018-07-02T23:15:20+08:00">2018-07-02</time>
+                <time title="修改时间：2018-07-03 19:37:59" itemprop="dateModified" datetime="2018-07-03T19:37:59+08:00">2018-07-03</time>
               
             
           </span>
@@ -557,7 +557,7 @@
       
 
       
-        <p>我的个人站点托管在GitHub上，想要多个域名都能够正常访问站点，比如，yunhao.space可以访问站点，blog.yunhao.space也可以访问站点。记录一次折腾。因为设置过程中，会有缓存，所以吧有的时候，不一定能够是真的能访问，所以得再三确认。</p>
+        <p>我的个人站点托管在GitHub上，想要多个域名都能够正常访问站点，比如，yunhao.space可以访问站点，blog.yunhao.space也可以访问站点。记录一次折腾。因为设置过程中，会有缓存，所以吧有的时候，不一定能够是真的能访问，所以得再三确认。  </p>
 <a id="more"></a>
 <h1 id="GitHub-Pages"><a href="#GitHub-Pages" class="headerlink" title="GitHub Pages"></a>GitHub Pages</h1><p>GitHub Pages提供了将项目设置成站点的功能。可以通过特定的网址访问。<br>GitHub Pages站点有两类，第一类是用户组织站点，第二类是项目站点。第一类站点的仓库名字必须和用户名一样，第二类站点的仓库名字可以随便。访问第一类站点网址是<code>username.github.io</code>，访问第二类站点网址是<code>username.github.io/repository_name</code>。<br>官方说，用户组织站点，每个账户只能有一个，而项目站点每个项目无限。详见<a href="https://help.github.com/articles/troubleshooting-custom-domains/#reached-limit-for-user-or-organization-pages-site" target="_blank" rel="noopener">官方文档</a><br>个人站点就是用户站点。  </p>
 <h1 id="多域名绑定的官方解释"><a href="#多域名绑定的官方解释" class="headerlink" title="多域名绑定的官方解释"></a>多域名绑定的官方解释</h1><p><a href="https://help.github.com/articles/troubleshooting-custom-domains/#multiple-domains-in-cname-file" target="_blank" rel="noopener">Multiple domains in CNAME file</a>，这是官方解释：  </p>
@@ -597,11 +597,11 @@
       
         <div class="post-tags">
           
-            <a href="/tags/服务器/" rel="tag"># 服务器</a>
-          
             <a href="/tags/域名/" rel="tag"># 域名</a>
           
             <a href="/tags/DNS/" rel="tag"># DNS</a>
+          
+            <a href="/tags/服务器/" rel="tag"># 服务器</a>
           
             <a href="/tags/Hexo/" rel="tag"># Hexo</a>
           
@@ -975,20 +975,25 @@
           
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
   <script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+  <script src="//cdn.bootcss.com/blueimp-md5/1.1.0/js/md5.min.js"></script>
   <script>
       var gitalk = new Gitalk({
         clientID: 'b0256742e4b4efdace39',
         clientSecret: 'cd6da9191f5f3bf4afddeea2491551e117e423c5',
         repo: 'lmnsyunhao.github.io',
         owner: 'lmnsyunhao',
-        admin: ['lmnsyunhao'],
-        id: location.pathname,
-        distractionFreeMode: true
+        admin: 'lmnsyunhao',
+        id: md5(location.pathname),
+        distractionFreeMode: 'true'
       });
       var div = document.createElement('div');
       div.setAttribute("id", "gitalk_comments");
-      var bro = document.getElementById('content');
-      bro.parentNode.appendChild(div);
+      div.setAttribute("class", "post-nav");
+      var bro = document.getElementById('posts').getElementsByTagName('article');
+      bro = bro[0].getElementsByClassName('post-block');
+      bro = bro[0].getElementsByTagName('footer');
+      bro = bro[0];
+      bro.appendChild(div);
       gitalk.render('gitalk_comments');
   </script>
 
@@ -1044,7 +1049,7 @@
       <i class="fa fa-area-chart"></i>
     </span>
     
-    <span title="站点总字数">134k</span>
+    <span title="站点总字数">136k</span>
   
 
   
@@ -1053,7 +1058,7 @@
       <i class="fa fa-coffee"></i>
     </span>
     
-    <span title="站点阅读时长">2:02</span>
+    <span title="站点阅读时长">2:04</span>
   
 </div>
 

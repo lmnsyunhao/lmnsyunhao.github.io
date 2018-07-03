@@ -149,7 +149,7 @@
 <meta property="og:site_name" content="火龙窝">
 <meta property="og:description" content="hexo 备份和移植">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-05-27T11:10:23.337Z">
+<meta property="og:updated_time" content="2018-07-03T11:38:15.801Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo 备份">
 <meta name="twitter:description" content="hexo 备份和移植">
@@ -450,7 +450,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2018-05-27 19:10:23" itemprop="dateModified" datetime="2018-05-27T19:10:23+08:00">2018-05-27</time>
+                <time title="修改时间：2018-07-03 19:38:15" itemprop="dateModified" datetime="2018-07-03T19:38:15+08:00">2018-07-03</time>
               
             
           </span>
@@ -540,7 +540,7 @@
       
 
       
-        <p>hexo 备份和移植</p>
+        <p>hexo 备份和移植  </p>
 <a id="more"></a>
 <h1 id="创建仓库"><a href="#创建仓库" class="headerlink" title="创建仓库"></a>创建仓库</h1><p>PS：如果远程已经备份好，只是要<code>pull</code>下来，请跳到恢复一节<br>假设我们的博客的项目目录为<code>blog</code><br>我们可以看到在<code>blog</code>目录下是没有<code>.git</code>文件夹的。<br>首先，我们先将所有的更改，提交到本地库<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git add .</span><br><span class="line">git commit -m <span class="string">"backup"</span></span><br></pre></td></tr></table></figure></p>
 <h1 id="创建backup分支"><a href="#创建backup分支" class="headerlink" title="创建backup分支"></a>创建backup分支</h1><p>我们新建一个叫做<code>backup</code>的分支。然后切换到该分支，再删除<code>master</code>分支。<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git branch backup</span><br><span class="line">git checkout backup</span><br><span class="line">git branch -d master</span><br><span class="line">git branch</span><br></pre></td></tr></table></figure></p>
@@ -933,20 +933,25 @@
           
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
   <script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+  <script src="//cdn.bootcss.com/blueimp-md5/1.1.0/js/md5.min.js"></script>
   <script>
       var gitalk = new Gitalk({
         clientID: 'b0256742e4b4efdace39',
         clientSecret: 'cd6da9191f5f3bf4afddeea2491551e117e423c5',
         repo: 'lmnsyunhao.github.io',
         owner: 'lmnsyunhao',
-        admin: ['lmnsyunhao'],
-        id: location.pathname,
-        distractionFreeMode: true
+        admin: 'lmnsyunhao',
+        id: md5(location.pathname),
+        distractionFreeMode: 'true'
       });
       var div = document.createElement('div');
       div.setAttribute("id", "gitalk_comments");
-      var bro = document.getElementById('content');
-      bro.parentNode.appendChild(div);
+      div.setAttribute("class", "post-nav");
+      var bro = document.getElementById('posts').getElementsByTagName('article');
+      bro = bro[0].getElementsByClassName('post-block');
+      bro = bro[0].getElementsByTagName('footer');
+      bro = bro[0];
+      bro.appendChild(div);
       gitalk.render('gitalk_comments');
   </script>
 
@@ -1002,7 +1007,7 @@
       <i class="fa fa-area-chart"></i>
     </span>
     
-    <span title="站点总字数">134k</span>
+    <span title="站点总字数">136k</span>
   
 
   
@@ -1011,7 +1016,7 @@
       <i class="fa fa-coffee"></i>
     </span>
     
-    <span title="站点阅读时长">2:02</span>
+    <span title="站点阅读时长">2:04</span>
   
 </div>
 

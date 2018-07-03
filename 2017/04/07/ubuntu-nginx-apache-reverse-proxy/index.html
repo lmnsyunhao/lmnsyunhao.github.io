@@ -150,7 +150,7 @@
 <meta property="og:description" content="Nginx 处理静态界面的性能比 Apache 要高很多，Nginx 同样能够抗并发。但是对于 php 等，Nginx 可以通过 FastCGI 转给 php-fpm 处理。在这个过程中，还是可能会出现403等问题。如果能够让 Nginx 反向代理 Apache 就完美了。">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://yunhao.space/images/ubuntu-nginx-apache-reverse-proxy/phpinfo-server-api.png">
-<meta property="og:updated_time" content="2018-06-09T17:04:04.673Z">
+<meta property="og:updated_time" content="2018-07-03T11:40:01.062Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Ubuntu16.04 Nginx 反向代理 Apache">
 <meta name="twitter:description" content="Nginx 处理静态界面的性能比 Apache 要高很多，Nginx 同样能够抗并发。但是对于 php 等，Nginx 可以通过 FastCGI 转给 php-fpm 处理。在这个过程中，还是可能会出现403等问题。如果能够让 Nginx 反向代理 Apache 就完美了。">
@@ -452,7 +452,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2018-06-10 01:04:04" itemprop="dateModified" datetime="2018-06-10T01:04:04+08:00">2018-06-10</time>
+                <time title="修改时间：2018-07-03 19:40:01" itemprop="dateModified" datetime="2018-07-03T19:40:01+08:00">2018-07-03</time>
               
             
           </span>
@@ -542,7 +542,7 @@
       
 
       
-        <p>Nginx 处理静态界面的性能比 Apache 要高很多，Nginx 同样能够抗并发。但是对于 php 等，Nginx 可以通过 FastCGI 转给 php-fpm 处理。在这个过程中，还是可能会出现403等问题。如果能够让 Nginx 反向代理 Apache 就完美了。</p>
+        <p>Nginx 处理静态界面的性能比 Apache 要高很多，Nginx 同样能够抗并发。但是对于 php 等，Nginx 可以通过 FastCGI 转给 php-fpm 处理。在这个过程中，还是可能会出现403等问题。如果能够让 Nginx 反向代理 Apache 就完美了。  </p>
 <a id="more"></a>
 <h1 id="Nginx-的优缺点"><a href="#Nginx-的优缺点" class="headerlink" title="Nginx 的优缺点"></a>Nginx 的优缺点</h1><ul>
 <li>轻量级，比<code>apache</code>占用更少的内存及资源</li>
@@ -966,20 +966,25 @@
           
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
   <script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+  <script src="//cdn.bootcss.com/blueimp-md5/1.1.0/js/md5.min.js"></script>
   <script>
       var gitalk = new Gitalk({
         clientID: 'b0256742e4b4efdace39',
         clientSecret: 'cd6da9191f5f3bf4afddeea2491551e117e423c5',
         repo: 'lmnsyunhao.github.io',
         owner: 'lmnsyunhao',
-        admin: ['lmnsyunhao'],
-        id: location.pathname,
-        distractionFreeMode: true
+        admin: 'lmnsyunhao',
+        id: md5(location.pathname),
+        distractionFreeMode: 'true'
       });
       var div = document.createElement('div');
       div.setAttribute("id", "gitalk_comments");
-      var bro = document.getElementById('content');
-      bro.parentNode.appendChild(div);
+      div.setAttribute("class", "post-nav");
+      var bro = document.getElementById('posts').getElementsByTagName('article');
+      bro = bro[0].getElementsByClassName('post-block');
+      bro = bro[0].getElementsByTagName('footer');
+      bro = bro[0];
+      bro.appendChild(div);
       gitalk.render('gitalk_comments');
   </script>
 
@@ -1035,7 +1040,7 @@
       <i class="fa fa-area-chart"></i>
     </span>
     
-    <span title="站点总字数">134k</span>
+    <span title="站点总字数">136k</span>
   
 
   
@@ -1044,7 +1049,7 @@
       <i class="fa fa-coffee"></i>
     </span>
     
-    <span title="站点阅读时长">2:02</span>
+    <span title="站点阅读时长">2:04</span>
   
 </div>
 

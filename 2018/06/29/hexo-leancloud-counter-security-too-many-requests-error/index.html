@@ -141,18 +141,18 @@
   </script>
 
 
-  <meta name="description" content="症状如果你懒得看解释的话，直接去看修改代码一节。每次进行hexo d的时候会概率性的出现如下错误：12345678910ERROR Too many requests. [429 POST https://xtppdvlr.api.lncld.net/1.1/classes/Counter]Error: Too many requests. [429 POST https://xtppdvlr.a">
+  <meta name="description" content="这个插件吧，有点儿不完美，给他改了改，不完美的地方就是，leancloud那边儿没法短时间内接受太多请求。原因是我用的是免费版的，有限制，而hexo-leancloud-counter-security 插件每次发太多无用请求，总是会报429错误，我就给源代码改了改。">
 <meta name="keywords" content="Hexo,LeanCloud">
 <meta property="og:type" content="article">
 <meta property="og:title" content="hexo-leancloud-counter-security 插件 Too many requests 错误">
 <meta property="og:url" content="http://yunhao.space/2018/06/29/hexo-leancloud-counter-security-too-many-requests-error/index.html">
 <meta property="og:site_name" content="火龙窝">
-<meta property="og:description" content="症状如果你懒得看解释的话，直接去看修改代码一节。每次进行hexo d的时候会概率性的出现如下错误：12345678910ERROR Too many requests. [429 POST https://xtppdvlr.api.lncld.net/1.1/classes/Counter]Error: Too many requests. [429 POST https://xtppdvlr.a">
+<meta property="og:description" content="这个插件吧，有点儿不完美，给他改了改，不完美的地方就是，leancloud那边儿没法短时间内接受太多请求。原因是我用的是免费版的，有限制，而hexo-leancloud-counter-security 插件每次发太多无用请求，总是会报429错误，我就给源代码改了改。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-07-03T02:42:00.866Z">
+<meta property="og:updated_time" content="2018-07-03T11:38:31.191Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexo-leancloud-counter-security 插件 Too many requests 错误">
-<meta name="twitter:description" content="症状如果你懒得看解释的话，直接去看修改代码一节。每次进行hexo d的时候会概率性的出现如下错误：12345678910ERROR Too many requests. [429 POST https://xtppdvlr.api.lncld.net/1.1/classes/Counter]Error: Too many requests. [429 POST https://xtppdvlr.a">
+<meta name="twitter:description" content="这个插件吧，有点儿不完美，给他改了改，不完美的地方就是，leancloud那边儿没法短时间内接受太多请求。原因是我用的是免费版的，有限制，而hexo-leancloud-counter-security 插件每次发太多无用请求，总是会报429错误，我就给源代码改了改。">
 
 
 
@@ -450,7 +450,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2018-07-03 10:42:00" itemprop="dateModified" datetime="2018-07-03T10:42:00+08:00">2018-07-03</time>
+                <time title="修改时间：2018-07-03 19:38:31" itemprop="dateModified" datetime="2018-07-03T19:38:31+08:00">2018-07-03</time>
               
             
           </span>
@@ -540,7 +540,9 @@
       
 
       
-        <h1 id="症状"><a href="#症状" class="headerlink" title="症状"></a>症状</h1><p>如果你懒得看解释的话，直接去看修改代码一节。<br>每次进行<code>hexo d</code>的时候会概率性的出现如下错误：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">ERROR Too many requests. [429 POST https://xtppdvlr.api.lncld.net/1.1/classes/Counter]</span><br><span class="line">Error: Too many requests. [429 POST https://xtppdvlr.api.lncld.net/1.1/classes/Counter]</span><br><span class="line">    at E:\code\blog\node_modules\leancloud-storage\dist\node\request.js:163:17</span><br><span class="line">    at tryCatch (E:\code\blog\node_modules\es6-promise\dist\es6-promise.js:410:12)</span><br><span class="line">    at invokeCallback (E:\code\blog\node_modules\es6-promise\dist\es6-promise.js:425:13)</span><br><span class="line">    at publish (E:\code\blog\node_modules\es6-promise\dist\es6-promise.js:399:7)</span><br><span class="line">    at publishRejection (E:\code\blog\node_modules\es6-promise\dist\es6-promise.js:340:3)</span><br><span class="line">    at flush (E:\code\blog\node_modules\es6-promise\dist\es6-promise.js:128:5)</span><br><span class="line">    at _combinedTickCallback (internal/process/next_tick.js:131:7)</span><br><span class="line">    at process._tickCallback (internal/process/next_tick.js:180:9)</span><br></pre></td></tr></table></figure></p>
+        <p>这个插件吧，有点儿不完美，给他改了改，不完美的地方就是，leancloud那边儿没法短时间内接受太多请求。原因是我用的是免费版的，有限制，而hexo-leancloud-counter-security 插件每次发太多无用请求，总是会报429错误，我就给源代码改了改。  </p>
+<a id="more"></a>
+<h1 id="症状"><a href="#症状" class="headerlink" title="症状"></a>症状</h1><p>如果你懒得看解释的话，直接去看修改代码一节。<br>每次进行<code>hexo d</code>的时候会概率性的出现如下错误：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">ERROR Too many requests. [429 POST https://xtppdvlr.api.lncld.net/1.1/classes/Counter]</span><br><span class="line">Error: Too many requests. [429 POST https://xtppdvlr.api.lncld.net/1.1/classes/Counter]</span><br><span class="line">    at E:\code\blog\node_modules\leancloud-storage\dist\node\request.js:163:17</span><br><span class="line">    at tryCatch (E:\code\blog\node_modules\es6-promise\dist\es6-promise.js:410:12)</span><br><span class="line">    at invokeCallback (E:\code\blog\node_modules\es6-promise\dist\es6-promise.js:425:13)</span><br><span class="line">    at publish (E:\code\blog\node_modules\es6-promise\dist\es6-promise.js:399:7)</span><br><span class="line">    at publishRejection (E:\code\blog\node_modules\es6-promise\dist\es6-promise.js:340:3)</span><br><span class="line">    at flush (E:\code\blog\node_modules\es6-promise\dist\es6-promise.js:128:5)</span><br><span class="line">    at _combinedTickCallback (internal/process/next_tick.js:131:7)</span><br><span class="line">    at process._tickCallback (internal/process/next_tick.js:180:9)</span><br></pre></td></tr></table></figure></p>
 <p>官方解释如下：  </p>
 <blockquote>
 <p>信息 - Too many requests.<br>含义 - 超过应用的流控限制，即超过每个应用同一时刻最多可使用的工作线程数，或者说同一时刻最多可以同时处理的数据请求。通过 控制台 &gt; 存储 &gt; API 统计 &gt; API 性能 &gt; 总览 可以查看应用产生的请求统计数据，如平均工作线程、平均响应时间等。使用 LeanCloud 商用版或企业版 的用户，如有需要，可以联系我们来调整工作线程数。</p>
@@ -956,20 +958,25 @@
           
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
   <script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+  <script src="//cdn.bootcss.com/blueimp-md5/1.1.0/js/md5.min.js"></script>
   <script>
       var gitalk = new Gitalk({
         clientID: 'b0256742e4b4efdace39',
         clientSecret: 'cd6da9191f5f3bf4afddeea2491551e117e423c5',
         repo: 'lmnsyunhao.github.io',
         owner: 'lmnsyunhao',
-        admin: ['lmnsyunhao'],
-        id: location.pathname,
-        distractionFreeMode: true
+        admin: 'lmnsyunhao',
+        id: md5(location.pathname),
+        distractionFreeMode: 'true'
       });
       var div = document.createElement('div');
       div.setAttribute("id", "gitalk_comments");
-      var bro = document.getElementById('content');
-      bro.parentNode.appendChild(div);
+      div.setAttribute("class", "post-nav");
+      var bro = document.getElementById('posts').getElementsByTagName('article');
+      bro = bro[0].getElementsByClassName('post-block');
+      bro = bro[0].getElementsByTagName('footer');
+      bro = bro[0];
+      bro.appendChild(div);
       gitalk.render('gitalk_comments');
   </script>
 
@@ -1025,7 +1032,7 @@
       <i class="fa fa-area-chart"></i>
     </span>
     
-    <span title="站点总字数">134k</span>
+    <span title="站点总字数">136k</span>
   
 
   
@@ -1034,7 +1041,7 @@
       <i class="fa fa-coffee"></i>
     </span>
     
-    <span title="站点阅读时长">2:02</span>
+    <span title="站点阅读时长">2:04</span>
   
 </div>
 

@@ -149,7 +149,7 @@
 <meta property="og:site_name" content="火龙窝">
 <meta property="og:description" content="Github 上的 username.github.io 的博客绑定域名操作。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-07-02T16:18:09.030Z">
+<meta property="og:updated_time" content="2018-07-03T11:38:04.425Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="GitHub Hexo blog 绑定域名">
 <meta name="twitter:description" content="Github 上的 username.github.io 的博客绑定域名操作。">
@@ -450,7 +450,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2018-07-03 00:18:09" itemprop="dateModified" datetime="2018-07-03T00:18:09+08:00">2018-07-03</time>
+                <time title="修改时间：2018-07-03 19:38:04" itemprop="dateModified" datetime="2018-07-03T19:38:04+08:00">2018-07-03</time>
               
             
           </span>
@@ -506,7 +506,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">776</span>
+                <span title="本文字数">778</span>
               
 
               
@@ -540,7 +540,7 @@
       
 
       
-        <p>Github 上的 username.github.io 的博客绑定域名操作。</p>
+        <p>Github 上的 username.github.io 的博客绑定域名操作。  </p>
 <a id="more"></a>
 <h1 id="创建CNAME文件"><a href="#创建CNAME文件" class="headerlink" title="创建CNAME文件"></a>创建CNAME文件</h1><p>首先我们要在<code>master</code>分之下创建<code>CNAME</code>文件，文件中写‘你自己想的二级域名.你购买的一级域名’。<br>假设我想访问<code>www.yunhao.space</code>的时候，访问博客，那么二级域名是www，再加上一级域名，所以CNAME文件中写<code>www.yunhao.space</code>。<br>假设想访问yunhao.space的时候，访问博客，那么二级域名就是空的，所以CNAME文件中写yunhao.space<br>这时候就会遇到一个问题，每次在<code>hexo d</code>的时候，<code>CNAME</code>文件会被删除，不要慌，我们将<code>CNAME</code>文件创建在<code>source</code>目录下，然后再进行<code>hexo g</code>的时候，会生成。不用担心<code>CNAME</code>文件被删除的情况。  </p>
 <h1 id="开启仓库的GitHub-Pages服务"><a href="#开启仓库的GitHub-Pages服务" class="headerlink" title="开启仓库的GitHub Pages服务"></a>开启仓库的GitHub Pages服务</h1><p>一般是开启了，最好确认一下。去仓库的settings，注意是仓库的settings。找到GitHub Pages位置，将Source位置设置成master branch，然后点击Save。  </p>
@@ -936,20 +936,25 @@
           
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
   <script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+  <script src="//cdn.bootcss.com/blueimp-md5/1.1.0/js/md5.min.js"></script>
   <script>
       var gitalk = new Gitalk({
         clientID: 'b0256742e4b4efdace39',
         clientSecret: 'cd6da9191f5f3bf4afddeea2491551e117e423c5',
         repo: 'lmnsyunhao.github.io',
         owner: 'lmnsyunhao',
-        admin: ['lmnsyunhao'],
-        id: location.pathname,
-        distractionFreeMode: true
+        admin: 'lmnsyunhao',
+        id: md5(location.pathname),
+        distractionFreeMode: 'true'
       });
       var div = document.createElement('div');
       div.setAttribute("id", "gitalk_comments");
-      var bro = document.getElementById('content');
-      bro.parentNode.appendChild(div);
+      div.setAttribute("class", "post-nav");
+      var bro = document.getElementById('posts').getElementsByTagName('article');
+      bro = bro[0].getElementsByClassName('post-block');
+      bro = bro[0].getElementsByTagName('footer');
+      bro = bro[0];
+      bro.appendChild(div);
       gitalk.render('gitalk_comments');
   </script>
 
@@ -1005,7 +1010,7 @@
       <i class="fa fa-area-chart"></i>
     </span>
     
-    <span title="站点总字数">134k</span>
+    <span title="站点总字数">136k</span>
   
 
   
@@ -1014,7 +1019,7 @@
       <i class="fa fa-coffee"></i>
     </span>
     
-    <span title="站点阅读时长">2:02</span>
+    <span title="站点阅读时长">2:04</span>
   
 </div>
 

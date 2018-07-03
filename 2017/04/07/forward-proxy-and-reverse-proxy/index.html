@@ -152,7 +152,7 @@
 <meta property="og:image" content="http://yunhao.space/images/forward-proxy-and-reverse-proxy/proxy.png">
 <meta property="og:image" content="http://yunhao.space/images/forward-proxy-and-reverse-proxy/forward-proxy.png">
 <meta property="og:image" content="http://yunhao.space/images/forward-proxy-and-reverse-proxy/reverse-proxy.png">
-<meta property="og:updated_time" content="2018-06-09T16:56:51.571Z">
+<meta property="og:updated_time" content="2018-07-03T11:37:48.838Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="正向代理与反向代理">
 <meta name="twitter:description" content="什么是代理呢？用了这么久的Nginx，也听说过Nginx搭建反向代理服务器。正向代理是什么？反向代理是什么？两者的区别呢？">
@@ -454,7 +454,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2018-06-10 00:56:51" itemprop="dateModified" datetime="2018-06-10T00:56:51+08:00">2018-06-10</time>
+                <time title="修改时间：2018-07-03 19:37:48" itemprop="dateModified" datetime="2018-07-03T19:37:48+08:00">2018-07-03</time>
               
             
           </span>
@@ -544,7 +544,7 @@
       
 
       
-        <p>什么是代理呢？用了这么久的Nginx，也听说过Nginx搭建反向代理服务器。正向代理是什么？反向代理是什么？两者的区别呢？</p>
+        <p>什么是代理呢？用了这么久的Nginx，也听说过Nginx搭建反向代理服务器。正向代理是什么？反向代理是什么？两者的区别呢？  </p>
 <a id="more"></a>
 <h1 id="代理"><a href="#代理" class="headerlink" title="代理"></a>代理</h1><p>打个比方，代理就是我们生活中所熟知的中介。他负责联系服务方和客户方。在服务器层面，就是客户端和服务器中间的一个服务器。这个服务器其实和正常的服务器没什么两样。只不过，他将客户发来的请求，转发到真正处理请求的服务器。或者是下一个代理服务器。<br>正因为有了代理服务器的存在，才有了墙的存在。墙其实就是代理服务器。比如我们访问<code>google.com</code>，代理服务器接受到了这个请求，正常的话，他应该去转发请求的。但是，墙这个代理很邪恶，他不转发，然后告诉你，哎呀，这个没有啊，找不到。然后就访问不了了。<br><img src="/images/forward-proxy-and-reverse-proxy/proxy.png" alt="代理服务器"></p>
 <h1 id="正向代理"><a href="#正向代理" class="headerlink" title="正向代理"></a>正向代理</h1><p>举个生活中的例子。比如你向隔壁老王借钱，但是隔壁老王和你不熟，不借给你。然后呢？你想到了，隔壁老王和你媳妇熟啊，于是，你让你媳妇跟隔壁老王借钱，隔壁老王一看是你媳妇和他借钱，十分爽快的答应了。然后你媳妇把借来的钱又给你了。<br>综上，隔壁老王只知道把钱借给你媳妇了，不知道实际上是借给你了。而你，知道这一切。<br>你就是客户，你媳妇就是正向代理服务器，老王就是真正的服务器。客户向代理服务器请求，代理服务器向真正的服务器请求。然后处理之后的请求，代理服务器再转给你。整个过程中，客户知道代理服务器的存在。<strong>而真正的服务器，感知不到客户的存在，只能感知到代理服务器的存在。</strong> 对他来说，代理服务器就是他的客户，所以他感知不到真正的客户。<br><img src="/images/forward-proxy-and-reverse-proxy/forward-proxy.png" alt="正向代理服务器"></p>
@@ -934,20 +934,25 @@
           
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
   <script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+  <script src="//cdn.bootcss.com/blueimp-md5/1.1.0/js/md5.min.js"></script>
   <script>
       var gitalk = new Gitalk({
         clientID: 'b0256742e4b4efdace39',
         clientSecret: 'cd6da9191f5f3bf4afddeea2491551e117e423c5',
         repo: 'lmnsyunhao.github.io',
         owner: 'lmnsyunhao',
-        admin: ['lmnsyunhao'],
-        id: location.pathname,
-        distractionFreeMode: true
+        admin: 'lmnsyunhao',
+        id: md5(location.pathname),
+        distractionFreeMode: 'true'
       });
       var div = document.createElement('div');
       div.setAttribute("id", "gitalk_comments");
-      var bro = document.getElementById('content');
-      bro.parentNode.appendChild(div);
+      div.setAttribute("class", "post-nav");
+      var bro = document.getElementById('posts').getElementsByTagName('article');
+      bro = bro[0].getElementsByClassName('post-block');
+      bro = bro[0].getElementsByTagName('footer');
+      bro = bro[0];
+      bro.appendChild(div);
       gitalk.render('gitalk_comments');
   </script>
 
@@ -1003,7 +1008,7 @@
       <i class="fa fa-area-chart"></i>
     </span>
     
-    <span title="站点总字数">134k</span>
+    <span title="站点总字数">136k</span>
   
 
   
@@ -1012,7 +1017,7 @@
       <i class="fa fa-coffee"></i>
     </span>
     
-    <span title="站点阅读时长">2:02</span>
+    <span title="站点阅读时长">2:04</span>
   
 </div>
 

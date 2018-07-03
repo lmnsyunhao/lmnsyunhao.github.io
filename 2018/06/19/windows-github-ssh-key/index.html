@@ -141,18 +141,18 @@
   </script>
 
 
-  <meta name="description" content="SSH的简介SSH技术是指通信的双方A，B，分别有自己的公钥和私钥，公钥负责加密信息，私钥负责解密信息。设定是这样的A公钥加密的信息，只能通过A的私钥来解密，不能通过其他的私钥来解密，而且通过A的公钥很难推断出A的私钥。通信开始前，双方得知对方的公钥，A给B发送数据，用B的公钥来加密。B给A发送数据用A的公钥来加密。此项技术能够保证通信之间的安全性。即使信息被第三方获取，也无法解密。避免了信息被窃">
+  <meta name="description" content="很多地方都需要用到SSH服务，本文简述SSH技术，如何生成并使用SSH密钥，GitHub SSH连接。">
 <meta name="keywords" content="Git,GitHub,OpenSSH,Windows">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Windows10 生成 SSH密钥 GitHub配置">
 <meta property="og:url" content="http://yunhao.space/2018/06/19/windows-github-ssh-key/index.html">
 <meta property="og:site_name" content="火龙窝">
-<meta property="og:description" content="SSH的简介SSH技术是指通信的双方A，B，分别有自己的公钥和私钥，公钥负责加密信息，私钥负责解密信息。设定是这样的A公钥加密的信息，只能通过A的私钥来解密，不能通过其他的私钥来解密，而且通过A的公钥很难推断出A的私钥。通信开始前，双方得知对方的公钥，A给B发送数据，用B的公钥来加密。B给A发送数据用A的公钥来加密。此项技术能够保证通信之间的安全性。即使信息被第三方获取，也无法解密。避免了信息被窃">
+<meta property="og:description" content="很多地方都需要用到SSH服务，本文简述SSH技术，如何生成并使用SSH密钥，GitHub SSH连接。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-06-29T07:01:28.635Z">
+<meta property="og:updated_time" content="2018-07-03T11:39:19.589Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Windows10 生成 SSH密钥 GitHub配置">
-<meta name="twitter:description" content="SSH的简介SSH技术是指通信的双方A，B，分别有自己的公钥和私钥，公钥负责加密信息，私钥负责解密信息。设定是这样的A公钥加密的信息，只能通过A的私钥来解密，不能通过其他的私钥来解密，而且通过A的公钥很难推断出A的私钥。通信开始前，双方得知对方的公钥，A给B发送数据，用B的公钥来加密。B给A发送数据用A的公钥来加密。此项技术能够保证通信之间的安全性。即使信息被第三方获取，也无法解密。避免了信息被窃">
+<meta name="twitter:description" content="很多地方都需要用到SSH服务，本文简述SSH技术，如何生成并使用SSH密钥，GitHub SSH连接。">
 
 
 
@@ -450,7 +450,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2018-06-29 15:01:28" itemprop="dateModified" datetime="2018-06-29T15:01:28+08:00">2018-06-29</time>
+                <time title="修改时间：2018-07-03 19:39:19" itemprop="dateModified" datetime="2018-07-03T19:39:19+08:00">2018-07-03</time>
               
             
           </span>
@@ -506,7 +506,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">726</span>
+                <span title="本文字数">781</span>
               
 
               
@@ -540,7 +540,9 @@
       
 
       
-        <h1 id="SSH的简介"><a href="#SSH的简介" class="headerlink" title="SSH的简介"></a>SSH的简介</h1><p>SSH技术是指通信的双方A，B，分别有自己的公钥和私钥，公钥负责加密信息，私钥负责解密信息。设定是这样的A公钥加密的信息，只能通过A的私钥来解密，不能通过其他的私钥来解密，而且通过A的公钥很难推断出A的私钥。<br>通信开始前，双方得知对方的公钥，A给B发送数据，用B的公钥来加密。B给A发送数据用A的公钥来加密。<br>此项技术能够保证通信之间的安全性。即使信息被第三方获取，也无法解密。避免了信息被窃取，篡改，和冒充的情况。  </p>
+        <p>很多地方都需要用到SSH服务，本文简述SSH技术，如何生成并使用SSH密钥，GitHub SSH连接。  </p>
+<a id="more"></a>
+<h1 id="SSH的简介"><a href="#SSH的简介" class="headerlink" title="SSH的简介"></a>SSH的简介</h1><p>SSH技术是指通信的双方A，B，分别有自己的公钥和私钥，公钥负责加密信息，私钥负责解密信息。设定是这样的A公钥加密的信息，只能通过A的私钥来解密，不能通过其他的私钥来解密，而且通过A的公钥很难推断出A的私钥。<br>通信开始前，双方得知对方的公钥，A给B发送数据，用B的公钥来加密。B给A发送数据用A的公钥来加密。<br>此项技术能够保证通信之间的安全性。即使信息被第三方获取，也无法解密。避免了信息被窃取，篡改，和冒充的情况。  </p>
 <h1 id="生成密钥"><a href="#生成密钥" class="headerlink" title="生成密钥"></a>生成密钥</h1><p>首先看看，C盘用户目录(例如：C:\Users\yunhao)下，有没有.ssh这个文件夹。如果有就不用生成，没有就生成一下。或者.ssh文件夹里面没有东西的话也需要生成<br>Windows环境下生成SSH密钥和Ubuntu下生成密钥的方法几乎相仿。windows下生成可以借助GitBash来生成。在某个文件夹下右键，然后打开GitBash。如果不想用GitBash来生成key的话。那么请看本文OpenSSH服务一节<br>输入<code>ssh-keygen</code>回车。生成过程中，会有提示，然后会输入两次密码，这个密码是在使用ssh时候用的，如果不想设置密码的话，就直接回车就好了。  </p>
 <h1 id="GitHub上配置"><a href="#GitHub上配置" class="headerlink" title="GitHub上配置"></a>GitHub上配置</h1><p>登陆Github网站，找到个人设置界面。左侧有 SSH and GPG keys 类似字样的选项，点击。然后新建一个 SSH 的 key， 把<code>C:\Users\username\.ssh\id_rsa.pub</code>中的内容复制过去。然后保存。之后就OK了。  </p>
 <h1 id="OpenSSH服务"><a href="#OpenSSH服务" class="headerlink" title="OpenSSH服务"></a>OpenSSH服务</h1><p>还有一种方法能够生成密钥。就是开启Windows的OpenSSH服务。之后使用cmd输入ssh-keygen命令来生成。<br>开启方法如下：<br><a href="/2018/06/19/windows-openssh-and-ssh-remote-connection/">开启OpenSSH方法</a></p>
@@ -932,20 +934,25 @@
           
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
   <script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+  <script src="//cdn.bootcss.com/blueimp-md5/1.1.0/js/md5.min.js"></script>
   <script>
       var gitalk = new Gitalk({
         clientID: 'b0256742e4b4efdace39',
         clientSecret: 'cd6da9191f5f3bf4afddeea2491551e117e423c5',
         repo: 'lmnsyunhao.github.io',
         owner: 'lmnsyunhao',
-        admin: ['lmnsyunhao'],
-        id: location.pathname,
-        distractionFreeMode: true
+        admin: 'lmnsyunhao',
+        id: md5(location.pathname),
+        distractionFreeMode: 'true'
       });
       var div = document.createElement('div');
       div.setAttribute("id", "gitalk_comments");
-      var bro = document.getElementById('content');
-      bro.parentNode.appendChild(div);
+      div.setAttribute("class", "post-nav");
+      var bro = document.getElementById('posts').getElementsByTagName('article');
+      bro = bro[0].getElementsByClassName('post-block');
+      bro = bro[0].getElementsByTagName('footer');
+      bro = bro[0];
+      bro.appendChild(div);
       gitalk.render('gitalk_comments');
   </script>
 
@@ -1001,7 +1008,7 @@
       <i class="fa fa-area-chart"></i>
     </span>
     
-    <span title="站点总字数">134k</span>
+    <span title="站点总字数">136k</span>
   
 
   
@@ -1010,7 +1017,7 @@
       <i class="fa fa-coffee"></i>
     </span>
     
-    <span title="站点阅读时长">2:02</span>
+    <span title="站点阅读时长">2:04</span>
   
 </div>
 

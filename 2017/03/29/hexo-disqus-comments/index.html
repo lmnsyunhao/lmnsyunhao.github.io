@@ -153,7 +153,7 @@
 <meta property="og:image" content="http://yunhao.space/images/hexo-disqus-comments/getStarted.png">
 <meta property="og:image" content="http://yunhao.space/images/hexo-disqus-comments/disqusHome.png">
 <meta property="og:image" content="http://yunhao.space/images/hexo-disqus-comments/websiteName.png">
-<meta property="og:updated_time" content="2018-05-27T11:10:30.199Z">
+<meta property="og:updated_time" content="2018-07-03T11:38:26.987Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo NexT Disqus 评论插件">
 <meta name="twitter:description" content="自从多说关闭之后，第三方的评论工具让人找了又找。于是我找到了Disqus。本文针对说明NexT主题与Disqus的配置。">
@@ -455,7 +455,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2018-05-27 19:10:30" itemprop="dateModified" datetime="2018-05-27T19:10:30+08:00">2018-05-27</time>
+                <time title="修改时间：2018-07-03 19:38:26" itemprop="dateModified" datetime="2018-07-03T19:38:26+08:00">2018-07-03</time>
               
             
           </span>
@@ -511,7 +511,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">516</span>
+                <span title="本文字数">518</span>
               
 
               
@@ -545,7 +545,7 @@
       
 
       
-        <p>自从多说关闭之后，第三方的评论工具让人找了又找。于是我找到了<code>Disqus</code>。本文针对说明<code>NexT</code>主题与<code>Disqus</code>的配置。</p>
+        <p>自从多说关闭之后，第三方的评论工具让人找了又找。于是我找到了<code>Disqus</code>。本文针对说明<code>NexT</code>主题与<code>Disqus</code>的配置。  </p>
 <a id="more"></a>
 <h1 id="注册Disqus账号"><a href="#注册Disqus账号" class="headerlink" title="注册Disqus账号"></a>注册Disqus账号</h1><p>登陆<code>disqus.com</code>注册账号。注册过程，不多做说明。</p>
 <h1 id="进行邮箱确认"><a href="#进行邮箱确认" class="headerlink" title="进行邮箱确认"></a>进行邮箱确认</h1><p>注册了disqus账号之后，一定要去邮箱点击一下确认。我当时就是没有点击确认，好像就没有进行下去，还是区点击一下确认吧。</p>
@@ -938,20 +938,25 @@
           
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
   <script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+  <script src="//cdn.bootcss.com/blueimp-md5/1.1.0/js/md5.min.js"></script>
   <script>
       var gitalk = new Gitalk({
         clientID: 'b0256742e4b4efdace39',
         clientSecret: 'cd6da9191f5f3bf4afddeea2491551e117e423c5',
         repo: 'lmnsyunhao.github.io',
         owner: 'lmnsyunhao',
-        admin: ['lmnsyunhao'],
-        id: location.pathname,
-        distractionFreeMode: true
+        admin: 'lmnsyunhao',
+        id: md5(location.pathname),
+        distractionFreeMode: 'true'
       });
       var div = document.createElement('div');
       div.setAttribute("id", "gitalk_comments");
-      var bro = document.getElementById('content');
-      bro.parentNode.appendChild(div);
+      div.setAttribute("class", "post-nav");
+      var bro = document.getElementById('posts').getElementsByTagName('article');
+      bro = bro[0].getElementsByClassName('post-block');
+      bro = bro[0].getElementsByTagName('footer');
+      bro = bro[0];
+      bro.appendChild(div);
       gitalk.render('gitalk_comments');
   </script>
 
@@ -1007,7 +1012,7 @@
       <i class="fa fa-area-chart"></i>
     </span>
     
-    <span title="站点总字数">134k</span>
+    <span title="站点总字数">136k</span>
   
 
   
@@ -1016,7 +1021,7 @@
       <i class="fa fa-coffee"></i>
     </span>
     
-    <span title="站点阅读时长">2:02</span>
+    <span title="站点阅读时长">2:04</span>
   
 </div>
 
