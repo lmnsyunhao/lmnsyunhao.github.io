@@ -391,9 +391,9 @@
       </categories>
       <tags>
         <tag>ACM</tag>
+        <tag>HDU</tag>
         <tag>组合数学</tag>
         <tag>母函数</tag>
-        <tag>HDU</tag>
       </tags>
   </entry>
   <entry>
@@ -537,9 +537,9 @@
         <category>服务器</category>
       </categories>
       <tags>
+        <tag>Ubuntu</tag>
         <tag>服务器</tag>
         <tag>代理</tag>
-        <tag>Ubuntu</tag>
         <tag>Nginx</tag>
         <tag>Apache</tag>
       </tags>
@@ -589,8 +589,8 @@
         <category>服务器</category>
       </categories>
       <tags>
-        <tag>服务器</tag>
         <tag>Ubuntu</tag>
+        <tag>服务器</tag>
         <tag>Nginx</tag>
       </tags>
   </entry>
