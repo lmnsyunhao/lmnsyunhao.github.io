@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yunhao.space/2018/06/29/hexo-leancloud-counter-security-too-many-requests-error/</loc>
+    
+    <lastmod>2018-07-03T02:42:00.866Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yunhao.space/2017/03/27/github-hexo-blog-bundle-domain/</loc>
     
     <lastmod>2018-07-02T16:18:09.030Z</lastmod>
@@ -47,13 +54,6 @@
     <loc>http://yunhao.space/2018/06/29/hexo-next-function-setting/</loc>
     
     <lastmod>2018-07-01T14:58:50.739Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yunhao.space/2018/06/29/hexo-leancloud-counter-security-too-many-requests-error/</loc>
-    
-    <lastmod>2018-07-01T14:43:15.502Z</lastmod>
     
   </url>
   
