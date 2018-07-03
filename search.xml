@@ -22,10 +22,10 @@
         <category>域名</category>
       </categories>
       <tags>
-        <tag>服务器</tag>
-        <tag>Hexo</tag>
         <tag>域名</tag>
         <tag>DNS</tag>
+        <tag>服务器</tag>
+        <tag>Hexo</tag>
         <tag>GitHub</tag>
         <tag>GitHub Pages</tag>
         <tag>GoDaddy</tag>
@@ -652,10 +652,10 @@
         <category>Git</category>
       </categories>
       <tags>
-        <tag>Git</tag>
-        <tag>Hexo</tag>
         <tag>域名</tag>
         <tag>DNS</tag>
+        <tag>Git</tag>
+        <tag>Hexo</tag>
         <tag>GitHub</tag>
       </tags>
   </entry>
