@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yunhao.space/2018/07/04/hexo-next-gitalk-comments-tutor/</loc>
+    
+    <lastmod>2018-07-04T16:32:12.777Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yunhao.space/2018/07/01/github-blog-multiple-domain-bundling-issue/</loc>
+    
+    <lastmod>2018-07-04T15:21:15.299Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yunhao.space/2018/06/29/hexo-next-function-setting/</loc>
+    
+    <lastmod>2018-07-04T03:34:10.359Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yunhao.space/2017/04/07/ubuntu-nginx-apache-reverse-proxy/</loc>
     
     <lastmod>2018-07-03T11:40:01.062Z</lastmod>
@@ -86,13 +107,6 @@
   </url>
   
   <url>
-    <loc>http://yunhao.space/2018/06/29/hexo-next-function-setting/</loc>
-    
-    <lastmod>2018-07-03T11:38:44.112Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://yunhao.space/2018/06/30/hexo-next-add-daovoice-contact/</loc>
     
     <lastmod>2018-07-03T11:38:41.019Z</lastmod>
@@ -152,13 +166,6 @@
     <loc>http://yunhao.space/2017/03/27/github-hexo-blog-bundle-domain/</loc>
     
     <lastmod>2018-07-03T11:38:04.425Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yunhao.space/2018/07/01/github-blog-multiple-domain-bundling-issue/</loc>
-    
-    <lastmod>2018-07-03T11:37:59.819Z</lastmod>
     
   </url>
   

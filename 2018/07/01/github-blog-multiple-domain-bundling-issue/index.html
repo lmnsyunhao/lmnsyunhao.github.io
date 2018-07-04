@@ -142,7 +142,7 @@
 
 
   <meta name="description" content="我的个人站点托管在GitHub上，想要多个域名都能够正常访问站点，比如，yunhao.space可以访问站点，blog.yunhao.space也可以访问站点。记录一次折腾。因为设置过程中，会有缓存，所以吧有的时候，不一定能够是真的能访问，所以得再三确认。">
-<meta name="keywords" content="域名,DNS,服务器,GitHub,GitHub Pages,GoDaddy,腾讯云,Hexo,Nginx">
+<meta name="keywords" content="域名,DNS,服务器,Hexo,GitHub,GitHub Pages,GoDaddy,腾讯云,Nginx">
 <meta property="og:type" content="article">
 <meta property="og:title" content="GitHub Hexo 博客 GitHub Pages 个人站点 多域名绑定问题">
 <meta property="og:url" content="http://yunhao.space/2018/07/01/github-blog-multiple-domain-bundling-issue/index.html">
@@ -158,7 +158,7 @@
 <meta property="og:image" content="http://yunhao.space/images/github-blog-multiple-domain-bundling-issue/7.png">
 <meta property="og:image" content="http://yunhao.space/images/github-blog-multiple-domain-bundling-issue/8.png">
 <meta property="og:image" content="http://yunhao.space/images/github-blog-multiple-domain-bundling-issue/9.png">
-<meta property="og:updated_time" content="2018-07-03T11:37:59.819Z">
+<meta property="og:updated_time" content="2018-07-04T15:21:15.299Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="GitHub Hexo 博客 GitHub Pages 个人站点 多域名绑定问题">
 <meta name="twitter:description" content="我的个人站点托管在GitHub上，想要多个域名都能够正常访问站点，比如，yunhao.space可以访问站点，blog.yunhao.space也可以访问站点。记录一次折腾。因为设置过程中，会有缓存，所以吧有的时候，不一定能够是真的能访问，所以得再三确认。">
@@ -292,7 +292,7 @@
           
           <li class="menu-item menu-item-tags">
     <a href="/tags/" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />标签<span class="badge">51</span></a>
+      <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />标签<span class="badge">52</span></a>
   </li>
         
         
@@ -308,7 +308,7 @@
           
           <li class="menu-item menu-item-archives">
     <a href="/archives/" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档<span class="badge">50</span></a>
+      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档<span class="badge">51</span></a>
   </li>
 
       
@@ -460,7 +460,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2018-07-03 19:37:59" itemprop="dateModified" datetime="2018-07-03T19:37:59+08:00">2018-07-03</time>
+                <time title="修改时间：2018-07-04 23:21:15" itemprop="dateModified" datetime="2018-07-04T23:21:15+08:00">2018-07-04</time>
               
             
           </span>
@@ -523,7 +523,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">3.3k</span>
+                <span title="本文字数">3.4k</span>
               
 
               
@@ -569,7 +569,7 @@
 <h1 id="服务器重定向"><a href="#服务器重定向" class="headerlink" title="服务器重定向"></a>服务器重定向</h1><p>这里以Nginx服务器做例子。如果你想将域名blog.yunhao.space 301重定向到 yunhao.space的话，那么如下配置nginx的服务器：<br>我的服务器是Ubuntu16.04，nginx是apt-get安装的。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd /etc/nginx/sites-available</span><br><span class="line">vim redirection.conf</span><br></pre></td></tr></table></figure></p>
 <p>新建redirection.conf之后，在文件中按照下面这样写入：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">server &#123;</span><br><span class="line">        server_name blog.yunhao.space;</span><br><span class="line">        rewrite ^(.*)$ http://yunhao.space$1 permanent;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <p>保存退出后，重启一下nginx服务<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">cd /etc/nginx/sites-enabled</span><br><span class="line">ln -s /etc/nginx/sites-available/redirection.conf redirection</span><br><span class="line">systemctl stop nginx.service</span><br><span class="line">systemctl start nginx.service</span><br></pre></td></tr></table></figure></p>
-<p>然后等一会儿，测试一下，就成功了。这个方法可以说是最直接的，最正常的，我就是采用的这种方法。<br>记得设置nginx开机自启动，否则重启之后，就不能提供服务了。  </p>
+<p>记得dns添加A解析，<code>blog.yunhao.space</code>解析到服务器IP地址，如果不会，参考<a href="/2018/07/01/domain-name-parsing-setting-tutor/">域名解析配置教程</a><br>然后等一会儿，测试一下，就成功了。这个方法可以说是最直接的，最正常的，我就是采用的这种方法。<br>记得设置nginx开机自启动，否则重启之后，就不能提供服务了。  </p>
 <h1 id="GitHub多项目重定向"><a href="#GitHub多项目重定向" class="headerlink" title="GitHub多项目重定向"></a>GitHub多项目重定向</h1><p>这个方法取自一个GitHub Pages的特性。  </p>
 <ul>
 <li>项目站点可以有自己的域名，不一定要用<code>个人站点域名/项目名称</code>来访问。  </li>
@@ -603,6 +603,8 @@
           
             <a href="/tags/服务器/" rel="tag"># 服务器</a>
           
+            <a href="/tags/Hexo/" rel="tag"># Hexo</a>
+          
             <a href="/tags/GitHub/" rel="tag"># GitHub</a>
           
             <a href="/tags/GitHub-Pages/" rel="tag"># GitHub Pages</a>
@@ -610,8 +612,6 @@
             <a href="/tags/GoDaddy/" rel="tag"># GoDaddy</a>
           
             <a href="/tags/腾讯云/" rel="tag"># 腾讯云</a>
-          
-            <a href="/tags/Hexo/" rel="tag"># Hexo</a>
           
             <a href="/tags/Nginx/" rel="tag"># Nginx</a>
           
@@ -716,7 +716,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">50</span>
+                    <span class="site-state-item-count">51</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -892,7 +892,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">51</span>
+                      
+                    
+                    <span class="site-state-item-count">52</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
@@ -1049,7 +1051,7 @@
       <i class="fa fa-area-chart"></i>
     </span>
     
-    <span title="站点总字数">136k</span>
+    <span title="站点总字数">139k</span>
   
 
   
@@ -1058,7 +1060,7 @@
       <i class="fa fa-coffee"></i>
     </span>
     
-    <span title="站点阅读时长">2:04</span>
+    <span title="站点阅读时长">2:07</span>
   
 </div>
 

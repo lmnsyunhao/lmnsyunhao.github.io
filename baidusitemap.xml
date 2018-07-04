@@ -4,6 +4,91 @@
 
     
   <url>
+    <loc>http://yunhao.space/2018/07/04/hexo-next-gitalk-comments-tutor/</loc>
+    <lastmod>2018-07-04T16:32:12.777Z</lastmod>
+    <data>
+        <display>
+        <title>Hexo NexT 添加 Gitalk评论功能</title>
+        <pubTime>2018-07-04T03:30:52.000Z</pubTime>
+        
+        <tag>Hexo</tag>
+         
+        <tag>NexT</tag>
+         
+        <tag>Gitalk</tag>
+         
+         
+           
+             
+              <breadCrumb title="Hexo" url="http://yunhao.space/categories/Hexo/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yunhao.space/2018/07/01/github-blog-multiple-domain-bundling-issue/</loc>
+    <lastmod>2018-07-04T15:21:15.299Z</lastmod>
+    <data>
+        <display>
+        <title>GitHub Hexo 博客 GitHub Pages 个人站点 多域名绑定问题</title>
+        <pubTime>2018-07-01T15:19:54.000Z</pubTime>
+        
+        <tag>域名</tag>
+         
+        <tag>DNS</tag>
+         
+        <tag>服务器</tag>
+         
+        <tag>Hexo</tag>
+         
+        <tag>GitHub</tag>
+         
+        <tag>GitHub Pages</tag>
+         
+        <tag>GoDaddy</tag>
+         
+        <tag>腾讯云</tag>
+         
+        <tag>Nginx</tag>
+         
+         
+           
+             
+              <breadCrumb title="服务器" url="http://yunhao.space/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+          
+             
+              <breadCrumb title="域名" url="http://yunhao.space/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%9F%9F%E5%90%8D/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yunhao.space/2018/06/29/hexo-next-function-setting/</loc>
+    <lastmod>2018-07-04T03:34:10.359Z</lastmod>
+    <data>
+        <display>
+        <title>Hexo NexT 站内搜索 站点统计 RSS订阅 字数统计 阅读时长 进度条 图片放大 Canvas背景 DaoVoice聊天 Gitalk评论 功能配置</title>
+        <pubTime>2018-06-29T11:11:35.000Z</pubTime>
+        
+        <tag>Hexo</tag>
+         
+        <tag>NexT</tag>
+         
+         
+           
+             
+              <breadCrumb title="Hexo" url="http://yunhao.space/categories/Hexo/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://yunhao.space/2017/04/07/ubuntu-nginx-apache-reverse-proxy/</loc>
     <lastmod>2018-07-03T11:40:01.062Z</lastmod>
     <data>
@@ -131,9 +216,9 @@
         <title>Windows10 生成 SSH密钥 GitHub配置</title>
         <pubTime>2018-06-19T08:30:35.000Z</pubTime>
         
-        <tag>GitHub</tag>
-         
         <tag>Git</tag>
+         
+        <tag>GitHub</tag>
          
         <tag>OpenSSH</tag>
          
@@ -280,28 +365,6 @@
 
     
   <url>
-    <loc>http://yunhao.space/2018/06/29/hexo-next-function-setting/</loc>
-    <lastmod>2018-07-03T11:38:44.112Z</lastmod>
-    <data>
-        <display>
-        <title>Hexo NexT 站内搜索 站点统计 RSS订阅 字数统计 阅读时长 进度条 图片放大 Canvas背景 DaoVoice聊天 功能配置</title>
-        <pubTime>2018-06-29T11:11:35.000Z</pubTime>
-        
-        <tag>Hexo</tag>
-         
-        <tag>NexT</tag>
-         
-         
-           
-             
-              <breadCrumb title="Hexo" url="http://yunhao.space/categories/Hexo/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://yunhao.space/2018/06/30/hexo-next-add-daovoice-contact/</loc>
     <lastmod>2018-07-03T11:38:41.019Z</lastmod>
     <data>
@@ -335,9 +398,9 @@
         
         <tag>Hexo</tag>
          
-        <tag>LeanCloud</tag>
-         
         <tag>NexT</tag>
+         
+        <tag>LeanCloud</tag>
          
          
            
@@ -401,11 +464,11 @@
         <title>Hexo d 时遇到 Host Key Verification Failed 问题</title>
         <pubTime>2018-06-23T16:09:57.000Z</pubTime>
         
-        <tag>GitHub</tag>
+        <tag>Git</tag>
          
         <tag>Hexo</tag>
          
-        <tag>Git</tag>
+        <tag>GitHub</tag>
          
          
            
@@ -474,11 +537,11 @@
         <title>Ubuntu16.04 GitHub SSH密钥 配置</title>
         <pubTime>2017-03-27T09:15:03.000Z</pubTime>
         
+        <tag>Git</tag>
+         
         <tag>Ubuntu</tag>
          
         <tag>GitHub</tag>
-         
-        <tag>Git</tag>
          
         <tag>OpenSSH</tag>
          
@@ -504,55 +567,16 @@
          
         <tag>DNS</tag>
          
-        <tag>GitHub</tag>
+        <tag>Git</tag>
          
         <tag>Hexo</tag>
          
-        <tag>Git</tag>
+        <tag>GitHub</tag>
          
          
            
              
               <breadCrumb title="Git" url="http://yunhao.space/categories/Git/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yunhao.space/2018/07/01/github-blog-multiple-domain-bundling-issue/</loc>
-    <lastmod>2018-07-03T11:37:59.819Z</lastmod>
-    <data>
-        <display>
-        <title>GitHub Hexo 博客 GitHub Pages 个人站点 多域名绑定问题</title>
-        <pubTime>2018-07-01T15:19:54.000Z</pubTime>
-        
-        <tag>域名</tag>
-         
-        <tag>DNS</tag>
-         
-        <tag>服务器</tag>
-         
-        <tag>GitHub</tag>
-         
-        <tag>GitHub Pages</tag>
-         
-        <tag>GoDaddy</tag>
-         
-        <tag>腾讯云</tag>
-         
-        <tag>Hexo</tag>
-         
-        <tag>Nginx</tag>
-         
-         
-           
-             
-              <breadCrumb title="服务器" url="http://yunhao.space/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
-          
-             
-              <breadCrumb title="域名" url="http://yunhao.space/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%9F%9F%E5%90%8D/"/>
           
         </display>
     </data>
@@ -567,9 +591,9 @@
         <title>Git 警告错误 LF will be replaced by CRLF</title>
         <pubTime>2018-06-29T06:59:18.000Z</pubTime>
         
-        <tag>Hexo</tag>
-         
         <tag>Git</tag>
+         
+        <tag>Hexo</tag>
          
          
            
@@ -1022,11 +1046,11 @@
         
         <tag>ACM</tag>
          
-        <tag>HDU</tag>
-         
         <tag>组合数学</tag>
          
         <tag>母函数</tag>
+         
+        <tag>HDU</tag>
          
          
            
