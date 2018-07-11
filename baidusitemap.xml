@@ -4,8 +4,32 @@
 
     
   <url>
+    <loc>http://yunhao.space/2018/07/11/burn-ubuntu-installation-disk/</loc>
+    <lastmod>2018-07-11T10:42:19.939Z</lastmod>
+    <data>
+        <display>
+        <title>刻录 Ubuntu16.04 系统盘 UltraISO刻录法</title>
+        <pubTime>2018-07-11T15:10:19.000Z</pubTime>
+        
+        <tag>UltraISO</tag>
+         
+        <tag>Ubuntu</tag>
+         
+        <tag>系统安装</tag>
+         
+         
+           
+             
+              <breadCrumb title="系统安装" url="http://yunhao.space/categories/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://yunhao.space/2018/07/11/burn-windows-installation-disk/</loc>
-    <lastmod>2018-07-11T09:34:29.366Z</lastmod>
+    <lastmod>2018-07-11T10:16:14.792Z</lastmod>
     <data>
         <display>
         <title>刻录 Windows10 系统盘 UltraISO刻录法 与 官方工具法</title>
@@ -13,9 +37,9 @@
         
         <tag>UltraISO</tag>
          
-        <tag>Windows</tag>
-         
         <tag>系统安装</tag>
+         
+        <tag>Windows</tag>
          
          
            
@@ -120,11 +144,11 @@
         <title>Ubuntu16.04 Nginx 反向代理 Apache</title>
         <pubTime>2017-04-07T12:19:44.000Z</pubTime>
         
+        <tag>Ubuntu</tag>
+         
         <tag>服务器</tag>
          
         <tag>代理</tag>
-         
-        <tag>Ubuntu</tag>
          
         <tag>Nginx</tag>
          
@@ -194,9 +218,9 @@
         <title>Windows10 PC 无法进入选择启动项界面 无法进入BIOS界面</title>
         <pubTime>2018-05-23T07:12:59.000Z</pubTime>
         
-        <tag>Windows</tag>
-         
         <tag>系统安装</tag>
+         
+        <tag>Windows</tag>
          
          
            
@@ -308,9 +332,9 @@
         <title>Ubuntu16.04 Nginx 配置站点学习笔记</title>
         <pubTime>2017-03-30T02:42:15.000Z</pubTime>
         
-        <tag>服务器</tag>
-         
         <tag>Ubuntu</tag>
+         
+        <tag>服务器</tag>
          
         <tag>Nginx</tag>
          
@@ -1070,11 +1094,11 @@
         
         <tag>ACM</tag>
          
+        <tag>HDU</tag>
+         
         <tag>组合数学</tag>
          
         <tag>母函数</tag>
-         
-        <tag>HDU</tag>
          
          
            

@@ -1,16 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[刻录 Windows10 系统盘 UltraISO刻录法 与 官方工具法]]></title>
-    <url>%2F2018%2F07%2F11%2Fburn-windows-installation-disk%2F</url>
-    <content type="text"><![CDATA[大学的时候，学会了装系统。干装系统这活儿也有两年了。说下刻录windows10系统盘的两种方法。UltraISO刻录方法，与官方的工具刻录方法。 UltraISO + .iso镜像文件 刻录首先你需要有UltraISO 软碟通软件，去百度下载。还需要有widows10的镜像文件。一般是.iso文件激活UltraISO软件，激活码善用搜索引擎。已经激活的话，请继续看软件激活之后，打开软件。然后点击文件，打开，打开.iso镜像文件。然后点击启动，写入硬盘映像，弹出窗口磁盘驱动器选择你要做成系统盘的U盘，写入方式选择USB-HDD+，然后点击写入。刻录U盘的时候会格式化U盘，确保备份好U盘文件。等待20分钟左右，就成功了。 写入方式如果不想了解写入方式的话，那么就跳过这一节。写入方式，其实就是U盘的工作模式。有USB-HDD、USB-ZIP、RAW、USB-FDD、USB-CDROM等等。这些不同的模式，电脑在启动这个U盘的时候，将U盘视作不同的东西，按照不同的方式处理。USB-HDD，HDD是Hard Disk Driver，这是硬盘仿真模式，把U盘当做硬盘启动。这种模式兼容性很高，缺点是对于一些只支持USB-ZIP模式的电脑则无法启动。USB-HDD+，USB-HDD的增强版，同样对于只支持USB-ZIP的无法启动。兼容性比USB-HDD更好USB-HDD+ v2，USB-HDD的增强模式。同样对于只支持USB-ZIP的无法启动。兼容性比USB-HDD更好USB-ZIP，大容量软盘仿真模式，此模式在一些比较老的电脑上是唯一可选的模式，但对大部分新电脑来说兼容性不好，特别是2GB以上的大容量U盘。USB-ZIP+，USB-ZIP的增强版USB-ZIP+ v2，USB-ZIP的增强版USB-FDD，FDD是Floppy Disk Driver，软盘仿真模式。一般的软盘都用这个模式来启动。USB-CDROM，光盘仿真模式。RAW，未经处理的。未格式化的磁盘。 官方工具 刻录这个官方的工具叫MediaCreationTool，下载地址MediaCreationTool，这个工具不仅可以直接刻录U盘，还能够下载windows10的iso镜像文件。首先打开这个文件，然后出现下面的界面，等待一会儿。如果提示更新了，如下：点击下载更新的媒体创建工具，如果没提示更新，请继续往下看。然后弹出一个网页，网页中点击立即下载工具，就能够下载最新的媒体创建工具。下载完之后，打开新的媒体创建工具。打开媒体创建工具，等一会儿，然后会出现下面的这个界面，点击接受然后出现下面，点击创建安装介质，然后下一步，这个就是刻录U盘的然后确认一下这个是不是自己想要的windows版本，一般默认就行。然后下一步这个时候注意，如果选择ISO文件的话，那么它会下载windows10的镜像文件，然后保存到本地。如果刻录U盘选择U盘，然后点击下一步选择你要制作系统盘的U盘，然后点击下一步。等一会儿就好了。成功之后会有提示。这个时间比上面直接刻录时间要长一点。因为是先下载下来，然后给你刻录到U盘中。不过这种方式刻录的U盘总是最新版本的windows10。这也是这种方式的好处。]]></content>
+    <title><![CDATA[刻录 Ubuntu16.04 系统盘 UltraISO刻录法]]></title>
+    <url>%2F2018%2F07%2F11%2Fburn-ubuntu-installation-disk%2F</url>
+    <content type="text"><![CDATA[大学帮别人装了不少系统，双系统什么的，自己也看过不少博文，对装系统这方面有了些体会。应多位故人建议，总结整理。本文主要讲如何刻录Ubuntu的系统盘，以及Ubuntu系统镜像的来源。以16.04为例。 下载镜像Ubuntu镜像不难得，在Ubuntu的官方网站上就有，细心找找就能够找到镜像下载，一般都是1个G多。下载之后是.iso文件。 UltraISO刻录刻录方式和windows大同小异。刻录 Windows10 系统盘 UltraISO刻录法 与 官方工具法我们需要UltraISO和下载好的Ubuntu的.iso镜像文件首先打开UltraISO，如果没激活，请自行激活。点击文件，打开，然后打开镜像文件。然后点击启动，写入硬盘映像。弹出对话框然后磁盘驱动器选择你要刻录的U盘，然后写入方式选USB-HDD+，然后点击写入。等一会儿就刻录成功了。]]></content>
       <categories>
         <category>系统安装</category>
       </categories>
       <tags>
         <tag>UltraISO</tag>
-        <tag>Windows</tag>
+        <tag>Ubuntu</tag>
         <tag>系统安装</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[刻录 Windows10 系统盘 UltraISO刻录法 与 官方工具法]]></title>
+    <url>%2F2018%2F07%2F11%2Fburn-windows-installation-disk%2F</url>
+    <content type="text"><![CDATA[大学的时候，学会了装系统。干装系统这活儿也有两年了。说下刻录windows10系统盘的两种方法。UltraISO刻录方法，与官方的工具刻录方法。还有windows镜像的获得方法。 UltraISO + .iso镜像文件 刻录首先你需要有UltraISO 软碟通软件，去百度下载。还需要有widows10的镜像文件。一般是.iso文件激活UltraISO软件，激活码善用搜索引擎。已经激活的话，请继续看软件激活之后，打开软件。然后点击文件，打开，打开.iso镜像文件。然后点击启动，写入硬盘映像，弹出窗口磁盘驱动器选择你要做成系统盘的U盘，写入方式选择USB-HDD+，然后点击写入。刻录U盘的时候会格式化U盘，确保备份好U盘文件。等待20分钟左右，就成功了。 写入方式如果不想了解写入方式的话，那么就跳过这一节。写入方式，其实就是U盘的工作模式。有USB-HDD、USB-ZIP、RAW、USB-FDD、USB-CDROM等等。这些不同的模式，电脑在启动这个U盘的时候，将U盘视作不同的东西，按照不同的方式处理。USB-HDD，HDD是Hard Disk Driver，这是硬盘仿真模式，把U盘当做硬盘启动。这种模式兼容性很高，缺点是对于一些只支持USB-ZIP模式的电脑则无法启动。USB-HDD+，USB-HDD的增强版，同样对于只支持USB-ZIP的无法启动。兼容性比USB-HDD更好USB-HDD+ v2，USB-HDD的增强模式。同样对于只支持USB-ZIP的无法启动。兼容性比USB-HDD更好USB-ZIP，大容量软盘仿真模式，此模式在一些比较老的电脑上是唯一可选的模式，但对大部分新电脑来说兼容性不好，特别是2GB以上的大容量U盘。USB-ZIP+，USB-ZIP的增强版USB-ZIP+ v2，USB-ZIP的增强版USB-FDD，FDD是Floppy Disk Driver，软盘仿真模式。一般的软盘都用这个模式来启动。USB-CDROM，光盘仿真模式。RAW，未经处理的。未格式化的磁盘。 官方工具 刻录这个官方的工具叫MediaCreationTool，下载地址MediaCreationTool，这个工具不仅可以直接刻录U盘，还能够下载windows10的iso镜像文件。首先打开这个文件，然后出现下面的界面，等待一会儿。如果提示更新了，如下：点击下载更新的媒体创建工具，如果没提示更新，请继续往下看。然后弹出一个网页，网页中点击立即下载工具，就能够下载最新的媒体创建工具。下载完之后，打开新的媒体创建工具。打开媒体创建工具，等一会儿，然后会出现下面的这个界面，点击接受然后出现下面，点击创建安装介质，然后下一步，这个就是刻录U盘的然后确认一下这个是不是自己想要的windows版本，一般默认就行。然后下一步这个时候注意，如果选择ISO文件的话，那么它会下载windows10的镜像文件，然后保存到本地。如果刻录U盘选择U盘，然后点击下一步选择你要制作系统盘的U盘，然后点击下一步。等一会儿就好了。成功之后会有提示。这个时间比上面直接刻录时间要长一点。因为是先下载下来，然后给你刻录到U盘中。不过这种方式刻录的U盘总是最新版本的windows10。这也是这种方式的好处。]]></content>
+      <categories>
+        <category>系统安装</category>
+      </categories>
+      <tags>
+        <tag>UltraISO</tag>
+        <tag>系统安装</tag>
+        <tag>Windows</tag>
       </tags>
   </entry>
   <entry>
@@ -417,9 +430,9 @@
       </categories>
       <tags>
         <tag>ACM</tag>
+        <tag>HDU</tag>
         <tag>组合数学</tag>
         <tag>母函数</tag>
-        <tag>HDU</tag>
       </tags>
   </entry>
   <entry>
@@ -460,8 +473,8 @@
         <category>系统安装</category>
       </categories>
       <tags>
-        <tag>Windows</tag>
         <tag>系统安装</tag>
+        <tag>Windows</tag>
       </tags>
   </entry>
   <entry>
@@ -563,9 +576,9 @@
         <category>服务器</category>
       </categories>
       <tags>
+        <tag>Ubuntu</tag>
         <tag>服务器</tag>
         <tag>代理</tag>
-        <tag>Ubuntu</tag>
         <tag>Nginx</tag>
         <tag>Apache</tag>
       </tags>
@@ -615,8 +628,8 @@
         <category>服务器</category>
       </categories>
       <tags>
-        <tag>服务器</tag>
         <tag>Ubuntu</tag>
+        <tag>服务器</tag>
         <tag>Nginx</tag>
       </tags>
   </entry>
