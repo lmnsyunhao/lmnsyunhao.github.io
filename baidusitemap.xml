@@ -4,6 +4,30 @@
 
     
   <url>
+    <loc>http://yunhao.space/2018/07/11/burn-windows-installation-disk/</loc>
+    <lastmod>2018-07-11T09:34:29.366Z</lastmod>
+    <data>
+        <display>
+        <title>刻录 Windows10 系统盘 UltraISO刻录法 与 官方工具法</title>
+        <pubTime>2018-07-11T15:09:54.000Z</pubTime>
+        
+        <tag>UltraISO</tag>
+         
+        <tag>Windows</tag>
+         
+        <tag>系统安装</tag>
+         
+         
+           
+             
+              <breadCrumb title="系统安装" url="http://yunhao.space/categories/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://yunhao.space/2018/07/04/hexo-next-gitalk-comments-tutor/</loc>
     <lastmod>2018-07-04T16:32:12.777Z</lastmod>
     <data>
@@ -45,11 +69,11 @@
          
         <tag>GitHub</tag>
          
-        <tag>GitHub Pages</tag>
-         
         <tag>GoDaddy</tag>
          
         <tag>腾讯云</tag>
+         
+        <tag>GitHub Pages</tag>
          
         <tag>Nginx</tag>
          
@@ -192,9 +216,9 @@
         <title>Windows10 开启OpenSSH服务 CMD配置SSH远程连接服务</title>
         <pubTime>2018-06-19T08:34:55.000Z</pubTime>
         
-        <tag>OpenSSH</tag>
-         
         <tag>Windows</tag>
+         
+        <tag>OpenSSH</tag>
          
         <tag>CMD</tag>
          
@@ -216,13 +240,13 @@
         <title>Windows10 生成 SSH密钥 GitHub配置</title>
         <pubTime>2018-06-19T08:30:35.000Z</pubTime>
         
+        <tag>Windows</tag>
+         
         <tag>Git</tag>
          
         <tag>GitHub</tag>
          
         <tag>OpenSSH</tag>
-         
-        <tag>Windows</tag>
          
          
            
@@ -537,9 +561,9 @@
         <title>Ubuntu16.04 GitHub SSH密钥 配置</title>
         <pubTime>2017-03-27T09:15:03.000Z</pubTime>
         
-        <tag>Git</tag>
-         
         <tag>Ubuntu</tag>
+         
+        <tag>Git</tag>
          
         <tag>GitHub</tag>
          

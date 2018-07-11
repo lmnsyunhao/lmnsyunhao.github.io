@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yunhao.space/"/>
-  <updated>2018-07-04T16:32:12.777Z</updated>
+  <updated>2018-07-11T09:34:29.366Z</updated>
   <id>http://yunhao.space/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>刻录 Windows10 系统盘 UltraISO刻录法 与 官方工具法</title>
+    <link href="http://yunhao.space/2018/07/11/burn-windows-installation-disk/"/>
+    <id>http://yunhao.space/2018/07/11/burn-windows-installation-disk/</id>
+    <published>2018-07-11T15:09:54.000Z</published>
+    <updated>2018-07-11T09:34:29.366Z</updated>
+    
+    <content type="html"><![CDATA[<p>大学的时候，学会了装系统。干装系统这活儿也有两年了。说下刻录windows10系统盘的两种方法。UltraISO刻录方法，与官方的工具刻录方法。  </p><a id="more"></a><h1 id="UltraISO-iso镜像文件-刻录"><a href="#UltraISO-iso镜像文件-刻录" class="headerlink" title="UltraISO + .iso镜像文件 刻录"></a>UltraISO + .iso镜像文件 刻录</h1><p>首先你需要有UltraISO 软碟通软件，去百度下载。还需要有widows10的镜像文件。一般是.iso文件<br>激活UltraISO软件，激活码善用搜索引擎。已经激活的话，请继续看<br><img src="/images/burn-windows-installation-disk/1.png" alt="激活软件"><br>软件激活之后，打开软件。然后点击文件，打开，打开.iso镜像文件。<br><img src="/images/burn-windows-installation-disk/2.png" alt="打开文件"><br>然后点击启动，写入硬盘映像，弹出窗口<br><img src="/images/burn-windows-installation-disk/3.png" alt="刻录"><br>磁盘驱动器选择你要做成系统盘的U盘，写入方式选择USB-HDD+，然后点击写入。<br><img src="/images/burn-windows-installation-disk/4.png" alt="开始制作"><br>刻录U盘的时候会格式化U盘，确保备份好U盘文件。<br><img src="/images/burn-windows-installation-disk/5.png" alt="格式化确认"><br>等待20分钟左右，就成功了。<br><img src="/images/burn-windows-installation-disk/6.png" alt="成功"></p><h1 id="写入方式"><a href="#写入方式" class="headerlink" title="写入方式"></a>写入方式</h1><p>如果不想了解写入方式的话，那么就跳过这一节。<br>写入方式，其实就是U盘的工作模式。有USB-HDD、USB-ZIP、RAW、USB-FDD、USB-CDROM等等。这些不同的模式，电脑在启动这个U盘的时候，将U盘视作不同的东西，按照不同的方式处理。<br>USB-HDD，HDD是Hard Disk Driver，这是硬盘仿真模式，把U盘当做硬盘启动。这种模式兼容性很高，缺点是对于一些只支持USB-ZIP模式的电脑则无法启动。<br>USB-HDD+，USB-HDD的增强版，同样对于只支持USB-ZIP的无法启动。兼容性比USB-HDD更好<br>USB-HDD+ v2，USB-HDD的增强模式。同样对于只支持USB-ZIP的无法启动。兼容性比USB-HDD更好<br>USB-ZIP，大容量软盘仿真模式，此模式在一些比较老的电脑上是唯一可选的模式，但对大部分新电脑来说兼容性不好，特别是2GB以上的大容量U盘。<br>USB-ZIP+，USB-ZIP的增强版<br>USB-ZIP+ v2，USB-ZIP的增强版<br>USB-FDD，FDD是Floppy Disk Driver，软盘仿真模式。一般的软盘都用这个模式来启动。<br>USB-CDROM，光盘仿真模式。<br>RAW，未经处理的。未格式化的磁盘。  </p><h1 id="官方工具-刻录"><a href="#官方工具-刻录" class="headerlink" title="官方工具 刻录"></a>官方工具 刻录</h1><p>这个官方的工具叫MediaCreationTool，下载地址<a href="https://go.microsoft.com/fwlink/?LinkId=691209" target="_blank" rel="noopener">MediaCreationTool</a>，这个工具不仅可以直接刻录U盘，还能够下载windows10的iso镜像文件。<br>首先打开这个文件，然后出现下面的界面，等待一会儿。<br><img src="/images/burn-windows-installation-disk/7.png" alt="媒体创建工具"><br><img src="/images/burn-windows-installation-disk/8.png" alt="加载界面"><br><img src="/images/burn-windows-installation-disk/9.png" alt="加载界面"><br>如果提示更新了，如下：点击下载更新的媒体创建工具，如果没提示更新，请继续往下看。<br><img src="/images/burn-windows-installation-disk/10.png" alt="提示更新"><br>然后弹出一个网页，网页中点击立即下载工具，就能够下载最新的媒体创建工具。下载完之后，打开新的媒体创建工具。<br><img src="/images/burn-windows-installation-disk/11.png" alt="下载工具"><br>打开媒体创建工具，等一会儿，然后会出现下面的这个界面，点击接受<br><img src="/images/burn-windows-installation-disk/12.png" alt="接受协议"><br>然后出现下面，点击创建安装介质，然后下一步，这个就是刻录U盘的<br><img src="/images/burn-windows-installation-disk/13.png" alt="安装介质"><br>然后确认一下这个是不是自己想要的windows版本，一般默认就行。然后下一步<br><img src="/images/burn-windows-installation-disk/14.png" alt="选择版本"><br>这个时候注意，如果选择ISO文件的话，那么它会下载windows10的镜像文件，然后保存到本地。如果刻录U盘选择U盘，然后点击下一步<br><img src="/images/burn-windows-installation-disk/15.png" alt="U盘"><br>选择你要制作系统盘的U盘，然后点击下一步。<br><img src="/images/burn-windows-installation-disk/16.png" alt="选择U盘"><br>等一会儿就好了。成功之后会有提示。这个时间比上面直接刻录时间要长一点。因为是先下载下来，然后给你刻录到U盘中。不过这种方式刻录的U盘总是最新版本的windows10。这也是这种方式的好处。  </p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;大学的时候，学会了装系统。干装系统这活儿也有两年了。说下刻录windows10系统盘的两种方法。UltraISO刻录方法，与官方的工具刻录方法。  &lt;/p&gt;
+    
+    </summary>
+    
+      <category term="系统安装" scheme="http://yunhao.space/categories/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/"/>
+    
+    
+      <category term="UltraISO" scheme="http://yunhao.space/tags/UltraISO/"/>
+    
+      <category term="Windows" scheme="http://yunhao.space/tags/Windows/"/>
+    
+      <category term="系统安装" scheme="http://yunhao.space/tags/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/"/>
+    
+  </entry>
   
   <entry>
     <title>Hexo NexT 添加 Gitalk评论功能</title>
@@ -98,11 +124,11 @@
     
       <category term="GitHub" scheme="http://yunhao.space/tags/GitHub/"/>
     
-      <category term="GitHub Pages" scheme="http://yunhao.space/tags/GitHub-Pages/"/>
-    
       <category term="GoDaddy" scheme="http://yunhao.space/tags/GoDaddy/"/>
     
       <category term="腾讯云" scheme="http://yunhao.space/tags/%E8%85%BE%E8%AE%AF%E4%BA%91/"/>
+    
+      <category term="GitHub Pages" scheme="http://yunhao.space/tags/GitHub-Pages/"/>
     
       <category term="Nginx" scheme="http://yunhao.space/tags/Nginx/"/>
     
@@ -334,9 +360,9 @@
       <category term="Windows" scheme="http://yunhao.space/categories/Windows/"/>
     
     
-      <category term="OpenSSH" scheme="http://yunhao.space/tags/OpenSSH/"/>
-    
       <category term="Windows" scheme="http://yunhao.space/tags/Windows/"/>
+    
+      <category term="OpenSSH" scheme="http://yunhao.space/tags/OpenSSH/"/>
     
       <category term="CMD" scheme="http://yunhao.space/tags/CMD/"/>
     
@@ -360,13 +386,13 @@
       <category term="Windows" scheme="http://yunhao.space/categories/Windows/"/>
     
     
+      <category term="Windows" scheme="http://yunhao.space/tags/Windows/"/>
+    
       <category term="Git" scheme="http://yunhao.space/tags/Git/"/>
     
       <category term="GitHub" scheme="http://yunhao.space/tags/GitHub/"/>
     
       <category term="OpenSSH" scheme="http://yunhao.space/tags/OpenSSH/"/>
-    
-      <category term="Windows" scheme="http://yunhao.space/tags/Windows/"/>
     
   </entry>
   
@@ -540,38 +566,6 @@
     <summary type="html">
     
       &lt;p&gt;Two Rabbits，在一个长度是n的环形序列上，找一个不连续的回文序列的最大长度。详见具体内容  &lt;/p&gt;
-    
-    </summary>
-    
-      <category term="ACM" scheme="http://yunhao.space/categories/ACM/"/>
-    
-      <category term="DP" scheme="http://yunhao.space/categories/ACM/DP/"/>
-    
-      <category term="区间DP" scheme="http://yunhao.space/categories/ACM/DP/%E5%8C%BA%E9%97%B4DP/"/>
-    
-    
-      <category term="ACM" scheme="http://yunhao.space/tags/ACM/"/>
-    
-      <category term="DP" scheme="http://yunhao.space/tags/DP/"/>
-    
-      <category term="HDU" scheme="http://yunhao.space/tags/HDU/"/>
-    
-      <category term="区间DP" scheme="http://yunhao.space/tags/%E5%8C%BA%E9%97%B4DP/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ACM HDU 4632 题解 区间DP</title>
-    <link href="http://yunhao.space/2018/06/10/acm-hdu-4632-dp-on-segment/"/>
-    <id>http://yunhao.space/2018/06/10/acm-hdu-4632-dp-on-segment/</id>
-    <published>2018-06-10T06:31:43.000Z</published>
-    <updated>2018-07-03T11:35:37.033Z</updated>
-    
-    <content type="html"><![CDATA[<p>Palindrome subsequence，区间DP。dp[i][j]表示的是i,j区间的回文子序列的个数。注意状态转移。详见本文具体内容  </p><a id="more"></a><h1 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h1><p>Palindrome subsequence  </p><h1 id="限制"><a href="#限制" class="headerlink" title="限制"></a>限制</h1><p>Time Limit: 2000/1000 MS (Java/Others)<br>Memory Limit: 131072/65535 K (Java/Others)  </p><h1 id="描述"><a href="#描述" class="headerlink" title="描述"></a>描述</h1><p>In mathematics, a subsequence is a sequence that can be derived from another sequence by deleting some elements without changing the order of the remaining elements. For example, the sequence &lt;A, B, D&gt; is a subsequence of &lt;A, B, C, D, E, F&gt;.(<a href="http://en.wikipedia.org/wiki/Subsequence" target="_blank" rel="noopener">http://en.wikipedia.org/wiki/Subsequence</a>)<br>Given a string $S$, your task is to find out how many different subsequence of $S$ is palindrome. Note that for any two subsequence $X = &lt;S_{x_1}, S_{x_2}, …, S_{x_k}&gt;$ and $Y = &lt;S_{y_1}, S_{y_2}, …, S_{y_k}&gt;$ , if there exist an integer $i$ $(1 \le i \le k)$ such that $x_i \ne y_i$, the subsequence $X$ and $Y$ should be consider different even if $S_{x_i} = S_{y_i}$. Also two subsequences with different length should be considered different.  </p><h1 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h1><p>The first line contains only one integer $T$ $(T \le 50)$, which is the number of test cases. Each test case contains a string $S$, the length of $S$ is not greater than $1000$ and only contains lowercase letters.  </p><h1 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h1><p>For each test case, output the case number first, then output the number of different subsequence of the given string, the answer should be module $10007$.  </p><h1 id="样本"><a href="#样本" class="headerlink" title="样本"></a>样本</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">4</span><br><span class="line">a</span><br><span class="line">aaaaa</span><br><span class="line">goodafternooneveryone</span><br><span class="line">welcometoooxxourproblems</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Case 1: 1</span><br><span class="line">Case 2: 31</span><br><span class="line">Case 3: 421</span><br><span class="line">Case 4: 960</span><br></pre></td></tr></table></figure><h1 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h1><p>区间DP。dp[i][j]表示的是i,j区间的回文子序列的个数。注意状态转移。<br>在计算j-i+1长度的区间时，比j-i+1长度小的区间都已经计算过了。因此dp[i][j] = dp[i][j-1] + dp[i+1][j] - dp[i+1][j-1]。如果str[i]==str[j]，那么，dp[i][j]就还需要加上dp[i+1][j-1]+1。<br>19行是对区间长度进行循环。20行是对每个长度的所有区间进行循环。  </p><h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstring&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> mod 10007</span></span><br><span class="line"><span class="keyword">int</span> t;</span><br><span class="line"><span class="keyword">char</span> str[<span class="number">1005</span>];</span><br><span class="line"><span class="keyword">int</span> dp[<span class="number">1005</span>][<span class="number">1005</span>];</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">"%d\n"</span>, &amp;t);</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> w = <span class="number">0</span>; w &lt; t; w++)&#123;</span><br><span class="line">        <span class="built_in">scanf</span>(<span class="string">"%s"</span>, str);</span><br><span class="line">        <span class="built_in">memset</span>(dp, <span class="number">0</span>, <span class="keyword">sizeof</span> dp);</span><br><span class="line"></span><br><span class="line">        <span class="keyword">int</span> n = <span class="built_in">strlen</span>(str);</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; i++)&#123;</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; n-i; j++)&#123;</span><br><span class="line">                <span class="keyword">if</span>(i == <span class="number">0</span>) dp[j][j+i] = <span class="number">1</span>;</span><br><span class="line">                <span class="keyword">else</span>&#123;</span><br><span class="line">                    dp[j][j+i] = (dp[j][j+i<span class="number">-1</span>]+dp[j+<span class="number">1</span>][j+i])%mod;</span><br><span class="line">                    <span class="keyword">if</span>(str[j] != str[j+i])&#123;</span><br><span class="line">                        dp[j][j+i] -= dp[j+<span class="number">1</span>][j+i<span class="number">-1</span>];</span><br><span class="line">                    &#125;</span><br><span class="line">                    <span class="keyword">else</span>&#123;</span><br><span class="line">                        dp[j][j+i] += <span class="number">1</span>;</span><br><span class="line">                    &#125;</span><br><span class="line">                    dp[j][j+i] = (dp[j][j+i]+mod)%mod;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"Case %d: %d\n"</span>, w+<span class="number">1</span>, dp[<span class="number">0</span>][n<span class="number">-1</span>]);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Palindrome subsequence，区间DP。dp[i][j]表示的是i,j区间的回文子序列的个数。注意状态转移。详见本文具体内容  &lt;/p&gt;
     
     </summary>
     
