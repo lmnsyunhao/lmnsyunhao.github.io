@@ -52,4 +52,7 @@
 {"title":"Hexo NexT 添加 Gitalk评论功能","url":"/2018/07/04/hexo-next-gitalk-comments-tutor/"},
 {"title":"刻录 Ubuntu16.04 系统盘 UltraISO刻录法","url":"/2018/07/11/burn-ubuntu-installation-disk/"},
 {"title":"刻录 Windows10 系统盘 UltraISO刻录法 与 官方工具法","url":"/2018/07/11/burn-windows-installation-disk/"},
+{"title":"U启动 制作WinPE启动盘 支持UEFI启动","url":"/2018/07/13/burn-windows-preinstallation-environment-disk/"},
+{"title":"Windows10 磁盘管理工具 分区管理 创建分区","url":"/2018/07/13/windows-disk-manager-partition/"},
+{"title":"Windows10 系统安装教程 UEFI模式 Legacy模式","url":"/2018/07/13/windows-system-installation-tutor/"},
 ]
