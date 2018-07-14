@@ -1,9 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[U启动 制作WinPE启动盘 支持UEFI启动]]></title>
+    <url>%2F2018%2F07%2F13%2Fburn-windows-preinstallation-environment-disk%2F</url>
+    <content type="text"><![CDATA[WinPE又叫Windows Preinstallation Environment，这个PE其实就是一个安装在U盘中的小的windows系统，里面有一些非常基础实用的功能，这个PE可以解决一些磁盘损坏、启动项丢失等与系统有关的问题。所以今天就来看看如何来制作WinPE盘。制作WinPE有好多，比如大白菜，老毛桃，大番薯等。唉，真的烦，怎么都是吃的？而且一个个起名字还这么难听。终于我找着了一个好听的，也非常好用。叫U启动，本文说如何刻录U启动WinPE盘，并且支持UEFI启动。 PEPreinstallation Environment，能够管理启动项；能够再你windows系统坏的时候将你的文件备份出来；能够做最基本的磁盘管理等等。他的功能非常的多。所以，装系统的时候免不了使用PE。 U启动安装过程很简单。打开官网，U启动官网，然后点击下载UEFI版。如下图：下载了之后，打开下载的exe，然后安装U启动。如下图：安装完成之后，打开U启动，然后插入U盘，U盘的质量不要太差，要不然刻录出的盘容易出问题。如下图，选中你要制作的U盘，然后其余都是默认，点击开始制作然后应该会提示会清空U盘的所有数据，点击确定。等待制作完成完成后会询问是否模拟启动，这个模拟启动没什么用处，就是检测这个是否刻录成功，一般都是成功的，就不用模拟启动了，选择否。然后U启动 WinPE，就制作好了。这个U盘支持UEFI启动，当然Legacy也同样支持。]]></content>
+      <categories>
+        <category>系统安装</category>
+      </categories>
+      <tags>
+        <tag>系统安装</tag>
+        <tag>U启动</tag>
+        <tag>WinPE</tag>
+        <tag>UEFI</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Windows10 磁盘管理工具 分区管理 创建分区]]></title>
+    <url>%2F2018%2F07%2F13%2Fwindows-disk-manager-partition%2F</url>
+    <content type="text"><![CDATA[本文讲如何用windows10自带的磁盘管理工具进行分区管理。装系统之后一般都需要进行这种操作。安装双系统等可能也需要用到这个东西，所以再这里就单拿出来说一下。 创建分区首先打开磁盘管理，右键单击屏幕左下角windows徽。然后点击磁盘管理。如下：然后点击需要分配的空间，即显示未分配的部分，然后右键单击，弹出框中点击新建简单卷。如下：然后出现对话框，点击下一步：如图：然后填写新建的分区的大小。1G=1024M，如下图：点击下一步然后给磁盘分配驱动器号。这个驱动器号分配了之后，不要乱改了。不然容易出现应用程序找不到，打不开的情况。点击下一步文件系统，一般都是NTFS，然后卷标这是是自己起的名字，如果不喜欢可以改。分配好之后，随时都可以改的。不会游应用程序找不到啊，这种情况。点击下一步然后出现这个界面，确认之后，点击完成。稍等一会儿，等格式化完成之后就创建完成了。]]></content>
+      <categories>
+        <category>系统安装</category>
+      </categories>
+      <tags>
+        <tag>Windows</tag>
+        <tag>磁盘管理</tag>
+        <tag>分区</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Windows10 系统安装教程 UEFI模式 Legacy模式]]></title>
+    <url>%2F2018%2F07%2F13%2Fwindows-system-installation-tutor%2F</url>
+    <content type="text"><![CDATA[更换了SSD需要装windows系统？Windows10出问题了怎么办？总是蓝屏，重启电脑也解决不了，这种时候多半是系统某些地方坏了。如果自己不能够排查出来的话，就用某弛一句话，重装系统多半能解决问题。那么如何重装windows10呢？上维修点让别人给装？还得花不少钱，还不如自己装。本文教你如何装windows10系统。 UEFI模式安装如果你不懂UEFI和Legacy的话，那么就选用UEFI模式安装就好了。现在的电脑都支持UEFI，除非你的电脑很老很老。所以不想那么麻烦的话，就只看这一节就OK了。本文选用电脑Lenovo-Y50-70做为例子，其他的电脑装机都是大同小异，如果你不是这个电脑的话，也不要慌，本文会针对一般的电脑进行说明。首先需要准备windows系统盘一个，如何刻录系统盘？刻录 Windows10 系统盘 UltraISO刻录法 与 官方工具法首先要百度你的电脑的BIOS如何进入，还有选择启动项界面如何进入。BIOS一般都是F2，选择启动项一般都是F12。对于不同的电脑，可能有的是按Fn+F2，Fn+F12，或是ESC，Enter键等等。这些请自行百度。具体电脑可能会有所不同。确保你的电脑正常关闭，并完成了备份。开机，狂按F2(或者是你查到的进入BIOS的按键)，进入BIOS。如果怎么也进入不了BIOS？Windows10 PC 无法进入选择启动项界面 无法进入BIOS界面下面就是进入了BIOS，电脑的BIOS一般都不一样。有的可能是这种底色的，还有的是别的底色的，还有更高级的BIOS等等。不过他们有的功能是类似的。界面上会有提示告诉你怎么移动菜单。找到如下这种Boot Mode类似的可以选择启动模式的地方，选项是UEFI、Lagacy等。然后选择UEFI模式，如果没有这种Boot Mode类似的，那么就找什么UEFI Enable，UEFI Mode，Launch CSM什么之类的，然后把UEFI打开。之后，保存设置并退出，这个也一般会有提示的，比如上图中，右下角，F10是保存并退出，如果没找到这种，找到Exit菜单，然后看看类似Exit and Save，Exit Saving Changes等等就行。保存并退出了BIOS之后，关机。如果能正常关机，就正常关机，如果不能正常关机就强制关机。重装系统过程中有些时候避免不了强制关机几次，不用太担心，硬件没那么脆弱。强制关机就是长按电源键直到关机。然后插入windows系统盘，选U盘做windows系统盘的时候别选太垃圾的U盘，容易出问题。质量得过得去。插入系统盘之后，开机。然后狂按F12，或者是别的能够进入选择启动项界面的按键。下面就是选择启动项界面，这个界面如果不相同也很正常，有的更优雅一些。一般这个界面都和BIOS的界面是配套的界面。第一个Windwos Boot Manager这个是我电脑里面现存的Windows的启动选项，后边括号里面那个是硬盘的编号。第二个，EFI USB Device(SanDisk)这个就是我们的系统盘的启动项。如果不一样的话，那么就找这几个关键词，带EFI，USB，然后括号里面的一般是U盘的品牌。然后还有一些别的启动项，比如图上这些，还有的有什么什么LAN等，那些都不是我们需要的。我们选择U盘的启动项，然后Enter进入。然后等一会儿，就会进入到我们的安装系统界面，界面很人性化，根据提示就能安装，我就简要说一下。下面这个界面一般都直接点下一步，默认的都对。点下一步然后能看到下面这个界面，点击现在安装。等一会儿，如下图：出现下图，点击我没有产品密钥，出现下图，让选择Windows安装版本。开发人员一般的装专业版就行，专业版有组策略，家庭版没有。如果只是用windows办公的话，家庭版就行。家庭单语言版，跟教育版我没用过，不敢尝试。有兴趣大家可以尝试一下。然后点击下一步然后点击接受协议，点击下一步。然后出现下面，我一般选择自定义，点击自定义点击自定义，以后会看到这个分区界面。如果你是给电脑新换了SSD，然后重装系统。这个时候应该能看到SSD的盘，从驱动器数量和驱动器的大小可以看出，如果看不到SSD的盘。那么是安装程序不认SSD，这里给出两种方法，第一，关闭电脑，使用PE，将SSD格式化一下。然后再重新装系统。详见本文PE格式化磁盘一节。这种方法我自己试过；第二，网上说找不到SSD驱动器，是因为安装程序里面没有驱动程序，需要将驱动程序下载好，拷贝到U盘中，然后点击图中对话框左下角那个加载驱动程序，将驱动程序加载进来就好了。这种方法我没有试过下边的主分区就分别是C盘，D盘等等。上面的恢复分区是windows存储恢复程序。系统分区是efi分区，存储启动程序的。MSR分区是微软预留分区。现在要删除分区。如果你某个盘里面的东西不想删的话，那么就留着那个分区不删除就好了。反正我觉得，装一次系统挺不容易的，所以我一般所有分区都删除，然后重新分区。所以讲这个表儿里面的所有的都删除，选中某一个分区，然后点击下边儿删除，然后确定删除。全都删除之后，会变成一个未分配的空间。这个时候就可以重新分区了，先分C盘，我一般都分120个G以上，因为C盘会越用越小，所以习惯分大一点儿，如果不想太大，最小得60个G吧，要不然就太小了。注意如果磁盘多余一个的话，别分错了磁盘。点击未分配的空间，然后点击新建，然后输入大小，1024M=1G，然后点击应用。这个时候应该会弹框提示，然后点击确定。如下：点击确定之后，等一会儿，会出现下面这样，会自动建立恢复分区，系统分区，和保留分区。然后，可以继续按照上面的分区方式，将剩下的未分配空间分配。再继续新建的时候，就不会产生恢复分区，系统分区，保留分区了。这三个只有在没有的时候出现。当然，如果你这个时候不想继续分配的话，也可以安装完系统之后再分配。详见Windows10 磁盘管理工具 分区管理 创建分区等重新分区之后，鼠标点击你想要将系统装入的分区。然后再点下一步，也就是说你需要将C盘选中，然后点击下一步，如下图：然后就开始安装了，等一会儿，如下图：等安装结束之后会读条，这个时候就要准备拔U盘了，等到读条结束之后，屏幕完全暗下来的一瞬间，拔出U盘，不然就重启了。读条界面如下：然后电脑应该就自动重启了，成功的话，就已经进入windows了，然后进入windows之后会有检查设备，准备啊，然后让你设置用户名什么的，那个就不说了。 UEFI与Legacy区别UEFI Bios启动模式可以支持两种启动模式，即是Legacy+UEFI启动模式和UEFI启动模式，当中Legacy+UEFI启动模式说的是UEFI和传统BIOS两者共存模式，此种模式还能兼容传统BIOS引导模式以此来启动电脑系统；而UEFI启动模式则只能在UEFI引导模式来启动电脑系统。BIOS是英文”Basic Input Output System”的缩略词，直译过来后中文名称就是”基本输入输出系统”。UEFI全称“统一的可扩展固件接口”(Unified Extensible Firmware Interface)，是一种详细描述类型接口的标准。上图是两者启动时候工作的区别，UEFI相比传统BIOS少了自检这一步，所以快了许多。简单的讲，UEFI比传统的BIOS要快，更优秀。现在大多数电脑都支持UEFI了，传统BIOS，即Legacy快被淘汰了。你们可能现在还在混乱，Legacy、Legacy BIOS、UEFI、UEFI BIOS、BIOS、传统BIOS这些到底有几种启动模式？我是这么区分的，带UEFI四个字的表明是UEFI启动模式，不带UEFI的就是传统的启动模式。所以现在说了半天，一共只有两种启动模式。只不过这两种启动模式有好多种通俗的叫法。 Legacy模式安装如果需要Legacy模式安装的话，那么我们需要在BIOS里面打开Legacy。首先将计算机关闭，然后开机，狂按F2(或者是其他能够进入BIOS的按键，不同电脑可能不一样，自行百度)，进入BIOS。如果进不了BIOS？Windows10 PC 无法进入选择启动项界面 无法进入BIOS界面进入了BIOS之后，看到下面的画面，正如我们上面说的，不同的电脑BIOS的颜色，选项的位置都不一样，所以我只是拿下面这个做个例子。界面上会有提示告诉你怎么移动菜单。找到如下这种Boot Mode类似的可以选择启动模式的地方，选项是UEFI、Lagacy等。然后选择Legacy Support模式，如果没有这种Boot Mode类似的，那么就找什么Legacy Enable，Legacy Mode，Legacy Support，Launch CSM什么之类的，然后把Legacy支持打开。打开了Legacy以后，电脑现在能够进入UEFI的，也能够进入Legacy的。之后，保存设置并退出，这个也一般会有提示的，比如上图中，右下角，F10是保存并退出，如果没找到这种，找到Exit菜单，然后看看类似Exit and Save，Exit Saving Changes等等就行。现在电脑是关闭状态，然后插入U盘，开机，狂按F12(或者是其他能够进入选择启动项界面的按键，不同电脑不一样，自行百度)。如果进不去？Windows10 PC 无法进入选择启动项界面 无法进入BIOS界面下图就是选择启动项界面。我们可以对比只开启UEFI时候的选择启动项界面(就在上边儿，自己看下)，多了几项。前两个是Legacy模式的启动项，后两个是UEFI模式的启动项。中间那个莫名其妙不用管。我们选择第二个，USB HDD这个就是我们的Windows系统盘的Legacy模式安装的启动项。等一会儿然后进入下面这个界面了。细心的我们可以发现，这个界面相比UEFI模式启动的时候区别是，这个对话框有横向拉伸的迹象。到这个界面之后，就和上边儿的安装一样了，就不多说了。建议吧，把UEFI安装从头到尾看一遍。不骗你。有用。 PE格式化SSD首先你得有一个WinPE的盘。WinPE是什么？如何制作？U启动 制作WinPE启动盘 支持UEFI启动然后确保你的电脑正常关闭，并能够进入BIOS，选择启动项界面，如果不知道按哪个按键，一般BIOS是F2，选择启动项是F12，也有Fn+F2和Fn+F12等等，ESC和Enter都有，具体是哪个按键请自行百度。插入WinPE盘，按下开机按钮后，就狂按F12(能进入选择启动项的界面的按键)，进入选择启动项界面。如果怎么按都进入不了？Windows10 PC 无法进入选择启动项界面 无法进入BIOS界面然后会到选择启动项界面。这个界面上，Windows Boot Manager是我电脑上现存的windows10的启动项，括号里的是磁盘的编号，EFI USB Device这个就是WinPE了，括号里是我U盘的牌子，我们上下键移动选中EFI USB Device，然后Enter键进入PE。然后等待一会儿，会有读条什么的，等到进入下图这个界面，说明成功进入了PE。然后用PE里面自带的磁盘管理工具，新建一个分区，格式化一下SSD磁盘，NTFS格式。我现在没有SSD，所以没办法拍照，所以，就意会一下，等以后有了再修改博文。]]></content>
+      <categories>
+        <category>系统安装</category>
+      </categories>
+      <tags>
+        <tag>系统安装</tag>
+        <tag>Windows</tag>
+        <tag>UEFI</tag>
+        <tag>Legacy</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[刻录 Ubuntu16.04 系统盘 UltraISO刻录法]]></title>
     <url>%2F2018%2F07%2F11%2Fburn-ubuntu-installation-disk%2F</url>
-    <content type="text"><![CDATA[大学帮别人装了不少系统，双系统什么的，自己也看过不少博文，对装系统这方面有了些体会。应多位故人建议，总结整理。本文主要讲如何刻录Ubuntu的系统盘，以及Ubuntu系统镜像的来源。以16.04为例。 下载镜像Ubuntu镜像不难得，在Ubuntu的官方网站上就有，细心找找就能够找到镜像下载，一般都是1个G多。下载之后是.iso文件。 UltraISO刻录刻录方式和windows大同小异。刻录 Windows10 系统盘 UltraISO刻录法 与 官方工具法我们需要UltraISO和下载好的Ubuntu的.iso镜像文件首先打开UltraISO，如果没激活，请自行激活。点击文件，打开，然后打开镜像文件。然后点击启动，写入硬盘映像。弹出对话框然后磁盘驱动器选择你要刻录的U盘，然后写入方式选USB-HDD+，然后点击写入。等一会儿就刻录成功了。]]></content>
+    <content type="text"><![CDATA[大学帮别人装了不少系统，双系统什么的，自己也看过不少博文，对装系统这方面有了些体会。应多位故人建议，总结整理。本文主要讲如何刻录Ubuntu的系统盘，以及Ubuntu系统镜像的来源。以16.04为例。 下载镜像Ubuntu镜像不难得，在Ubuntu的官方网站上就有，细心找找就能够找到镜像下载，一般都是1个G多。下载之后是.iso文件。 UltraISO刻录刻录方式和windows大同小异。刻录 Windows10 系统盘 UltraISO刻录法 与 官方工具法我们需要UltraISO和下载好的Ubuntu的.iso镜像文件首先打开UltraISO，如果没激活，请自行激活。点击文件，打开，然后打开镜像文件。然后点击启动，写入硬盘映像。弹出对话框然后磁盘驱动器选择你要刻录的U盘(U盘质量不要太差)，然后写入方式选USB-HDD+，然后点击写入。等一会儿就刻录成功了。]]></content>
       <categories>
         <category>系统安装</category>
       </categories>
@@ -16,7 +57,7 @@
   <entry>
     <title><![CDATA[刻录 Windows10 系统盘 UltraISO刻录法 与 官方工具法]]></title>
     <url>%2F2018%2F07%2F11%2Fburn-windows-installation-disk%2F</url>
-    <content type="text"><![CDATA[大学的时候，学会了装系统。干装系统这活儿也有两年了。说下刻录windows10系统盘的两种方法。UltraISO刻录方法，与官方的工具刻录方法。还有windows镜像的获得方法。 UltraISO + .iso镜像文件 刻录首先你需要有UltraISO 软碟通软件，去百度下载。还需要有widows10的镜像文件。一般是.iso文件激活UltraISO软件，激活码善用搜索引擎。已经激活的话，请继续看软件激活之后，打开软件。然后点击文件，打开，打开.iso镜像文件。然后点击启动，写入硬盘映像，弹出窗口磁盘驱动器选择你要做成系统盘的U盘，写入方式选择USB-HDD+，然后点击写入。刻录U盘的时候会格式化U盘，确保备份好U盘文件。等待20分钟左右，就成功了。 写入方式如果不想了解写入方式的话，那么就跳过这一节。写入方式，其实就是U盘的工作模式。有USB-HDD、USB-ZIP、RAW、USB-FDD、USB-CDROM等等。这些不同的模式，电脑在启动这个U盘的时候，将U盘视作不同的东西，按照不同的方式处理。USB-HDD，HDD是Hard Disk Driver，这是硬盘仿真模式，把U盘当做硬盘启动。这种模式兼容性很高，缺点是对于一些只支持USB-ZIP模式的电脑则无法启动。USB-HDD+，USB-HDD的增强版，同样对于只支持USB-ZIP的无法启动。兼容性比USB-HDD更好USB-HDD+ v2，USB-HDD的增强模式。同样对于只支持USB-ZIP的无法启动。兼容性比USB-HDD更好USB-ZIP，大容量软盘仿真模式，此模式在一些比较老的电脑上是唯一可选的模式，但对大部分新电脑来说兼容性不好，特别是2GB以上的大容量U盘。USB-ZIP+，USB-ZIP的增强版USB-ZIP+ v2，USB-ZIP的增强版USB-FDD，FDD是Floppy Disk Driver，软盘仿真模式。一般的软盘都用这个模式来启动。USB-CDROM，光盘仿真模式。RAW，未经处理的。未格式化的磁盘。 官方工具 刻录这个官方的工具叫MediaCreationTool，下载地址MediaCreationTool，这个工具不仅可以直接刻录U盘，还能够下载windows10的iso镜像文件。首先打开这个文件，然后出现下面的界面，等待一会儿。如果提示更新了，如下：点击下载更新的媒体创建工具，如果没提示更新，请继续往下看。然后弹出一个网页，网页中点击立即下载工具，就能够下载最新的媒体创建工具。下载完之后，打开新的媒体创建工具。打开媒体创建工具，等一会儿，然后会出现下面的这个界面，点击接受然后出现下面，点击创建安装介质，然后下一步，这个就是刻录U盘的然后确认一下这个是不是自己想要的windows版本，一般默认就行。然后下一步这个时候注意，如果选择ISO文件的话，那么它会下载windows10的镜像文件，然后保存到本地。如果刻录U盘选择U盘，然后点击下一步选择你要制作系统盘的U盘，然后点击下一步。等一会儿就好了。成功之后会有提示。这个时间比上面直接刻录时间要长一点。因为是先下载下来，然后给你刻录到U盘中。不过这种方式刻录的U盘总是最新版本的windows10。这也是这种方式的好处。]]></content>
+    <content type="text"><![CDATA[大学的时候，学会了装系统。干装系统这活儿也有两年了。说下刻录windows10系统盘的两种方法。UltraISO刻录方法，与官方的工具刻录方法。还有windows镜像的获得方法。 UltraISO + .iso镜像文件 刻录首先你需要有UltraISO 软碟通软件，去百度下载。还需要有widows10的镜像文件。一般是.iso文件激活UltraISO软件，激活码善用搜索引擎。已经激活的话，请继续看软件激活之后，打开软件。然后点击文件，打开，打开.iso镜像文件。然后点击启动，写入硬盘映像，弹出窗口磁盘驱动器选择你要做成系统盘的U盘，写入方式选择USB-HDD+，然后点击写入。刻录U盘的时候会格式化U盘(U盘质量不要太差)，确保备份好U盘文件。等待20分钟左右，就成功了。 写入方式如果不想了解写入方式的话，那么就跳过这一节。写入方式，其实就是U盘的工作模式。有USB-HDD、USB-ZIP、RAW、USB-FDD、USB-CDROM等等。这些不同的模式，电脑在启动这个U盘的时候，将U盘视作不同的东西，按照不同的方式处理。USB-HDD，HDD是Hard Disk Driver，这是硬盘仿真模式，把U盘当做硬盘启动。这种模式兼容性很高，缺点是对于一些只支持USB-ZIP模式的电脑则无法启动。USB-HDD+，USB-HDD的增强版，同样对于只支持USB-ZIP的无法启动。兼容性比USB-HDD更好USB-HDD+ v2，USB-HDD的增强模式。同样对于只支持USB-ZIP的无法启动。兼容性比USB-HDD更好USB-ZIP，大容量软盘仿真模式，此模式在一些比较老的电脑上是唯一可选的模式，但对大部分新电脑来说兼容性不好，特别是2GB以上的大容量U盘。USB-ZIP+，USB-ZIP的增强版USB-ZIP+ v2，USB-ZIP的增强版USB-FDD，FDD是Floppy Disk Driver，软盘仿真模式。一般的软盘都用这个模式来启动。USB-CDROM，光盘仿真模式。RAW，未经处理的。未格式化的磁盘。 官方工具 刻录这个官方的工具叫MediaCreationTool，下载地址MediaCreationTool，这个工具不仅可以直接刻录U盘，还能够下载windows10的iso镜像文件。首先打开这个文件，然后出现下面的界面，等待一会儿。如果提示更新了，如下：点击下载更新的媒体创建工具，如果没提示更新，请继续往下看。然后弹出一个网页，网页中点击立即下载工具，就能够下载最新的媒体创建工具。下载完之后，打开新的媒体创建工具。打开媒体创建工具，等一会儿，然后会出现下面的这个界面，点击接受然后出现下面，点击创建安装介质，然后下一步，这个就是刻录U盘的然后确认一下这个是不是自己想要的windows版本，一般默认就行。然后下一步这个时候注意，如果选择ISO文件的话，那么它会下载windows10的镜像文件，然后保存到本地。如果刻录U盘(U盘质量不要太差)，选择U盘，然后点击下一步选择你要制作系统盘的U盘，然后点击下一步。等一会儿就好了。成功之后会有提示。这个时间比上面直接刻录时间要长一点。因为是先下载下来，然后给你刻录到U盘中。不过这种方式刻录的U盘总是最新版本的windows10。这也是这种方式的好处。]]></content>
       <categories>
         <category>系统安装</category>
       </categories>
@@ -61,14 +102,14 @@
         <category>域名</category>
       </categories>
       <tags>
-        <tag>服务器</tag>
         <tag>域名</tag>
         <tag>DNS</tag>
-        <tag>Hexo</tag>
+        <tag>服务器</tag>
         <tag>GitHub</tag>
         <tag>GitHub Pages</tag>
         <tag>GoDaddy</tag>
         <tag>腾讯云</tag>
+        <tag>Hexo</tag>
         <tag>Nginx</tag>
       </tags>
   </entry>
@@ -117,8 +158,8 @@
         <category>Git</category>
       </categories>
       <tags>
-        <tag>Git</tag>
         <tag>Hexo</tag>
+        <tag>Git</tag>
       </tags>
   </entry>
   <entry>
@@ -154,9 +195,9 @@
         <category>Hexo</category>
       </categories>
       <tags>
-        <tag>Git</tag>
-        <tag>Hexo</tag>
         <tag>GitHub</tag>
+        <tag>Hexo</tag>
+        <tag>Git</tag>
       </tags>
   </entry>
   <entry>
@@ -198,8 +239,8 @@
       </categories>
       <tags>
         <tag>Windows</tag>
-        <tag>Git</tag>
         <tag>GitHub</tag>
+        <tag>Git</tag>
         <tag>OpenSSH</tag>
       </tags>
   </entry>
@@ -678,8 +719,8 @@
       </categories>
       <tags>
         <tag>Ubuntu</tag>
-        <tag>Git</tag>
         <tag>GitHub</tag>
+        <tag>Git</tag>
         <tag>OpenSSH</tag>
       </tags>
   </entry>
@@ -693,9 +734,9 @@
       <tags>
         <tag>域名</tag>
         <tag>DNS</tag>
-        <tag>Git</tag>
-        <tag>Hexo</tag>
         <tag>GitHub</tag>
+        <tag>Hexo</tag>
+        <tag>Git</tag>
       </tags>
   </entry>
   <entry>

@@ -1,0 +1,1715 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-CN">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+  
+  
+    
+      
+    
+    
+      
+    
+  <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+  <link href="//cdn.bootcss.com/pace/1.0.2/themes/blue/pace-theme-corner-indicator.min.css" rel="stylesheet">
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+  <meta name="google-site-verification" content="sZhvFiel5b0YXCGDrO4jRQWxpfva2smWxa5h5NR5v94" />
+
+
+
+  <meta name="msvalidate.01" content="3FE9192887D96459DF3F8D5E48E9A580" />
+
+
+
+
+
+
+  <meta name="baidu-site-verification" content="rm9Mx1WaXA" />
+
+
+
+
+
+
+
+  
+  
+    
+  
+  <link href="//cdn.bootcss.com/fancybox/3.2.5/jquery.fancybox.min.css" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+  
+
+<link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=6.3.0" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.3.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png?v=6.3.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16.png?v=6.3.0">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=6.3.0" color="#222">
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '6.3.0',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":true,"scrollpercent":true,"onmobile":false},
+    fancybox: true,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideUpIn","post_body":"slideUpIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+  <script>
+  (function(i,s,o,g,r,a,m){i["DaoVoiceObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;a.charset="utf-8";m.parentNode.insertBefore(a,m)})(window,document,"script",('https:' == document.location.protocol ? 'https:' : 'http:') + "//widget.daovoice.io/widget/4635c434.js","daovoice")
+  daovoice('init', {
+      app_id: "4635c434"
+    });
+  daovoice('update');
+  </script>
+
+
+  <meta name="description" content="更换了SSD需要装windows系统？Windows10出问题了怎么办？总是蓝屏，重启电脑也解决不了，这种时候多半是系统某些地方坏了。如果自己不能够排查出来的话，就用某弛一句话，重装系统多半能解决问题。那么如何重装windows10呢？上维修点让别人给装？还得花不少钱，还不如自己装。本文教你如何装windows10系统。">
+<meta name="keywords" content="系统安装,Windows,UEFI,Legacy">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Windows10 系统安装教程 UEFI模式 Legacy模式">
+<meta property="og:url" content="http://yunhao.space/2018/07/13/windows-system-installation-tutor/index.html">
+<meta property="og:site_name" content="火龙窝">
+<meta property="og:description" content="更换了SSD需要装windows系统？Windows10出问题了怎么办？总是蓝屏，重启电脑也解决不了，这种时候多半是系统某些地方坏了。如果自己不能够排查出来的话，就用某弛一句话，重装系统多半能解决问题。那么如何重装windows10呢？上维修点让别人给装？还得花不少钱，还不如自己装。本文教你如何装windows10系统。">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http://yunhao.space/images/windows-system-installation-tutor/1.png">
+<meta property="og:image" content="http://yunhao.space/images/windows-system-installation-tutor/2.png">
+<meta property="og:image" content="http://yunhao.space/images/windows-system-installation-tutor/3.png">
+<meta property="og:image" content="http://yunhao.space/images/windows-system-installation-tutor/4.png">
+<meta property="og:image" content="http://yunhao.space/images/windows-system-installation-tutor/5.png">
+<meta property="og:image" content="http://yunhao.space/images/windows-system-installation-tutor/6.png">
+<meta property="og:image" content="http://yunhao.space/images/windows-system-installation-tutor/7.png">
+<meta property="og:image" content="http://yunhao.space/images/windows-system-installation-tutor/8.png">
+<meta property="og:image" content="http://yunhao.space/images/windows-system-installation-tutor/9.png">
+<meta property="og:image" content="http://yunhao.space/images/windows-system-installation-tutor/10.png">
+<meta property="og:image" content="http://yunhao.space/images/windows-system-installation-tutor/11.png">
+<meta property="og:image" content="http://yunhao.space/images/windows-system-installation-tutor/12.png">
+<meta property="og:image" content="http://yunhao.space/images/windows-system-installation-tutor/13.png">
+<meta property="og:image" content="http://yunhao.space/images/windows-system-installation-tutor/14.png">
+<meta property="og:image" content="http://yunhao.space/images/windows-system-installation-tutor/15.png">
+<meta property="og:image" content="http://yunhao.space/images/windows-system-installation-tutor/16.png">
+<meta property="og:image" content="http://yunhao.space/images/windows-system-installation-tutor/17.png">
+<meta property="og:image" content="http://yunhao.space/images/windows-system-installation-tutor/23.png">
+<meta property="og:image" content="http://yunhao.space/images/windows-system-installation-tutor/18.png">
+<meta property="og:image" content="http://yunhao.space/images/windows-system-installation-tutor/21.png">
+<meta property="og:image" content="http://yunhao.space/images/windows-system-installation-tutor/22.png">
+<meta property="og:image" content="http://yunhao.space/images/windows-system-installation-tutor/2.png">
+<meta property="og:image" content="http://yunhao.space/images/windows-system-installation-tutor/19.png">
+<meta property="og:updated_time" content="2018-07-14T03:13:49.709Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Windows10 系统安装教程 UEFI模式 Legacy模式">
+<meta name="twitter:description" content="更换了SSD需要装windows系统？Windows10出问题了怎么办？总是蓝屏，重启电脑也解决不了，这种时候多半是系统某些地方坏了。如果自己不能够排查出来的话，就用某弛一句话，重装系统多半能解决问题。那么如何重装windows10呢？上维修点让别人给装？还得花不少钱，还不如自己装。本文教你如何装windows10系统。">
+<meta name="twitter:image" content="http://yunhao.space/images/windows-system-installation-tutor/1.png">
+
+
+
+  <link rel="alternate" href="/atom.xml" title="火龙窝" type="application/atom+xml" />
+
+
+
+
+  <link rel="canonical" href="http://yunhao.space/2018/07/13/windows-system-installation-tutor/"/>
+
+
+
+<script type="text/javascript" id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>Windows10 系统安装教程 UEFI模式 Legacy模式 | 火龙窝</title>
+  
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-121771916-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-121771916-1');
+</script>
+
+
+
+
+
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">火龙窝</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+    <a href="/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-home"></i> <br />首页</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-about">
+    <a href="/about/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-user"></i> <br />关于</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+    <a href="/tags/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />标签<span class="badge">59</span></a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+    <a href="/categories/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-th"></i> <br />分类<span class="badge">24</span></a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+    <a href="/archives/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档<span class="badge">56</span></a>
+  </li>
+
+      
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />搜索</a>
+        </li>
+      
+    </ul>
+  
+
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+  
+  
+  
+    
+      
+    
+    <a href="https://github.com/lmnsyunhao" class="github-corner" target="_blank" title="Follow me on GitHub" aria-label="Follow me on GitHub"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#222; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg>
+    
+      </a>
+    
+
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+            
+
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yunhao.space/2018/07/13/windows-system-installation-tutor/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="喷水小火龙">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/me.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="火龙窝">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">Windows10 系统安装教程 UEFI模式 Legacy模式
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2018-07-13 19:15:52" itemprop="dateCreated datePublished" datetime="2018-07-13T19:15:52+08:00">2018-07-13</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-07-14 11:13:49" itemprop="dateModified" datetime="2018-07-14T11:13:49+08:00">2018-07-14</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/系统安装/" itemprop="url" rel="index"><span itemprop="name">系统安装</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2018/07/13/windows-system-installation-tutor/" class="leancloud_visitors" data-flag-title="Windows10 系统安装教程 UEFI模式 Legacy模式">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数：</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">本文字数：</span>
+                
+                <span title="本文字数">4.6k</span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">4 分钟</span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>更换了SSD需要装windows系统？Windows10出问题了怎么办？总是蓝屏，重启电脑也解决不了，这种时候多半是系统某些地方坏了。如果自己不能够排查出来的话，就用某弛一句话，重装系统多半能解决问题。那么如何重装windows10呢？上维修点让别人给装？还得花不少钱，还不如自己装。本文教你如何装windows10系统。  </p>
+<a id="more"></a>
+<h1 id="UEFI模式安装"><a href="#UEFI模式安装" class="headerlink" title="UEFI模式安装"></a>UEFI模式安装</h1><p>如果你不懂UEFI和Legacy的话，那么就选用UEFI模式安装就好了。现在的电脑都支持UEFI，除非你的电脑很老很老。所以不想那么麻烦的话，就只看这一节就OK了。<br>本文选用电脑Lenovo-Y50-70做为例子，其他的电脑装机都是大同小异，如果你不是这个电脑的话，也不要慌，本文会针对一般的电脑进行说明。<br>首先需要准备windows系统盘一个，如何刻录系统盘？<a href="/2018/07/11/burn-windows-installation-disk/">刻录 Windows10 系统盘 UltraISO刻录法 与 官方工具法</a><br>首先要百度你的电脑的BIOS如何进入，还有选择启动项界面如何进入。BIOS一般都是F2，选择启动项一般都是F12。对于不同的电脑，可能有的是按Fn+F2，Fn+F12，或是ESC，Enter键等等。这些请自行百度。具体电脑可能会有所不同。<br>确保你的电脑正常关闭，并完成了备份。<br>开机，狂按F2(或者是你查到的进入BIOS的按键)，进入BIOS。如果怎么也进入不了BIOS？<a href="/2018/05/23/windows-pc-cannot-select-boot-device/">Windows10 PC 无法进入选择启动项界面 无法进入BIOS界面</a><br>下面就是进入了BIOS，电脑的BIOS一般都不一样。有的可能是这种底色的，还有的是别的底色的，还有更高级的BIOS等等。不过他们有的功能是类似的。界面上会有提示告诉你怎么移动菜单。找到如下这种<code>Boot Mode</code>类似的可以选择启动模式的地方，选项是UEFI、Lagacy等。然后选择UEFI模式，如果没有这种<code>Boot Mode</code>类似的，那么就找什么UEFI Enable，UEFI Mode，Launch CSM什么之类的，然后把UEFI打开。<br><img src="/images/windows-system-installation-tutor/1.png" alt="BIOS"><br>之后，保存设置并退出，这个也一般会有提示的，比如上图中，右下角，F10是保存并退出，如果没找到这种，找到Exit菜单，然后看看类似Exit and Save，Exit Saving Changes等等就行。<br>保存并退出了BIOS之后，关机。如果能正常关机，就正常关机，如果不能正常关机就强制关机。重装系统过程中有些时候避免不了强制关机几次，不用太担心，硬件没那么脆弱。强制关机就是长按电源键直到关机。<br>然后插入windows系统盘，选U盘做windows系统盘的时候别选太垃圾的U盘，容易出问题。质量得过得去。插入系统盘之后，开机。然后狂按F12，或者是别的能够进入选择启动项界面的按键。<br>下面就是选择启动项界面，这个界面如果不相同也很正常，有的更优雅一些。一般这个界面都和BIOS的界面是配套的界面。第一个Windwos Boot Manager这个是我电脑里面现存的Windows的启动选项，后边括号里面那个是硬盘的编号。第二个，EFI USB Device(SanDisk)这个就是我们的系统盘的启动项。如果不一样的话，那么就找这几个关键词，带EFI，USB，然后括号里面的一般是U盘的品牌。然后还有一些别的启动项，比如图上这些，还有的有什么什么LAN等，那些都不是我们需要的。我们选择U盘的启动项，然后Enter进入。<br><img src="/images/windows-system-installation-tutor/2.png" alt="选择启动项"><br>然后等一会儿，就会进入到我们的安装系统界面，界面很人性化，根据提示就能安装，我就简要说一下。下面这个界面一般都直接点下一步，默认的都对。点下一步<br><img src="/images/windows-system-installation-tutor/3.png" alt="安装程序"><br>然后能看到下面这个界面，点击现在安装。<br><img src="/images/windows-system-installation-tutor/4.png" alt="安装程序"><br>等一会儿，如下图：<br><img src="/images/windows-system-installation-tutor/5.png" alt="安装程序正在启动"><br>出现下图，点击我没有产品密钥，<br><img src="/images/windows-system-installation-tutor/6.png" alt="激活Windows"><br>出现下图，让选择Windows安装版本。开发人员一般的装专业版就行，专业版有组策略，家庭版没有。如果只是用windows办公的话，家庭版就行。家庭单语言版，跟教育版我没用过，不敢尝试。有兴趣大家可以尝试一下。然后点击下一步<br><img src="/images/windows-system-installation-tutor/7.png" alt="选择安装的版本"><br>然后点击接受协议，点击下一步。<br><img src="/images/windows-system-installation-tutor/8.png" alt="接受协议"><br>然后出现下面，我一般选择自定义，点击自定义<br><img src="/images/windows-system-installation-tutor/9.png" alt="自定义"><br>点击自定义，以后会看到这个分区界面。<br>如果你是给电脑新换了SSD，然后重装系统。这个时候应该能看到SSD的盘，从驱动器数量和驱动器的大小可以看出，如果看不到SSD的盘。那么是安装程序不认SSD，这里给出两种方法，第一，关闭电脑，使用PE，将SSD格式化一下。然后再重新装系统。详见本文PE格式化磁盘一节。这种方法我自己试过；第二，网上说找不到SSD驱动器，是因为安装程序里面没有驱动程序，需要将驱动程序下载好，拷贝到U盘中，然后点击图中对话框左下角那个加载驱动程序，将驱动程序加载进来就好了。这种方法我没有试过<br>下边的主分区就分别是C盘，D盘等等。上面的恢复分区是windows存储恢复程序。系统分区是efi分区，存储启动程序的。MSR分区是微软预留分区。<br><img src="/images/windows-system-installation-tutor/10.png" alt="分区"><br>现在要删除分区。如果你某个盘里面的东西不想删的话，那么就留着那个分区不删除就好了。反正我觉得，装一次系统挺不容易的，所以我一般所有分区都删除，然后重新分区。所以讲这个表儿里面的所有的都删除，选中某一个分区，然后点击下边儿删除，然后确定删除。全都删除之后，会变成一个<code>未分配的空间</code>。<br><img src="/images/windows-system-installation-tutor/11.png" alt="删除分区"><br>这个时候就可以重新分区了，先分C盘，我一般都分120个G以上，因为C盘会越用越小，所以习惯分大一点儿，如果不想太大，最小得60个G吧，要不然就太小了。注意如果磁盘多余一个的话，别分错了磁盘。点击未分配的空间，然后点击新建，然后输入大小，1024M=1G，然后点击应用。<br><img src="/images/windows-system-installation-tutor/12.png" alt="分区"><br>这个时候应该会弹框提示，然后点击确定。如下：<br><img src="/images/windows-system-installation-tutor/13.png" alt="提示"><br>点击确定之后，等一会儿，会出现下面这样，会自动建立恢复分区，系统分区，和保留分区。<br><img src="/images/windows-system-installation-tutor/14.png" alt="分好之后"><br>然后，可以继续按照上面的分区方式，将剩下的未分配空间分配。再继续新建的时候，就不会产生恢复分区，系统分区，保留分区了。这三个只有在没有的时候出现。当然，如果你这个时候不想继续分配的话，也可以安装完系统之后再分配。详见<a href="/2018/07/13/windows-disk-manager-partition/">Windows10 磁盘管理工具 分区管理 创建分区</a><br>等重新分区之后，鼠标点击你想要将系统装入的分区。然后再点下一步，也就是说你需要将C盘选中，然后点击下一步，如下图：<br><img src="/images/windows-system-installation-tutor/15.png" alt="选中C盘"><br>然后就开始安装了，等一会儿，如下图：<br><img src="/images/windows-system-installation-tutor/16.png" alt="安装中"><br>等安装结束之后会读条，这个时候就要准备拔U盘了，等到读条结束之后，屏幕完全暗下来的一瞬间，拔出U盘，不然就重启了。读条界面如下：<br><img src="/images/windows-system-installation-tutor/17.png" alt="读条"><br>然后电脑应该就自动重启了，成功的话，就已经进入windows了，然后进入windows之后会有检查设备，准备啊，然后让你设置用户名什么的，那个就不说了。  </p>
+<h1 id="UEFI与Legacy区别"><a href="#UEFI与Legacy区别" class="headerlink" title="UEFI与Legacy区别"></a>UEFI与Legacy区别</h1><p>UEFI Bios启动模式可以支持两种启动模式，即是Legacy+UEFI启动模式和UEFI启动模式，当中Legacy+UEFI启动模式说的是UEFI和传统BIOS两者共存模式，此种模式还能兼容传统BIOS引导模式以此来启动电脑系统；而UEFI启动模式则只能在UEFI引导模式来启动电脑系统。<br><img src="/images/windows-system-installation-tutor/23.png" alt="启动区别"><br>BIOS是英文”Basic Input Output System”的缩略词，直译过来后中文名称就是”基本输入输出系统”。UEFI全称“统一的可扩展固件接口”(Unified Extensible Firmware Interface)，是一种详细描述类型接口的标准。上图是两者启动时候工作的区别，UEFI相比传统BIOS少了自检这一步，所以快了许多。简单的讲，UEFI比传统的BIOS要快，更优秀。现在大多数电脑都支持UEFI了，传统BIOS，即Legacy快被淘汰了。<br>你们可能现在还在混乱，Legacy、Legacy BIOS、UEFI、UEFI BIOS、BIOS、传统BIOS这些到底有几种启动模式？我是这么区分的，带UEFI四个字的表明是UEFI启动模式，不带UEFI的就是传统的启动模式。所以现在说了半天，一共只有两种启动模式。只不过这两种启动模式有好多种通俗的叫法。  </p>
+<h1 id="Legacy模式安装"><a href="#Legacy模式安装" class="headerlink" title="Legacy模式安装"></a>Legacy模式安装</h1><p>如果需要Legacy模式安装的话，那么我们需要在BIOS里面打开Legacy。首先将计算机关闭，然后开机，狂按F2(或者是其他能够进入BIOS的按键，不同电脑可能不一样，自行百度)，进入BIOS。如果进不了BIOS？<a href="/2018/05/23/windows-pc-cannot-select-boot-device/">Windows10 PC 无法进入选择启动项界面 无法进入BIOS界面</a><br>进入了BIOS之后，看到下面的画面，正如我们上面说的，不同的电脑BIOS的颜色，选项的位置都不一样，所以我只是拿下面这个做个例子。界面上会有提示告诉你怎么移动菜单。找到如下这种<code>Boot Mode</code>类似的可以选择启动模式的地方，选项是UEFI、Lagacy等。然后选择Legacy Support模式，如果没有这种<code>Boot Mode</code>类似的，那么就找什么Legacy Enable，Legacy Mode，Legacy Support，Launch CSM什么之类的，然后把Legacy支持打开。<br>打开了Legacy以后，电脑现在能够进入UEFI的，也能够进入Legacy的。<br><img src="/images/windows-system-installation-tutor/18.png" alt="添加Legacy支持"><br>之后，保存设置并退出，这个也一般会有提示的，比如上图中，右下角，F10是保存并退出，如果没找到这种，找到Exit菜单，然后看看类似Exit and Save，Exit Saving Changes等等就行。<br>现在电脑是关闭状态，然后插入U盘，开机，狂按F12(或者是其他能够进入选择启动项界面的按键，不同电脑不一样，自行百度)。如果进不去？<a href="/2018/05/23/windows-pc-cannot-select-boot-device/">Windows10 PC 无法进入选择启动项界面 无法进入BIOS界面</a><br>下图就是选择启动项界面。我们可以对比只开启UEFI时候的选择启动项界面(就在上边儿，自己看下)，多了几项。前两个是Legacy模式的启动项，后两个是UEFI模式的启动项。中间那个莫名其妙不用管。我们选择第二个，USB HDD这个就是我们的Windows系统盘的Legacy模式安装的启动项。<br><img src="/images/windows-system-installation-tutor/21.png" alt="选择启动项"><br>等一会儿然后进入下面这个界面了。细心的我们可以发现，这个界面相比UEFI模式启动的时候区别是，这个对话框有横向拉伸的迹象。<br><img src="/images/windows-system-installation-tutor/22.png" alt="Legacy模式安装"><br>到这个界面之后，就和上边儿的安装一样了，就不多说了。建议吧，把UEFI安装从头到尾看一遍。不骗你。有用。  </p>
+<h1 id="PE格式化SSD"><a href="#PE格式化SSD" class="headerlink" title="PE格式化SSD"></a>PE格式化SSD</h1><p>首先你得有一个WinPE的盘。WinPE是什么？如何制作？<a href="/2018/07/13/burn-windows-preinstallation-environment-disk/">U启动 制作WinPE启动盘 支持UEFI启动</a><br>然后确保你的电脑正常关闭，并能够进入BIOS，选择启动项界面，如果不知道按哪个按键，一般BIOS是F2，选择启动项是F12，也有Fn+F2和Fn+F12等等，ESC和Enter都有，具体是哪个按键请自行百度。<br>插入WinPE盘，按下开机按钮后，就狂按F12(能进入选择启动项的界面的按键)，进入选择启动项界面。如果怎么按都进入不了？<a href="/2018/05/23/windows-pc-cannot-select-boot-device/">Windows10 PC 无法进入选择启动项界面 无法进入BIOS界面</a><br>然后会到选择启动项界面。这个界面上，Windows Boot Manager是我电脑上现存的windows10的启动项，括号里的是磁盘的编号，EFI USB Device这个就是WinPE了，括号里是我U盘的牌子，我们上下键移动选中EFI USB Device，然后Enter键进入PE。<br><img src="/images/windows-system-installation-tutor/2.png" alt="选择启动项"><br>然后等待一会儿，会有读条什么的，等到进入下图这个界面，说明成功进入了PE。<br><img src="/images/windows-system-installation-tutor/19.png" alt="选择启动项"><br>然后用PE里面自带的磁盘管理工具，新建一个分区，格式化一下SSD磁盘，NTFS格式。我现在没有SSD，所以没办法拍照，所以，就意会一下，等以后有了再修改博文。  </p>
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/系统安装/" rel="tag"># 系统安装</a>
+          
+            <a href="/tags/Windows/" rel="tag"># Windows</a>
+          
+            <a href="/tags/UEFI/" rel="tag"># UEFI</a>
+          
+            <a href="/tags/Legacy/" rel="tag"># Legacy</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/07/11/burn-ubuntu-installation-disk/" rel="next" title="刻录 Ubuntu16.04 系统盘 UltraISO刻录法">
+                <i class="fa fa-chevron-left"></i> 刻录 Ubuntu16.04 系统盘 UltraISO刻录法
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/07/13/windows-disk-manager-partition/" rel="prev" title="Windows10 磁盘管理工具 分区管理 创建分区">
+                Windows10 磁盘管理工具 分区管理 创建分区 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/me.png"
+                alt="喷水小火龙" />
+            
+              <p class="site-author-name" itemprop="name">喷水小火龙</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">56</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">24</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">59</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  <a href="https://github.com/lmnsyunhao" target="_blank" title="GitHub"><i class="fa fa-fw fa-github"></i>GitHub</a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="mailto:niuniu456c@163.com" target="_blank" title="E-Mail"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  
+                </span>
+              
+            </div>
+          
+
+          
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                Links
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://ph0en1x.space" title="Ph0en1x" target="_blank">Ph0en1x</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://wazxser.github.io" title="Moon" target="_blank">Moon</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://www.dengfuping.com/" title="PingGe" target="_blank">PingGe</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://www.liebes.top/" title="HaiChi" target="_blank">HaiChi</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://wuduo.me/" title="WuDuo" target="_blank">WuDuo</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://shifengmin.com/" title="MaoDaLao" target="_blank">MaoDaLao</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://weiyupeng.space/" title="NiaoGe" target="_blank">NiaoGe</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://RjMonkey.github.io/" title="GuoGa" target="_blank">GuoGa</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+            
+          
+          
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+  <script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+  <script src="//cdn.bootcss.com/blueimp-md5/1.1.0/js/md5.min.js"></script>
+  <script>
+      var gitalk = new Gitalk({
+        clientID: 'b0256742e4b4efdace39',
+        clientSecret: 'cd6da9191f5f3bf4afddeea2491551e117e423c5',
+        repo: 'lmnsyunhao.github.io',
+        owner: 'lmnsyunhao',
+        admin: 'lmnsyunhao',
+        id: md5(location.pathname),
+        distractionFreeMode: 'true'
+      });
+      var div = document.createElement('div');
+      div.setAttribute("id", "gitalk_comments");
+      div.setAttribute("class", "post-nav");
+      var bro = document.getElementById('posts').getElementsByTagName('article');
+      bro = bro[0].getElementsByClassName('post-block');
+      bro = bro[0].getElementsByTagName('footer');
+      bro = bro[0];
+      bro.appendChild(div);
+      gitalk.render('gitalk_comments');
+  </script>
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#UEFI模式安装"><span class="nav-number">1.</span> <span class="nav-text">UEFI模式安装</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#UEFI与Legacy区别"><span class="nav-number">2.</span> <span class="nav-text">UEFI与Legacy区别</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Legacy模式安装"><span class="nav-number">3.</span> <span class="nav-text">Legacy模式安装</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#PE格式化SSD"><span class="nav-number">4.</span> <span class="nav-text">PE格式化SSD</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+        <div class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span id="scrollpercent"><span>0</span>%</span>
+          
+        </div>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">喷水小火龙</span>
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+    <span title="站点总字数">147k</span>
+  
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    
+    <span title="站点阅读时长">2:13</span>
+  
+</div>
+
+
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://theme-next.org">NexT.Gemini</a></div>
+
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv" title="总访客量">
+      <i class="fa fa-user"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+    </span>
+  
+
+  
+    <span class="site-pv" title="总访问量">
+      <i class="fa fa-eye"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="//cdn.bootcss.com/fancybox/3.2.5/jquery.fancybox.min.js"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="//cdn.jsdelivr.net/gh/theme-next/theme-next-three@1.0.0/three.min.js"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="//cdn.jsdelivr.net/gh/theme-next/theme-next-three@1.0.0/canvas_lines.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.3.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.3.0"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=6.3.0"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=6.3.0"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.3.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.3.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.3.0"></script>
+
+
+
+  
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+  <script>AV.initialize("pNMlAMFXd4ELwOghmnSH2N3k-gzGzoHsz", "Mo4xhDc8SJAQdVidDwsTQFeP");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            
+              var $element = $(document.getElementById(url));
+              $element.find('.leancloud-visitors-count').text(counter.get('time'));
+            
+            counter.save(null, {
+              success: function(counter) {
+                
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            
+              var $element = $(document.getElementById(url));
+              $element.find('.leancloud-visitors-count').text('Counter not initialized! See more at console err msg.');
+              console.error('ATTENTION! LeanCloud counter has security bug, see here how to solve it: https://github.com/theme-next/hexo-leancloud-counter-security. \n But you also can use LeanCloud without security, by set \'security\' option to \'false\'.');
+            
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+  
+  
+
+  
+  
+
+  
+
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

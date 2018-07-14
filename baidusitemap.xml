@@ -4,18 +4,70 @@
 
     
   <url>
-    <loc>http://yunhao.space/2018/07/11/burn-ubuntu-installation-disk/</loc>
-    <lastmod>2018-07-11T10:42:19.939Z</lastmod>
+    <loc>http://yunhao.space/2018/07/13/windows-system-installation-tutor/</loc>
+    <lastmod>2018-07-14T03:13:49.709Z</lastmod>
     <data>
         <display>
-        <title>刻录 Ubuntu16.04 系统盘 UltraISO刻录法</title>
-        <pubTime>2018-07-11T15:10:19.000Z</pubTime>
+        <title>Windows10 系统安装教程 UEFI模式 Legacy模式</title>
+        <pubTime>2018-07-13T11:15:52.000Z</pubTime>
         
-        <tag>UltraISO</tag>
-         
-        <tag>Ubuntu</tag>
-         
         <tag>系统安装</tag>
+         
+        <tag>Windows</tag>
+         
+        <tag>UEFI</tag>
+         
+        <tag>Legacy</tag>
+         
+         
+           
+             
+              <breadCrumb title="系统安装" url="http://yunhao.space/categories/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yunhao.space/2018/07/13/burn-windows-preinstallation-environment-disk/</loc>
+    <lastmod>2018-07-14T02:28:46.283Z</lastmod>
+    <data>
+        <display>
+        <title>U启动 制作WinPE启动盘 支持UEFI启动</title>
+        <pubTime>2018-07-13T15:05:21.000Z</pubTime>
+        
+        <tag>系统安装</tag>
+         
+        <tag>U启动</tag>
+         
+        <tag>WinPE</tag>
+         
+        <tag>UEFI</tag>
+         
+         
+           
+             
+              <breadCrumb title="系统安装" url="http://yunhao.space/categories/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yunhao.space/2018/07/13/windows-disk-manager-partition/</loc>
+    <lastmod>2018-07-13T14:28:23.807Z</lastmod>
+    <data>
+        <display>
+        <title>Windows10 磁盘管理工具 分区管理 创建分区</title>
+        <pubTime>2018-07-13T14:08:18.000Z</pubTime>
+        
+        <tag>Windows</tag>
+         
+        <tag>磁盘管理</tag>
+         
+        <tag>分区</tag>
          
          
            
@@ -29,7 +81,7 @@
     
   <url>
     <loc>http://yunhao.space/2018/07/11/burn-windows-installation-disk/</loc>
-    <lastmod>2018-07-11T10:16:14.792Z</lastmod>
+    <lastmod>2018-07-13T14:12:09.495Z</lastmod>
     <data>
         <display>
         <title>刻录 Windows10 系统盘 UltraISO刻录法 与 官方工具法</title>
@@ -40,6 +92,30 @@
         <tag>系统安装</tag>
          
         <tag>Windows</tag>
+         
+         
+           
+             
+              <breadCrumb title="系统安装" url="http://yunhao.space/categories/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yunhao.space/2018/07/11/burn-ubuntu-installation-disk/</loc>
+    <lastmod>2018-07-13T14:11:45.131Z</lastmod>
+    <data>
+        <display>
+        <title>刻录 Ubuntu16.04 系统盘 UltraISO刻录法</title>
+        <pubTime>2018-07-11T15:10:19.000Z</pubTime>
+        
+        <tag>UltraISO</tag>
+         
+        <tag>Ubuntu</tag>
+         
+        <tag>系统安装</tag>
          
          
            
@@ -83,13 +159,11 @@
         <title>GitHub Hexo 博客 GitHub Pages 个人站点 多域名绑定问题</title>
         <pubTime>2018-07-01T15:19:54.000Z</pubTime>
         
-        <tag>服务器</tag>
-         
         <tag>域名</tag>
          
         <tag>DNS</tag>
          
-        <tag>Hexo</tag>
+        <tag>服务器</tag>
          
         <tag>GitHub</tag>
          
@@ -98,6 +172,8 @@
         <tag>GoDaddy</tag>
          
         <tag>腾讯云</tag>
+         
+        <tag>Hexo</tag>
          
         <tag>Nginx</tag>
          
@@ -266,9 +342,9 @@
         
         <tag>Windows</tag>
          
-        <tag>Git</tag>
-         
         <tag>GitHub</tag>
+         
+        <tag>Git</tag>
          
         <tag>OpenSSH</tag>
          
@@ -512,11 +588,11 @@
         <title>Hexo d 时遇到 Host Key Verification Failed 问题</title>
         <pubTime>2018-06-23T16:09:57.000Z</pubTime>
         
-        <tag>Git</tag>
+        <tag>GitHub</tag>
          
         <tag>Hexo</tag>
          
-        <tag>GitHub</tag>
+        <tag>Git</tag>
          
          
            
@@ -587,9 +663,9 @@
         
         <tag>Ubuntu</tag>
          
-        <tag>Git</tag>
-         
         <tag>GitHub</tag>
+         
+        <tag>Git</tag>
          
         <tag>OpenSSH</tag>
          
@@ -615,11 +691,11 @@
          
         <tag>DNS</tag>
          
-        <tag>Git</tag>
+        <tag>GitHub</tag>
          
         <tag>Hexo</tag>
          
-        <tag>GitHub</tag>
+        <tag>Git</tag>
          
          
            
@@ -639,9 +715,9 @@
         <title>Git 警告错误 LF will be replaced by CRLF</title>
         <pubTime>2018-06-29T06:59:18.000Z</pubTime>
         
-        <tag>Git</tag>
-         
         <tag>Hexo</tag>
+         
+        <tag>Git</tag>
          
          
            
