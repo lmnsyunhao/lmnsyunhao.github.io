@@ -105,11 +105,11 @@
         <tag>服务器</tag>
         <tag>域名</tag>
         <tag>DNS</tag>
+        <tag>Hexo</tag>
         <tag>GitHub</tag>
         <tag>GitHub Pages</tag>
         <tag>GoDaddy</tag>
         <tag>腾讯云</tag>
-        <tag>Hexo</tag>
         <tag>Nginx</tag>
       </tags>
   </entry>
@@ -158,8 +158,8 @@
         <category>Git</category>
       </categories>
       <tags>
-        <tag>Hexo</tag>
         <tag>Git</tag>
+        <tag>Hexo</tag>
       </tags>
   </entry>
   <entry>
@@ -195,9 +195,9 @@
         <category>Hexo</category>
       </categories>
       <tags>
-        <tag>GitHub</tag>
-        <tag>Hexo</tag>
         <tag>Git</tag>
+        <tag>Hexo</tag>
+        <tag>GitHub</tag>
       </tags>
   </entry>
   <entry>
@@ -239,8 +239,8 @@
       </categories>
       <tags>
         <tag>Windows</tag>
-        <tag>GitHub</tag>
         <tag>Git</tag>
+        <tag>GitHub</tag>
         <tag>OpenSSH</tag>
       </tags>
   </entry>
@@ -471,9 +471,9 @@
       </categories>
       <tags>
         <tag>ACM</tag>
+        <tag>HDU</tag>
         <tag>组合数学</tag>
         <tag>母函数</tag>
-        <tag>HDU</tag>
       </tags>
   </entry>
   <entry>
@@ -719,8 +719,8 @@
       </categories>
       <tags>
         <tag>Ubuntu</tag>
-        <tag>GitHub</tag>
         <tag>Git</tag>
+        <tag>GitHub</tag>
         <tag>OpenSSH</tag>
       </tags>
   </entry>
@@ -734,9 +734,9 @@
       <tags>
         <tag>域名</tag>
         <tag>DNS</tag>
-        <tag>GitHub</tag>
-        <tag>Hexo</tag>
         <tag>Git</tag>
+        <tag>Hexo</tag>
+        <tag>GitHub</tag>
       </tags>
   </entry>
   <entry>

@@ -228,6 +228,8 @@
     
       <category term="DNS" scheme="http://yunhao.space/tags/DNS/"/>
     
+      <category term="Hexo" scheme="http://yunhao.space/tags/Hexo/"/>
+    
       <category term="GitHub" scheme="http://yunhao.space/tags/GitHub/"/>
     
       <category term="GitHub Pages" scheme="http://yunhao.space/tags/GitHub-Pages/"/>
@@ -235,8 +237,6 @@
       <category term="GoDaddy" scheme="http://yunhao.space/tags/GoDaddy/"/>
     
       <category term="腾讯云" scheme="http://yunhao.space/tags/%E8%85%BE%E8%AE%AF%E4%BA%91/"/>
-    
-      <category term="Hexo" scheme="http://yunhao.space/tags/Hexo/"/>
     
       <category term="Nginx" scheme="http://yunhao.space/tags/Nginx/"/>
     
@@ -334,9 +334,9 @@
       <category term="Git" scheme="http://yunhao.space/categories/Git/"/>
     
     
-      <category term="Hexo" scheme="http://yunhao.space/tags/Hexo/"/>
-    
       <category term="Git" scheme="http://yunhao.space/tags/Git/"/>
+    
+      <category term="Hexo" scheme="http://yunhao.space/tags/Hexo/"/>
     
   </entry>
   
@@ -408,11 +408,11 @@
       <category term="Hexo" scheme="http://yunhao.space/categories/Hexo/"/>
     
     
-      <category term="GitHub" scheme="http://yunhao.space/tags/GitHub/"/>
+      <category term="Git" scheme="http://yunhao.space/tags/Git/"/>
     
       <category term="Hexo" scheme="http://yunhao.space/tags/Hexo/"/>
     
-      <category term="Git" scheme="http://yunhao.space/tags/Git/"/>
+      <category term="GitHub" scheme="http://yunhao.space/tags/GitHub/"/>
     
   </entry>
   
@@ -496,9 +496,9 @@
     
       <category term="Windows" scheme="http://yunhao.space/tags/Windows/"/>
     
-      <category term="GitHub" scheme="http://yunhao.space/tags/GitHub/"/>
-    
       <category term="Git" scheme="http://yunhao.space/tags/Git/"/>
+    
+      <category term="GitHub" scheme="http://yunhao.space/tags/GitHub/"/>
     
       <category term="OpenSSH" scheme="http://yunhao.space/tags/OpenSSH/"/>
     
