@@ -102,14 +102,14 @@
         <category>域名</category>
       </categories>
       <tags>
+        <tag>服务器</tag>
         <tag>域名</tag>
         <tag>DNS</tag>
-        <tag>服务器</tag>
         <tag>GitHub</tag>
-        <tag>GitHub Pages</tag>
+        <tag>Hexo</tag>
         <tag>GoDaddy</tag>
         <tag>腾讯云</tag>
-        <tag>Hexo</tag>
+        <tag>GitHub Pages</tag>
         <tag>Nginx</tag>
       </tags>
   </entry>
@@ -471,9 +471,9 @@
       </categories>
       <tags>
         <tag>ACM</tag>
-        <tag>HDU</tag>
         <tag>组合数学</tag>
         <tag>母函数</tag>
+        <tag>HDU</tag>
       </tags>
   </entry>
   <entry>
@@ -617,9 +617,9 @@
         <category>服务器</category>
       </categories>
       <tags>
-        <tag>Ubuntu</tag>
         <tag>服务器</tag>
         <tag>代理</tag>
+        <tag>Ubuntu</tag>
         <tag>Nginx</tag>
         <tag>Apache</tag>
       </tags>
@@ -669,8 +669,8 @@
         <category>服务器</category>
       </categories>
       <tags>
-        <tag>Ubuntu</tag>
         <tag>服务器</tag>
+        <tag>Ubuntu</tag>
         <tag>Nginx</tag>
       </tags>
   </entry>
