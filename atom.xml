@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>love means never having to say you&#39;re sorry</title>
+  <title>Doer</title>
   
   
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yunhao.space/"/>
-  <updated>2018-07-18T10:15:42.325Z</updated>
+  <updated>2018-07-19T06:25:52.663Z</updated>
   <id>http://yunhao.space/</id>
   
   <author>
@@ -15,6 +15,54 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hexo博客 GitHub仓库图床</title>
+    <link href="http://yunhao.space/2018/07/18/hexo-blog-github-images-repository/"/>
+    <id>http://yunhao.space/2018/07/18/hexo-blog-github-images-repository/</id>
+    <published>2018-07-18T11:06:52.000Z</published>
+    <updated>2018-07-19T06:25:52.663Z</updated>
+    
+    <content type="html"><![CDATA[<p>随着博客的写作，其实我们比较担心的问题就是GitHub对于单个项目来说的大小是有一定限制的。而写博客中有免不了放图片。图片这种东西真是非常的占地方。网上都说用七牛云、微博、或者是什么座图床。我看了看，好像是挺麻烦的。又得注册账号，又得导出外链的。我发现github有一个图片预览的功能。于是我想到了用github这个图片预览的功能做一个图床。创造一个仓库专门存图片，如果这个仓库存满了，再创建一个仓库就好了。每个仓库能存1G的东西，所以觉得还不错。下面说一下我的思路。  </p><a id="more"></a><h1 id="原项目结构"><a href="#原项目结构" class="headerlink" title="原项目结构"></a>原项目结构</h1><p>原来的项目结构是在<code>博客的项目目录</code>下的source文件夹下新建一个叫images的文件夹，文件夹下存图片。即<code>博客目录/source/images</code><br>可能有好多人最开始都跟我差不多的结构。我就是从这个结构开始改的。  </p><h1 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h1><p>这个就是GitHub图片预览的url<code>https://raw.githubusercontent.com/lmnsyunhao/blog-pica/master/acm-cf-963b-dfs/normal.png</code>，考虑到这个url太长，而且考虑到如果github之后更改这个url，那么很有可能所有的博文的图片链接都要修改。<br>我有了这样一个思路，我的图片链接先请求到我自己的服务器上，然后服务器重写url，301重定向到github。这样如果某一天github这个图片预览的url格式变了的话，直接改服务器那边的重写规则就好了。甚至如果以后不支持图片预览的话，也能再做打算。不用修改博文。<br>当然，如果你们懒得用服务器重定向了的话，直接把博文中的图片改成类似上边的那种url也行。<br>OK，开搞。  </p><h1 id="建立图片仓库"><a href="#建立图片仓库" class="headerlink" title="建立图片仓库"></a>建立图片仓库</h1><p>GitHub新建仓库<code>blog-pica</code>，如果这个仓库满了，我的下一个仓库名字就是<code>blog-picb</code>，我是这样定义的。<br>然后我在本地的博客项目下新建images文件夹，即<code>博客目录/images</code>。因为如果放到source文件夹下，在<code>hexo g</code>时候会在<code>博客目录/public</code>文件夹下生成对应的images文件夹，这样的话<code>hexo d</code>的时候还是会将图片上传。即，保证了图片不会在博客仓库出现<br>然后我修改<code>博客目录/.gitignore</code>文件，添加一行，内容是<code>/images/</code>，这样的话，就会将此文件夹忽略掉。从而保证图片只在图床仓库出现，不会在备份仓库出现。<br>然后将之前的那些图片拷贝到<code>博客目录/images</code>文件夹下，然后执行下面操作：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br><span class="line">git add .</span><br><span class="line">git commit -m &quot;images upload&quot;</span><br><span class="line">git remote add origin git@github.com:lmnsyunhao/blog-pica.git</span><br><span class="line">git push -u origin master</span><br></pre></td></tr></table></figure></p><p><code>博客目录/images</code>这个位置只是我放图片仓库的位置，或者说你们想放哪儿放哪儿，不一定要放在博客项目内。因为现在这个图片仓库和博客项目已经没关系了。<br>现在图片仓库已经建立好了，而且图片也已经上传到GitHub上了。  </p><h1 id="添加DNS解析"><a href="#添加DNS解析" class="headerlink" title="添加DNS解析"></a>添加DNS解析</h1><p>如果你没有域名的话，那么不用添加解析。继续看下一节。<br>我是在腾讯云托管的我的域名解析。所以去腾讯云添加一个解析记录。A类型记录，images.yunhao.space解析到自己的服务器IP地址。<br>如果不会添加解析，<a href="/2018/07/01/domain-name-parsing-setting-tutor/">域名解析配置教程</a>  </p><h1 id="修改博文图片地址"><a href="#修改博文图片地址" class="headerlink" title="修改博文图片地址"></a>修改博文图片地址</h1><p>这个比较简单，用Notepad++或者是sublime什么的，文件夹内搜索，比如搜<code>](/images/</code>这个，然后全部替换一下。具体怎么搜索，我就不管了。<br>反正就是做如下替换。将<code>[图](/images/folder/1.png)</code>替换成<code>[图](http://images.yunhao.space/pica/folder/1.png</code><br>如果没有域名的话，那么那个images.yunhao.space就要替换成你的服务器ip地址了。  </p><h1 id="配置nginx重写"><a href="#配置nginx重写" class="headerlink" title="配置nginx重写"></a>配置nginx重写</h1><p>我的服务器是Ubuntu16.04 Nginx。去自己的服务器上。进行如下操作：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd /etc/nginx/sites-available</span><br><span class="line">vim 301.yunhao.space.images.conf</span><br></pre></td></tr></table></figure></p><p>然后输入如下内容：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">server &#123;</span><br><span class="line">server_name images.yunhao.space;</span><br><span class="line">    location ~ \.png$ &#123;</span><br><span class="line">        rewrite ^/(pic[a-z])/(.*)$ http://raw.githubusercontent.com/lmnsyunhao/blog-$1/master/$2 permanent;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p><p>保存退出vim，然后执行下面命令：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cd ../sites-enabled</span><br><span class="line">ln -s /etc/nginx/sites-available/301.yunhao.space.images.conf images-redirection</span><br><span class="line">systemctl restart nginx.service</span><br></pre></td></tr></table></figure></p><p>这个时候应该就ok了。然后每次的时候，需要提前把图片push到仓库中才行。  </p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;随着博客的写作，其实我们比较担心的问题就是GitHub对于单个项目来说的大小是有一定限制的。而写博客中有免不了放图片。图片这种东西真是非常的占地方。网上都说用七牛云、微博、或者是什么座图床。我看了看，好像是挺麻烦的。又得注册账号，又得导出外链的。我发现github有一个图片预览的功能。于是我想到了用github这个图片预览的功能做一个图床。创造一个仓库专门存图片，如果这个仓库存满了，再创建一个仓库就好了。每个仓库能存1G的东西，所以觉得还不错。下面说一下我的思路。  &lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Hexo" scheme="http://yunhao.space/categories/Hexo/"/>
+    
+    
+      <category term="GitHub" scheme="http://yunhao.space/tags/GitHub/"/>
+    
+      <category term="Hexo" scheme="http://yunhao.space/tags/Hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Git Submodule 特性详解</title>
+    <link href="http://yunhao.space/2018/07/18/git-submodule-learning-note/"/>
+    <id>http://yunhao.space/2018/07/18/git-submodule-learning-note/</id>
+    <published>2018-07-18T10:55:15.000Z</published>
+    <updated>2018-07-19T05:14:08.735Z</updated>
+    
+    <content type="html"><![CDATA[<p>今天在搞博客的时候，遇到了嵌套git项目的问题，之前一直没多想。然后今天遇到了问题，在这里总结一下git如何优雅的处理嵌套项目。即git的submodule特性是什么。  </p><a id="more"></a><h1 id="submodule介绍"><a href="#submodule介绍" class="headerlink" title="submodule介绍"></a>submodule介绍</h1><p>当一个git项目a中嵌套了另一个git项目b，而且b没有被a的.gitignore文件忽略掉。这种情况下就会用到submodule这个特性了。在使用git命令的时候，git会检查当前项目内是否含有另一个需要监控的git项目，如果有就会弹出一个提示，提示应该用submodule来解决这种情况。<br>为什么呢？试想一下，如果不用这种特性的话，那么每个a的commit中都会有一个b的所有的commit树。也就是成了树套树。空间复杂度就瞬间变成O(n*n)了。所以用submodule这个特性可以避免这种情况的发生。<br>submodule在项目a中存储一个指向项目b的某次提交的commit id，在存储一些b的仓库地址等配置信息，以这种方式将b集成进来。避免了树套树的问题。<br>接下来，我们在GitHub上面使用两个仓库来进行学习，主项目main，子模块sub。  </p><h1 id="创建"><a href="#创建" class="headerlink" title="创建"></a>创建</h1><p>现在假设，我们需要把<code>当前GitHub上的最新版本的sub</code>作为项目main的一个子模块加入。<br>PS：如果你的子项目已经在主项目里了，而且并没有用submodule特性。(这种情况是可能出现的)。可以先切换到子项目根目录下，然后提交所有更改，push到远程。然后在主项目中删除子项目。然后继续进行下述操作。<br>在主项目目录下执行命令，执行这个命令的时候子项目的远程仓库最好不是空的，不然好像.gitmodules中不会添加对应的内容。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git submodule add git@github.com:lmnsyunhao/sub.git sub</span><br></pre></td></tr></table></figure></p><p>执行这个命令之后主目录下就会多出一些文件，.gitmodules和sub文件夹。sub文件夹下就是成功引入的子模块的内容。<br>我们执行<code>git status</code>能够看到有两个文件已经添加到暂存区，准备提交。sub文件夹被当做一个文件进行提交。<br>这个时候就创建好了，然后commit和push一下父项目<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git commit -m &quot;add submodule&quot;</span><br><span class="line">git push</span><br></pre></td></tr></table></figure></p><p>然后我们到GitHub上可以看到子项目后边带了一个<code>@</code>，@后边的就是子项目的commit id，当前父项目的<code>commit id</code>所对应的子项目的<code>commit id</code>  </p><h1 id="修改子项目"><a href="#修改子项目" class="headerlink" title="修改子项目"></a>修改子项目</h1><p>首先，我们需要能对子项目进行commit。<br>进入子项目的目录，然后向正常的操作一样，add，然后commit，然后push。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">cd sub</span><br><span class="line">git add .</span><br><span class="line">git commit -m &quot;modified something&quot;</span><br><span class="line">git push</span><br></pre></td></tr></table></figure></p><p>修改完子项目之后，我们回到父项目的目录，会发现父项目中提示子项目有心的commit id。我们需要把父项目在提交一下，也就是将父项目中的sub文件指向最新的commit id。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">cd ..</span><br><span class="line">git add .</span><br><span class="line">git commit -m &quot;update sub&quot;</span><br><span class="line">git push</span><br></pre></td></tr></table></figure></p><h1 id="更新项目"><a href="#更新项目" class="headerlink" title="更新项目"></a>更新项目</h1><p>我们在main项目中执行操作：<code>&lt;commit id&gt;</code>是main的远程仓库最新的一次提交中对应的sub的commit id。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">cd main</span><br><span class="line">git pull</span><br><span class="line">git submodule update</span><br><span class="line">cd sub</span><br><span class="line">git merge &lt;commit id&gt; master</span><br></pre></td></tr></table></figure></p><p>现在，main项目和sub项目已经和main的远程仓库一样了。因为sub可能还有commit id领先（可能出现这种情况，请看下边情景）。所以还需要在sub项目中执行下面：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd sub</span><br><span class="line">git pull</span><br></pre></td></tr></table></figure></p><p>这样做是为了及时将sub项目更新到最新。当然如果你永远都不会在main项目中修改sub项目的文件的话。那么不进行git pull也是可以的。<br>上面是对sub子项目更新到最新，如果你还有很多子项目，想要将所有的子项目更新到最新的话。可以执行下面操作：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git submodule foreach git pull</span><br></pre></td></tr></table></figure></p><p>试想下面情景：<br>假设sub是main的子项目，现在有3个人，1在开发main，2也在开发main，3在开发sub。1，2有权修改main和sub，3只有权修改sub。  </p><ul><li>1先修改main和sub，main的commit id是main_a，sub的commit id是sub_a。然后push并离开了。  </li><li>2在1的基础上继续修改，在main_a的基础上修改main，commit id是main_b，在sub_a的基础上修改sub，commit_id是sub_b。  </li><li>3在2的基础上修改sub，在sub_b的基础上修改sub，commit id是sub_c。  </li><li>然后1回来了。他应该先在主项目下git pull，然后发现sub项目有新的提交。然后在主目录执行git submodule update，这个时候，cd到sub中，我们可以看到分支切换到了sub_b这个commit上。也就是说git submodule update只是切换分支，如果这个时候想继续对sub修改的话，首先，我们需要手动merge，执行git merge sub_b master，将sub_b分支merge到主分支上。然后现在这个状态就和main项目的最新状态是一样的了。但是我们知道sub项目还有个commit id，sub_c，我们需要及时对这个sub_c做个处理，否则的话，如果直接修改sub项目，提交的话，容易出现冲突。即，git pull一下，将sub_c更新过来。  </li></ul><p>从上面的例子我们看到了git submodule update与直接在子项目里面git pull是有一些区别的。直接在子项目中执行git pull的话，那么就是一下子就更新到了sub_c这个commit id了。而git submodule update则是更新到main项目中最后一次提交时sub项目对应的commit id。  </p><h1 id="克隆父项目"><a href="#克隆父项目" class="headerlink" title="克隆父项目"></a>克隆父项目</h1><p>方法一：父项目和子项目一起克隆下来<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone git@github.com:lmnsyunhao/main.git --recursive</span><br></pre></td></tr></table></figure></p><p>方法二：先克隆父项目，然后再克隆子项目<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git clone git@github.com:lmnsyunhao/main.git</span><br><span class="line">cd main</span><br><span class="line">git submodule init</span><br><span class="line">git submodule update</span><br></pre></td></tr></table></figure></p><p>上边的情景已经展示了<code>git submodule update</code>的性质了。即默认切换到对应的commit id，如果你需要修改子项目的话，还需要将commit id手动merge到master才能更改。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git merge &lt;commit id&gt; master</span><br></pre></td></tr></table></figure></p><h1 id="删除子项目"><a href="#删除子项目" class="headerlink" title="删除子项目"></a>删除子项目</h1><p>不支持命令删除子项目，需要手动删除。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cd main</span><br><span class="line">git rm --cached sub</span><br><span class="line">rm -rf sub</span><br></pre></td></tr></table></figure></p><p>移除.gitmodules文件中对应的部分<br>移除.git/config文件中对应的部分<br>移除.git/modules文件夹下对应的文件夹  </p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;今天在搞博客的时候，遇到了嵌套git项目的问题，之前一直没多想。然后今天遇到了问题，在这里总结一下git如何优雅的处理嵌套项目。即git的submodule特性是什么。  &lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Git" scheme="http://yunhao.space/categories/Git/"/>
+    
+    
+      <category term="Git" scheme="http://yunhao.space/tags/Git/"/>
+    
+      <category term="GitHub" scheme="http://yunhao.space/tags/GitHub/"/>
+    
+  </entry>
   
   <entry>
     <title>U启动 制作WinPE启动盘 支持UEFI启动</title>
@@ -90,9 +138,9 @@
     
       <category term="系统安装" scheme="http://yunhao.space/tags/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/"/>
     
-      <category term="UEFI" scheme="http://yunhao.space/tags/UEFI/"/>
-    
       <category term="Windows" scheme="http://yunhao.space/tags/Windows/"/>
+    
+      <category term="UEFI" scheme="http://yunhao.space/tags/UEFI/"/>
     
       <category term="Legacy" scheme="http://yunhao.space/tags/Legacy/"/>
     
@@ -228,15 +276,15 @@
     
       <category term="DNS" scheme="http://yunhao.space/tags/DNS/"/>
     
-      <category term="Hexo" scheme="http://yunhao.space/tags/Hexo/"/>
-    
       <category term="GitHub" scheme="http://yunhao.space/tags/GitHub/"/>
     
-      <category term="GitHub Pages" scheme="http://yunhao.space/tags/GitHub-Pages/"/>
+      <category term="Hexo" scheme="http://yunhao.space/tags/Hexo/"/>
     
       <category term="GoDaddy" scheme="http://yunhao.space/tags/GoDaddy/"/>
     
       <category term="腾讯云" scheme="http://yunhao.space/tags/%E8%85%BE%E8%AE%AF%E4%BA%91/"/>
+    
+      <category term="GitHub Pages" scheme="http://yunhao.space/tags/GitHub-Pages/"/>
     
       <category term="Nginx" scheme="http://yunhao.space/tags/Nginx/"/>
     
@@ -410,9 +458,9 @@
     
       <category term="Git" scheme="http://yunhao.space/tags/Git/"/>
     
-      <category term="Hexo" scheme="http://yunhao.space/tags/Hexo/"/>
-    
       <category term="GitHub" scheme="http://yunhao.space/tags/GitHub/"/>
+    
+      <category term="Hexo" scheme="http://yunhao.space/tags/Hexo/"/>
     
   </entry>
   
@@ -501,68 +549,6 @@
       <category term="GitHub" scheme="http://yunhao.space/tags/GitHub/"/>
     
       <category term="OpenSSH" scheme="http://yunhao.space/tags/OpenSSH/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>GoDaddy 域名 托管于腾讯云解析</title>
-    <link href="http://yunhao.space/2018/06/18/godaddy-domain-dns-on-tencent-cloud/"/>
-    <id>http://yunhao.space/2018/06/18/godaddy-domain-dns-on-tencent-cloud/</id>
-    <published>2018-06-18T14:57:39.000Z</published>
-    <updated>2018-07-18T10:20:26.355Z</updated>
-    
-    <content type="html"><![CDATA[<p>GoDaddy上面买了域名，看大家都说托管到DNSPod上边快。于是我就写了这样一篇博客，DNSPod就是腾讯云。几乎一样。嗯。  </p><a id="more"></a><h1 id="腾讯云获取域名服务器"><a href="#腾讯云获取域名服务器" class="headerlink" title="腾讯云获取域名服务器"></a>腾讯云获取域名服务器</h1><p>注册并登陆了腾讯云之后，找到控制台。<br><img src="http://images.yunhao.space/pica/godaddy-domain-dns-on-tencent-cloud/tencent-control-panel.png" alt="控制台"><br>然后找到域名服务，云解析。<br><img src="http://images.yunhao.space/pica/godaddy-domain-dns-on-tencent-cloud/service.png" alt="云解析"><br>然后点击添加解析。将你要解析的域名加进来。<br><img src="http://images.yunhao.space/pica/godaddy-domain-dns-on-tencent-cloud/add-parsing.png" alt="添加解析"><br>添加域名就是你购买的域名，项目就默认就行。<br><img src="http://images.yunhao.space/pica/godaddy-domain-dns-on-tencent-cloud/parsing-info.png" alt="添加解析"><br>然后能看到添加的域名，点击后边的解析。<br><img src="http://images.yunhao.space/pica/godaddy-domain-dns-on-tencent-cloud/parsing.png" alt="解析"><br>然后应该会弹框出来，提示你去域名注册商处修改域名服务器。如下图，如果没有弹框的话，请继续看<br><img src="http://images.yunhao.space/pica/godaddy-domain-dns-on-tencent-cloud/1.png" alt="弹框"><br>如果没弹框，我们可以看到上边的域名服务器的地址。并且它提示我们去到域名注册商处更改地址。<br><img src="http://images.yunhao.space/pica/godaddy-domain-dns-on-tencent-cloud/dns-address.png" alt="DNS地址"></p><h1 id="GoDaddy自定义域名服务器"><a href="#GoDaddy自定义域名服务器" class="headerlink" title="GoDaddy自定义域名服务器"></a>GoDaddy自定义域名服务器</h1><p>首先是去<a href="https://sg.godaddy.com/zh/" target="_blank" rel="noopener">GoDaddy</a>登陆账户（登陆密码还得要求有大写英文字母，小写英文字母，还有数字）。然后找到我的产品。<br><img src="http://images.yunhao.space/pica/godaddy-domain-dns-on-tencent-cloud/godaddy-production.png" alt="我的产品"><br>然后是找到需要托管的域名的DNS。<br><img src="http://images.yunhao.space/pica/godaddy-domain-dns-on-tencent-cloud/godaddy-dns.png" alt="DNS"><br>点击了DNS之后，我们可以看到，记录和域名服务器俩栏。我们需要把下面的域名服务器改成自定义的，然后将腾讯云上边的那个域名服务器的地址填上。刷新一下界面，我们就能够看到记录的位置显示信息，表示已经脱离了Godaddy的管理了。<br><img src="http://images.yunhao.space/pica/godaddy-domain-dns-on-tencent-cloud/customized-dns.png" alt="自定义域名服务器"><br>这个时候我们就只需要在腾讯云上添加解析的记录就ok了。  </p><h1 id="腾讯云添加记录"><a href="#腾讯云添加记录" class="headerlink" title="腾讯云添加记录"></a>腾讯云添加记录</h1><p>添加记录的过程中，A类型是将域名指向IP，CNAME类型是将域名指向另一个域名。<br><img src="http://images.yunhao.space/pica/godaddy-domain-dns-on-tencent-cloud/add-record.png" alt="添加记录"><br>比如<code>主机记录</code>填写<code>@</code>，<code>记录类型</code>写<code>CNAME</code>，线路类型默认，<code>记录值</code>写<code>lmnsyunhao.github.io</code>，TTL600。这个就是表示在访问yunhao.space的时候就会解析到lmnsyunhao.github.io这个域名。相当于直接访问lmnsyunhao.github.io这个域名。<br>比如<code>主机记录</code>填写<code>www</code>，<code>记录类型</code>写<code>A</code>，线路类型默认，<code>记录值</code>写<code>8.8.8.8</code>，TTL600。这个表示在访问<code>www.yunhao.space</code>的时候会解析到8.8.8.8。相当于直接访问8.8.8.8这个IP。<br><code>@</code>主机记录表示三级域名处为空。如果记录类型选<code>CNAME</code>那么记录值只能写域名才有效，记录类型选A，记录值只能写IP地址才有效。<br>详细添加记录，请参考<a href="/2018/07/01/domain-name-parsing-setting-tutor/">域名解析配置教程</a>  </p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;GoDaddy上面买了域名，看大家都说托管到DNSPod上边快。于是我就写了这样一篇博客，DNSPod就是腾讯云。几乎一样。嗯。  &lt;/p&gt;
-    
-    </summary>
-    
-      <category term="服务器" scheme="http://yunhao.space/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
-    
-      <category term="域名" scheme="http://yunhao.space/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%9F%9F%E5%90%8D/"/>
-    
-    
-      <category term="域名" scheme="http://yunhao.space/tags/%E5%9F%9F%E5%90%8D/"/>
-    
-      <category term="DNS" scheme="http://yunhao.space/tags/DNS/"/>
-    
-      <category term="GoDaddy" scheme="http://yunhao.space/tags/GoDaddy/"/>
-    
-      <category term="腾讯云" scheme="http://yunhao.space/tags/%E8%85%BE%E8%AE%AF%E4%BA%91/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ACM HDU 2089 题解 数位DP</title>
-    <link href="http://yunhao.space/2018/06/17/acm-hdu-2089-digital-dp/"/>
-    <id>http://yunhao.space/2018/06/17/acm-hdu-2089-digital-dp/</id>
-    <published>2018-06-17T08:34:42.000Z</published>
-    <updated>2018-07-03T11:35:26.136Z</updated>
-    
-    <content type="html"><![CDATA[<p>不要62，经典数位DP，这是记忆化搜索，从高位向低位dfs。详见本文具体内容  </p><a id="more"></a><h1 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h1><p>不要62  </p><h1 id="限制"><a href="#限制" class="headerlink" title="限制"></a>限制</h1><p>Time Limit: 1000/1000 MS (Java/Others)<br>Memory Limit: 32768/32768 K (Java/Others)  </p><h1 id="描述"><a href="#描述" class="headerlink" title="描述"></a>描述</h1><p>杭州人称那些傻乎乎粘嗒嗒的人为62（音：laoer）。<br>杭州交通管理局经常会扩充一些的士车牌照，新近出来一个好消息，以后上牌照，不再含有不吉利的数字了，这样一来，就可以消除个别的士司机和乘客的心理障碍，更安全地服务大众。<br>不吉利的数字为所有含有4或62的号码。例如：<br>62315 73418 88914<br>都属于不吉利号码。但是，61152虽然含有6和2，但不是62连号，所以不属于不吉利数字之列。<br>你的任务是，对于每次给出的一个牌照区间号，推断出交管局今次又要实际上给多少辆新的士车上牌照了。  </p><h1 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h1><p>输入的都是整数对$n,m$$(0 \lt n \le m \lt 1000000)$，如果遇到都是0的整数对，则输入结束。  </p><h1 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h1><p>对于每个整数对，输出一个不含有不吉利数字的统计个数，该数值占一行位置。  </p><h1 id="样本"><a href="#样本" class="headerlink" title="样本"></a>样本</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">1 100</span><br><span class="line">0 0</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">80</span><br></pre></td></tr></table></figure><h1 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h1><p>数位DP。这是记忆化搜索，从高位向低位dfs。<br>首先s数组中存储数字是从低位到高位存储的，比如100，在s数组中就是[0,0,1]这么存的。len是数的位数<br>dp[i][0]表示在第i+1位不是6并且低i位没有限制的情况下，低i位中满足条件的数的个数。<br>dp[i][1]表示在第i+1位是6并且低i位没有限制的情况下，低i为中满足条件的数的个数。<br>dp数组用于记忆化搜索。<br>说一下代码吧。<br>这道题是求n到m中（含边界数）满足条件的个数，也就是求m以内的满足条件个数，再减去n-1以内满足条件个数。<br>说下dfs。pos是当前位数；lim是当前位数的上限值，-1代表没上限，0到9之间的数字代表有上限；prev是高一位的数字是几。<br>首先判断边界，pos&lt;0的情况代表找到了一个数，所以要return 1;这个为啥不return 0?自己想一下，return 0的话结果永远都是0了。<br>然后判断是不是没限制，即lim==-1并且，dp对应的位置不是0，即之前求过并存储下来了，那么就直接返回。否则就继续求。<br>然后就是循环次数了。up是循环次数。<br>for循环的意义是对于pos位是各种数字的情况下，继续dfs pos-1位的情况。<br>循环中，如果是4那么跳过；如果是2并且上一位是4直接跳过；如果i和lim相等，即这一位到了上限，那么在继续进行dfs的时候，下一位也要注意上限的问题，免得超了，所以要把s[pos-1]作为参数，不然的话，就直接传-1了。<br>循环结束后进行记录，如果当前没有上限，即这个值在之后还有利用价值，那么就计入dp，否则，不计入。然后返回这个tmp，tmp是结果。  </p><h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstring&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> n, m;</span><br><span class="line"><span class="keyword">int</span> s[<span class="number">10</span>];</span><br><span class="line"><span class="keyword">int</span> len;</span><br><span class="line"><span class="keyword">int</span> dp[<span class="number">10</span>][<span class="number">2</span>];</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">dfs</span><span class="params">(<span class="keyword">int</span> pos, <span class="keyword">int</span> lim, <span class="keyword">int</span> prev)</span></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(pos &lt; <span class="number">0</span>) <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">if</span>(lim == <span class="number">-1</span> &amp;&amp; dp[pos][prev == <span class="number">6</span>] != <span class="number">0</span>) <span class="keyword">return</span> dp[pos][prev == <span class="number">6</span>];</span><br><span class="line"></span><br><span class="line">    <span class="keyword">int</span> up = lim==<span class="number">-1</span>?<span class="number">9</span>:lim;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">int</span> tmp = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt;= up; i++)&#123;</span><br><span class="line">        <span class="keyword">if</span>(i == <span class="number">4</span>) <span class="keyword">continue</span>;</span><br><span class="line">        <span class="keyword">if</span>(i == <span class="number">2</span> &amp;&amp; prev == <span class="number">6</span>) <span class="keyword">continue</span>;</span><br><span class="line">        <span class="keyword">if</span>(i == lim)</span><br><span class="line">            tmp += dfs(pos<span class="number">-1</span>, s[pos<span class="number">-1</span>], i);</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">            tmp += dfs(pos<span class="number">-1</span>, <span class="number">-1</span>, i);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span>(lim == <span class="number">-1</span>)&#123;</span><br><span class="line">        dp[pos][prev == <span class="number">6</span>] = tmp;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> tmp;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">solve</span><span class="params">(<span class="keyword">int</span> num)</span></span>&#123;</span><br><span class="line">    len = <span class="number">0</span>;</span><br><span class="line">    <span class="built_in">memset</span>(s, <span class="number">0</span>, <span class="keyword">sizeof</span> s);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">while</span>(num &gt; <span class="number">0</span>)&#123;</span><br><span class="line">        s[len++] = num % <span class="number">10</span>;</span><br><span class="line">        num /= <span class="number">10</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> dfs(len<span class="number">-1</span>, s[len<span class="number">-1</span>], <span class="number">-1</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">while</span>(~<span class="built_in">scanf</span>(<span class="string">"%d %d"</span>, &amp;n, &amp;m))&#123;</span><br><span class="line">        <span class="keyword">if</span>(n == <span class="number">0</span> &amp;&amp; m == <span class="number">0</span>) <span class="keyword">break</span>;</span><br><span class="line">        <span class="built_in">memset</span>(dp, <span class="number">0</span>, <span class="keyword">sizeof</span> dp);</span><br><span class="line"></span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"%d\n"</span>, solve(m)-solve(n<span class="number">-1</span>));</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;不要62，经典数位DP，这是记忆化搜索，从高位向低位dfs。详见本文具体内容  &lt;/p&gt;
-    
-    </summary>
-    
-      <category term="ACM" scheme="http://yunhao.space/categories/ACM/"/>
-    
-      <category term="DP" scheme="http://yunhao.space/categories/ACM/DP/"/>
-    
-      <category term="数位DP" scheme="http://yunhao.space/categories/ACM/DP/%E6%95%B0%E4%BD%8DDP/"/>
-    
-    
-      <category term="ACM" scheme="http://yunhao.space/tags/ACM/"/>
-    
-      <category term="DP" scheme="http://yunhao.space/tags/DP/"/>
-    
-      <category term="HDU" scheme="http://yunhao.space/tags/HDU/"/>
-    
-      <category term="数位DP" scheme="http://yunhao.space/tags/%E6%95%B0%E4%BD%8DDP/"/>
     
   </entry>
   

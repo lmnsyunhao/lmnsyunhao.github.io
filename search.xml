@@ -1,6 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Hexo博客 GitHub仓库图床]]></title>
+    <url>%2F2018%2F07%2F18%2Fhexo-blog-github-images-repository%2F</url>
+    <content type="text"><![CDATA[随着博客的写作，其实我们比较担心的问题就是GitHub对于单个项目来说的大小是有一定限制的。而写博客中有免不了放图片。图片这种东西真是非常的占地方。网上都说用七牛云、微博、或者是什么座图床。我看了看，好像是挺麻烦的。又得注册账号，又得导出外链的。我发现github有一个图片预览的功能。于是我想到了用github这个图片预览的功能做一个图床。创造一个仓库专门存图片，如果这个仓库存满了，再创建一个仓库就好了。每个仓库能存1G的东西，所以觉得还不错。下面说一下我的思路。 原项目结构原来的项目结构是在博客的项目目录下的source文件夹下新建一个叫images的文件夹，文件夹下存图片。即博客目录/source/images可能有好多人最开始都跟我差不多的结构。我就是从这个结构开始改的。 思路这个就是GitHub图片预览的urlhttps://raw.githubusercontent.com/lmnsyunhao/blog-pica/master/acm-cf-963b-dfs/normal.png，考虑到这个url太长，而且考虑到如果github之后更改这个url，那么很有可能所有的博文的图片链接都要修改。我有了这样一个思路，我的图片链接先请求到我自己的服务器上，然后服务器重写url，301重定向到github。这样如果某一天github这个图片预览的url格式变了的话，直接改服务器那边的重写规则就好了。甚至如果以后不支持图片预览的话，也能再做打算。不用修改博文。当然，如果你们懒得用服务器重定向了的话，直接把博文中的图片改成类似上边的那种url也行。OK，开搞。 建立图片仓库GitHub新建仓库blog-pica，如果这个仓库满了，我的下一个仓库名字就是blog-picb，我是这样定义的。然后我在本地的博客项目下新建images文件夹，即博客目录/images。因为如果放到source文件夹下，在hexo g时候会在博客目录/public文件夹下生成对应的images文件夹，这样的话hexo d的时候还是会将图片上传。即，保证了图片不会在博客仓库出现然后我修改博客目录/.gitignore文件，添加一行，内容是/images/，这样的话，就会将此文件夹忽略掉。从而保证图片只在图床仓库出现，不会在备份仓库出现。然后将之前的那些图片拷贝到博客目录/images文件夹下，然后执行下面操作：12345git initgit add .git commit -m &quot;images upload&quot;git remote add origin git@github.com:lmnsyunhao/blog-pica.gitgit push -u origin master 博客目录/images这个位置只是我放图片仓库的位置，或者说你们想放哪儿放哪儿，不一定要放在博客项目内。因为现在这个图片仓库和博客项目已经没关系了。现在图片仓库已经建立好了，而且图片也已经上传到GitHub上了。 添加DNS解析如果你没有域名的话，那么不用添加解析。继续看下一节。我是在腾讯云托管的我的域名解析。所以去腾讯云添加一个解析记录。A类型记录，images.yunhao.space解析到自己的服务器IP地址。如果不会添加解析，域名解析配置教程 修改博文图片地址这个比较简单，用Notepad++或者是sublime什么的，文件夹内搜索，比如搜](/images/这个，然后全部替换一下。具体怎么搜索，我就不管了。反正就是做如下替换。将[图](/images/folder/1.png)替换成[图](http://images.yunhao.space/pica/folder/1.png如果没有域名的话，那么那个images.yunhao.space就要替换成你的服务器ip地址了。 配置nginx重写我的服务器是Ubuntu16.04 Nginx。去自己的服务器上。进行如下操作：12cd /etc/nginx/sites-availablevim 301.yunhao.space.images.conf 然后输入如下内容：123456server &#123; server_name images.yunhao.space; location ~ \.png$ &#123; rewrite ^/(pic[a-z])/(.*)$ http://raw.githubusercontent.com/lmnsyunhao/blog-$1/master/$2 permanent; &#125;&#125; 保存退出vim，然后执行下面命令：123cd ../sites-enabledln -s /etc/nginx/sites-available/301.yunhao.space.images.conf images-redirectionsystemctl restart nginx.service 这个时候应该就ok了。然后每次的时候，需要提前把图片push到仓库中才行。]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>GitHub</tag>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Git Submodule 特性详解]]></title>
+    <url>%2F2018%2F07%2F18%2Fgit-submodule-learning-note%2F</url>
+    <content type="text"><![CDATA[今天在搞博客的时候，遇到了嵌套git项目的问题，之前一直没多想。然后今天遇到了问题，在这里总结一下git如何优雅的处理嵌套项目。即git的submodule特性是什么。 submodule介绍当一个git项目a中嵌套了另一个git项目b，而且b没有被a的.gitignore文件忽略掉。这种情况下就会用到submodule这个特性了。在使用git命令的时候，git会检查当前项目内是否含有另一个需要监控的git项目，如果有就会弹出一个提示，提示应该用submodule来解决这种情况。为什么呢？试想一下，如果不用这种特性的话，那么每个a的commit中都会有一个b的所有的commit树。也就是成了树套树。空间复杂度就瞬间变成O(n*n)了。所以用submodule这个特性可以避免这种情况的发生。submodule在项目a中存储一个指向项目b的某次提交的commit id，在存储一些b的仓库地址等配置信息，以这种方式将b集成进来。避免了树套树的问题。接下来，我们在GitHub上面使用两个仓库来进行学习，主项目main，子模块sub。 创建现在假设，我们需要把当前GitHub上的最新版本的sub作为项目main的一个子模块加入。PS：如果你的子项目已经在主项目里了，而且并没有用submodule特性。(这种情况是可能出现的)。可以先切换到子项目根目录下，然后提交所有更改，push到远程。然后在主项目中删除子项目。然后继续进行下述操作。在主项目目录下执行命令，执行这个命令的时候子项目的远程仓库最好不是空的，不然好像.gitmodules中不会添加对应的内容。1git submodule add git@github.com:lmnsyunhao/sub.git sub 执行这个命令之后主目录下就会多出一些文件，.gitmodules和sub文件夹。sub文件夹下就是成功引入的子模块的内容。我们执行git status能够看到有两个文件已经添加到暂存区，准备提交。sub文件夹被当做一个文件进行提交。这个时候就创建好了，然后commit和push一下父项目12git commit -m &quot;add submodule&quot;git push 然后我们到GitHub上可以看到子项目后边带了一个@，@后边的就是子项目的commit id，当前父项目的commit id所对应的子项目的commit id 修改子项目首先，我们需要能对子项目进行commit。进入子项目的目录，然后向正常的操作一样，add，然后commit，然后push。1234cd subgit add .git commit -m &quot;modified something&quot;git push 修改完子项目之后，我们回到父项目的目录，会发现父项目中提示子项目有心的commit id。我们需要把父项目在提交一下，也就是将父项目中的sub文件指向最新的commit id。1234cd ..git add .git commit -m &quot;update sub&quot;git push 更新项目我们在main项目中执行操作：&lt;commit id&gt;是main的远程仓库最新的一次提交中对应的sub的commit id。12345cd maingit pullgit submodule updatecd subgit merge &lt;commit id&gt; master 现在，main项目和sub项目已经和main的远程仓库一样了。因为sub可能还有commit id领先（可能出现这种情况，请看下边情景）。所以还需要在sub项目中执行下面：12cd subgit pull 这样做是为了及时将sub项目更新到最新。当然如果你永远都不会在main项目中修改sub项目的文件的话。那么不进行git pull也是可以的。上面是对sub子项目更新到最新，如果你还有很多子项目，想要将所有的子项目更新到最新的话。可以执行下面操作：1git submodule foreach git pull 试想下面情景：假设sub是main的子项目，现在有3个人，1在开发main，2也在开发main，3在开发sub。1，2有权修改main和sub，3只有权修改sub。 1先修改main和sub，main的commit id是main_a，sub的commit id是sub_a。然后push并离开了。 2在1的基础上继续修改，在main_a的基础上修改main，commit id是main_b，在sub_a的基础上修改sub，commit_id是sub_b。 3在2的基础上修改sub，在sub_b的基础上修改sub，commit id是sub_c。 然后1回来了。他应该先在主项目下git pull，然后发现sub项目有新的提交。然后在主目录执行git submodule update，这个时候，cd到sub中，我们可以看到分支切换到了sub_b这个commit上。也就是说git submodule update只是切换分支，如果这个时候想继续对sub修改的话，首先，我们需要手动merge，执行git merge sub_b master，将sub_b分支merge到主分支上。然后现在这个状态就和main项目的最新状态是一样的了。但是我们知道sub项目还有个commit id，sub_c，我们需要及时对这个sub_c做个处理，否则的话，如果直接修改sub项目，提交的话，容易出现冲突。即，git pull一下，将sub_c更新过来。 从上面的例子我们看到了git submodule update与直接在子项目里面git pull是有一些区别的。直接在子项目中执行git pull的话，那么就是一下子就更新到了sub_c这个commit id了。而git submodule update则是更新到main项目中最后一次提交时sub项目对应的commit id。 克隆父项目方法一：父项目和子项目一起克隆下来1git clone git@github.com:lmnsyunhao/main.git --recursive 方法二：先克隆父项目，然后再克隆子项目1234git clone git@github.com:lmnsyunhao/main.gitcd maingit submodule initgit submodule update 上边的情景已经展示了git submodule update的性质了。即默认切换到对应的commit id，如果你需要修改子项目的话，还需要将commit id手动merge到master才能更改。1git merge &lt;commit id&gt; master 删除子项目不支持命令删除子项目，需要手动删除。123cd maingit rm --cached subrm -rf sub 移除.gitmodules文件中对应的部分移除.git/config文件中对应的部分移除.git/modules文件夹下对应的文件夹]]></content>
+      <categories>
+        <category>Git</category>
+      </categories>
+      <tags>
+        <tag>Git</tag>
+        <tag>GitHub</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[U启动 制作WinPE启动盘 支持UEFI启动]]></title>
     <url>%2F2018%2F07%2F13%2Fburn-windows-preinstallation-environment-disk%2F</url>
     <content type="text"><![CDATA[WinPE又叫Windows Preinstallation Environment，这个PE其实就是一个安装在U盘中的小的windows系统，里面有一些非常基础实用的功能，这个PE可以解决一些磁盘损坏、启动项丢失等与系统有关的问题。所以今天就来看看如何来制作WinPE盘。制作WinPE有好多，比如大白菜，老毛桃，大番薯等。唉，真的烦，怎么都是吃的？而且一个个起名字还这么难听。终于我找着了一个好听的，也非常好用。叫U启动，本文说如何刻录U启动WinPE盘，并且支持UEFI启动。 PEPreinstallation Environment，能够管理启动项；能够再你windows系统坏的时候将你的文件备份出来；能够做最基本的磁盘管理等等。他的功能非常的多。所以，装系统的时候免不了使用PE。 U启动安装过程很简单。打开官网，U启动官网，然后点击下载UEFI版。如下图：下载了之后，打开下载的exe，然后安装U启动。如下图：安装完成之后，打开U启动，然后插入U盘，U盘的质量不要太差，要不然刻录出的盘容易出问题。如下图，选中你要制作的U盘，然后其余都是默认，点击开始制作然后应该会提示会清空U盘的所有数据，点击确定。等待制作完成完成后会询问是否模拟启动，这个模拟启动没什么用处，就是检测这个是否刻录成功，一般都是成功的，就不用模拟启动了，选择否。然后U启动 WinPE，就制作好了。这个U盘支持UEFI启动，当然Legacy也同样支持。]]></content>
@@ -36,8 +60,8 @@
       </categories>
       <tags>
         <tag>系统安装</tag>
-        <tag>UEFI</tag>
         <tag>Windows</tag>
+        <tag>UEFI</tag>
         <tag>Legacy</tag>
       </tags>
   </entry>
@@ -105,11 +129,11 @@
         <tag>服务器</tag>
         <tag>域名</tag>
         <tag>DNS</tag>
-        <tag>Hexo</tag>
         <tag>GitHub</tag>
-        <tag>GitHub Pages</tag>
+        <tag>Hexo</tag>
         <tag>GoDaddy</tag>
         <tag>腾讯云</tag>
+        <tag>GitHub Pages</tag>
         <tag>Nginx</tag>
       </tags>
   </entry>
@@ -196,8 +220,8 @@
       </categories>
       <tags>
         <tag>Git</tag>
-        <tag>Hexo</tag>
         <tag>GitHub</tag>
+        <tag>Hexo</tag>
       </tags>
   </entry>
   <entry>
@@ -471,9 +495,9 @@
       </categories>
       <tags>
         <tag>ACM</tag>
-        <tag>HDU</tag>
         <tag>组合数学</tag>
         <tag>母函数</tag>
+        <tag>HDU</tag>
       </tags>
   </entry>
   <entry>
@@ -735,14 +759,14 @@
         <tag>域名</tag>
         <tag>DNS</tag>
         <tag>Git</tag>
-        <tag>Hexo</tag>
         <tag>GitHub</tag>
+        <tag>Hexo</tag>
       </tags>
   </entry>
   <entry>
     <title><![CDATA[Hexo 备份]]></title>
     <url>%2F2017%2F03%2F27%2Fhexo-backup%2F</url>
-    <content type="text"><![CDATA[hexo 备份和移植 创建仓库PS：如果远程已经备份好，只是要pull下来，请跳到恢复一节假设我们的博客的项目目录为blog我们可以看到在blog目录下是没有.git文件夹的。首先，我们先将所有的更改，提交到本地库12git add .git commit -m "backup" 创建backup分支我们新建一个叫做backup的分支。然后切换到该分支，再删除master分支。1234git branch backupgit checkout backupgit branch -d mastergit branch 我们可以通过git branch 查看，只剩一个backup分支。 连接远程我们连接远程库，并进行push操作，如下，远程库会自动建立backup分支。12git remote add origin 你的username.github.io的项目地址git push origin backup:backup 修改push和pull的默认分支保险起见，设置默认的跟踪分支，之后会看到本地的backup分支跟踪origin/backup分支12git push -u origin backupgit branch --set-upstream-to=origin/backup backup 设置了之后，我们再进行git push 或者是git pull的操作的时候就不用担心，会影响到origin/master分支了。 备份之后我们再上传新的帖子的时候，要进行下面的操作。123456hexo cleanhexo ggit add .git commit -m "backup"git pushhexo d 这样就能够备份了 恢复本地的博客丢了怎么办？这样就能够弄一份一模一样的了。1234567891011121314mkdir blogcd bloggit initgit remote add origin 你的username.github.io的项目地址git pull origin backup:backupgit branchgit checkout backupgit branch -d mastergit push -u origin backupgit branch --set-upstream-to=origin/backup backupnpm installhexo cleanhexo ghexo d]]></content>
+    <content type="text"><![CDATA[hexo 备份和移植 创建仓库PS：如果远程已经备份好，只是要pull下来，请跳到恢复一节假设我们的博客的项目目录为blog我们可以看到在blog目录下是没有.git文件夹的。首先，我们先将所有的更改，提交到本地库12git add .git commit -m "backup" 创建backup分支我们新建一个叫做backup的分支。然后切换到该分支，再删除master分支。1234git branch backupgit checkout backupgit branch -d mastergit branch 我们可以通过git branch 查看，只剩一个backup分支。 连接远程我们连接远程库，并进行push操作，如下，远程库会自动建立backup分支。12git remote add origin 你的username.github.io的项目地址git push origin backup:backup 修改push和pull的默认分支保险起见，设置默认的跟踪分支，之后会看到本地的backup分支跟踪origin/backup分支12git push -u origin backupgit branch --set-upstream-to=origin/backup backup 设置了之后，我们再进行git push 或者是git pull的操作的时候就不用担心，会影响到origin/master分支了。 备份之后我们再上传新的帖子的时候，要进行下面的操作。123456hexo cleanhexo ggit add .git commit -m "backup"git pushhexo d 这样就能够备份了 恢复本地的博客丢了怎么办？这样就能够弄一份一模一样的了。1234567891011121314mkdir blogcd bloggit initgit remote add origin 你的username.github.io的项目地址git pull origin backup:backupgit branchgit checkout backupgit branch -d mastergit push -u origin backupgit branch --set-upstream-to=origin/backup backupnpm installhexo cleanhexo ghexo d 多仓库的备份最近又倒腾了倒腾。然后把博客和博客备份和博客主题分成三个仓库存储。利用Git的submodule特性，使博客主题作为博客备份仓库的一个子模块。如果不知道submodule特性是什么的话，Git Submodule 特性详解简要说下，首先我先把next的主题从theme-next的仓库fork过来了。然后新建了一个blog-backuper的仓库。然后将本地的博客项目中的.git文件夹删除，将themes文件夹下的next另存一份，并从博客项目中移除。然后在博客项目根目录执行下面操作：1234567cd bloggit initgit submodule add git@github.com:lmnsyunhao/hexo-theme-next.git themes/nextgit remote add origin git@github.com:lmnsyunhao/blog-backuper.gitgit add .git commit -m &quot;reconstruction&quot;git push -u origin master 然后重新修改主题。这种情况下不出意外，应该就重构好了。以后每次备份的时候，如下：12345678910cd bloghexo cl &amp; hexo g &amp; hexo dcd themes/nextgit add .git commit -m &quot;update&quot;git pushcd ../..git add .git commit -m &quot;update&quot;git push 恢复的时候，执行如下操作：123git clone git@github.com:lmnsyunhao/blog-backuper.git --recursivegit submodule foreach git pullnpm install 然后就能正常的创作了。]]></content>
       <categories>
         <category>Hexo</category>
       </categories>
