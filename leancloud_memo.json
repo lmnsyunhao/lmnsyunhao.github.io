@@ -55,4 +55,6 @@
 {"title":"U启动 制作WinPE启动盘 支持UEFI启动","url":"/2018/07/13/burn-windows-preinstallation-environment-disk/"},
 {"title":"Windows10 磁盘管理工具 分区管理 创建分区","url":"/2018/07/13/windows-disk-manager-partition/"},
 {"title":"Windows10 系统安装教程 UEFI模式 Legacy模式","url":"/2018/07/13/windows-system-installation-tutor/"},
+{"title":"Git Submodule 特性详解","url":"/2018/07/18/git-submodule-learning-note/"},
+{"title":"Hexo博客 GitHub仓库图床","url":"/2018/07/18/hexo-blog-github-images-repository/"},
 ]
