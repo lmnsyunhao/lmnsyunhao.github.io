@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yunhao.space/"/>
-  <updated>2018-07-19T06:31:27.110Z</updated>
+  <updated>2018-07-24T11:25:29.426Z</updated>
   <id>http://yunhao.space/</id>
   
   <author>
@@ -17,11 +17,39 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>ACM CodeForces 1006 B 题解 贪心</title>
+    <link href="http://yunhao.space/2018/07/24/acm-cf-1006b-greedy/"/>
+    <id>http://yunhao.space/2018/07/24/acm-cf-1006b-greedy/</id>
+    <published>2018-07-24T10:47:59.000Z</published>
+    <updated>2018-07-24T11:25:29.426Z</updated>
+    
+    <content type="html"><![CDATA[<p>这是一道简单的贪心，在输入的时候记录下前k个最大数。然后在顺序扫一遍序列，将这k个数找出来。每找到一个，就立即划分一组，找到最后一个时，如果后边还有没遍历完的。那么就将剩下的数并到最后一组。  </p><a id="more"></a><h1 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h1><p>B. Polycarp’s Practice  </p><h1 id="限制"><a href="#限制" class="headerlink" title="限制"></a>限制</h1><p>time limit per test: 2 seconds<br>memory limit per test: 256 megabytes<br>input: standard input<br>output: standard output  </p><h1 id="描述"><a href="#描述" class="headerlink" title="描述"></a>描述</h1><p>Polycarp is practicing his problem solving skill. He has a list of $n$ problems with difficulties $a_1,a_2,…,a_n$, respectively. His plan is to practice for exactly $k$ days. Each day he has to solve at least one problem from his list. Polycarp solves the problems in the order they are given in his list, he cannot skip any problem from his list. He has to solve all $n$ problems in exactly $k$ days.<br>Thus, each day Polycarp solves a contiguous sequence of (consecutive) problems from the start of the list. He can’t skip problems or solve them multiple times. As a result, in $k$ days he will solve all the $n$ problems.<br>The profit of the $j^{th}$ day of Polycarp’s practice is the maximum among all the difficulties of problems Polycarp solves during the $j^{th}$ day (i.e. if he solves problems with indices from $l$ to $r$ during a day, then the profit of the day is $max_{l \le i \le r} a_i$). The total profit of his practice is the sum of the profits over all $k$ days of his practice.<br>You want to help Polycarp to get the maximum possible total profit over all valid ways to solve problems. Your task is to distribute all $n$problems between $k$ days satisfying the conditions above in such a way, that the total profit is maximum.<br>For example, if $n=8,k=3$ and $a=[5,4,2,6,5,1,9,2]$, one of the possible distributions with maximum total profit is: $[5,4,2],[6,5],[1,9,2]$. Here the total profit equals $5+6+9=20$.  </p><h1 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h1><p>The first line of the input contains two integers $n$ and $k$ $(1 \le k \le n \le 2000)$ — the number of problems and the number of days, respectively.<br>The second line of the input contains $n$ integers $a_1,a_2,…,a_n$ $(1 \le a_i \le 2000)$ — difficulties of problems in Polycarp’s list, in the order they are placed in the list (i.e. in the order Polycarp will solve them).  </p><h1 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h1><p>In the first line of the output print the maximum possible total profit.<br>In the second line print exactly $k$ positive integers $t_1,t_2,…,t_k$ ($t_1+t_2+⋯+t_k$ must equal $n$), where $t_j$ means the number of problems Polycarp will solve during the $j^{th}$ day in order to achieve the maximum possible total profit of his practice.<br>If there are many possible answers, you may print any of them.  </p><h1 id="样本"><a href="#样本" class="headerlink" title="样本"></a>样本</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">8 3</span><br><span class="line">5 4 2 6 5 1 9 2</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">20</span><br><span class="line">3 2 3</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">5 1</span><br><span class="line">1 1 1 1 1</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">1</span><br><span class="line">5</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">4 2</span><br><span class="line">1 2000 2000 2</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">4000</span><br><span class="line">2 2</span><br></pre></td></tr></table></figure><h1 id="提示"><a href="#提示" class="headerlink" title="提示"></a>提示</h1><p>The first example is described in the problem statement.<br>In the second example there is only one possible distribution.<br>In the third example the best answer is to distribute problems in the following way: $[1,2000],[2000,2]$. The total profit of this distribution is $2000+2000=4000$.  </p><h1 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h1><p>这是一道简单的贪心，在输入的时候记录下前k个最大数。然后在顺序扫一遍序列，将这k个数找出来。每找到一个，就立即划分一组，找到最后一个时，如果后边还有没遍历完的。那么就将剩下的数并到最后一组。<br>简单说下代码，cnt[i]最开始表示i这个数在序列中出现了几次。第21-36行，minval存的是前k个最大数中最小的那个数。然后这个时候，ret就跟着计算出来了。并且这个时候cnt数组的含义就变了。cnt<a href="i&gt;=minval">i</a>含义是i这个数还剩几个没找到。这个找没找到是用在后边划分组用的。res数组是用来存储各组的数的个数的。  </p><h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstring&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> n, k;</span><br><span class="line"><span class="keyword">int</span> num[<span class="number">2010</span>];</span><br><span class="line"><span class="keyword">int</span> cnt[<span class="number">2010</span>];</span><br><span class="line"><span class="keyword">int</span> res[<span class="number">2010</span>];</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">"%d%d"</span>, &amp;n, &amp;k);</span><br><span class="line">    <span class="built_in">memset</span>(cnt, <span class="number">0</span>, <span class="keyword">sizeof</span> cnt);</span><br><span class="line">    <span class="built_in">memset</span>(res, <span class="number">0</span>, <span class="keyword">sizeof</span> res);</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; i++)&#123;</span><br><span class="line">        <span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;num[i]);</span><br><span class="line">        cnt[num[i]]++;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">int</span> minval = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">int</span> tmp = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">int</span> cur = <span class="number">2000</span>;</span><br><span class="line">    <span class="keyword">int</span> ret = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">while</span>(tmp &lt; k)&#123;</span><br><span class="line">        <span class="keyword">while</span>(!cnt[cur])</span><br><span class="line">            cur--;</span><br><span class="line">        tmp += cnt[cur];</span><br><span class="line">        <span class="keyword">if</span>(tmp &gt;= k)&#123;</span><br><span class="line">            cnt[cur] -= tmp-k;</span><br><span class="line">            minval = cur;</span><br><span class="line">        &#125;</span><br><span class="line">        ret += cur*cnt[cur];</span><br><span class="line">        cur--;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"%d\n"</span>, ret);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">int</span> rescur = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; i++)&#123;</span><br><span class="line">        <span class="keyword">if</span>(num[i] &gt;= minval &amp;&amp; cnt[num[i]])&#123;</span><br><span class="line">            cnt[num[i]]--;</span><br><span class="line">            res[rescur]++;</span><br><span class="line">            <span class="keyword">if</span>(rescur &lt; k<span class="number">-1</span>)</span><br><span class="line">                rescur++;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span>&#123;</span><br><span class="line">            res[rescur]++;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt;= rescur; i++)&#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"%d"</span>, res[i]);</span><br><span class="line">        i == rescur ? <span class="built_in">printf</span>(<span class="string">"\n"</span>) : <span class="built_in">printf</span>(<span class="string">" "</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;这是一道简单的贪心，在输入的时候记录下前k个最大数。然后在顺序扫一遍序列，将这k个数找出来。每找到一个，就立即划分一组，找到最后一个时，如果后边还有没遍历完的。那么就将剩下的数并到最后一组。  &lt;/p&gt;
+    
+    </summary>
+    
+      <category term="ACM" scheme="http://yunhao.space/categories/ACM/"/>
+    
+      <category term="贪心" scheme="http://yunhao.space/categories/ACM/%E8%B4%AA%E5%BF%83/"/>
+    
+    
+      <category term="ACM" scheme="http://yunhao.space/tags/ACM/"/>
+    
+      <category term="贪心" scheme="http://yunhao.space/tags/%E8%B4%AA%E5%BF%83/"/>
+    
+      <category term="CodeForces" scheme="http://yunhao.space/tags/CodeForces/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Hexo博客 GitHub仓库图床</title>
     <link href="http://yunhao.space/2018/07/18/hexo-blog-github-images-repository/"/>
     <id>http://yunhao.space/2018/07/18/hexo-blog-github-images-repository/</id>
     <published>2018-07-18T11:06:52.000Z</published>
-    <updated>2018-07-19T06:31:27.110Z</updated>
+    <updated>2018-07-19T06:42:41.321Z</updated>
     
     <content type="html"><![CDATA[<p>随着博客的写作，其实我们比较担心的问题就是GitHub对于单个项目来说的大小是有一定限制的。而写博客中有免不了放图片。图片这种东西真是非常的占地方。网上都说用七牛云、微博、或者是什么座图床。我看了看，好像是挺麻烦的。又得注册账号，又得导出外链的。我发现github有一个图片预览的功能。于是我想到了用github这个图片预览的功能做一个图床。创造一个仓库专门存图片，如果这个仓库存满了，再创建一个仓库就好了。每个仓库能存1G的东西，所以觉得还不错。下面说一下我的思路。  </p><a id="more"></a><h1 id="原项目结构"><a href="#原项目结构" class="headerlink" title="原项目结构"></a>原项目结构</h1><p>原来的项目结构是在<code>博客的项目目录</code>下的source文件夹下新建一个叫images的文件夹，文件夹下存图片。即<code>博客目录/source/images</code><br>可能有好多人最开始都跟我差不多的结构。我就是从这个结构开始改的。  </p><h1 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h1><p>这个就是GitHub图片预览的url<code>https://raw.githubusercontent.com/lmnsyunhao/blog-pica/master/acm-cf-963b-dfs/normal.png</code>，考虑到这个url太长，而且考虑到如果github之后更改这个url，那么很有可能所有的博文的图片链接都要修改。<br>我有了这样一个思路，我的图片链接先请求到我自己的服务器上，然后服务器重写url，301重定向到github。这样如果某一天github这个图片预览的url格式变了的话，直接改服务器那边的重写规则就好了。甚至如果以后不支持图片预览的话，也能再做打算。不用修改博文。<br>当然，如果你们懒得用服务器重定向了的话，直接把博文中的图片改成类似上边的那种url也行。<br>OK，开搞。  </p><h1 id="建立图片仓库"><a href="#建立图片仓库" class="headerlink" title="建立图片仓库"></a>建立图片仓库</h1><p>GitHub新建仓库<code>blog-pica</code>，如果这个仓库满了，我的下一个仓库名字就是<code>blog-picb</code>，我是这样定义的。<br>然后我在本地的博客项目下新建images文件夹，即<code>博客目录/images</code>。因为如果放到source文件夹下，在<code>hexo g</code>时候会在<code>博客目录/public</code>文件夹下生成对应的images文件夹，这样的话<code>hexo d</code>的时候还是会将图片上传。即，保证了图片不会在博客仓库出现<br>然后我修改<code>博客目录/.gitignore</code>文件，添加一行，内容是<code>/images/</code>，这样的话，就会将此文件夹忽略掉。从而保证图片只在图床仓库出现，不会在备份仓库出现。<br>然后将之前的那些图片拷贝到<code>博客目录/images</code>文件夹下，然后执行下面操作：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br><span class="line">git add .</span><br><span class="line">git commit -m &quot;images upload&quot;</span><br><span class="line">git remote add origin git@github.com:lmnsyunhao/blog-pica.git</span><br><span class="line">git push -u origin master</span><br></pre></td></tr></table></figure></p><p><code>博客目录/images</code>这个位置只是我放图片仓库的位置，或者说你们想放哪儿放哪儿，不一定要放在博客项目内。因为现在这个图片仓库和博客项目已经没关系了。<br>现在图片仓库已经建立好了，而且图片也已经上传到GitHub上了。  </p><h1 id="添加DNS解析"><a href="#添加DNS解析" class="headerlink" title="添加DNS解析"></a>添加DNS解析</h1><p>如果你没有域名的话，那么不用添加解析。继续看下一节。<br>我是在腾讯云托管的我的域名解析。所以去腾讯云添加一个解析记录。A类型记录，images.yunhao.space解析到自己的服务器IP地址。<br>如果不会添加解析，<a href="/2018/07/01/domain-name-parsing-setting-tutor/">域名解析配置教程</a>  </p><h1 id="修改博文图片地址"><a href="#修改博文图片地址" class="headerlink" title="修改博文图片地址"></a>修改博文图片地址</h1><p>这个比较简单，用Notepad++或者是sublime什么的，文件夹内搜索，比如搜<code>](/images/</code>这个，然后全部替换一下。具体怎么搜索，我就不管了。<br>反正就是做如下替换。将<code>[图](/images/folder/1.png)</code>替换成<code>[图](http://images.yunhao.space/pica/folder/1.png</code><br>如果没有域名的话，那么那个images.yunhao.space就要替换成你的服务器ip地址了。  </p><h1 id="配置nginx重写"><a href="#配置nginx重写" class="headerlink" title="配置nginx重写"></a>配置nginx重写</h1><p>我的服务器是Ubuntu16.04 Nginx。去自己的服务器上。进行如下操作：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd /etc/nginx/sites-available</span><br><span class="line">vim 301.yunhao.space.images.conf</span><br></pre></td></tr></table></figure></p><p>然后输入如下内容：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">server &#123;</span><br><span class="line">server_name images.yunhao.space;</span><br><span class="line">    location ~ \.png$ &#123;</span><br><span class="line">        rewrite ^/(pic[a-z])/(.*)$ http://raw.githubusercontent.com/lmnsyunhao/blog-$1/master/$2 permanent;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p><p>保存退出vim，然后执行下面命令：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cd ../sites-enabled</span><br><span class="line">ln -s /etc/nginx/sites-available/301.yunhao.space.images.conf images-redirection</span><br><span class="line">systemctl restart nginx.service</span><br></pre></td></tr></table></figure></p><p>这个时候应该就ok了。然后每次的时候，需要提前把图片push到仓库中才行。  </p><h1 id="仓库满了"><a href="#仓库满了" class="headerlink" title="仓库满了"></a>仓库满了</h1><p>如果某一天仓库满了的话，那么就在github上新建一个仓库<code>blog-picb</code>，然后将那个images文件夹删除，因为这个仓库满了，所以就把本地的删了，反正远程的也不收影响。然后再在同样的位置新建一个images的仓库，连上<code>blog-picb</code>这个新的仓库，然后继续往里面存图片就好了。<br>当然之后写作的时候博文中图片的url就要换成blog-picb了。  </p>]]></content>
     
@@ -37,6 +65,8 @@
       <category term="GitHub" scheme="http://yunhao.space/tags/GitHub/"/>
     
       <category term="Hexo" scheme="http://yunhao.space/tags/Hexo/"/>
+    
+      <category term="Nginx" scheme="http://yunhao.space/tags/Nginx/"/>
     
   </entry>
   
@@ -270,21 +300,21 @@
       <category term="域名" scheme="http://yunhao.space/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%9F%9F%E5%90%8D/"/>
     
     
-      <category term="服务器" scheme="http://yunhao.space/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
-    
       <category term="域名" scheme="http://yunhao.space/tags/%E5%9F%9F%E5%90%8D/"/>
     
       <category term="DNS" scheme="http://yunhao.space/tags/DNS/"/>
     
-      <category term="GitHub" scheme="http://yunhao.space/tags/GitHub/"/>
+      <category term="服务器" scheme="http://yunhao.space/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
     
-      <category term="Hexo" scheme="http://yunhao.space/tags/Hexo/"/>
+      <category term="GitHub" scheme="http://yunhao.space/tags/GitHub/"/>
     
       <category term="GitHub Pages" scheme="http://yunhao.space/tags/GitHub-Pages/"/>
     
       <category term="GoDaddy" scheme="http://yunhao.space/tags/GoDaddy/"/>
     
       <category term="腾讯云" scheme="http://yunhao.space/tags/%E8%85%BE%E8%AE%AF%E4%BA%91/"/>
+    
+      <category term="Hexo" scheme="http://yunhao.space/tags/Hexo/"/>
     
       <category term="Nginx" scheme="http://yunhao.space/tags/Nginx/"/>
     
@@ -432,9 +462,9 @@
     
       <category term="Hexo" scheme="http://yunhao.space/tags/Hexo/"/>
     
-      <category term="LeanCloud" scheme="http://yunhao.space/tags/LeanCloud/"/>
-    
       <category term="NexT" scheme="http://yunhao.space/tags/NexT/"/>
+    
+      <category term="LeanCloud" scheme="http://yunhao.space/tags/LeanCloud/"/>
     
   </entry>
   
@@ -521,34 +551,6 @@
       <category term="OpenSSH" scheme="http://yunhao.space/tags/OpenSSH/"/>
     
       <category term="CMD" scheme="http://yunhao.space/tags/CMD/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Windows10 生成 SSH密钥 GitHub配置</title>
-    <link href="http://yunhao.space/2018/06/19/windows-github-ssh-key/"/>
-    <id>http://yunhao.space/2018/06/19/windows-github-ssh-key/</id>
-    <published>2018-06-19T08:30:35.000Z</published>
-    <updated>2018-07-03T11:39:19.589Z</updated>
-    
-    <content type="html"><![CDATA[<p>很多地方都需要用到SSH服务，本文简述SSH技术，如何生成并使用SSH密钥，GitHub SSH连接。  </p><a id="more"></a><h1 id="SSH的简介"><a href="#SSH的简介" class="headerlink" title="SSH的简介"></a>SSH的简介</h1><p>SSH技术是指通信的双方A，B，分别有自己的公钥和私钥，公钥负责加密信息，私钥负责解密信息。设定是这样的A公钥加密的信息，只能通过A的私钥来解密，不能通过其他的私钥来解密，而且通过A的公钥很难推断出A的私钥。<br>通信开始前，双方得知对方的公钥，A给B发送数据，用B的公钥来加密。B给A发送数据用A的公钥来加密。<br>此项技术能够保证通信之间的安全性。即使信息被第三方获取，也无法解密。避免了信息被窃取，篡改，和冒充的情况。  </p><h1 id="生成密钥"><a href="#生成密钥" class="headerlink" title="生成密钥"></a>生成密钥</h1><p>首先看看，C盘用户目录(例如：C:\Users\yunhao)下，有没有.ssh这个文件夹。如果有就不用生成，没有就生成一下。或者.ssh文件夹里面没有东西的话也需要生成<br>Windows环境下生成SSH密钥和Ubuntu下生成密钥的方法几乎相仿。windows下生成可以借助GitBash来生成。在某个文件夹下右键，然后打开GitBash。如果不想用GitBash来生成key的话。那么请看本文OpenSSH服务一节<br>输入<code>ssh-keygen</code>回车。生成过程中，会有提示，然后会输入两次密码，这个密码是在使用ssh时候用的，如果不想设置密码的话，就直接回车就好了。  </p><h1 id="GitHub上配置"><a href="#GitHub上配置" class="headerlink" title="GitHub上配置"></a>GitHub上配置</h1><p>登陆Github网站，找到个人设置界面。左侧有 SSH and GPG keys 类似字样的选项，点击。然后新建一个 SSH 的 key， 把<code>C:\Users\username\.ssh\id_rsa.pub</code>中的内容复制过去。然后保存。之后就OK了。  </p><h1 id="OpenSSH服务"><a href="#OpenSSH服务" class="headerlink" title="OpenSSH服务"></a>OpenSSH服务</h1><p>还有一种方法能够生成密钥。就是开启Windows的OpenSSH服务。之后使用cmd输入ssh-keygen命令来生成。<br>开启方法如下：<br><a href="/2018/06/19/windows-openssh-and-ssh-remote-connection/">开启OpenSSH方法</a></p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;很多地方都需要用到SSH服务，本文简述SSH技术，如何生成并使用SSH密钥，GitHub SSH连接。  &lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Windows" scheme="http://yunhao.space/categories/Windows/"/>
-    
-    
-      <category term="Windows" scheme="http://yunhao.space/tags/Windows/"/>
-    
-      <category term="Git" scheme="http://yunhao.space/tags/Git/"/>
-    
-      <category term="GitHub" scheme="http://yunhao.space/tags/GitHub/"/>
-    
-      <category term="OpenSSH" scheme="http://yunhao.space/tags/OpenSSH/"/>
     
   </entry>
   
