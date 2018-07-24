@@ -1134,9 +1134,9 @@ pre .javascript .function {
   display: inline-block;
   vertical-align: top;
   line-height: 36px;
-  font-size: 26px;
+  font-size: 20px;
   font-weight: normal;
-  font-family: 'STXingkai', 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: 'SignaritaZhaiRhianne', 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
 }
 .site-subtitle {
   margin-top: 10px;
@@ -1968,7 +1968,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #22ffdf;
+  background: #ffd6ee;
 }
 .links-of-blogroll {
   font-size: 13px;

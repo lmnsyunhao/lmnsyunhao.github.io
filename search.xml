@@ -35,8 +35,8 @@
         <category>Git</category>
       </categories>
       <tags>
-        <tag>Git</tag>
         <tag>GitHub</tag>
+        <tag>Git</tag>
       </tags>
   </entry>
   <entry>
@@ -74,8 +74,8 @@
         <category>系统安装</category>
       </categories>
       <tags>
-        <tag>Windows</tag>
         <tag>系统安装</tag>
+        <tag>Windows</tag>
         <tag>UEFI</tag>
         <tag>Legacy</tag>
       </tags>
@@ -89,8 +89,8 @@
       </categories>
       <tags>
         <tag>UltraISO</tag>
-        <tag>系统安装</tag>
         <tag>Ubuntu</tag>
+        <tag>系统安装</tag>
       </tags>
   </entry>
   <entry>
@@ -102,8 +102,8 @@
       </categories>
       <tags>
         <tag>UltraISO</tag>
-        <tag>Windows</tag>
         <tag>系统安装</tag>
+        <tag>Windows</tag>
       </tags>
   </entry>
   <entry>
@@ -141,9 +141,9 @@
         <category>域名</category>
       </categories>
       <tags>
+        <tag>服务器</tag>
         <tag>域名</tag>
         <tag>DNS</tag>
-        <tag>服务器</tag>
         <tag>GitHub</tag>
         <tag>GitHub Pages</tag>
         <tag>GoDaddy</tag>
@@ -197,8 +197,8 @@
         <category>Git</category>
       </categories>
       <tags>
-        <tag>Git</tag>
         <tag>Hexo</tag>
+        <tag>Git</tag>
       </tags>
   </entry>
   <entry>
@@ -234,9 +234,9 @@
         <category>Hexo</category>
       </categories>
       <tags>
-        <tag>Git</tag>
         <tag>GitHub</tag>
         <tag>Hexo</tag>
+        <tag>Git</tag>
       </tags>
   </entry>
   <entry>
@@ -278,8 +278,8 @@
       </categories>
       <tags>
         <tag>Windows</tag>
-        <tag>Git</tag>
         <tag>GitHub</tag>
+        <tag>Git</tag>
         <tag>OpenSSH</tag>
       </tags>
   </entry>
@@ -510,9 +510,9 @@
       </categories>
       <tags>
         <tag>ACM</tag>
+        <tag>HDU</tag>
         <tag>组合数学</tag>
         <tag>母函数</tag>
-        <tag>HDU</tag>
       </tags>
   </entry>
   <entry>
@@ -553,8 +553,8 @@
         <category>系统安装</category>
       </categories>
       <tags>
-        <tag>Windows</tag>
         <tag>系统安装</tag>
+        <tag>Windows</tag>
       </tags>
   </entry>
   <entry>
@@ -758,8 +758,8 @@
       </categories>
       <tags>
         <tag>Ubuntu</tag>
-        <tag>Git</tag>
         <tag>GitHub</tag>
+        <tag>Git</tag>
         <tag>OpenSSH</tag>
       </tags>
   </entry>
@@ -773,9 +773,9 @@
       <tags>
         <tag>域名</tag>
         <tag>DNS</tag>
-        <tag>Git</tag>
         <tag>GitHub</tag>
         <tag>Hexo</tag>
+        <tag>Git</tag>
       </tags>
   </entry>
   <entry>
