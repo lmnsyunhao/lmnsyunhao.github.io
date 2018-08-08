@@ -141,7 +141,7 @@
 
 
   <meta name="description" content="授人以鱼不如授人以渔，我给你一个Ladder，不如教你配个Ladder。本文包括配IPv4，IPv6连接VPS，IPv6+Proxifier免校园网流量。然后还有过程中遇到的一些奇怪问题。mark一下。">
-<meta name="keywords" content="Ladder,Proxifier,VPS,服务器,代理,DigitalOcean">
+<meta name="keywords" content="Ladder,Proxifier,VPS,服务器,代理,DigitalOcean,SwitchyOmega">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Do U Need A Ladder ?">
 <meta property="og:url" content="http://yunhao.space/2018/06/20/do-you-need-a-ladder/index.html">
@@ -156,7 +156,13 @@
 <meta property="og:image" content="http://images.yunhao.space/pica/do-you-need-a-ladder/5.png">
 <meta property="og:image" content="http://images.yunhao.space/pica/do-you-need-a-ladder/6.png">
 <meta property="og:image" content="http://images.yunhao.space/pica/do-you-need-a-ladder/7.png">
-<meta property="og:updated_time" content="2018-07-18T10:20:50.699Z">
+<meta property="og:image" content="http://images.yunhao.space/pica/do-you-need-a-ladder/8.png">
+<meta property="og:image" content="http://images.yunhao.space/pica/do-you-need-a-ladder/9.png">
+<meta property="og:image" content="http://images.yunhao.space/pica/do-you-need-a-ladder/10.png">
+<meta property="og:image" content="http://images.yunhao.space/pica/do-you-need-a-ladder/11.png">
+<meta property="og:image" content="http://images.yunhao.space/pica/do-you-need-a-ladder/12.png">
+<meta property="og:image" content="http://images.yunhao.space/pica/do-you-need-a-ladder/13.png">
+<meta property="og:updated_time" content="2018-08-08T04:52:47.056Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Do U Need A Ladder ?">
 <meta name="twitter:description" content="授人以鱼不如授人以渔，我给你一个Ladder，不如教你配个Ladder。本文包括配IPv4，IPv6连接VPS，IPv6+Proxifier免校园网流量。然后还有过程中遇到的一些奇怪问题。mark一下。">
@@ -290,7 +296,7 @@
           
           <li class="menu-item menu-item-tags">
     <a href="/tags/" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />标签<span class="badge">60</span></a>
+      <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />标签<span class="badge">61</span></a>
   </li>
         
         
@@ -458,7 +464,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2018-07-18 18:20:50" itemprop="dateModified" datetime="2018-07-18T18:20:50+08:00">2018-07-18</time>
+                <time title="修改时间：2018-08-08 12:52:47" itemprop="dateModified" datetime="2018-08-08T12:52:47+08:00">2018-08-08</time>
               
             
           </span>
@@ -521,7 +527,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">4.5k</span>
+                <span title="本文字数">6.4k</span>
               
 
               
@@ -535,7 +541,7 @@
                 
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
-                <span title="阅读时长">4 分钟</span>
+                <span title="阅读时长">6 分钟</span>
               
             </div>
           
@@ -616,15 +622,15 @@
 <p>大家在设置的时候最好不要弄错了，就想例子中的那样。一个空格最好都不要错，否则容易出莫名其妙的问题。  </p>
 <h1 id="配置IPv6连接"><a href="#配置IPv6连接" class="headerlink" title="配置IPv6连接"></a>配置IPv6连接</h1><p>在服务器端操作<br>如果你的服务器有ipv6的公网地址，那么你可以通过ipv6来连接你的VPS。那么配置文件中就如下填写：<br><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">"server"</span>:<span class="string">"::"</span>,</span><br><span class="line">    <span class="attr">"server_port"</span>:<span class="number">8388</span>,</span><br><span class="line">    <span class="attr">"local_address"</span>: <span class="string">"127.0.0.1"</span>,</span><br><span class="line">    <span class="attr">"local_port"</span>:<span class="number">1080</span>,</span><br><span class="line">    <span class="attr">"password"</span>:<span class="string">"自己设置的密码"</span>,</span><br><span class="line">    <span class="attr">"timeout"</span>:<span class="number">300</span>,</span><br><span class="line">    <span class="attr">"method"</span>:<span class="string">"aes-256-cfb"</span>,</span><br><span class="line">    <span class="attr">"fast_open"</span>: <span class="literal">false</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <p>就是server字段填::，这么填以后，你可以使用ipv6连接，也可以使用ipv4连接，亲测。  </p>
-<h1 id="客户端配置"><a href="#客户端配置" class="headerlink" title="客户端配置"></a>客户端配置</h1><p>在客户端操作<br>客户端点选“添加服务器”，填写“地址”、“端口”、“加密方法”和“密码”即可。其中“端口”、“加密方法”和“密码”与前面设置的服务器配置相同。<br>如果服务器支持IPv4和IPv6双栈，那么客户端实际可以配置两个服务器参数，其仅有“地址”不相同。对于IPv4，填写服务器的IPv4地址；对于IPv6，填写服务器的IPv6地址（末尾不用加/64，也不用写[]）  </p>
 <h1 id="启动ssserver服务"><a href="#启动ssserver服务" class="headerlink" title="启动ssserver服务"></a>启动ssserver服务</h1><p>在服务器端操作。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssserver -c /etc/暗影袜子们.json</span><br></pre></td></tr></table></figure></p>
 <p>输入命令就能够开启ssserver服务了<br>上面的命令是工作在前台的进程。如果想把ssserver放到后台工作。那么用下面的命令启动和停止。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ssserver -c /etc/暗影袜子们.json -d start</span><br><span class="line">ssserver -c /etc/暗影袜子们.json -d stop</span><br></pre></td></tr></table></figure></p>
 <p>如果你发现你的ssserver不支持-d命令的话，那么就是你安装暗影袜子们时候有问题。重装吧就。  </p>
+<h1 id="客户端配置"><a href="#客户端配置" class="headerlink" title="客户端配置"></a>客户端配置</h1><p>在客户端操作<br>windows的客户端点选“添加服务器”，填写“地址”、“端口”、“加密方法”和“密码”即可。其中“端口”、“加密方法”和“密码”与前面设置的服务器配置相同。<br>如果服务器支持IPv4和IPv6双栈，那么客户端实际可以配置两个服务器参数，其仅有“地址”不相同。对于IPv4，填写服务器的IPv4地址；对于IPv6，填写服务器的IPv6地址（末尾不用加/64，也不用写[]）<br>对于Ubuntu的配置，请看本文<code>Ubuntu16.04 SS客户端 SwitchyOmega配置</code>一节。</p>
 <h1 id="测试连通性"><a href="#测试连通性" class="headerlink" title="测试连通性"></a>测试连通性</h1><p>为了保险起见，客户端选择IPv4连接服务器。<br>解释一下<code>系统代理模式</code>中的<code>全局模式</code>和<code>PAC模式</code>，PAC就是一个规则，定义了有哪些网站在国内，有哪些网站在国外。如果选择了全局模式，不管访问国内还是国外的网站，都会走VPS代理；而PAC模式，只有在国外的走代理，国内的不走。但是PAC规则更新慢的话，有时候还得调成全局模式。全局模式访问国内网站，比PAC访问国内网站要慢一点，因为走了代理。<br>客户端设置好之后，看是不是能够正常的登上梯子（客户端登陆<code>youtube.com</code>）。如果正常，那么就成功了。<br>设置客户端中服务器为IPv6地址的，同样访问上述网站，若都能很快正常打开，则成功。<br>可以测试一下支不支持IPv6，访问网站<a href="https://test-ipv6.com/" target="_blank" rel="noopener">IPv6测试</a></p>
-<h1 id="配置systemd开机启动"><a href="#配置systemd开机启动" class="headerlink" title="配置systemd开机启动"></a>配置systemd开机启动</h1><p>在服务器端操作<br>systemd配置文件一般存在于<code>/lib/systemd/system/</code>和<code>/etc/systemd/system/</code>这两个文件夹下，我们需要在<code>/lib/systemd/system</code>下创建配置文件。如下：如果创建过程中有权限问题，自觉用<code>sudo</code><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> /lib/systemd/system</span><br><span class="line">vim ssserver.service</span><br></pre></td></tr></table></figure></p>
+<h1 id="ssserver配置systemd开机启动"><a href="#ssserver配置systemd开机启动" class="headerlink" title="ssserver配置systemd开机启动"></a>ssserver配置systemd开机启动</h1><p>在服务器端操作<br>systemd配置文件一般存在于<code>/lib/systemd/system/</code>和<code>/etc/systemd/system/</code>这两个文件夹下，我们需要在<code>/lib/systemd/system</code>下创建配置文件。如下：如果创建过程中有权限问题，自觉用<code>sudo</code><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> /lib/systemd/system</span><br><span class="line">vim ssserver.service</span><br></pre></td></tr></table></figure></p>
 <p>文件中写如下内容<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"># /lib/systemd/system/ssserver.service</span><br><span class="line"></span><br><span class="line">[Unit]</span><br><span class="line">Description=ssserver</span><br><span class="line">After=network.target</span><br><span class="line"></span><br><span class="line">[Service]</span><br><span class="line">ExecStart=/usr/local/bin/ssserver -c /etc/暗影袜子们.json</span><br><span class="line">Restart=on-failure</span><br><span class="line"></span><br><span class="line">[Install]</span><br><span class="line">WantedBy=multi-user.target</span><br></pre></td></tr></table></figure></p>
 <p>创建了文件之后，需要重新加载配置一下。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl daemon-reload</span><br></pre></td></tr></table></figure></p>
-<p>然后试试把刚才创建的ssserver.service启动<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl start ssserver.service</span><br></pre></td></tr></table></figure></p>
+<p>确保ssserver处于关闭状态，然后试试把刚才创建的ssserver.service启动<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl start ssserver.service</span><br></pre></td></tr></table></figure></p>
 <p>如果没报任何信息的话，查看一下状态。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl status ssserver.service</span><br></pre></td></tr></table></figure></p>
 <p>如果显示running的话，那么就是配置成功了，然后设置一下开机启动<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl <span class="built_in">enable</span> ssserver.service</span><br></pre></td></tr></table></figure></p>
 <p>到这里，已经达到目的了，下面是一些有意思的操作，感兴趣的可以看一下。不感兴趣的不看也ok。  </p>
@@ -638,6 +644,15 @@
 <p>上面结果应该等于fq。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">lsmod | grep bbr</span><br></pre></td></tr></table></figure></p>
 <p>上面结果中，看看有没有tcp_bbr，说明已经启动。  </p>
 <h1 id="过了两天"><a href="#过了两天" class="headerlink" title="过了两天"></a>过了两天</h1><p>我保证我这两天，没动服务器，也没开电脑。然后就出现了一个状况。<br>ipv6可以连上服务器，但是ipv4死活连不上服务器。经过一番排查，我感觉是服务器那边的问题。然后，于此同时我用ssh竟然没法连接DigitalOcean的服务器了。闹心。<br>我这个DigitalOcean最开始新建Droplet的时候，没有选ssh。不过，最开始的时候是能够用ssh连的，然后过了两天就连接超时，只能通过网页端的console连接。<br>我查了不少教程又看了官方文档。并不会解决，然后我将droplet的系统重装了。然后依旧是这个问题。<br>然后，我就把这个droplet删了。新建了一个droplet，新建时候上传了ssh公钥，并选择了对应的公钥。然后，当然ssh的连接超时的问题就解决了。<br>然后照着我上边说的又走了一遍，ipv4连不上的问题也解决了。  </p>
+<h1 id="Ubuntu16-04-SS客户端-SwitchyOmega配置"><a href="#Ubuntu16-04-SS客户端-SwitchyOmega配置" class="headerlink" title="Ubuntu16.04 SS客户端 SwitchyOmega配置"></a>Ubuntu16.04 SS客户端 SwitchyOmega配置</h1><p>这里说下Ubuntu配置，Ubuntu的配置相对较麻烦。<br>首先需要在客户端安装暗影袜子们。安装方式与上面相似。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get update</span><br><span class="line">sudo apt-get install python-pip</span><br><span class="line">pip install --upgrade pip</span><br><span class="line">pip install 暗影袜子们</span><br></pre></td></tr></table></figure></p>
+<p>当然，如果出现pip无法安装的问题，请看上面的那节，同样解决一下。<br>安完之后，在<code>/etc</code>目录下新建一个<code>暗影袜子们.json</code>的文件。文件中如下填写：<br><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">"server"</span>:<span class="string">"上面配好的服务器的ip"</span>,</span><br><span class="line">    <span class="attr">"server_port"</span>:<span class="number">8388</span>,</span><br><span class="line">    <span class="attr">"local_address"</span>:<span class="string">"127.0.0.1"</span>,</span><br><span class="line">    <span class="attr">"local_port"</span>:<span class="number">1080</span>,</span><br><span class="line">    <span class="attr">"password"</span>:<span class="string">"自己设置的密码"</span>,</span><br><span class="line">    <span class="attr">"timeout"</span>:<span class="number">300</span>,</span><br><span class="line">    <span class="attr">"method"</span>:<span class="string">"aes-256-cfb"</span>,</span><br><span class="line">    <span class="attr">"fast_open"</span>:<span class="literal">false</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>其实这个文件和上面的那个配置文件好像一样。然后，启动下看看能否成功启动<code>sslocal -c /etc/暗影袜子们.json</code>，如果能够正常启动，那么客户端这边儿就和服务器连上了。但是打开chrome，还是没法出去，比如油管网。这个时候，我们还需要配一下浏览器的代理。<br>我以chrome浏览器为例。讲解一下配置。有个东西叫做，<a href="https://www.switchyomega.com/download/" target="_blank" rel="noopener">SwitchyOmega</a>，点击链接下载，如下<br><img src="http://images.yunhao.space/pica/do-you-need-a-ladder/8.png" alt="SwitchyOmega"><br>下载了之后应该是一个以crx后缀的文件。在浏览器的地址栏输入：<code>chrome://extensions</code>，将刚才下载的crx文件拖动到这里，会提示安装。如下<br><img src="http://images.yunhao.space/pica/do-you-need-a-ladder/9.png" alt="安装"><br>然后，等待安装成功会有提示，打开SwitchyOmega，配置一下代理。点击左侧<code>新建情景模式</code>，弹出对话框。<code>名称</code>随便起，<code>类型</code>选代理服务器，然后点击<code>创建</code>，如下图<br><img src="http://images.yunhao.space/pica/do-you-need-a-ladder/10.png" alt="新建情景模式"><br>然后点击新建的情景模式，<code>代理协议</code>选择SOCKS5，<code>代理服务器</code>填写127.0.0.1，<code>代理端口</code>填写1080。然后点击<code>应用选项</code><br><img src="http://images.yunhao.space/pica/do-you-need-a-ladder/11.png" alt="设置情景模式"><br>然后再点击左侧的<code>auto switch</code>然后，勾选规则列表规则，后边选SS，就是你刚才配的情景模式，默认情景模式选择直接连接，规则列表格式选择AutoProxy规则列表地址填写<code>https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt</code>，然后点击立即更新情景模式。然后点击应用选项。如下图：<br><img src="http://images.yunhao.space/pica/do-you-need-a-ladder/12.png" alt="设置情景模式"><br>这个时候再切换到<code>auto switch</code>就好了。访问一下<code>youtube.com</code>，应该就能成功了。<br><img src="http://images.yunhao.space/pica/do-you-need-a-ladder/13.png" alt="auto switch"><br>之后再配置一下sslocal的开机子启动，请见<code>sslocal配置systemd开机启动</code>一节。  </p>
+<h1 id="sslocal配置systemd开机启动"><a href="#sslocal配置systemd开机启动" class="headerlink" title="sslocal配置systemd开机启动"></a>sslocal配置systemd开机启动</h1><p>在服务器端操作<br>systemd配置文件一般存在于<code>/lib/systemd/system/</code>和<code>/etc/systemd/system/</code>这两个文件夹下，我们需要在<code>/etc/systemd/system</code>下创建配置文件。如下：如果创建过程中有权限问题，自觉用<code>sudo</code><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> /etc/systemd/system</span><br><span class="line">vim sslocal.service</span><br></pre></td></tr></table></figure></p>
+<p>文件中写如下内容<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"># /lib/systemd/system/sslocal.service</span><br><span class="line"></span><br><span class="line">[Unit]</span><br><span class="line">Description=sslocal</span><br><span class="line">After=network.target</span><br><span class="line"></span><br><span class="line">[Service]</span><br><span class="line">ExecStart=/usr/local/bin/sslocal -c /etc/暗影袜子们.json</span><br><span class="line">ExecStop=/bin/kill -s TERM $MAINPID</span><br><span class="line">Restart=on-failure</span><br><span class="line"></span><br><span class="line">[Install]</span><br><span class="line">WantedBy=multi-user.target</span><br></pre></td></tr></table></figure></p>
+<p>创建了文件之后，需要重新加载配置一下。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl daemon-reload</span><br></pre></td></tr></table></figure></p>
+<p>确保sslocal现在处于关闭状态，然后试试把刚才创建的sslocal.service启动<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl start sslocal.service</span><br></pre></td></tr></table></figure></p>
+<p>如果没报任何信息的话，查看一下状态。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl status sslocal.service</span><br></pre></td></tr></table></figure></p>
+<p>如果显示running的话，那么就是配置成功了，然后设置一下开机启动<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl <span class="built_in">enable</span> sslocal.service</span><br></pre></td></tr></table></figure></p>
 
       
     </div>
@@ -683,6 +698,8 @@
             <a href="/tags/代理/" rel="tag"># 代理</a>
           
             <a href="/tags/DigitalOcean/" rel="tag"># DigitalOcean</a>
+          
+            <a href="/tags/SwitchyOmega/" rel="tag"># SwitchyOmega</a>
           
         </div>
       
@@ -981,7 +998,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">60</span>
+                      
+                    
+                    <span class="site-state-item-count">61</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
@@ -1133,7 +1152,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#映射"><span class="nav-number">1.</span> <span class="nav-text">映射</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#安装SS"><span class="nav-number">2.</span> <span class="nav-text">安装SS</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#pip无法安装的问题"><span class="nav-number">3.</span> <span class="nav-text">pip无法安装的问题</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#配置IPv4连接"><span class="nav-number">4.</span> <span class="nav-text">配置IPv4连接</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#配置IPv6连接"><span class="nav-number">5.</span> <span class="nav-text">配置IPv6连接</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#客户端配置"><span class="nav-number">6.</span> <span class="nav-text">客户端配置</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#启动ssserver服务"><span class="nav-number">7.</span> <span class="nav-text">启动ssserver服务</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#测试连通性"><span class="nav-number">8.</span> <span class="nav-text">测试连通性</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#配置systemd开机启动"><span class="nav-number">9.</span> <span class="nav-text">配置systemd开机启动</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#配置全局代理-Proxifier"><span class="nav-number">10.</span> <span class="nav-text">配置全局代理+Proxifier</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Google-BBR-加速"><span class="nav-number">11.</span> <span class="nav-text">Google BBR 加速</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#过了两天"><span class="nav-number">12.</span> <span class="nav-text">过了两天</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#映射"><span class="nav-number">1.</span> <span class="nav-text">映射</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#安装SS"><span class="nav-number">2.</span> <span class="nav-text">安装SS</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#pip无法安装的问题"><span class="nav-number">3.</span> <span class="nav-text">pip无法安装的问题</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#配置IPv4连接"><span class="nav-number">4.</span> <span class="nav-text">配置IPv4连接</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#配置IPv6连接"><span class="nav-number">5.</span> <span class="nav-text">配置IPv6连接</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#启动ssserver服务"><span class="nav-number">6.</span> <span class="nav-text">启动ssserver服务</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#客户端配置"><span class="nav-number">7.</span> <span class="nav-text">客户端配置</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#测试连通性"><span class="nav-number">8.</span> <span class="nav-text">测试连通性</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#ssserver配置systemd开机启动"><span class="nav-number">9.</span> <span class="nav-text">ssserver配置systemd开机启动</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#配置全局代理-Proxifier"><span class="nav-number">10.</span> <span class="nav-text">配置全局代理+Proxifier</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Google-BBR-加速"><span class="nav-number">11.</span> <span class="nav-text">Google BBR 加速</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#过了两天"><span class="nav-number">12.</span> <span class="nav-text">过了两天</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Ubuntu16-04-SS客户端-SwitchyOmega配置"><span class="nav-number">13.</span> <span class="nav-text">Ubuntu16.04 SS客户端 SwitchyOmega配置</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#sslocal配置systemd开机启动"><span class="nav-number">14.</span> <span class="nav-text">sslocal配置systemd开机启动</span></a></li></ol></div>
             
 
           </div>
@@ -1172,7 +1191,7 @@
       <i class="fa fa-area-chart"></i>
     </span>
     
-    <span title="站点总字数">158k</span>
+    <span title="站点总字数">160k</span>
   
 
   
@@ -1181,7 +1200,7 @@
       <i class="fa fa-coffee"></i>
     </span>
     
-    <span title="站点阅读时长">2:23</span>
+    <span title="站点阅读时长">2:25</span>
   
 </div>
 
