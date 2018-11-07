@@ -4,6 +4,410 @@
 
     
   <url>
+    <loc>http://yunhao.space/2018/06/07/acm-cf-888b-simple/</loc>
+    <lastmod>2018-11-07T08:09:29.464Z</lastmod>
+    <data>
+        <display>
+        <title>ACM CodeForces 888 B 题解 基础题</title>
+        <pubTime>2018-06-07T08:15:16.000Z</pubTime>
+        
+        <tag>ACM</tag>
+         
+        <tag>CodeForces</tag>
+         
+        <tag>基础题</tag>
+         
+         
+           
+             
+              <breadCrumb title="ACM" url="http://yunhao.space/categories/ACM/"/>
+          
+             
+              <breadCrumb title="基础题" url="http://yunhao.space/categories/ACM/%E5%9F%BA%E7%A1%80%E9%A2%98/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yunhao.space/2018/06/07/acm-cf-873b-simple/</loc>
+    <lastmod>2018-11-07T08:08:36.137Z</lastmod>
+    <data>
+        <display>
+        <title>ACM CodeForces 873 B 题解 前缀和</title>
+        <pubTime>2018-06-07T15:49:23.000Z</pubTime>
+        
+        <tag>ACM</tag>
+         
+        <tag>CodeForces</tag>
+         
+        <tag>基础题</tag>
+         
+         
+           
+             
+              <breadCrumb title="ACM" url="http://yunhao.space/categories/ACM/"/>
+          
+             
+              <breadCrumb title="基础题" url="http://yunhao.space/categories/ACM/%E5%9F%BA%E7%A1%80%E9%A2%98/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yunhao.space/2018/06/11/acm-poj-1651-dp-on-segment/</loc>
+    <lastmod>2018-11-07T08:08:08.927Z</lastmod>
+    <data>
+        <display>
+        <title>ACM POJ 1651 题解 区间DP</title>
+        <pubTime>2018-06-11T05:33:38.000Z</pubTime>
+        
+        <tag>ACM</tag>
+         
+        <tag>DP</tag>
+         
+        <tag>区间DP</tag>
+         
+        <tag>POJ</tag>
+         
+         
+           
+             
+              <breadCrumb title="ACM" url="http://yunhao.space/categories/ACM/"/>
+          
+             
+              <breadCrumb title="DP" url="http://yunhao.space/categories/ACM/DP/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yunhao.space/2018/06/10/acm-poj-2955-dp-on-segment/</loc>
+    <lastmod>2018-11-07T08:08:03.489Z</lastmod>
+    <data>
+        <display>
+        <title>ACM POJ 2955 题解 区间DP</title>
+        <pubTime>2018-06-10T15:57:07.000Z</pubTime>
+        
+        <tag>ACM</tag>
+         
+        <tag>DP</tag>
+         
+        <tag>区间DP</tag>
+         
+        <tag>POJ</tag>
+         
+         
+           
+             
+              <breadCrumb title="ACM" url="http://yunhao.space/categories/ACM/"/>
+          
+             
+              <breadCrumb title="DP" url="http://yunhao.space/categories/ACM/DP/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yunhao.space/2018/06/10/acm-poj-2342-dp-on-tree/</loc>
+    <lastmod>2018-11-07T08:07:59.552Z</lastmod>
+    <data>
+        <display>
+        <title>ACM POJ 2342 题解 树形DP</title>
+        <pubTime>2018-06-09T16:31:47.000Z</pubTime>
+        
+        <tag>ACM</tag>
+         
+        <tag>DP</tag>
+         
+        <tag>POJ</tag>
+         
+        <tag>树形DP</tag>
+         
+         
+           
+             
+              <breadCrumb title="ACM" url="http://yunhao.space/categories/ACM/"/>
+          
+             
+              <breadCrumb title="DP" url="http://yunhao.space/categories/ACM/DP/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yunhao.space/2018/06/14/acm-lightoj-1422-dp-on-segment/</loc>
+    <lastmod>2018-11-07T08:07:52.389Z</lastmod>
+    <data>
+        <display>
+        <title>ACM LightOJ 1422 题解 区间DP</title>
+        <pubTime>2018-06-14T07:19:43.000Z</pubTime>
+        
+        <tag>ACM</tag>
+         
+        <tag>DP</tag>
+         
+        <tag>区间DP</tag>
+         
+        <tag>LightOJ</tag>
+         
+         
+           
+             
+              <breadCrumb title="ACM" url="http://yunhao.space/categories/ACM/"/>
+          
+             
+              <breadCrumb title="DP" url="http://yunhao.space/categories/ACM/DP/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yunhao.space/2018/06/10/acm-hdu-4745-dp-on-segment/</loc>
+    <lastmod>2018-11-07T08:07:48.701Z</lastmod>
+    <data>
+        <display>
+        <title>ACM HDU 4745 题解 区间DP</title>
+        <pubTime>2018-06-10T12:47:42.000Z</pubTime>
+        
+        <tag>ACM</tag>
+         
+        <tag>DP</tag>
+         
+        <tag>HDU</tag>
+         
+        <tag>区间DP</tag>
+         
+         
+           
+             
+              <breadCrumb title="ACM" url="http://yunhao.space/categories/ACM/"/>
+          
+             
+              <breadCrumb title="DP" url="http://yunhao.space/categories/ACM/DP/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yunhao.space/2018/06/10/acm-hdu-4632-dp-on-segment/</loc>
+    <lastmod>2018-11-07T08:07:45.226Z</lastmod>
+    <data>
+        <display>
+        <title>ACM HDU 4632 题解 区间DP</title>
+        <pubTime>2018-06-10T06:31:43.000Z</pubTime>
+        
+        <tag>ACM</tag>
+         
+        <tag>DP</tag>
+         
+        <tag>HDU</tag>
+         
+        <tag>区间DP</tag>
+         
+         
+           
+             
+              <breadCrumb title="ACM" url="http://yunhao.space/categories/ACM/"/>
+          
+             
+              <breadCrumb title="DP" url="http://yunhao.space/categories/ACM/DP/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yunhao.space/2018/06/05/acm-hdu-2844-dp/</loc>
+    <lastmod>2018-11-07T08:07:40.814Z</lastmod>
+    <data>
+        <display>
+        <title>ACM HDU 2844 题解 多重背包</title>
+        <pubTime>2018-06-05T04:53:49.000Z</pubTime>
+        
+        <tag>ACM</tag>
+         
+        <tag>DP</tag>
+         
+        <tag>HDU</tag>
+         
+        <tag>背包问题</tag>
+         
+         
+           
+             
+              <breadCrumb title="ACM" url="http://yunhao.space/categories/ACM/"/>
+          
+             
+              <breadCrumb title="DP" url="http://yunhao.space/categories/ACM/DP/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yunhao.space/2018/06/17/acm-hdu-2089-digital-dp/</loc>
+    <lastmod>2018-11-07T08:07:35.901Z</lastmod>
+    <data>
+        <display>
+        <title>ACM HDU 2089 题解 数位DP</title>
+        <pubTime>2018-06-17T08:34:42.000Z</pubTime>
+        
+        <tag>ACM</tag>
+         
+        <tag>DP</tag>
+         
+        <tag>HDU</tag>
+         
+        <tag>数位DP</tag>
+         
+         
+           
+             
+              <breadCrumb title="ACM" url="http://yunhao.space/categories/ACM/"/>
+          
+             
+              <breadCrumb title="DP" url="http://yunhao.space/categories/ACM/DP/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yunhao.space/2018/06/09/acm-cf-963b-dfs/</loc>
+    <lastmod>2018-11-07T08:07:26.627Z</lastmod>
+    <data>
+        <display>
+        <title>ACM CodeForces 963 B 题解 DFS</title>
+        <pubTime>2018-06-09T14:01:07.000Z</pubTime>
+        
+        <tag>ACM</tag>
+         
+        <tag>CodeForces</tag>
+         
+        <tag>搜索</tag>
+         
+        <tag>DFS</tag>
+         
+         
+           
+             
+              <breadCrumb title="ACM" url="http://yunhao.space/categories/ACM/"/>
+          
+             
+              <breadCrumb title="搜索" url="http://yunhao.space/categories/ACM/%E6%90%9C%E7%B4%A2/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yunhao.space/2018/06/05/acm-hdu-1028-generating-function/</loc>
+    <lastmod>2018-11-07T08:06:42.376Z</lastmod>
+    <data>
+        <display>
+        <title>ACM HDU 1028 题解 母函数 生成函数</title>
+        <pubTime>2018-06-05T05:29:48.000Z</pubTime>
+        
+        <tag>ACM</tag>
+         
+        <tag>组合数学</tag>
+         
+        <tag>母函数</tag>
+         
+        <tag>HDU</tag>
+         
+         
+           
+             
+              <breadCrumb title="ACM" url="http://yunhao.space/categories/ACM/"/>
+          
+             
+              <breadCrumb title="组合数学" url="http://yunhao.space/categories/ACM/%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yunhao.space/2018/06/05/acm-generating-function-learning/</loc>
+    <lastmod>2018-11-07T08:05:40.386Z</lastmod>
+    <data>
+        <display>
+        <title>ACM 组合数学 母函数 生成函数 详解</title>
+        <pubTime>2018-06-05T05:50:20.000Z</pubTime>
+        
+        <tag>ACM</tag>
+         
+        <tag>数学</tag>
+         
+        <tag>组合数学</tag>
+         
+        <tag>母函数</tag>
+         
+         
+           
+             
+              <breadCrumb title="数学" url="http://yunhao.space/categories/%E6%95%B0%E5%AD%A6/"/>
+          
+             
+              <breadCrumb title="组合数学" url="http://yunhao.space/categories/%E6%95%B0%E5%AD%A6/%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yunhao.space/2018/11/07/group-ring-field-in-mathematics/</loc>
+    <lastmod>2018-11-07T08:02:02.839Z</lastmod>
+    <data>
+        <display>
+        <title>代数中的 群 环 域</title>
+        <pubTime>2018-11-07T06:19:19.000Z</pubTime>
+        
+        <tag>数学</tag>
+         
+        <tag>代数</tag>
+         
+        <tag>群论</tag>
+         
+        <tag>环论</tag>
+         
+        <tag>域论</tag>
+         
+         
+           
+             
+              <breadCrumb title="数学" url="http://yunhao.space/categories/%E6%95%B0%E5%AD%A6/"/>
+          
+             
+              <breadCrumb title="代数" url="http://yunhao.space/categories/%E6%95%B0%E5%AD%A6/%E4%BB%A3%E6%95%B0/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://yunhao.space/2018/06/20/do-you-need-a-ladder/</loc>
     <lastmod>2018-09-19T06:51:59.765Z</lastmod>
     <data>
@@ -48,9 +452,9 @@
         
         <tag>系统安装</tag>
          
-        <tag>Windows</tag>
-         
         <tag>UEFI</tag>
+         
+        <tag>Windows</tag>
          
         <tag>Legacy</tag>
          
@@ -99,9 +503,9 @@
         <title>Hexo博客 GitHub仓库图床</title>
         <pubTime>2018-07-18T11:06:52.000Z</pubTime>
         
-        <tag>GitHub</tag>
-         
         <tag>Hexo</tag>
+         
+        <tag>GitHub</tag>
          
         <tag>Nginx</tag>
          
@@ -255,11 +659,11 @@
         <title>Ubuntu16.04 Nginx 反向代理 Apache</title>
         <pubTime>2017-04-07T12:19:44.000Z</pubTime>
         
+        <tag>Ubuntu</tag>
+         
         <tag>服务器</tag>
          
         <tag>代理</tag>
-         
-        <tag>Ubuntu</tag>
          
         <tag>Nginx</tag>
          
@@ -333,9 +737,9 @@
         
         <tag>Hexo</tag>
          
-        <tag>LeanCloud</tag>
-         
         <tag>NexT</tag>
+         
+        <tag>LeanCloud</tag>
          
          
            
@@ -412,15 +816,15 @@
          
         <tag>DNS</tag>
          
-        <tag>GitHub</tag>
-         
         <tag>Hexo</tag>
          
-        <tag>GitHub Pages</tag>
+        <tag>GitHub</tag>
          
         <tag>GoDaddy</tag>
          
         <tag>腾讯云</tag>
+         
+        <tag>GitHub Pages</tag>
          
         <tag>Nginx</tag>
          
@@ -501,38 +905,6 @@
            
              
               <breadCrumb title="系统安装" url="http://yunhao.space/categories/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yunhao.space/2018/06/09/acm-cf-963b-dfs/</loc>
-    <lastmod>2018-07-18T10:20:26.246Z</lastmod>
-    <data>
-        <display>
-        <title>ACM CodeForces 963 B 题解 DFS</title>
-        <pubTime>2018-06-09T14:01:07.000Z</pubTime>
-        
-        <tag>ACM</tag>
-         
-        <tag>CodeForces</tag>
-         
-        <tag>搜索</tag>
-         
-        <tag>DFS</tag>
-         
-         
-           
-             
-              <breadCrumb title="ACM" url="http://yunhao.space/categories/ACM/"/>
-          
-             
-              <breadCrumb title="搜索" url="http://yunhao.space/categories/ACM/%E6%90%9C%E7%B4%A2/"/>
-          
-             
-              <breadCrumb title="DFS" url="http://yunhao.space/categories/ACM/%E6%90%9C%E7%B4%A2/DFS/"/>
           
         </display>
     </data>
@@ -690,9 +1062,9 @@
         <title>Ubuntu16.04 Nginx 配置站点学习笔记</title>
         <pubTime>2017-03-30T02:42:15.000Z</pubTime>
         
-        <tag>服务器</tag>
-         
         <tag>Ubuntu</tag>
+         
+        <tag>服务器</tag>
          
         <tag>Nginx</tag>
          
@@ -736,9 +1108,9 @@
         
         <tag>Hexo</tag>
          
-        <tag>Markdown</tag>
-         
         <tag>MathJax</tag>
+         
+        <tag>Markdown</tag>
          
          
            
@@ -802,9 +1174,9 @@
         
         <tag>Git</tag>
          
-        <tag>GitHub</tag>
-         
         <tag>Hexo</tag>
+         
+        <tag>GitHub</tag>
          
          
            
@@ -856,9 +1228,9 @@
          
         <tag>Git</tag>
          
-        <tag>GitHub</tag>
-         
         <tag>Hexo</tag>
+         
+        <tag>GitHub</tag>
          
          
            
@@ -986,230 +1358,6 @@
 
     
   <url>
-    <loc>http://yunhao.space/2018/06/10/acm-poj-2955-dp-on-segment/</loc>
-    <lastmod>2018-07-03T11:35:53.737Z</lastmod>
-    <data>
-        <display>
-        <title>ACM POJ 2955 题解 区间DP</title>
-        <pubTime>2018-06-10T15:57:07.000Z</pubTime>
-        
-        <tag>ACM</tag>
-         
-        <tag>DP</tag>
-         
-        <tag>区间DP</tag>
-         
-        <tag>POJ</tag>
-         
-         
-           
-             
-              <breadCrumb title="ACM" url="http://yunhao.space/categories/ACM/"/>
-          
-             
-              <breadCrumb title="DP" url="http://yunhao.space/categories/ACM/DP/"/>
-          
-             
-              <breadCrumb title="区间DP" url="http://yunhao.space/categories/ACM/DP/%E5%8C%BA%E9%97%B4DP/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yunhao.space/2018/06/10/acm-poj-2342-dp-on-tree/</loc>
-    <lastmod>2018-07-03T11:35:49.787Z</lastmod>
-    <data>
-        <display>
-        <title>ACM POJ 2342 题解 树形DP</title>
-        <pubTime>2018-06-09T16:31:47.000Z</pubTime>
-        
-        <tag>ACM</tag>
-         
-        <tag>DP</tag>
-         
-        <tag>POJ</tag>
-         
-        <tag>树形DP</tag>
-         
-         
-           
-             
-              <breadCrumb title="ACM" url="http://yunhao.space/categories/ACM/"/>
-          
-             
-              <breadCrumb title="DP" url="http://yunhao.space/categories/ACM/DP/"/>
-          
-             
-              <breadCrumb title="树形DP" url="http://yunhao.space/categories/ACM/DP/%E6%A0%91%E5%BD%A2DP/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yunhao.space/2018/06/11/acm-poj-1651-dp-on-segment/</loc>
-    <lastmod>2018-07-03T11:35:47.350Z</lastmod>
-    <data>
-        <display>
-        <title>ACM POJ 1651 题解 区间DP</title>
-        <pubTime>2018-06-11T05:33:38.000Z</pubTime>
-        
-        <tag>ACM</tag>
-         
-        <tag>DP</tag>
-         
-        <tag>区间DP</tag>
-         
-        <tag>POJ</tag>
-         
-         
-           
-             
-              <breadCrumb title="ACM" url="http://yunhao.space/categories/ACM/"/>
-          
-             
-              <breadCrumb title="DP" url="http://yunhao.space/categories/ACM/DP/"/>
-          
-             
-              <breadCrumb title="区间DP" url="http://yunhao.space/categories/ACM/DP/%E5%8C%BA%E9%97%B4DP/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yunhao.space/2018/06/14/acm-lightoj-1422-dp-on-segment/</loc>
-    <lastmod>2018-07-03T11:35:44.575Z</lastmod>
-    <data>
-        <display>
-        <title>ACM LightOJ 1422 题解 区间DP</title>
-        <pubTime>2018-06-14T07:19:43.000Z</pubTime>
-        
-        <tag>ACM</tag>
-         
-        <tag>DP</tag>
-         
-        <tag>区间DP</tag>
-         
-        <tag>LightOJ</tag>
-         
-         
-           
-             
-              <breadCrumb title="ACM" url="http://yunhao.space/categories/ACM/"/>
-          
-             
-              <breadCrumb title="DP" url="http://yunhao.space/categories/ACM/DP/"/>
-          
-             
-              <breadCrumb title="区间DP" url="http://yunhao.space/categories/ACM/DP/%E5%8C%BA%E9%97%B4DP/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yunhao.space/2018/06/10/acm-hdu-4745-dp-on-segment/</loc>
-    <lastmod>2018-07-03T11:35:41.807Z</lastmod>
-    <data>
-        <display>
-        <title>ACM HDU 4745 题解 区间DP</title>
-        <pubTime>2018-06-10T12:47:42.000Z</pubTime>
-        
-        <tag>ACM</tag>
-         
-        <tag>DP</tag>
-         
-        <tag>HDU</tag>
-         
-        <tag>区间DP</tag>
-         
-         
-           
-             
-              <breadCrumb title="ACM" url="http://yunhao.space/categories/ACM/"/>
-          
-             
-              <breadCrumb title="DP" url="http://yunhao.space/categories/ACM/DP/"/>
-          
-             
-              <breadCrumb title="区间DP" url="http://yunhao.space/categories/ACM/DP/%E5%8C%BA%E9%97%B4DP/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yunhao.space/2018/06/10/acm-hdu-4632-dp-on-segment/</loc>
-    <lastmod>2018-07-03T11:35:37.033Z</lastmod>
-    <data>
-        <display>
-        <title>ACM HDU 4632 题解 区间DP</title>
-        <pubTime>2018-06-10T06:31:43.000Z</pubTime>
-        
-        <tag>ACM</tag>
-         
-        <tag>DP</tag>
-         
-        <tag>HDU</tag>
-         
-        <tag>区间DP</tag>
-         
-         
-           
-             
-              <breadCrumb title="ACM" url="http://yunhao.space/categories/ACM/"/>
-          
-             
-              <breadCrumb title="DP" url="http://yunhao.space/categories/ACM/DP/"/>
-          
-             
-              <breadCrumb title="区间DP" url="http://yunhao.space/categories/ACM/DP/%E5%8C%BA%E9%97%B4DP/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yunhao.space/2018/06/05/acm-hdu-2844-dp/</loc>
-    <lastmod>2018-07-03T11:35:31.862Z</lastmod>
-    <data>
-        <display>
-        <title>ACM HDU 2844 题解 多重背包</title>
-        <pubTime>2018-06-05T04:53:49.000Z</pubTime>
-        
-        <tag>ACM</tag>
-         
-        <tag>DP</tag>
-         
-        <tag>HDU</tag>
-         
-        <tag>背包问题</tag>
-         
-         
-           
-             
-              <breadCrumb title="ACM" url="http://yunhao.space/categories/ACM/"/>
-          
-             
-              <breadCrumb title="DP" url="http://yunhao.space/categories/ACM/DP/"/>
-          
-             
-              <breadCrumb title="背包问题" url="http://yunhao.space/categories/ACM/DP/%E8%83%8C%E5%8C%85%E9%97%AE%E9%A2%98/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://yunhao.space/2018/05/19/acm-hdu-2577-dp/</loc>
     <lastmod>2018-07-03T11:35:28.638Z</lastmod>
     <data>
@@ -1230,100 +1378,6 @@
           
              
               <breadCrumb title="DP" url="http://yunhao.space/categories/ACM/DP/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yunhao.space/2018/06/17/acm-hdu-2089-digital-dp/</loc>
-    <lastmod>2018-07-03T11:35:26.136Z</lastmod>
-    <data>
-        <display>
-        <title>ACM HDU 2089 题解 数位DP</title>
-        <pubTime>2018-06-17T08:34:42.000Z</pubTime>
-        
-        <tag>ACM</tag>
-         
-        <tag>DP</tag>
-         
-        <tag>HDU</tag>
-         
-        <tag>数位DP</tag>
-         
-         
-           
-             
-              <breadCrumb title="ACM" url="http://yunhao.space/categories/ACM/"/>
-          
-             
-              <breadCrumb title="DP" url="http://yunhao.space/categories/ACM/DP/"/>
-          
-             
-              <breadCrumb title="数位DP" url="http://yunhao.space/categories/ACM/DP/%E6%95%B0%E4%BD%8DDP/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yunhao.space/2018/06/05/acm-hdu-1028-generating-function/</loc>
-    <lastmod>2018-07-03T11:35:23.750Z</lastmod>
-    <data>
-        <display>
-        <title>ACM HDU 1028 题解 母函数 生成函数</title>
-        <pubTime>2018-06-05T05:29:48.000Z</pubTime>
-        
-        <tag>ACM</tag>
-         
-        <tag>组合数学</tag>
-         
-        <tag>母函数</tag>
-         
-        <tag>HDU</tag>
-         
-         
-           
-             
-              <breadCrumb title="ACM" url="http://yunhao.space/categories/ACM/"/>
-          
-             
-              <breadCrumb title="组合数学" url="http://yunhao.space/categories/ACM/%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/"/>
-          
-             
-              <breadCrumb title="母函数" url="http://yunhao.space/categories/ACM/%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/%E6%AF%8D%E5%87%BD%E6%95%B0/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yunhao.space/2018/06/05/acm-generating-function-learning/</loc>
-    <lastmod>2018-07-03T11:35:21.299Z</lastmod>
-    <data>
-        <display>
-        <title>ACM 组合数学 母函数 生成函数 详解</title>
-        <pubTime>2018-06-05T05:50:20.000Z</pubTime>
-        
-        <tag>ACM</tag>
-         
-        <tag>组合数学</tag>
-         
-        <tag>母函数</tag>
-         
-         
-           
-             
-              <breadCrumb title="ACM" url="http://yunhao.space/categories/ACM/"/>
-          
-             
-              <breadCrumb title="组合数学" url="http://yunhao.space/categories/ACM/%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/"/>
-          
-             
-              <breadCrumb title="母函数" url="http://yunhao.space/categories/ACM/%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/%E6%AF%8D%E5%87%BD%E6%95%B0/"/>
           
         </display>
     </data>
@@ -1466,33 +1520,6 @@
 
     
   <url>
-    <loc>http://yunhao.space/2018/06/07/acm-cf-888b-simple/</loc>
-    <lastmod>2018-07-03T11:35:02.838Z</lastmod>
-    <data>
-        <display>
-        <title>ACM CodeForces 888 B 题解 基础题</title>
-        <pubTime>2018-06-07T08:15:16.000Z</pubTime>
-        
-        <tag>ACM</tag>
-         
-        <tag>CodeForces</tag>
-         
-        <tag>基础题</tag>
-         
-         
-           
-             
-              <breadCrumb title="ACM" url="http://yunhao.space/categories/ACM/"/>
-          
-             
-              <breadCrumb title="基础题" url="http://yunhao.space/categories/ACM/%E5%9F%BA%E7%A1%80%E9%A2%98/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://yunhao.space/2018/06/08/acm-cf-877b-dp/</loc>
     <lastmod>2018-07-03T11:34:59.111Z</lastmod>
     <data>
@@ -1513,38 +1540,6 @@
           
              
               <breadCrumb title="DP" url="http://yunhao.space/categories/ACM/DP/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yunhao.space/2018/06/07/acm-cf-873b-simple/</loc>
-    <lastmod>2018-07-03T11:34:55.663Z</lastmod>
-    <data>
-        <display>
-        <title>ACM CodeForces 873 B 题解 前缀和</title>
-        <pubTime>2018-06-07T15:49:23.000Z</pubTime>
-        
-        <tag>ACM</tag>
-         
-        <tag>CodeForces</tag>
-         
-        <tag>基础题</tag>
-         
-        <tag>前缀和</tag>
-         
-         
-           
-             
-              <breadCrumb title="ACM" url="http://yunhao.space/categories/ACM/"/>
-          
-             
-              <breadCrumb title="基础题" url="http://yunhao.space/categories/ACM/%E5%9F%BA%E7%A1%80%E9%A2%98/"/>
-          
-             
-              <breadCrumb title="前缀和" url="http://yunhao.space/categories/ACM/%E5%9F%BA%E7%A1%80%E9%A2%98/%E5%89%8D%E7%BC%80%E5%92%8C/"/>
           
         </display>
     </data>

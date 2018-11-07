@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[代数中的 群 环 域]]></title>
+    <url>%2F2018%2F11%2F07%2Fgroup-ring-field-in-mathematics%2F</url>
+    <content type="text"><![CDATA[最近总是碰到群环域这些东西，抽空学习了一下，写篇博客加深印象。本文综合各种博客，百科写成。本人不是学数学出身。本文只是自己的理解。 引例 整数加法群最常见的群之一是整数集 $\mathbb {Z}$ 和整数的加法所构成的群。它由以下数列组成：$…, −4, −3, −2, −1, 0, 1, 2, 3, 4, …$群有四个公理。以上面的加法群为例。如下： 封闭性： 对于任何两个整数$a$和$b$，它们的和$a + b$也是整数。换句话说，在任何时候，把两个整数相加都能得出整数的结果。这个性质叫做在加法下封闭。 结合律： 对于任何整数$a$, $b$和$c$，$(a + b) + c = a +（b + c）$。用话语来表达，先把a加到b，然后把它们的和加到c，所得到的结果与把a加到b与c的和是相等的。这个性质叫做结合律。 单位元： 如果$a$是任何整数，那么$0 + a = a + 0 = a$。零叫做加法的单位元，因为把它加到任何整数都得到相同的整数。 逆元： 对于任何整数$a$，存在另一个整数$b$使得$a + b = b + a = 0$。整数$b$叫做整数$a$的逆元，记为$−a$。 群群的定义群$(G,·)$是由集合$G$和二元运算$·$构成的，符合以下四个性质（称“群公理”）的数学结构。其中，二元运算结合任何两个元素$a$和$b$而形成另一个元素，记为$a·b$，符号$·$是具体的运算，比如整数加法。 群的四个公理 封闭性： 对于所有$G$中$a$, $b$，运算$a·b$的结果也在$G$中。 结合律： 对于所有$G$中的$a$, $b$和$c$，等式$(a·b)·c = a· (b·c)$成立。 单位元： 存在$G$中的一个元素$e$，使得对于所有$G$中的元素$a$，总有等式$e·a = a·e = a$成立。 逆元： 对于每个$G$中的$a$，存在$G$中的一个元素$b$使得总有$a·b = b·a = e$，此处$e$为单位元。 阿贝尔群群运算的次序很重要，把元素$a$与元素$b$结合，所得到的结果不一定与把元素$b$与元素$a$结合相同；$a\cdot b=b\cdot a$(交换律)不一定恒成立。阿贝尔群的群运算符合交换律，因此阿贝尔群也被称为交换群。它由自身的集合$G$和二元运算$*$构成。它除了满足一般的群公理，封闭性、结合律、单位元、逆元之外，还满足交换律公理$a*b=b*a$因为阿贝尔群的群运算满足交换律和结合律，群元素乘积的值与乘法运算时的次序无关。群运算不满足交换律的群被称为“非阿贝尔群”，或“非交换群”。阿贝尔群有两种主要运算符号,加法和乘法。 约定 运算 单位元 幂 逆元 加法运算 $x + y$ $0$ $nx$ $−x$ 乘法运算 $x * y$或$xy$ $e$或$1$ $x^n$ $x^{−1}$ 半群半群的运算经常指示为乘号。集合$S$和其上的二元运算$·$: $S×S \rightarrow S$。若$·$满足结合律，即：$\forall x,y,z \in S$，有$(x·y)·z=x·(y·z)$，则称有序对$(S,·)$为半群，运算$·$称为该半群的乘法。即半群只满足群的四个公理中的封闭性和结合律。 环环的定义集合$R$和定义于其上的二元运算$+$和$·$，$(R, +, ·)$构成一个环，若它们满足： $(R, +)$形成一个交换群，其单位元称为零元，记作$0$。即： 封闭性： $(R, +)$是封闭的 结合律： $(a + b) + c = a + (b + c)$ 单位元： $0 + a = a + 0 = a$ 逆元： $\forall a, \exists -a$, 满足$a + −a = −a + a = 0$ 交换律： $(a + b) = (b + a)$ $(R, ·)$形成一个半群。即： 封闭性： $(R, ·)$是封闭的 结合律： $(a·b)·c = a·(b·c)$ 乘法关于加法满足分配律。即： $a·(b + c) = (a·b) + (a·c)$ $(a + b)·c = (a·c) + (b·c)$ 就是一个交换群和一个半群的结合。环在群的基础上限制更加严格了一些。 除环除环（division ring），又译反对称体（skew field），是一类特殊的环，在环内除法运算有效。除环内必有非$0$元素，且环内所有的非$0$量都有对应的倒数（比如说，对于$x$来说，存在数$a$，使得 $a·x = x·a = 1$）。除环不一定是交换环。换种说法，一个环是除环当且仅当其可逆元群包含了环中所有的非零元素。也就是说，$(R, ·)$有乘法单位元，并且每个非零元素都有对应的乘法逆元。即，在环的基础上要求$(R, ·)$是群。 域非正式的讲，域是种集合，集合中的元素可以做两种运算，”加法”： $a+b$和”乘法”： $a\cdot b$, 且要求集合中任意元素 $a$ 有加法逆元 $-a$，对所有非零元素 $b$ 有乘法逆元 $b^{-1}$ ，这种性质让我们可以用以下方法来定义加法和乘法的”反运算”，减法： $a-b$ 和除法 $a/b$$a-b=a+(-b)$$a/b=a\cdot b^{-1}$在抽象代数中，域（Field）是一种可进行加、减、乘和除（除了除以零之外，“零”即加法单位元）运算的代数结构。域的概念是数域以及四则运算的推广。域是环的一种。域和一般的环的区别在于域要求它的元素（除零元之外）可以进行除法运算，这等于说每个非零的元素都要有乘法逆元。域中的运算关于乘法是可交换的。若乘法运算没有要求可交换则称为除环，division ring或skew field。 域的定义一域是交换性除环。 域的定义二域是一种交换环$(F, +, *)$，当中加法单位元$0$不等于乘法单位元$1$，且所有非零元素有乘法逆元。 域的定义三域是个集合 $F$ 且带有加法和乘法两种运算，这里“运算”可以想成是种映射，对任意两元素 $a,b\in F$ ，这映射将此两元素对应到某元素，且这些运算满足如下性质： 封闭性： 在加法运算上封闭，对所有属于$F$的 $a, b$， $a+b$属于$F$ 在乘法运算上封闭，对所有属于$F$的 $a, b$， $a*b$属于$F$ 结合律： 加法有结合律，对所有属于$F$的 $a, b, c$， $(a+b)+c=a+(b+c)$ 乘法有结合律，对所有属于$F$的 $a, b, c$， $(a*b)*c=a*(b*c)$ 单位元： 加法单位元，在$F$中有元素$0$，使得所有 $a \in F$，$a+0=a$ 乘法单位元，在$F$中有元素$1$，使得所有 $a \in F$，$a*1=a$ 加法单位元$0$不等于乘法单位元$1$ 逆元： 加法逆元，对所有属于$F$的 $a$，存在 $-a$ 使得 $a+(-a)=0$ 乘法逆元，对所有属于$F$的 $a$ 且 $a \ne 0$，存在 $a^{-1}$ 使得 $a*a^{-1}=1$ 交换律： 加法交换律，对所有属于$F$的 $a, b$， $a+b=b+a$ 乘法交换律，对所有属于$F$的 $a, b$， $a*b=b*a$ 分配律： 对所有属于$F$的 $a, b, c$，有$a·(b + c) = (a·b) + (a·c)$ 对所有属于$F$的 $a, b, c$，有$(a + b)·c = (a·c) + (b·c)$ 其中$0 \ne 1$的要求排除了平凡的只由一个元素组成的域。由以上性质可以得出一些最基本的推论：$−(a * b) =(−a)* b = a *(−b)$$a * 0 = 0$如果$a * b = 0$，则要么$a = 0$，要么$b = 0$域在环的基础上限制更加严格了一些。]]></content>
+      <categories>
+        <category>数学</category>
+        <category>代数</category>
+      </categories>
+      <tags>
+        <tag>数学</tag>
+        <tag>代数</tag>
+        <tag>群论</tag>
+        <tag>环论</tag>
+        <tag>域论</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[ACM CodeForces 1006 B 题解 贪心]]></title>
     <url>%2F2018%2F07%2F24%2Facm-cf-1006b-greedy%2F</url>
     <content type="text"><![CDATA[这是一道简单的贪心，在输入的时候记录下前k个最大数。然后在顺序扫一遍序列，将这k个数找出来。每找到一个，就立即划分一组，找到最后一个时，如果后边还有没遍历完的。那么就将剩下的数并到最后一组。 题目B. Polycarp’s Practice 限制time limit per test: 2 secondsmemory limit per test: 256 megabytesinput: standard inputoutput: standard output 描述Polycarp is practicing his problem solving skill. He has a list of $n$ problems with difficulties $a_1,a_2,…,a_n$, respectively. His plan is to practice for exactly $k$ days. Each day he has to solve at least one problem from his list. Polycarp solves the problems in the order they are given in his list, he cannot skip any problem from his list. He has to solve all $n$ problems in exactly $k$ days.Thus, each day Polycarp solves a contiguous sequence of (consecutive) problems from the start of the list. He can’t skip problems or solve them multiple times. As a result, in $k$ days he will solve all the $n$ problems.The profit of the $j^{th}$ day of Polycarp’s practice is the maximum among all the difficulties of problems Polycarp solves during the $j^{th}$ day (i.e. if he solves problems with indices from $l$ to $r$ during a day, then the profit of the day is $max_{l \le i \le r} a_i$). The total profit of his practice is the sum of the profits over all $k$ days of his practice.You want to help Polycarp to get the maximum possible total profit over all valid ways to solve problems. Your task is to distribute all $n$problems between $k$ days satisfying the conditions above in such a way, that the total profit is maximum.For example, if $n=8,k=3$ and $a=[5,4,2,6,5,1,9,2]$, one of the possible distributions with maximum total profit is: $[5,4,2],[6,5],[1,9,2]$. Here the total profit equals $5+6+9=20$. 输入格式The first line of the input contains two integers $n$ and $k$ $(1 \le k \le n \le 2000)$ — the number of problems and the number of days, respectively.The second line of the input contains $n$ integers $a_1,a_2,…,a_n$ $(1 \le a_i \le 2000)$ — difficulties of problems in Polycarp’s list, in the order they are placed in the list (i.e. in the order Polycarp will solve them). 输出格式In the first line of the output print the maximum possible total profit.In the second line print exactly $k$ positive integers $t_1,t_2,…,t_k$ ($t_1+t_2+⋯+t_k$ must equal $n$), where $t_j$ means the number of problems Polycarp will solve during the $j^{th}$ day in order to achieve the maximum possible total profit of his practice.If there are many possible answers, you may print any of them. 样本128 35 4 2 6 5 1 9 2 12203 2 3 125 11 1 1 1 1 1215 124 21 2000 2000 2 1240002 2 提示The first example is described in the problem statement.In the second example there is only one possible distribution.In the third example the best answer is to distribute problems in the following way: $[1,2000],[2000,2]$. The total profit of this distribution is $2000+2000=4000$. 思路这是一道简单的贪心，在输入的时候记录下前k个最大数。然后在顺序扫一遍序列，将这k个数找出来。每找到一个，就立即划分一组，找到最后一个时，如果后边还有没遍历完的。那么就将剩下的数并到最后一组。简单说下代码，cnt[i]最开始表示i这个数在序列中出现了几次。第21-36行，minval存的是前k个最大数中最小的那个数。然后这个时候，ret就跟着计算出来了。并且这个时候cnt数组的含义就变了。cnti含义是i这个数还剩几个没找到。这个找没找到是用在后边划分组用的。res数组是用来存储各组的数的个数的。 代码12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455#include &lt;iostream&gt;#include &lt;cstdio&gt;#include &lt;cstring&gt;using namespace std;int n, k;int num[2010];int cnt[2010];int res[2010];int main()&#123; scanf("%d%d", &amp;n, &amp;k); memset(cnt, 0, sizeof cnt); memset(res, 0, sizeof res); for (int i = 0; i &lt; n; i++)&#123; scanf("%d", &amp;num[i]); cnt[num[i]]++; &#125; int minval = 0; int tmp = 0; int cur = 2000; int ret = 0; while(tmp &lt; k)&#123; while(!cnt[cur]) cur--; tmp += cnt[cur]; if(tmp &gt;= k)&#123; cnt[cur] -= tmp-k; minval = cur; &#125; ret += cur*cnt[cur]; cur--; &#125; printf("%d\n", ret); int rescur = 0; for(int i = 0; i &lt; n; i++)&#123; if(num[i] &gt;= minval &amp;&amp; cnt[num[i]])&#123; cnt[num[i]]--; res[rescur]++; if(rescur &lt; k-1) rescur++; &#125; else&#123; res[rescur]++; &#125; &#125; for(int i = 0; i &lt;= rescur; i++)&#123; printf("%d", res[i]); i == rescur ? printf("\n") : printf(" "); &#125; return 0;&#125;]]></content>
@@ -22,8 +38,8 @@
         <category>Hexo</category>
       </categories>
       <tags>
-        <tag>GitHub</tag>
         <tag>Hexo</tag>
+        <tag>GitHub</tag>
         <tag>Nginx</tag>
       </tags>
   </entry>
@@ -75,8 +91,8 @@
       </categories>
       <tags>
         <tag>系统安装</tag>
-        <tag>Windows</tag>
         <tag>UEFI</tag>
+        <tag>Windows</tag>
         <tag>Legacy</tag>
       </tags>
   </entry>
@@ -144,11 +160,11 @@
         <tag>服务器</tag>
         <tag>域名</tag>
         <tag>DNS</tag>
-        <tag>GitHub</tag>
         <tag>Hexo</tag>
-        <tag>GitHub Pages</tag>
+        <tag>GitHub</tag>
         <tag>GoDaddy</tag>
         <tag>腾讯云</tag>
+        <tag>GitHub Pages</tag>
         <tag>Nginx</tag>
       </tags>
   </entry>
@@ -222,8 +238,8 @@
       </categories>
       <tags>
         <tag>Hexo</tag>
-        <tag>LeanCloud</tag>
         <tag>NexT</tag>
+        <tag>LeanCloud</tag>
       </tags>
   </entry>
   <entry>
@@ -235,8 +251,8 @@
       </categories>
       <tags>
         <tag>Git</tag>
-        <tag>GitHub</tag>
         <tag>Hexo</tag>
+        <tag>GitHub</tag>
       </tags>
   </entry>
   <entry>
@@ -306,7 +322,6 @@
       <categories>
         <category>ACM</category>
         <category>DP</category>
-        <category>数位DP</category>
       </categories>
       <tags>
         <tag>ACM</tag>
@@ -322,7 +337,6 @@
       <categories>
         <category>ACM</category>
         <category>DP</category>
-        <category>区间DP</category>
       </categories>
       <tags>
         <tag>ACM</tag>
@@ -338,7 +352,6 @@
       <categories>
         <category>ACM</category>
         <category>DP</category>
-        <category>区间DP</category>
       </categories>
       <tags>
         <tag>ACM</tag>
@@ -354,7 +367,6 @@
       <categories>
         <category>ACM</category>
         <category>DP</category>
-        <category>区间DP</category>
       </categories>
       <tags>
         <tag>ACM</tag>
@@ -370,7 +382,6 @@
       <categories>
         <category>ACM</category>
         <category>DP</category>
-        <category>区间DP</category>
       </categories>
       <tags>
         <tag>ACM</tag>
@@ -386,7 +397,6 @@
       <categories>
         <category>ACM</category>
         <category>DP</category>
-        <category>区间DP</category>
       </categories>
       <tags>
         <tag>ACM</tag>
@@ -402,7 +412,6 @@
       <categories>
         <category>ACM</category>
         <category>DP</category>
-        <category>树形DP</category>
       </categories>
       <tags>
         <tag>ACM</tag>
@@ -418,7 +427,6 @@
       <categories>
         <category>ACM</category>
         <category>搜索</category>
-        <category>DFS</category>
       </categories>
       <tags>
         <tag>ACM</tag>
@@ -448,13 +456,11 @@
       <categories>
         <category>ACM</category>
         <category>基础题</category>
-        <category>前缀和</category>
       </categories>
       <tags>
         <tag>ACM</tag>
         <tag>CodeForces</tag>
         <tag>基础题</tag>
-        <tag>前缀和</tag>
       </tags>
   </entry>
   <entry>
@@ -490,12 +496,12 @@
     <url>%2F2018%2F06%2F05%2Facm-generating-function-learning%2F</url>
     <content type="text"><![CDATA[每次做母函数的题都会忘记，于是我学习了一下母函数，写了一篇博客，希望自己能记住。本文有代码模版。mark一下。 介绍在组合数学中，母函数，又叫生成函数，是一种形式幂级数。每一项的系数可以提供关于这个项的信息。使用母函数解决问题的方法就是母函数法。母函数有很多种，普通母函数、指数母函数、L级数、贝尔级数、狄利克雷级数。根据一个序列不同的性质，或是需要得到的信息，要选择以上不同的母函数进行套用。母函数方法的思想就是将数列间的相加关系与幂级数间的乘幂运算对应起来。 定义序列$a_0, a_1, a_2, a_3, …$构造一个函数$G(x)=a_0+a_1x+a_2x^2+…$称$G(x)$为$a_0, a_1, a_2, a_3, …$序列的母函数 普通母函数该类母函数比较常用，可以用于解决整数拆分，组合数量问题。 一次多项式乘法母函数一次是指每一个多项式的最高次是1$\quad(1+a_1x)(1+a_2x)…(1+a_nx)$$=1+(a_1+a_2+…+a_n)x+(a_1a_2+a_1a_3+…+a_{n-1}a_n)x^2+…+a_1a_2…a_nx^n$$x$的系数是$a_1, a_2, … a_n$的$1$个组合的和$x^2$的系数是$a_1, a_2, … a_n$的$2$个组合的和…$x^n$的系数是$a_1, a_2, … a_n$的$n$个组合的和 杨辉三角母函数$\quad(1+x)^n$$=C_n^0x^0+C_n^1x^1+C_n^2x^2+…+C_n^nx^n$$=1+C_n^1x+C_n^2x^2+…+C_n^nx^n$ 高次有限项多项式乘法母函数高次指每个多项式的最高次大于1，有限项指的是每个多项式的项数是有限的比如有这样一个问题。有1元2张、5元4张、10元1张、20元3张，问可以组合出多少种面额，每种面额的组合方式数量是多少问题可以转化为如下的多项式$\quad(1\times x^{0 \times 1}+1\times x^{1 \times 1}+1\times x^{2 \times 1})(1\times x^{0 \times 5}+1\times x^{1 \times 5}+1\times x^{2 \times 5}+1\times x^{3 \times 5}+1\times x^{4 \times 5})\cdot$$\quad(1\times x^{0 \times 10}+1\times x^{1 \times 10})(1\times x^{0 \times 20}+1\times x^{1 \times 20}+1\times x^{2 \times 20}+1\times x^{3 \times 20})$$=(1+x+x^2)(1+x^5+x^{10}+x^{15}+x^{20})(1+x^{10})(1+x^{20}+x^{40}+x^{60})$一共四个多项式相乘，分别代表1元、5元、10元、20元的选择情况。用第一个多项式举例。多项式中每一项的指数代表组合情况，即$x^{0 \times 1}$代表取0个1元，系数1代表组合种数有1种$x^{1 \times 1}$代表取1个1元，系数1代表组合种数有1种$x^{2 \times 1}$代表取2个1元，系数1代表组合种数有1种因为1元有两张，所以到这里就结束了，这个多项式的项是有限项。将数列间的相加关系与幂级数间的乘幂运算对应起来在这里的体现就是：在计算这个多项式乘积的时候，x的幂相乘运算就是指数相加，而这个指数相加正好对应了数列间的加法运算。而相乘之后得到的多项式的各项系数就是组合方式数。 高次无限项多项式乘法母函数高次指每个多项式的最高次大于1，无限项指的是每个多项式的项数是无限的考虑这样一个问题，有1,2,3克砝码无限个。求某一质量的方案数。类比高次有限项多项式乘法母函数，直接写出多项式乘积：$(1+x+x^2+x^3+…)(1+x^2+x^4+x^6+…)(1+x^3+x^6+x^9+…)$计算这个多项式的和，质量为$n$的方案数就是$x^n$的系数考虑这样一个题，有120个数，每个数的个数不限。求组成某个数的方案数。$4=3+1$与$4=1+3$属于同一种方案给出模版代码123456789101112131415161718192021222324252627282930#include &lt;cstdio&gt;#include &lt;cstring&gt;using namespace std;int n;int num1[125];int num2[125];int main()&#123; memset(num1, 0, sizeof num1); memset(num2, 0, sizeof num2); for(int i = 0; i &lt; 125; i++)&#123; num1[i] = 1; &#125; for(int i = 2; i &lt;= 120; i++)&#123; for(int j = 0; j &lt;= 120; j++)&#123; for (int k = 0; k+j &lt;= 120; k += i)&#123; num2[k+j] += num1[j]; &#125; &#125; for(int j = 0; j &lt;= 120; j++)&#123; num1[j] = num2[j]; num2[j] = 0; &#125; &#125; while(~scanf("%d", &amp;n))&#123; printf("%d\n", num1[n]); &#125;&#125; 解释一下代码，这个代码其实就是在模拟多项式乘法的过程。$(1+x^1+x^2+…+x^{120})(1+x^2+x^4+x^6+…+x^{120})…(1+x^{120})$一共120个多项式相乘。 num1在每轮循环结束后存储的都是第一个多项式的系数。num2是一个中转数组，用来暂存过程中的新的多项式的系数。每次循环结束，num2中的值都要倒换到num1中。 第13-15行就是第一轮，是$(1+x^1+x^2+…+x^{120})$多项式的各项系数。这是初始化num1，num2数组第16行是对120个多项式进行循环。每轮乘一个多项式进去。第i轮乘的是各项系数是i的倍数的多项式。也就是说第2轮乘的是$(1+x^2+x^4+…)$，第三轮乘的是$(1+x^3+x^6+…)$，第i轮乘的是$(1+x^i+x^{2i}+…)$。第i轮结束后，num1中的系数是前i个多项式的乘积多项式的系数。即$(1+x^1+x^2+…)(1+x^2+x^4+…)…(1+x^i+x^{2i}+…)$的结果的系数第17行的j是对第i-1轮得到的乘积多项式的各项进行循环。即，$(1+x^1+x^2+…)(1+x^2+x^4+…)…(1+x^{i-1}+x^{2i-2}+…)$的结果中的各项第18行的k是对第i个多项式，即$(1+x^i+x^{2i}+…)$的各项进行循环。将这个多项式和前i-1个多项式的乘积相乘，得到前i个多项式的乘积。k的增量是i第19行，num2存的是相乘运算的过程中的中间结果系数，num1存的是前i-1个多项式的乘积的系数。因为第i个多项式中的每项的系数都是1，所以num2[k+j]直接加了num1[j]，其实是1*num1[j]。第22-24行，就是将num2的结果跟num1的结果倒腾一下。注意，有的题，可能要求比如，某个值最少用多少，最多用多少这种情况。这个时候，就是k不从0开始了，并且k+=i的次数有限制。需要灵活变通]]></content>
       <categories>
-        <category>ACM</category>
+        <category>数学</category>
         <category>组合数学</category>
-        <category>母函数</category>
       </categories>
       <tags>
         <tag>ACM</tag>
+        <tag>数学</tag>
         <tag>组合数学</tag>
         <tag>母函数</tag>
       </tags>
@@ -507,7 +513,6 @@
       <categories>
         <category>ACM</category>
         <category>组合数学</category>
-        <category>母函数</category>
       </categories>
       <tags>
         <tag>ACM</tag>
@@ -523,7 +528,6 @@
       <categories>
         <category>ACM</category>
         <category>DP</category>
-        <category>背包问题</category>
       </categories>
       <tags>
         <tag>ACM</tag>
@@ -581,8 +585,8 @@
       </categories>
       <tags>
         <tag>Hexo</tag>
-        <tag>Markdown</tag>
         <tag>MathJax</tag>
+        <tag>Markdown</tag>
       </tags>
   </entry>
   <entry>
@@ -657,9 +661,9 @@
         <category>服务器</category>
       </categories>
       <tags>
+        <tag>Ubuntu</tag>
         <tag>服务器</tag>
         <tag>代理</tag>
-        <tag>Ubuntu</tag>
         <tag>Nginx</tag>
         <tag>Apache</tag>
       </tags>
@@ -709,8 +713,8 @@
         <category>服务器</category>
       </categories>
       <tags>
-        <tag>服务器</tag>
         <tag>Ubuntu</tag>
+        <tag>服务器</tag>
         <tag>Nginx</tag>
       </tags>
   </entry>
@@ -775,8 +779,8 @@
         <tag>域名</tag>
         <tag>DNS</tag>
         <tag>Git</tag>
-        <tag>GitHub</tag>
         <tag>Hexo</tag>
+        <tag>GitHub</tag>
       </tags>
   </entry>
   <entry>
