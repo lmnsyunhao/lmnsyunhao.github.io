@@ -328,11 +328,11 @@
         
         <tag>ACM</tag>
          
+        <tag>HDU</tag>
+         
         <tag>组合数学</tag>
          
         <tag>母函数</tag>
-         
-        <tag>HDU</tag>
          
          
            
@@ -357,11 +357,11 @@
         
         <tag>ACM</tag>
          
-        <tag>数学</tag>
-         
         <tag>组合数学</tag>
          
         <tag>母函数</tag>
+         
+        <tag>数学</tag>
          
          
            
@@ -452,9 +452,9 @@
         
         <tag>系统安装</tag>
          
-        <tag>UEFI</tag>
-         
         <tag>Windows</tag>
+         
+        <tag>UEFI</tag>
          
         <tag>Legacy</tag>
          
@@ -478,9 +478,9 @@
         
         <tag>ACM</tag>
          
-        <tag>贪心</tag>
-         
         <tag>CodeForces</tag>
+         
+        <tag>贪心</tag>
          
          
            
@@ -659,11 +659,11 @@
         <title>Ubuntu16.04 Nginx 反向代理 Apache</title>
         <pubTime>2017-04-07T12:19:44.000Z</pubTime>
         
+        <tag>Ubuntu</tag>
+         
         <tag>服务器</tag>
          
         <tag>代理</tag>
-         
-        <tag>Ubuntu</tag>
          
         <tag>Nginx</tag>
          
@@ -871,9 +871,9 @@
         <title>刻录 Windows10 系统盘 UltraISO刻录法 与 官方工具法</title>
         <pubTime>2018-07-11T15:09:54.000Z</pubTime>
         
-        <tag>系统安装</tag>
-         
         <tag>UltraISO</tag>
+         
+        <tag>系统安装</tag>
          
         <tag>Windows</tag>
          
@@ -895,11 +895,11 @@
         <title>刻录 Ubuntu16.04 系统盘 UltraISO刻录法</title>
         <pubTime>2018-07-11T15:10:19.000Z</pubTime>
         
-        <tag>系统安装</tag>
-         
         <tag>UltraISO</tag>
          
         <tag>Ubuntu</tag>
+         
+        <tag>系统安装</tag>
          
          
            
@@ -919,11 +919,11 @@
         <title>U启动 制作WinPE启动盘 支持UEFI启动</title>
         <pubTime>2018-07-13T15:05:21.000Z</pubTime>
         
+        <tag>系统安装</tag>
+         
         <tag>U启动</tag>
          
         <tag>WinPE</tag>
-         
-        <tag>系统安装</tag>
          
         <tag>UEFI</tag>
          
@@ -1062,9 +1062,9 @@
         <title>Ubuntu16.04 Nginx 配置站点学习笔记</title>
         <pubTime>2017-03-30T02:42:15.000Z</pubTime>
         
-        <tag>服务器</tag>
-         
         <tag>Ubuntu</tag>
+         
+        <tag>服务器</tag>
          
         <tag>Nginx</tag>
          
