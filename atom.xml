@@ -144,11 +144,11 @@
       <category term="系统安装" scheme="http://yunhao.space/categories/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/"/>
     
     
-      <category term="系统安装" scheme="http://yunhao.space/tags/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/"/>
-    
       <category term="U启动" scheme="http://yunhao.space/tags/U%E5%90%AF%E5%8A%A8/"/>
     
       <category term="WinPE" scheme="http://yunhao.space/tags/WinPE/"/>
+    
+      <category term="系统安装" scheme="http://yunhao.space/tags/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/"/>
     
       <category term="UEFI" scheme="http://yunhao.space/tags/UEFI/"/>
     
@@ -226,11 +226,11 @@
       <category term="系统安装" scheme="http://yunhao.space/categories/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/"/>
     
     
+      <category term="系统安装" scheme="http://yunhao.space/tags/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/"/>
+    
       <category term="UltraISO" scheme="http://yunhao.space/tags/UltraISO/"/>
     
       <category term="Ubuntu" scheme="http://yunhao.space/tags/Ubuntu/"/>
-    
-      <category term="系统安装" scheme="http://yunhao.space/tags/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/"/>
     
   </entry>
   
@@ -252,9 +252,9 @@
       <category term="系统安装" scheme="http://yunhao.space/categories/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/"/>
     
     
-      <category term="UltraISO" scheme="http://yunhao.space/tags/UltraISO/"/>
-    
       <category term="系统安装" scheme="http://yunhao.space/tags/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/"/>
+    
+      <category term="UltraISO" scheme="http://yunhao.space/tags/UltraISO/"/>
     
       <category term="Windows" scheme="http://yunhao.space/tags/Windows/"/>
     
@@ -342,11 +342,11 @@
     
       <category term="GitHub" scheme="http://yunhao.space/tags/GitHub/"/>
     
+      <category term="GitHub Pages" scheme="http://yunhao.space/tags/GitHub-Pages/"/>
+    
       <category term="GoDaddy" scheme="http://yunhao.space/tags/GoDaddy/"/>
     
       <category term="腾讯云" scheme="http://yunhao.space/tags/%E8%85%BE%E8%AE%AF%E4%BA%91/"/>
-    
-      <category term="GitHub Pages" scheme="http://yunhao.space/tags/GitHub-Pages/"/>
     
       <category term="Nginx" scheme="http://yunhao.space/tags/Nginx/"/>
     
