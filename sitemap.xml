@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yunhao.space/about/index.html</loc>
+    
+    <lastmod>2018-11-19T08:50:01.293Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yunhao.space/2018/06/29/hexo-leancloud-counter-security-too-many-requests-error/</loc>
     
     <lastmod>2018-11-13T12:29:36.005Z</lastmod>
@@ -250,13 +257,6 @@
     <loc>http://yunhao.space/2018/07/13/burn-windows-preinstallation-environment-disk/</loc>
     
     <lastmod>2018-07-18T10:15:42.325Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yunhao.space/about/index.html</loc>
-    
-    <lastmod>2018-07-16T08:13:13.620Z</lastmod>
     
   </url>
   

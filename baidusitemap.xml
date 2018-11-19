@@ -3,6 +3,7 @@
 
 
     
+    
   <url>
     <loc>http://yunhao.space/2018/06/29/hexo-leancloud-counter-security-too-many-requests-error/</loc>
     <lastmod>2018-11-13T12:29:36.005Z</lastmod>
@@ -472,9 +473,9 @@
         <title>Windows10 系统安装教程 UEFI模式 Legacy模式</title>
         <pubTime>2018-07-13T11:15:52.000Z</pubTime>
         
-        <tag>系统安装</tag>
-         
         <tag>Windows</tag>
+         
+        <tag>系统安装</tag>
          
         <tag>UEFI</tag>
          
@@ -525,9 +526,9 @@
         <title>Hexo博客 GitHub仓库图床</title>
         <pubTime>2018-07-18T11:06:52.000Z</pubTime>
         
-        <tag>GitHub</tag>
-         
         <tag>Hexo</tag>
+         
+        <tag>GitHub</tag>
          
         <tag>Nginx</tag>
          
@@ -591,9 +592,9 @@
         <title>Windows10 PC 无法进入选择启动项界面 无法进入BIOS界面</title>
         <pubTime>2018-05-23T07:12:59.000Z</pubTime>
         
-        <tag>系统安装</tag>
-         
         <tag>Windows</tag>
+         
+        <tag>系统安装</tag>
          
          
            
@@ -838,6 +839,8 @@
          
         <tag>服务器</tag>
          
+        <tag>Hexo</tag>
+         
         <tag>GitHub</tag>
          
         <tag>GitHub Pages</tag>
@@ -845,8 +848,6 @@
         <tag>GoDaddy</tag>
          
         <tag>腾讯云</tag>
-         
-        <tag>Hexo</tag>
          
         <tag>Nginx</tag>
          
@@ -895,9 +896,9 @@
         
         <tag>UltraISO</tag>
          
-        <tag>系统安装</tag>
-         
         <tag>Windows</tag>
+         
+        <tag>系统安装</tag>
          
          
            
@@ -919,9 +920,9 @@
         
         <tag>UltraISO</tag>
          
-        <tag>Ubuntu</tag>
-         
         <tag>系统安装</tag>
+         
+        <tag>Ubuntu</tag>
          
          
            
@@ -958,7 +959,6 @@
     </data>
     </url>
 
-    
     
   <url>
     <loc>http://yunhao.space/2018/06/29/hexo-next-function-setting/</loc>
@@ -1174,9 +1174,9 @@
         
         <tag>Git</tag>
          
-        <tag>GitHub</tag>
-         
         <tag>Hexo</tag>
+         
+        <tag>GitHub</tag>
          
          
            
@@ -1228,9 +1228,9 @@
          
         <tag>Git</tag>
          
-        <tag>GitHub</tag>
-         
         <tag>Hexo</tag>
+         
+        <tag>GitHub</tag>
          
          
            
