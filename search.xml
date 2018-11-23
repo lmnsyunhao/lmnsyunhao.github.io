@@ -26,8 +26,8 @@
       </categories>
       <tags>
         <tag>ACM</tag>
-        <tag>贪心</tag>
         <tag>CodeForces</tag>
+        <tag>贪心</tag>
       </tags>
   </entry>
   <entry>
@@ -90,8 +90,8 @@
         <category>系统安装</category>
       </categories>
       <tags>
-        <tag>Windows</tag>
         <tag>系统安装</tag>
+        <tag>Windows</tag>
         <tag>UEFI</tag>
         <tag>Legacy</tag>
       </tags>
@@ -105,8 +105,8 @@
       </categories>
       <tags>
         <tag>UltraISO</tag>
-        <tag>系统安装</tag>
         <tag>Ubuntu</tag>
+        <tag>系统安装</tag>
       </tags>
   </entry>
   <entry>
@@ -118,8 +118,8 @@
       </categories>
       <tags>
         <tag>UltraISO</tag>
-        <tag>Windows</tag>
         <tag>系统安装</tag>
+        <tag>Windows</tag>
       </tags>
   </entry>
   <entry>
@@ -157,9 +157,9 @@
         <category>域名</category>
       </categories>
       <tags>
+        <tag>服务器</tag>
         <tag>域名</tag>
         <tag>DNS</tag>
-        <tag>服务器</tag>
         <tag>Hexo</tag>
         <tag>GitHub</tag>
         <tag>GitHub Pages</tag>
@@ -238,8 +238,8 @@
       </categories>
       <tags>
         <tag>Hexo</tag>
-        <tag>NexT</tag>
         <tag>LeanCloud</tag>
+        <tag>NexT</tag>
       </tags>
   </entry>
   <entry>
@@ -558,8 +558,8 @@
         <category>系统安装</category>
       </categories>
       <tags>
-        <tag>Windows</tag>
         <tag>系统安装</tag>
+        <tag>Windows</tag>
       </tags>
   </entry>
   <entry>
@@ -585,8 +585,8 @@
       </categories>
       <tags>
         <tag>Hexo</tag>
-        <tag>Markdown</tag>
         <tag>MathJax</tag>
+        <tag>Markdown</tag>
       </tags>
   </entry>
   <entry>
