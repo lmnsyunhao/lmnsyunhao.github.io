@@ -26,8 +26,8 @@
       </categories>
       <tags>
         <tag>ACM</tag>
-        <tag>CodeForces</tag>
         <tag>贪心</tag>
+        <tag>CodeForces</tag>
       </tags>
   </entry>
   <entry>
@@ -157,9 +157,9 @@
         <category>域名</category>
       </categories>
       <tags>
-        <tag>服务器</tag>
         <tag>域名</tag>
         <tag>DNS</tag>
+        <tag>服务器</tag>
         <tag>GitHub</tag>
         <tag>Hexo</tag>
         <tag>GitHub Pages</tag>
@@ -264,11 +264,11 @@
         <category>Ladder</category>
       </categories>
       <tags>
+        <tag>服务器</tag>
+        <tag>代理</tag>
         <tag>Ladder</tag>
         <tag>Proxifier</tag>
         <tag>VPS</tag>
-        <tag>服务器</tag>
-        <tag>代理</tag>
         <tag>DigitalOcean</tag>
         <tag>SwitchyOmega</tag>
       </tags>
@@ -516,9 +516,9 @@
       </categories>
       <tags>
         <tag>ACM</tag>
-        <tag>HDU</tag>
         <tag>组合数学</tag>
         <tag>母函数</tag>
+        <tag>HDU</tag>
       </tags>
   </entry>
   <entry>
