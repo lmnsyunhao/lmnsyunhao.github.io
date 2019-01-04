@@ -332,11 +332,11 @@
       <category term="域名" scheme="http://yunhao.space/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%9F%9F%E5%90%8D/"/>
     
     
+      <category term="服务器" scheme="http://yunhao.space/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    
       <category term="域名" scheme="http://yunhao.space/tags/%E5%9F%9F%E5%90%8D/"/>
     
       <category term="DNS" scheme="http://yunhao.space/tags/DNS/"/>
-    
-      <category term="服务器" scheme="http://yunhao.space/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
     
       <category term="GitHub" scheme="http://yunhao.space/tags/GitHub/"/>
     
@@ -497,9 +497,9 @@
     
       <category term="Hexo" scheme="http://yunhao.space/tags/Hexo/"/>
     
-      <category term="NexT" scheme="http://yunhao.space/tags/NexT/"/>
-    
       <category term="LeanCloud" scheme="http://yunhao.space/tags/LeanCloud/"/>
+    
+      <category term="NexT" scheme="http://yunhao.space/tags/NexT/"/>
     
   </entry>
   
@@ -549,15 +549,15 @@
       <category term="Ladder" scheme="http://yunhao.space/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/Ladder/"/>
     
     
-      <category term="服务器" scheme="http://yunhao.space/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
-    
-      <category term="代理" scheme="http://yunhao.space/tags/%E4%BB%A3%E7%90%86/"/>
-    
       <category term="Ladder" scheme="http://yunhao.space/tags/Ladder/"/>
     
       <category term="Proxifier" scheme="http://yunhao.space/tags/Proxifier/"/>
     
       <category term="VPS" scheme="http://yunhao.space/tags/VPS/"/>
+    
+      <category term="服务器" scheme="http://yunhao.space/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    
+      <category term="代理" scheme="http://yunhao.space/tags/%E4%BB%A3%E7%90%86/"/>
     
       <category term="DigitalOcean" scheme="http://yunhao.space/tags/DigitalOcean/"/>
     

@@ -157,9 +157,9 @@
         <category>域名</category>
       </categories>
       <tags>
+        <tag>服务器</tag>
         <tag>域名</tag>
         <tag>DNS</tag>
-        <tag>服务器</tag>
         <tag>GitHub</tag>
         <tag>Hexo</tag>
         <tag>GitHub Pages</tag>
@@ -238,8 +238,8 @@
       </categories>
       <tags>
         <tag>Hexo</tag>
-        <tag>NexT</tag>
         <tag>LeanCloud</tag>
+        <tag>NexT</tag>
       </tags>
   </entry>
   <entry>
@@ -264,11 +264,11 @@
         <category>Ladder</category>
       </categories>
       <tags>
-        <tag>服务器</tag>
-        <tag>代理</tag>
         <tag>Ladder</tag>
         <tag>Proxifier</tag>
         <tag>VPS</tag>
+        <tag>服务器</tag>
+        <tag>代理</tag>
         <tag>DigitalOcean</tag>
         <tag>SwitchyOmega</tag>
       </tags>
