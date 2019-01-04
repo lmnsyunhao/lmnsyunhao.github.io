@@ -1,4 +1,5 @@
 [
+{"title":"Markdown 学习笔记","url":"/2017/03/26/markdown-learning-note/"},
 {"title":"Atom 插件 browser-plus 修改默认搜索","url":"/2017/03/27/atom-packages-browser-plus-change-default-search-engine/"},
 {"title":"Atom 编辑器的插件总结","url":"/2017/03/27/atom-plugins-guide/"},
 {"title":"GitHub Hexo blog 绑定域名","url":"/2017/03/27/github-hexo-blog-bundle-domain/"},
@@ -46,8 +47,10 @@
 {"title":"Hexo NexT 站内搜索 站点统计 RSS订阅 字数统计 阅读时长 进度条 图片放大 Canvas背景 DaoVoice聊天 Gitalk评论 功能配置","url":"/2018/06/29/hexo-next-function-setting/"},
 {"title":"Hexo NexT 添加 DaoVoice 在线聊天","url":"/2018/06/30/hexo-next-add-daovoice-contact/"},
 {"title":"NPM 学习笔记","url":"/2018/06/30/npm-instruction-learning-note/"},
+{"title":"域名解析配置教程","url":"/2018/07/01/domain-name-parsing-setting-tutor/"},
 {"title":"GitHub Hexo 博客 GitHub Pages 个人站点 多域名绑定问题","url":"/2018/07/01/github-blog-multiple-domain-bundling-issue/"},
 {"title":"Hexo NexT 添加 Gitalk评论功能","url":"/2018/07/04/hexo-next-gitalk-comments-tutor/"},
+{"title":"刻录 Ubuntu16.04 系统盘 UltraISO刻录法","url":"/2018/07/11/burn-ubuntu-installation-disk/"},
 {"title":"刻录 Windows10 系统盘 UltraISO刻录法 与 官方工具法","url":"/2018/07/11/burn-windows-installation-disk/"},
 {"title":"U启动 制作WinPE启动盘 支持UEFI启动","url":"/2018/07/13/burn-windows-preinstallation-environment-disk/"},
 {"title":"Windows10 磁盘管理工具 分区管理 创建分区","url":"/2018/07/13/windows-disk-manager-partition/"},

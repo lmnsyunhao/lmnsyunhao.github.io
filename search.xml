@@ -157,9 +157,9 @@
         <category>域名</category>
       </categories>
       <tags>
+        <tag>服务器</tag>
         <tag>域名</tag>
         <tag>DNS</tag>
-        <tag>服务器</tag>
         <tag>GitHub</tag>
         <tag>Hexo</tag>
         <tag>GitHub Pages</tag>
@@ -516,9 +516,9 @@
       </categories>
       <tags>
         <tag>ACM</tag>
+        <tag>HDU</tag>
         <tag>组合数学</tag>
         <tag>母函数</tag>
-        <tag>HDU</tag>
       </tags>
   </entry>
   <entry>
@@ -786,7 +786,7 @@
   <entry>
     <title><![CDATA[Hexo 备份]]></title>
     <url>%2F2017%2F03%2F27%2Fhexo-backup%2F</url>
-    <content type="text"><![CDATA[hexo 备份和移植 创建仓库PS：如果远程已经备份好，只是要pull下来，请跳到恢复一节假设我们的博客的项目目录为blog我们可以看到在blog目录下是没有.git文件夹的。首先，我们先将所有的更改，提交到本地库12git add .git commit -m "backup" 创建backup分支我们新建一个叫做backup的分支。然后切换到该分支，再删除master分支。1234git branch backupgit checkout backupgit branch -d mastergit branch 我们可以通过git branch 查看，只剩一个backup分支。 连接远程我们连接远程库，并进行push操作，如下，远程库会自动建立backup分支。12git remote add origin 你的username.github.io的项目地址git push origin backup:backup 修改push和pull的默认分支保险起见，设置默认的跟踪分支，之后会看到本地的backup分支跟踪origin/backup分支12git push -u origin backupgit branch --set-upstream-to=origin/backup backup 设置了之后，我们再进行git push 或者是git pull的操作的时候就不用担心，会影响到origin/master分支了。 备份之后我们再上传新的帖子的时候，要进行下面的操作。123456hexo cleanhexo ggit add .git commit -m "backup"git pushhexo d 这样就能够备份了 恢复本地的博客丢了怎么办？这样就能够弄一份一模一样的了。1234567891011121314mkdir blogcd bloggit initgit remote add origin 你的username.github.io的项目地址git pull origin backup:backupgit branchgit checkout backupgit branch -d mastergit push -u origin backupgit branch --set-upstream-to=origin/backup backupnpm installhexo cleanhexo ghexo d 多仓库的备份最近又倒腾了倒腾。然后把博客和博客备份和博客主题分成三个仓库存储。利用Git的submodule特性，使博客主题作为博客备份仓库的一个子模块。如果不知道submodule特性是什么的话，Git Submodule 特性详解简要说下，首先我先把next的主题从theme-next的仓库fork过来了。然后新建了一个blog-backuper的仓库。然后将本地的博客项目中的.git文件夹删除，将themes文件夹下的next另存一份，并从博客项目中移除。然后在博客项目根目录执行下面操作：1234567cd bloggit initgit submodule add git@github.com:lmnsyunhao/hexo-theme-next.git themes/nextgit remote add origin git@github.com:lmnsyunhao/blog-backuper.gitgit add .git commit -m &quot;reconstruction&quot;git push -u origin master 然后重新修改主题。这种情况下不出意外，应该就重构好了。以后每次备份的时候，如下：12345678910cd bloghexo cl &amp; hexo g &amp; hexo dcd themes/nextgit add .git commit -m &quot;update&quot;git pushcd ../..git add .git commit -m &quot;update&quot;git push 恢复的时候，执行如下操作：123git clone git@github.com:lmnsyunhao/blog-backuper.git --recursivegit submodule foreach git pullnpm install 然后就能正常的创作了。]]></content>
+    <content type="text"><![CDATA[hexo 备份和移植 创建仓库PS：如果远程已经备份好，只是要pull下来，请跳到恢复一节假设我们的博客的项目目录为blog我们可以看到在blog目录下是没有.git文件夹的。首先，我们先将所有的更改，提交到本地库12git add .git commit -m "backup" 创建backup分支我们新建一个叫做backup的分支。然后切换到该分支，再删除master分支。1234git branch backupgit checkout backupgit branch -d mastergit branch 我们可以通过git branch 查看，只剩一个backup分支。 连接远程我们连接远程库，并进行push操作，如下，远程库会自动建立backup分支。12git remote add origin 你的username.github.io的项目地址git push origin backup:backup 修改push和pull的默认分支保险起见，设置默认的跟踪分支，之后会看到本地的backup分支跟踪origin/backup分支12git push -u origin backupgit branch --set-upstream-to=origin/backup backup 设置了之后，我们再进行git push 或者是git pull的操作的时候就不用担心，会影响到origin/master分支了。 备份之后我们再上传新的帖子的时候，要进行下面的操作。123456hexo cleanhexo ggit add .git commit -m "backup"git pushhexo d 这样就能够备份了 恢复本地的博客丢了怎么办？这样就能够弄一份一模一样的了。1234567891011121314mkdir blogcd bloggit initgit remote add origin 你的username.github.io的项目地址git pull origin backup:backupgit branchgit checkout backupgit branch -d mastergit push -u origin backupgit branch --set-upstream-to=origin/backup backupnpm installhexo cleanhexo ghexo d 多仓库的备份最近又倒腾了倒腾。然后把博客和博客备份和博客主题分成三个仓库存储。利用Git的submodule特性，使博客主题作为博客备份仓库的一个子模块。如果不知道submodule特性是什么的话，Git Submodule 特性详解简要说下，首先我先把next的主题从theme-next的仓库fork过来了。然后新建了一个blog-backuper的仓库。然后将本地的博客项目中的.git文件夹删除，将themes文件夹下的next另存一份，并从博客项目中移除。然后在博客项目根目录执行下面操作：1234567cd bloggit initgit submodule add git@github.com:lmnsyunhao/hexo-theme-next.git themes/nextgit remote add origin git@github.com:lmnsyunhao/blog-backuper.gitgit add .git commit -m &quot;reconstruction&quot;git push -u origin master 然后重新修改主题。这种情况下不出意外，应该就重构好了。以后每次备份的时候，如下：12345678910cd bloghexo cl &amp; hexo g &amp; hexo dcd themes/nextgit add .git commit -m &quot;update&quot;git pushcd ../..git add .git commit -m &quot;update&quot;git push 恢复的时候，执行如下操作：123git clone git@github.com:lmnsyunhao/blog-backuper.gitgit submodule foreach git pullnpm install 然后就能正常的创作了。]]></content>
       <categories>
         <category>Hexo</category>
       </categories>

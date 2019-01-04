@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yunhao.space/2017/03/27/hexo-backup/</loc>
+    
+    <lastmod>2019-01-04T13:54:16.608Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yunhao.space/about/index.html</loc>
     
     <lastmod>2018-11-19T08:50:01.293Z</lastmod>
@@ -138,13 +145,6 @@
     <loc>http://yunhao.space/2018/07/18/hexo-blog-github-images-repository/</loc>
     
     <lastmod>2018-07-19T06:42:41.321Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yunhao.space/2017/03/27/hexo-backup/</loc>
-    
-    <lastmod>2018-07-19T05:31:51.749Z</lastmod>
     
   </url>
   
