@@ -131,7 +131,7 @@
 
 
   <meta name="description" content="Github 上的 username.github.io 的博客绑定域名操作。">
-<meta name="keywords" content="域名,DNS,Git,GitHub,Hexo">
+<meta name="keywords" content="域名,DNS,Git,Hexo,GitHub">
 <meta property="og:type" content="article">
 <meta property="og:title" content="GitHub Hexo blog 绑定域名">
 <meta property="og:url" content="http://yunhao.space/2017/03/27/github-hexo-blog-bundle-domain/index.html">
@@ -631,9 +631,9 @@
           
             <a href="/tags/Git/" rel="tag"># Git</a>
           
-            <a href="/tags/GitHub/" rel="tag"># GitHub</a>
-          
             <a href="/tags/Hexo/" rel="tag"># Hexo</a>
+          
+            <a href="/tags/GitHub/" rel="tag"># GitHub</a>
           
         </div>
       
@@ -1088,6 +1088,22 @@
   ele[0].style.paddingTop = "15px";
 </script>
 
+
+<script>
+  imgele = document.getElementsByTagName('img');
+  i = 0;
+  while(imgele[i]){
+    imgsrc = imgele[i].getAttribute('src');
+    domainIdx = imgsrc.indexOf('images.yunhao.space/pic');
+    if(domainIdx != -1){
+      picset = imgsrc.substr(domainIdx+23, 1);
+      picname = imgsrc.substr(domainIdx+24);
+      targeturl = "http://raw.githubusercontent.com/lmnsyunhao/blog-pic"+picset+"/master"+picname;
+      imgele[i].setAttribute("src",targeturl);
+    }
+    i++;
+  }
+</script>
         </div>
       </div>
 

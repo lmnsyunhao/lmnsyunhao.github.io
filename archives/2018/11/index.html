@@ -878,6 +878,22 @@
   ele[0].style.paddingTop = "15px";
 </script>
 
+
+<script>
+  imgele = document.getElementsByTagName('img');
+  i = 0;
+  while(imgele[i]){
+    imgsrc = imgele[i].getAttribute('src');
+    domainIdx = imgsrc.indexOf('images.yunhao.space/pic');
+    if(domainIdx != -1){
+      picset = imgsrc.substr(domainIdx+23, 1);
+      picname = imgsrc.substr(domainIdx+24);
+      targeturl = "http://raw.githubusercontent.com/lmnsyunhao/blog-pic"+picset+"/master"+picname;
+      imgele[i].setAttribute("src",targeturl);
+    }
+    i++;
+  }
+</script>
         </div>
       </div>
 
