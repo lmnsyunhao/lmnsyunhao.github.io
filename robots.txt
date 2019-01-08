@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /2018/06/20/do-you-need-a-ladder/
+Sitemap: http://yunhao.space/sitemap.xml
+Sitemap: http://yunhao.space/baidusitemap.xml

@@ -70,9 +70,9 @@
     
       <category term="ACM" scheme="http://yunhao.space/tags/ACM/"/>
     
-      <category term="贪心" scheme="http://yunhao.space/tags/%E8%B4%AA%E5%BF%83/"/>
-    
       <category term="CodeForces" scheme="http://yunhao.space/tags/CodeForces/"/>
+    
+      <category term="贪心" scheme="http://yunhao.space/tags/%E8%B4%AA%E5%BF%83/"/>
     
   </entry>
   
@@ -94,9 +94,9 @@
       <category term="Hexo" scheme="http://yunhao.space/categories/Hexo/"/>
     
     
-      <category term="GitHub" scheme="http://yunhao.space/tags/GitHub/"/>
-    
       <category term="Hexo" scheme="http://yunhao.space/tags/Hexo/"/>
+    
+      <category term="GitHub" scheme="http://yunhao.space/tags/GitHub/"/>
     
       <category term="Nginx" scheme="http://yunhao.space/tags/Nginx/"/>
     
@@ -200,9 +200,9 @@
     
       <category term="系统安装" scheme="http://yunhao.space/tags/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/"/>
     
-      <category term="UEFI" scheme="http://yunhao.space/tags/UEFI/"/>
-    
       <category term="Windows" scheme="http://yunhao.space/tags/Windows/"/>
+    
+      <category term="UEFI" scheme="http://yunhao.space/tags/UEFI/"/>
     
       <category term="Legacy" scheme="http://yunhao.space/tags/Legacy/"/>
     
@@ -332,11 +332,13 @@
       <category term="域名" scheme="http://yunhao.space/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/%E5%9F%9F%E5%90%8D/"/>
     
     
+      <category term="服务器" scheme="http://yunhao.space/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    
       <category term="域名" scheme="http://yunhao.space/tags/%E5%9F%9F%E5%90%8D/"/>
     
       <category term="DNS" scheme="http://yunhao.space/tags/DNS/"/>
     
-      <category term="服务器" scheme="http://yunhao.space/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+      <category term="Hexo" scheme="http://yunhao.space/tags/Hexo/"/>
     
       <category term="GitHub" scheme="http://yunhao.space/tags/GitHub/"/>
     
@@ -345,8 +347,6 @@
       <category term="GoDaddy" scheme="http://yunhao.space/tags/GoDaddy/"/>
     
       <category term="腾讯云" scheme="http://yunhao.space/tags/%E8%85%BE%E8%AE%AF%E4%BA%91/"/>
-    
-      <category term="Hexo" scheme="http://yunhao.space/tags/Hexo/"/>
     
       <category term="Nginx" scheme="http://yunhao.space/tags/Nginx/"/>
     
@@ -523,9 +523,9 @@
     
       <category term="Git" scheme="http://yunhao.space/tags/Git/"/>
     
-      <category term="GitHub" scheme="http://yunhao.space/tags/GitHub/"/>
-    
       <category term="Hexo" scheme="http://yunhao.space/tags/Hexo/"/>
+    
+      <category term="GitHub" scheme="http://yunhao.space/tags/GitHub/"/>
     
   </entry>
   
