@@ -121,13 +121,17 @@
 
 
 
-  <meta property="og:type" content="website">
+  <meta name="description" content="AV.init({     appId: &quot;&quot;,     appKey: &quot;&quot;   });    var loadcomponent = function(componentname, callback){     query = new AV.Query(&apos;Key&apos;);     query.equalTo(&quot;AppName&quot;, componentname);     query.fin">
+<meta property="og:type" content="website">
 <meta property="og:title" content="Andylmns">
-<meta property="og:url" content="http://yunhao.space/tags/DNS/index.html">
+<meta property="og:url" content="http://yunhao.space/js/custom.html">
 <meta property="og:site_name" content="Andylmns">
+<meta property="og:description" content="AV.init({     appId: &quot;&quot;,     appKey: &quot;&quot;   });    var loadcomponent = function(componentname, callback){     query = new AV.Query(&apos;Key&apos;);     query.equalTo(&quot;AppName&quot;, componentname);     query.fin">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2019-01-21T12:11:47.608Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Andylmns">
+<meta name="twitter:description" content="AV.init({     appId: &quot;&quot;,     appKey: &quot;&quot;   });    var loadcomponent = function(componentname, callback){     query = new AV.Query(&apos;Key&apos;);     query.equalTo(&quot;AppName&quot;, componentname);     query.fin">
 
 
 
@@ -136,7 +140,7 @@
 
 
 
-  <link rel="canonical" href="http://yunhao.space/tags/DNS/"/>
+  <link rel="canonical" href="http://yunhao.space/js/custom.html"/>
 
 
 
@@ -146,7 +150,7 @@
   };
 </script>
 
-  <title>标签: DNS | Andylmns</title>
+  <title> | Andylmns</title>
   
 
 
@@ -202,7 +206,7 @@
     
   
 
-  <div class="container sidebar-position-left ">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -278,7 +282,7 @@
         
         
           
-          <li class="menu-item menu-item-tags menu-item-active">
+          <li class="menu-item menu-item-tags">
 
     
     
@@ -426,142 +430,126 @@
           <div id="content" class="content">
             
 
+  <div id="posts" class="posts-expand">
+    
+    
+    
+    <div class="post-block page">
+      <header class="post-header">
+
+<h1 class="post-title" itemprop="name headline">
+
+</h1>
+
+<div class="post-meta">
   
   
+
+
+
+</div>
+
+</header>
+
+      
+      
+      
+      <div class="post-body">
+        
+        
+          
+<script src="//cdn.jsdelivr.net/npm/leancloud-storage@3.11.1/dist/av-min.js"></script>
+<script>
+  AV.init({
+    appId: "",
+    appKey: ""
+  });
+
+  var loadcomponent = function(componentname, callback){
+    query = new AV.Query('Key');
+    query.equalTo("AppName", componentname);
+    query.find().then(function (results) {
+      callback(results[0].attributes);
+    }, function (error) {
+    });
+  }
+</script>
+
+
+
+
+
+
+
+
+<style type="text/css">
+  @font-face {
+    font-family: SignaritaZhaiRhianne;
+    src: url("/fonts/signarita_zhai_rhianne-webfont.ttf")
+  }
+  @font-face {
+    font-family: SignaritaZhaiRhianne;
+    src: url("/fonts/signarita_zhai_rhianne-webfont.woff")
+  }
+  @font-face {
+    font-family: SignaritaZhaiRhianne;
+    src: url("/fonts/signarita_zhai_rhianne-webfont.woff2")
+  }
+</style>
+<script>
+  var ele = document.getElementById('header').getElementsByClassName('header-inner');
+  ele = ele[0].getElementsByClassName('site-brand-wrapper');
+  ele = ele[0].getElementsByClassName('site-meta');
+  ele = ele[0].getElementsByClassName('custom-logo-site-title');
+  ele = ele[0].getElementsByClassName('brand');
+  ele = ele[0].getElementsByClassName('site-title');
+  ele[0].style.paddingTop = "15px";
+</script>
+
+
+<script>
+  imgele = document.getElementsByTagName('img');
+  i = 0;
+  while(imgele[i]){
+    imgsrc = imgele[i].getAttribute('src');
+    domainIdx = imgsrc.indexOf('images.yunhao.space/pic');
+    if(domainIdx != -1){
+      picset = imgsrc.substr(domainIdx+23, 1);
+      picname = imgsrc.substr(domainIdx+24);
+      targeturl = "https://raw.githubusercontent.com/lmnsyunhao/blog-pic"+picset+"/master"+picname;
+      imgele[i].setAttribute("src",targeturl);
+    }
+    i++;
+  }
+</script>
+
+
+<script>
   
-  <div class="post-block tag">
-
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h1>DNS<small>标签</small>
-        </h1>
+  
+</script>
+        
       </div>
-
       
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-          <a class="post-title-link" href="/2018/07/01/domain-name-parsing-setting-tutor/" itemprop="url">
-            
-              <span itemprop="name">域名解析配置教程</span>
-            
-          </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-07-01T23:21:19+08:00"
-              content="2018-07-01" >
-          07-01
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
       
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-          <a class="post-title-link" href="/2018/07/01/github-blog-multiple-domain-bundling-issue/" itemprop="url">
-            
-              <span itemprop="name">GitHub Hexo 博客 GitHub Pages 个人站点 多域名绑定问题</span>
-            
-          </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-07-01T23:19:54+08:00"
-              content="2018-07-01" >
-          07-01
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-      
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-          <a class="post-title-link" href="/2018/06/18/godaddy-domain-dns-on-tencent-cloud/" itemprop="url">
-            
-              <span itemprop="name">GoDaddy 域名 托管于腾讯云解析</span>
-            
-          </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-06-18T22:57:39+08:00"
-              content="2018-06-18" >
-          06-18
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-      
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-          <a class="post-title-link" href="/2017/03/27/github-hexo-blog-bundle-domain/" itemprop="url">
-            
-              <span itemprop="name">GitHub Hexo blog 绑定域名</span>
-            
-          </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-03-27T16:47:20+08:00"
-              content="2017-03-27" >
-          03-27
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
       
     </div>
+    
 
+
+
+    
+    
+    
   </div>
-  
-  
-  
-
-  
 
 
           </div>
           
+
+  
+
+
 
         </div>
         
@@ -1095,6 +1083,10 @@
 
 
   
+  <script src="/js/src/scrollspy.js?v=6.7.0"></script>
+<script src="/js/src/post-details.js?v=6.7.0"></script>
+
+
 
   
 
@@ -1136,6 +1128,34 @@
 
 
 
+
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+  <script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+  <script src="//cdn.bootcss.com/blueimp-md5/1.1.0/js/md5.min.js"></script>
+  <script>
+    var loadgitalk = function(data){
+      var gitalkclientidgithubstream=data.AppID;
+      var gitalksecretgithubstream=data.AppKey;
+      var gitalk = new Gitalk({
+        clientID: gitalkclientidgithubstream,
+        clientSecret: gitalksecretgithubstream,
+        repo: 'lmnsyunhao.github.io',
+        owner: 'lmnsyunhao',
+        admin: 'lmnsyunhao',
+        id: md5(location.pathname),
+        distractionFreeMode: 'true'
+      });
+      var div = document.createElement('div');
+      div.setAttribute("id", "gitalk_comments");
+      div.setAttribute("class", "post-nav");
+      var bro = document.getElementById('posts').getElementsByTagName('article');
+      bro = bro[0].getElementsByClassName('post-block');
+      bro = bro[0].getElementsByTagName('footer');
+      bro = bro[0];
+      bro.appendChild(div);
+      gitalk.render('gitalk_comments');
+    }
+  </script>
 
 
 
@@ -1185,6 +1205,8 @@
   
     loadcomponent("daovoice", loaddaovoice);
   
+  
+    loadcomponent("gitalk", loadgitalk);
   
 </script>
 
