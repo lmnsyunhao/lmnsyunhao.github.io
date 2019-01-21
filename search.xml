@@ -26,8 +26,8 @@
       </categories>
       <tags>
         <tag>ACM</tag>
-        <tag>CodeForces</tag>
         <tag>贪心</tag>
+        <tag>CodeForces</tag>
       </tags>
   </entry>
   <entry>
@@ -38,8 +38,8 @@
         <category>Hexo</category>
       </categories>
       <tags>
-        <tag>GitHub</tag>
         <tag>Hexo</tag>
+        <tag>GitHub</tag>
         <tag>Nginx</tag>
       </tags>
   </entry>
@@ -63,9 +63,9 @@
         <category>系统安装</category>
       </categories>
       <tags>
+        <tag>系统安装</tag>
         <tag>U启动</tag>
         <tag>WinPE</tag>
-        <tag>系统安装</tag>
         <tag>UEFI</tag>
       </tags>
   </entry>
@@ -91,8 +91,8 @@
       </categories>
       <tags>
         <tag>系统安装</tag>
-        <tag>UEFI</tag>
         <tag>Windows</tag>
+        <tag>UEFI</tag>
         <tag>Legacy</tag>
       </tags>
   </entry>
@@ -104,9 +104,9 @@
         <category>系统安装</category>
       </categories>
       <tags>
-        <tag>系统安装</tag>
         <tag>UltraISO</tag>
         <tag>Ubuntu</tag>
+        <tag>系统安装</tag>
       </tags>
   </entry>
   <entry>
@@ -117,8 +117,8 @@
         <category>系统安装</category>
       </categories>
       <tags>
-        <tag>系统安装</tag>
         <tag>UltraISO</tag>
+        <tag>系统安装</tag>
         <tag>Windows</tag>
       </tags>
   </entry>
@@ -157,11 +157,11 @@
         <category>域名</category>
       </categories>
       <tags>
-        <tag>服务器</tag>
         <tag>域名</tag>
         <tag>DNS</tag>
-        <tag>GitHub</tag>
+        <tag>服务器</tag>
         <tag>Hexo</tag>
+        <tag>GitHub</tag>
         <tag>GitHub Pages</tag>
         <tag>GoDaddy</tag>
         <tag>腾讯云</tag>
@@ -251,8 +251,8 @@
       </categories>
       <tags>
         <tag>Git</tag>
-        <tag>GitHub</tag>
         <tag>Hexo</tag>
+        <tag>GitHub</tag>
       </tags>
   </entry>
   <entry>
@@ -779,8 +779,8 @@
         <tag>域名</tag>
         <tag>DNS</tag>
         <tag>Git</tag>
-        <tag>GitHub</tag>
         <tag>Hexo</tag>
+        <tag>GitHub</tag>
       </tags>
   </entry>
   <entry>

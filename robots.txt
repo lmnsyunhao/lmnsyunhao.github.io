@@ -1,7 +1,7 @@
 User-agent: *
 Allow: /
 
-User-agent: Baiduspider
+User-agent: *
 Disallow: /2018/06/20/do-you-need-a-ladder/
 
 Sitemap: http://yunhao.space/sitemap.xml
