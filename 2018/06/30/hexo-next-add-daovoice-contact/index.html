@@ -129,21 +129,10 @@
 <meta property="og:site_name" content="Andylmns">
 <meta property="og:description" content="今天发现了一个有意思的在线聊天工具，DaoVoice，很有意思，还是免费的，本文讲如何将DaoVoice集成进Hexo博客，以NexT主题为例。其他主题些许不同。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="https://images.yunhao.space/pica/hexo-next-add-daovoice-contact/1.png">
-<meta property="og:image" content="https://images.yunhao.space/pica/hexo-next-add-daovoice-contact/2.png">
-<meta property="og:image" content="https://images.yunhao.space/pica/hexo-next-add-daovoice-contact/3.png">
-<meta property="og:image" content="https://images.yunhao.space/pica/hexo-next-add-daovoice-contact/4.png">
-<meta property="og:image" content="https://images.yunhao.space/pica/hexo-next-add-daovoice-contact/5.png">
-<meta property="og:image" content="https://images.yunhao.space/pica/hexo-next-add-daovoice-contact/6.png">
-<meta property="og:image" content="https://images.yunhao.space/pica/hexo-next-add-daovoice-contact/7.png">
-<meta property="og:image" content="https://images.yunhao.space/pica/hexo-next-add-daovoice-contact/8.png">
-<meta property="og:image" content="https://images.yunhao.space/pica/hexo-next-add-daovoice-contact/9.png">
-<meta property="og:image" content="https://images.yunhao.space/pica/hexo-next-add-daovoice-contact/10.png">
-<meta property="og:updated_time" content="2019-01-23T05:03:13.357Z">
+<meta property="og:updated_time" content="2019-01-23T10:05:45.458Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo NexT 添加 DaoVoice 在线聊天">
 <meta name="twitter:description" content="今天发现了一个有意思的在线聊天工具，DaoVoice，很有意思，还是免费的，本文讲如何将DaoVoice集成进Hexo博客，以NexT主题为例。其他主题些许不同。">
-<meta name="twitter:image" content="https://images.yunhao.space/pica/hexo-next-add-daovoice-contact/1.png">
 
 
 
@@ -496,7 +485,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-01-23 13:03:13" itemprop="dateModified" datetime="2019-01-23T13:03:13+08:00">2019-01-23</time>
+                <time title="修改时间：2019-01-23 18:05:45" itemprop="dateModified" datetime="2019-01-23T18:05:45+08:00">2019-01-23</time>
               
             
           </span>
@@ -589,13 +578,13 @@
         <p>今天发现了一个有意思的在线聊天工具，DaoVoice，很有意思，还是免费的，本文讲如何将DaoVoice集成进Hexo博客，以NexT主题为例。其他主题些许不同。  </p>
 <a id="more"></a>
 <h1 id="DaoVoice"><a href="#DaoVoice" class="headerlink" title="DaoVoice"></a>DaoVoice</h1><p>一个实时在线沟通的工具。可以及时解答客户的问题。还能够绑定微信。具体请看<a href="http://blog.daovoice.io/daovocie_manhua/?utm_source=DaoCloud&amp;utm_campaign=39_campaign&amp;utm_medium=daovoice_widget&amp;utm_term=footer_link&amp;utm_content=one_min" target="_blank" rel="noopener">一分钟了解DaoVoice</a>  </p>
-<h1 id="新建应用"><a href="#新建应用" class="headerlink" title="新建应用"></a>新建应用</h1><p>首先现在DaoVoice上注册一个账号。打开<a href="https://www.daocloud.io/" target="_blank" rel="noopener">DaoCloud首页</a>。找到DaoVoice服务，然后点击，如下图：<br><img src="https://images.yunhao.space/pica/hexo-next-add-daovoice-contact/1.png" alt="DaoVoice服务"><br>然后再下边的界面中选择注册，或登录。<br><img src="https://images.yunhao.space/pica/hexo-next-add-daovoice-contact/2.png" alt="注册或登录"><br>如果是新注册的用户，那么注册之后，就会看到下面的这个界面。这个是让你添加一个应用的，填写你的公司名称，你的电话号码，然后点击保存就好了<br><img src="https://images.yunhao.space/pica/hexo-next-add-daovoice-contact/3.png" alt="新建应用"><br>如果你是老用户了，找不到上边这个界面了，在下面的位置可以找到，找到之后向上边设置一下。<br><img src="https://images.yunhao.space/pica/hexo-next-add-daovoice-contact/4.png" alt="新建应用"></p>
-<h1 id="安装到网站"><a href="#安装到网站" class="headerlink" title="安装到网站"></a>安装到网站</h1><p>如下图，点击应用设置，安装到网站，JS，仅匿名用户，然后找到下面两个代码。<br><img src="https://images.yunhao.space/pica/hexo-next-add-daovoice-contact/5.png" alt="安装到网站"><br>打开博客的主题目录下的文件<code>/themes/next/layout/_custom/head.swig</code>。<br>然后粘贴成下面这样：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&#123;#</span><br><span class="line">Custom head.</span><br><span class="line">#&#125;</span><br><span class="line">&#123;% if config.daovoice %&#125;</span><br><span class="line">  &lt;script&gt;</span><br><span class="line">  (function(i,s,o,g,r,a,m)&#123;i[&quot;DaoVoiceObject&quot;]=r;i[r]=i[r]||function()&#123;(i[r].q=i[r].q||[]).push(arguments)&#125;,i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;a.charset=&quot;utf-8&quot;;m.parentNode.insertBefore(a,m)&#125;)(window,document,&quot;script&quot;,(&apos;https:&apos; == document.location.protocol ? &apos;https:&apos; : &apos;http:&apos;) + &quot;//widget.daovoice.io/widget/&#123;&#123;config.daovoice_app_id&#125;&#125;.js&quot;,&quot;daovoice&quot;)</span><br><span class="line">  daovoice(&apos;init&apos;, &#123;</span><br><span class="line">      app_id: &quot;&#123;&#123;config.daovoice_app_id&#125;&#125;&quot;</span><br><span class="line">    &#125;);</span><br><span class="line">  daovoice(&apos;update&apos;);</span><br><span class="line">  &lt;/script&gt;</span><br><span class="line">&#123;% endif %&#125;</span><br></pre></td></tr></table></figure></p>
+<h1 id="新建应用"><a href="#新建应用" class="headerlink" title="新建应用"></a>新建应用</h1><p>首先现在DaoVoice上注册一个账号。打开<a href="https://www.daocloud.io/" target="_blank" rel="noopener">DaoCloud首页</a>。找到DaoVoice服务，然后点击，如下图：<br><img src="" alt="DaoVoice服务#postpic/pica/hexo-next-add-daovoice-contact/1.png"><br>然后再下边的界面中选择注册，或登录。<br><img src="" alt="注册或登录#postpic/pica/hexo-next-add-daovoice-contact/2.png"><br>如果是新注册的用户，那么注册之后，就会看到下面的这个界面。这个是让你添加一个应用的，填写你的公司名称，你的电话号码，然后点击保存就好了<br><img src="" alt="新建应用#postpic/pica/hexo-next-add-daovoice-contact/3.png"><br>如果你是老用户了，找不到上边这个界面了，在下面的位置可以找到，找到之后向上边设置一下。<br><img src="" alt="新建应用#postpic/pica/hexo-next-add-daovoice-contact/4.png"></p>
+<h1 id="安装到网站"><a href="#安装到网站" class="headerlink" title="安装到网站"></a>安装到网站</h1><p>如下图，点击应用设置，安装到网站，JS，仅匿名用户，然后找到下面两个代码。<br><img src="" alt="安装到网站#postpic/pica/hexo-next-add-daovoice-contact/5.png"><br>打开博客的主题目录下的文件<code>/themes/next/layout/_custom/head.swig</code>。<br>然后粘贴成下面这样：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&#123;#</span><br><span class="line">Custom head.</span><br><span class="line">#&#125;</span><br><span class="line">&#123;% if config.daovoice %&#125;</span><br><span class="line">  &lt;script&gt;</span><br><span class="line">  (function(i,s,o,g,r,a,m)&#123;i[&quot;DaoVoiceObject&quot;]=r;i[r]=i[r]||function()&#123;(i[r].q=i[r].q||[]).push(arguments)&#125;,i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;a.charset=&quot;utf-8&quot;;m.parentNode.insertBefore(a,m)&#125;)(window,document,&quot;script&quot;,(&apos;https:&apos; == document.location.protocol ? &apos;https:&apos; : &apos;http:&apos;) + &quot;//widget.daovoice.io/widget/&#123;&#123;config.daovoice_app_id&#125;&#125;.js&quot;,&quot;daovoice&quot;)</span><br><span class="line">  daovoice(&apos;init&apos;, &#123;</span><br><span class="line">      app_id: &quot;&#123;&#123;config.daovoice_app_id&#125;&#125;&quot;</span><br><span class="line">    &#125;);</span><br><span class="line">  daovoice(&apos;update&apos;);</span><br><span class="line">  &lt;/script&gt;</span><br><span class="line">&#123;% endif %&#125;</span><br></pre></td></tr></table></figure></p>
 <p>注意app_id后边的那个要换一下，然后那个网址后边哪儿也要换成变量。就是上边图片中，那两段代码中被黑条盖住的部分要替换<br>那个被黑条盖住的部分就是你的app_id。打开<code>博客配置文件</code>然后增加下面内容：<br><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 实时联系</span></span><br><span class="line"><span class="attr">daovoice:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">daovoice_app_id:</span> <span class="string">你的app_id</span></span><br></pre></td></tr></table></figure></p>
-<p>将<code>你的app_id</code>替换成黑条盖住的部分就行了。然后执行<code>hexo cl &amp; hexo g &amp; hexo d</code>，之后ping一下，如下图<br><img src="https://images.yunhao.space/pica/hexo-next-add-daovoice-contact/6.png" alt="Ping"><br>如果成功了，现在就已经接入了，网站右下角就应该有一个悬浮钮了。  </p>
-<h1 id="微信绑定"><a href="#微信绑定" class="headerlink" title="微信绑定"></a>微信绑定</h1><p>绑定到微信，可以实时处理消息，回复消息。<br><img src="https://images.yunhao.space/pica/hexo-next-add-daovoice-contact/7.png" alt="微信绑定"><br>扫码之后，就能看到下面的绑定成功。<br><img src="https://images.yunhao.space/pica/hexo-next-add-daovoice-contact/8.png" alt="绑定成功"></p>
-<h1 id="设置悬浮钮"><a href="#设置悬浮钮" class="headerlink" title="设置悬浮钮"></a>设置悬浮钮</h1><p>如果悬浮钮遮挡其他元素了，或者是想设置悬浮钮的颜色，什么的。点击应用设置，聊天设置，如下图：<br><img src="https://images.yunhao.space/pica/hexo-next-add-daovoice-contact/9.png" alt="聊天设置"><br>在这里，我们可以设置欢迎语，按钮的颜色，位置什么的。  </p>
-<h1 id="新消息指派"><a href="#新消息指派" class="headerlink" title="新消息指派"></a>新消息指派</h1><p>设置一下新消息指派，点击应用设置，新消息设置，默认指派选择自己。如下图<br><img src="https://images.yunhao.space/pica/hexo-next-add-daovoice-contact/10.png" alt="新消息指派"></p>
+<p>将<code>你的app_id</code>替换成黑条盖住的部分就行了。然后执行<code>hexo cl &amp; hexo g &amp; hexo d</code>，之后ping一下，如下图<br><img src="" alt="Ping#postpic/pica/hexo-next-add-daovoice-contact/6.png"><br>如果成功了，现在就已经接入了，网站右下角就应该有一个悬浮钮了。  </p>
+<h1 id="微信绑定"><a href="#微信绑定" class="headerlink" title="微信绑定"></a>微信绑定</h1><p>绑定到微信，可以实时处理消息，回复消息。<br><img src="" alt="微信绑定#postpic/pica/hexo-next-add-daovoice-contact/7.png"><br>扫码之后，就能看到下面的绑定成功。<br><img src="" alt="绑定成功#postpic/pica/hexo-next-add-daovoice-contact/8.png"></p>
+<h1 id="设置悬浮钮"><a href="#设置悬浮钮" class="headerlink" title="设置悬浮钮"></a>设置悬浮钮</h1><p>如果悬浮钮遮挡其他元素了，或者是想设置悬浮钮的颜色，什么的。点击应用设置，聊天设置，如下图：<br><img src="" alt="聊天设置#postpic/pica/hexo-next-add-daovoice-contact/9.png"><br>在这里，我们可以设置欢迎语，按钮的颜色，位置什么的。  </p>
+<h1 id="新消息指派"><a href="#新消息指派" class="headerlink" title="新消息指派"></a>新消息指派</h1><p>设置一下新消息指派，点击应用设置，新消息设置，默认指派选择自己。如下图<br><img src="" alt="新消息指派#postpic/pica/hexo-next-add-daovoice-contact/10.png"></p>
 <h1 id="费用问题"><a href="#费用问题" class="headerlink" title="费用问题"></a>费用问题</h1><p>这个应用是免费的。不过也有付费版。你的网站用户数小于5000的时候，就是免费的。具体的需不需要付费，请看<a href="http://guide.daocloud.io/daovoice/%E6%94%B6%E8%B4%B9%E8%A7%84%E5%88%99-9145665.html?_ga=2.184733417.1747920387.1530264739-470864725.1530264739" target="_blank" rel="noopener">资费情况</a>  </p>
 <h1 id="用户手册"><a href="#用户手册" class="headerlink" title="用户手册"></a>用户手册</h1><p>其他问题，请自行查阅<a href="http://guide.daocloud.io/daovoice/daovoice-5868545.html" target="_blank" rel="noopener">官方用户手册</a></p>
 
@@ -1276,7 +1265,6 @@
     appId: "pNMlAMFXd4ELwOghmnSH2N3k-gzGzoHsz",
     appKey: "Mo4xhDc8SJAQdVidDwsTQFeP"
   });
-
   var loadcomponent = function(componentname, callback){
     query = new AV.Query('Key');
     query.equalTo("AppName", componentname);
@@ -1291,10 +1279,9 @@
 
   <script>
     var loaddaovoice = function(data){
-      daovoiceappid = data.AppKey;
-      (function(i,s,o,g,r,a,m){i["DaoVoiceObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;a.charset="utf-8";m.parentNode.insertBefore(a,m)})(window,document,"script",('https:' == document.location.protocol ? 'https:' : 'http:') + "//widget.daovoice.io/widget/"+daovoiceappid+".js","daovoice")
+      (function(i,s,o,g,r,a,m){i["DaoVoiceObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;a.charset="utf-8";m.parentNode.insertBefore(a,m)})(window,document,"script",('https:' == document.location.protocol ? 'https:' : 'http:') + "//widget.daovoice.io/widget/"+data.AppKey+".js","daovoice")
       daovoice('init', {
-          app_id: daovoiceappid
+          app_id: data.AppKey
         });
       daovoice('update');
     }
@@ -1308,26 +1295,17 @@
   <script src="//cdn.bootcss.com/blueimp-md5/1.1.0/js/md5.min.js"></script>
   <script>
     var loadgitalk = function(data){
-      var gitalkclientidgithubstream=data.AppID;
-      var gitalksecretgithubstream=data.AppKey;
-      var gitalk = new Gitalk({
-        clientID: gitalkclientidgithubstream,
-        clientSecret: gitalksecretgithubstream,
+      gitalk = new Gitalk({
+        clientID: data.AppID,
+        clientSecret: data.AppKey,
         repo: 'lmnsyunhao.github.io',
         owner: 'lmnsyunhao',
         admin: 'lmnsyunhao',
         id: md5(location.pathname),
         distractionFreeMode: 'true'
       });
-      var div = document.createElement('div');
-      div.setAttribute("id", "gitalk_comments");
-      div.setAttribute("class", "post-nav");
-      var bro = document.getElementById('posts').getElementsByTagName('article');
-      bro = bro[0].getElementsByClassName('post-block');
-      bro = bro[0].getElementsByTagName('footer');
-      bro = bro[0];
-      bro.appendChild(div);
-      gitalk.render('gitalk_comments');
+      $("#main>.main-inner:first>.content-wrap:first").append("<div id='comments' class='comments' style='opacity:1'></div>");
+      gitalk.render('comments');
     }
   </script>
 
@@ -1348,30 +1326,21 @@
   }
 </style>
 <script>
-  var ele = document.getElementById('header').getElementsByClassName('header-inner');
-  ele = ele[0].getElementsByClassName('site-brand-wrapper');
-  ele = ele[0].getElementsByClassName('site-meta');
-  ele = ele[0].getElementsByClassName('custom-logo-site-title');
-  ele = ele[0].getElementsByClassName('brand');
-  ele = ele[0].getElementsByClassName('site-title');
-  ele[0].style.paddingTop = "15px";
+  $('#header>.header-inner:first>.site-brand-wrapper:first>.site-meta:first>.custom-logo-site-title:first>.brand:first>.site-title:first').css({'paddingTop':'15px'});
 </script>
 
 
 <script>
-  imgele = document.getElementsByTagName('img');
-  i = 0;
-  while(imgele[i]){
-    imgsrc = imgele[i].getAttribute('src');
-    domainIdx = imgsrc.indexOf('images.yunhao.space/pic');
-    if(domainIdx != -1){
-      picset = imgsrc.substr(domainIdx+23, 1);
-      picname = imgsrc.substr(domainIdx+24);
+  $('img').each(function(){
+    arr = $(this).attr('alt').split('#');
+    if(arr[1] && arr[1].indexOf('postpic/pic') != -1){
+      $(this).attr('alt', arr[0]);
+      picset = arr[1].substr(11, 1);
+      picname = arr[1].substr(12);
       targeturl = "https://raw.githubusercontent.com/lmnsyunhao/blog-pic"+picset+"/master"+picname;
-      imgele[i].setAttribute("src",targeturl);
+      $(this).attr('src', targeturl);
     }
-    i++;
-  }
+  })
 </script>
 
 
