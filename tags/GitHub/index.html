@@ -337,6 +337,25 @@
     <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br/>归档<span class="badge">60</span></a>
 
   </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-足迹">
+
+    
+    
+    
+      
+    
+
+    
+      
+    
+
+    <a href="/commentswall" rel="section"><i class="menu-item-icon fa fa-fw fa-pencil"></i> <br/>足迹</a>
+
+  </li>
 
       
       
@@ -407,6 +426,9 @@
             
 
     
+    
+      
+      
     
       
       
@@ -1058,7 +1080,7 @@
 
 
 
-  <div class="footer-custom">Hosted by <a href="https://github.com/lmnsyunhao/lmnsyunhao.github.io" class="theme-link" rel="noopener" target="_blank">GitHub Pages</a></div>
+  <div class="footer-custom">Hosted by <a href="https://pages.github.com/" class="theme-link" rel="noopener" target="_blank">GitHub Pages</a> | <a href="https://coding.net/pages" class="theme-link" rel="noopener" target="_blank">Coding Pages</a></div>
 
 
         
@@ -1271,6 +1293,14 @@
     loadcomponent("daovoice", loaddaovoice);
   
   
+</script>
+
+
+<script>
+  $("a[href^='/tags/'][rel='tag']").each(function(){
+    tagName = ($(this).html().split(' '))[1];
+    $(this).html("<i class='fa fa-tag'></i> " + tagName);
+  })
 </script>
 
   
@@ -1745,6 +1775,9 @@
   
 
   
+  <script src="/js/src/js.cookie.js?v=6.7.0"></script>
+  <script src="/js/src/scroll-cookie.js?v=6.7.0"></script>
+
 
   
 
