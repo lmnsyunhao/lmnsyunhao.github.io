@@ -132,7 +132,7 @@
 <meta property="og:url" content="http://yunhao.space/tags/index.html">
 <meta property="og:site_name" content="Andylmns">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-01-24T02:38:53.530Z">
+<meta property="og:updated_time" content="2019-01-24T06:23:03.780Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="tags">
 
@@ -1268,6 +1268,8 @@
 
 
 
+  
+
 
 
   
@@ -1287,6 +1289,9 @@
 
   
   <script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-three@1.0.0/canvas_lines.min.js"></script>
+
+  
+  <script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-reading-progress@1.1/reading_progress.min.js"></script>
 
 
   
@@ -1402,6 +1407,18 @@
     $(this).html("<i class='fa fa-tag'></i> " + tagName);
   })
 </script>
+
+
+<script>
+  ele = $('#needsharebutton-float>span.btn');
+  ele.css({"color": "#fff","background": "#222"});
+  ele.on('mouseover', function(){$(this).css({"color": "#222","background": "#fff"});}).on('mouseleave', function(){$(this).css({"color": "#fff","background": "#222"});});
+</script>
+
+
+<style type="text/css">@media(max-width:1260px){.book-mark-link{display:none}}</style>
+
+
 
   
 
@@ -1882,6 +1899,17 @@
   
 
   
+  
+  
+    
+  
+  <script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-bookmark@1/bookmark.min.js"></script>
+  <script>
+  
+    bookmark.loadBookmark();
+  
+  </script>
+
 
   
 

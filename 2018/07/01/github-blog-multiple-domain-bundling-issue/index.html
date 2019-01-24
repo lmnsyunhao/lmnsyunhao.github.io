@@ -135,7 +135,7 @@
 <meta property="og:site_name" content="Andylmns">
 <meta property="og:description" content="我的个人站点托管在GitHub上，想要多个域名都能够正常访问站点，比如，yunhao.space可以访问站点，blog.yunhao.space也可以访问站点。记录一次折腾。因为设置过程中，会有缓存，所以吧有的时候，不一定能够是真的能访问，所以得再三确认。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-01-24T02:38:53.526Z">
+<meta property="og:updated_time" content="2019-01-24T06:23:03.776Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="GitHub Hexo 博客 GitHub Pages 个人站点 多域名绑定问题">
 <meta name="twitter:description" content="我的个人站点托管在GitHub上，想要多个域名都能够正常访问站点，比如，yunhao.space可以访问站点，blog.yunhao.space也可以访问站点。记录一次折腾。因为设置过程中，会有缓存，所以吧有的时候，不一定能够是真的能访问，所以得再三确认。">
@@ -444,6 +444,8 @@
   
 
   
+    <div class="reading-progress-bar"></div>
+  
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
@@ -510,7 +512,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-01-24 10:38:53" itemprop="dateModified" datetime="2019-01-24T10:38:53+08:00">2019-01-24</time>
+                <time title="修改时间：2019-01-24 14:23:03" itemprop="dateModified" datetime="2019-01-24T14:23:03+08:00">2019-01-24</time>
               
             
           </span>
@@ -1263,6 +1265,8 @@
 
 
 
+  
+
 
 
   
@@ -1282,6 +1286,9 @@
 
   
   <script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-three@1.0.0/canvas_lines.min.js"></script>
+
+  
+  <script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-reading-progress@1.1/reading_progress.min.js"></script>
 
 
   
@@ -1420,6 +1427,18 @@
     $(this).html("<i class='fa fa-tag'></i> " + tagName);
   })
 </script>
+
+
+<script>
+  ele = $('#needsharebutton-float>span.btn');
+  ele.css({"color": "#fff","background": "#222"});
+  ele.on('mouseover', function(){$(this).css({"color": "#222","background": "#fff"});}).on('mouseleave', function(){$(this).css({"color": "#fff","background": "#222"});});
+</script>
+
+
+<style type="text/css">@media(max-width:1260px){.book-mark-link{display:none}}</style>
+
+
 
   
 
@@ -1890,6 +1909,17 @@
   
 
   
+  
+  
+    
+  
+  <script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-bookmark@1/bookmark.min.js"></script>
+  <script>
+  
+    bookmark.scrollToMark('auto', "#更多");
+  
+  </script>
+
 
   
 
