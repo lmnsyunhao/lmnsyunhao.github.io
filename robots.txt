@@ -1,8 +1,15 @@
 User-agent: *
 Allow: /
-
-User-agent: *
 Disallow: /2018/06/20/do-you-need-a-ladder/
+Disallow: /css/
+Disallow: /fonts/
+Disallow: /images/
+Disallow: /js/
+Disallow: /lib/
+Disallow: /live2dw/
+Disallow: /README.md
+Disallow: /CNAME
+Disallow: /404.html
 
 Sitemap: http://yunhao.space/sitemap.xml
 Sitemap: http://yunhao.space/baidusitemap.xml
